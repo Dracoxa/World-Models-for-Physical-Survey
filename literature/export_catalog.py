@@ -116,6 +116,8 @@ def main():
 
 ## 本轮新增讨论入口
 
+2026-10-01 v0.2 写作补充另见[文献与内容缺口清单](WRITING_GAPS.md)；补充记录与此表格快照分开维护，合并前应再次去重。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)

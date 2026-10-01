@@ -30,3 +30,41 @@ The literature corpus includes both direct methods and supporting work. Learned 
   \Description{Three horizontal control loops. The first maps observations through a policy and controller to the environment. The second inserts a reasoner that reviews policy proposals and also receives observations. The third predicts consequences of action candidates before evaluation, selection, and control. Each loop returns new observations from the environment.}
   \label{fig:interfaces}
 \end{figure}
+
+\subsection{From Learned Dynamics to Predictive Robot Systems}
+World-model research comprises interacting directions rather than a single replacement sequence. One direction learns dynamics for online decisions. PETS uses probabilistic ensembles and trajectory sampling to propagate uncertainty when evaluating actions~\cite{chua2018pets}; PlaNet brings planning into a learned latent space~\cite{hafner2019planet}. Another direction uses predicted experience to train a policy. Dreamer optimizes behavior through imagined latent trajectories~\cite{hafner2020dreamer}, whereas MBPO augments policy learning with short model rollouts initialized from collected experience~\cite{janner2019mbpo}. The distinction concerns when the model is queried, not whether the final policy is a neural network.
+
+Physical deployment adds sensing, actuation, and interaction costs to this design space. DayDreamer applies world-model learning directly to physical platforms for manipulation, locomotion, and navigation~\cite{wu2023daydreamer}. Foundation-model approaches enter from another direction: they acquire broad visual or semantic priors before adaptation to an action interface. Recent systems such as DreamZero couple future video with action generation~\cite{ye2026dreamzero}. These developments make it useful to retain both the classical model-use distinction and the newer questions of pretraining, embodiment, and execution.
+
+With observation--action history $h_t$, goal $g$, and candidate action sequence $a_{t:t+H-1}$, a predictive model can be written as
+\begin{equation}
+ p_\theta(y_{t+1:t+H}\mid h_t,a_{t:t+H-1},g),
+ \label{eq:predictor}
+\end{equation}
+where $y$ may represent images, latent features, geometry, or other task-relevant variables. A policy instead produces $\pi_\phi(a_{t:t+H-1}\mid h_t,g)$. These expressions describe interfaces rather than a required architecture. A joint model may implement both, while a model trained on passive video may omit the action argument. The practical question is which interface is trained, queried, and tested.
+
+\subsection{Relation to Recent Surveys and Review Scope}
+Recent surveys already cover substantial parts of this landscape. Hou et al.~\cite{hou2026survey} organize robot world models around policy coupling, learned simulation, and visual predictive modeling. Lu et al.~\cite{lu2026survey} emphasize world-action architectures and control applications. Jena et al.~\cite{jena2026evaluation} focus on evaluation benchmarks and the comparison between prediction and executed behavior. Table~\ref{tab:survey-position} summarizes their stated emphases without interpreting an omitted entry as proof that a topic is absent from a paper.
+
+Our working emphasis is the traceable connection between a predicted quantity, the interface that uses it, and the evidence for physical interaction. This perspective accommodates world models, their training resources, and complementary policy or safety components without treating them as identical objects. The seven collection categories supply literature to four narrative parts: foundations establish interfaces; data and representations determine what can be predicted; integration explains how predictions affect behavior; evaluation examines whether that use is reliable.
+
+\begin{table}[t]
+\caption{Positioning against selected 2026 surveys. Stated scope is compared, not completeness. All three are cited through accessible preprints.}
+\label{tab:survey-position}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.20\linewidth}YY@{}}
+\toprule
+Survey & Main organizing emphasis & Connection to this review \\
+\midrule
+Hou et al.~\cite{hou2026survey} & Robot learning: policy coupling, simulation, and predictive models & Broad method map for tracing primary papers. \\
+\addlinespace
+Lu et al.~\cite{lu2026survey} & World-action modeling, architecture, and control applications & Predictive and executable interfaces. \\
+\addlinespace
+Jena et al.~\cite{jena2026evaluation} & Benchmark protocols and predictive embodied evaluation & Prediction tests versus decision tests. \\
+\addlinespace
+This review & Prediction target, action interface, operational use, and reliability & Connects design choices to evidence for physical use. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The present manuscript is a first-pass narrative synthesis, not a completed systematic review. Its companion catalog contains 929 category records with cross-category duplication; this is neither a unique-study count nor a verified-paper count. Primary sources support method descriptions; surveys guide discovery and positioning. The selection log will be expanded alongside the manuscript, with formal publications preferred when available and preprints retained for explicitly identified recent developments.

@@ -1,6 +1,56 @@
 \section{Integration with Robot Policies}
 \label{sec:policy}
 
+\subsection{Planning with Predicted Consequences}
+The most direct use of a world model is to compare candidate actions before executing one. PETS uses uncertainty-aware dynamics within trajectory sampling~\cite{chua2018pets}; PlaNet and TD-MPC2 plan in learned latent spaces~\cite{hafner2019planet,hansen2024tdmpc2}. Their predictive models enter an online decision procedure whose components include candidate generation, rollout, outcome scoring, and the feedback that replaces predictions with observations.
+
+A generic receding-horizon decision can be expressed as
+\begin{equation}
+ a^*_{t:t+H-1}=\operatorname*{arg\,max}_{a_{t:t+H-1}}
+ \mathbb{E}_{p_\theta}\!\left[\sum_{k=0}^{H-1}\gamma^k r(y_{t+k+1},a_{t+k})\right],
+ \label{eq:planning}
+\end{equation}
+with an initial action or chunk executed before replanning. Here $r$ scores predicted outcomes and $\gamma$ discounts future reward. This is a decision template, not an assertion that all cited systems implement the same optimizer. Learned values, terminal costs, constraints, and uncertainty penalties can change the objective. A better planner, evaluator, or candidate generator can also improve task success independently of the predictor.
+
+Rollout length trades anticipation of delayed effects against reliance on increasingly uncertain predictions. Frequent feedback limits open-loop execution but cannot make an inaccurate model harmless: the first selected action can itself place a robot in a difficult state. Horizon, sampling budget, and control rate therefore belong in a method comparison alongside architecture. A planning result is most interpretable when predictive quality and action-selection behavior are examined under the same task conditions.
+
+\subsection{Policy Learning with Imagined Experience}
+A world model can influence behavior without conducting a full online search at every control step. Dreamer learns an actor through imagined latent trajectories~\cite{hafner2020dreamer}. MBPO uses short synthetic rollouts branched from real experience for policy optimization~\cite{janner2019mbpo}. These approaches move some predictive computation into learning. They differ from online planning in deployment cost, interaction requirements, and where model errors affect behavior.
+
+DayDreamer anchors this discussion in physical sensing and actuation~\cite{wu2023daydreamer}. More generally, imagined learning involves two coupled feedback loops: interaction updates the model, and the model changes the policy that collects subsequent interaction. Analysis should record both loops, including the reward source and whether policy-induced distribution changes are reflected in model updates.
+
+Synthetic volume is not a sufficient measure of training value. MBPO's restricted rollouts illustrate that model use can be selective rather than maximized~\cite{janner2019mbpo}. For foundation-scale systems, the corresponding comparison should account for generating, filtering, and training on synthetic trajectories. Real interaction, synthetic interaction, and computation remain separate resources; a reduction in one is not automatically a reduction in all three.
+
+\subsection{Visual Plans and Joint World--Action Models}
+A generated future can serve as an intermediate action representation. UniPi synthesizes goal-conditioned video and extracts actions from it~\cite{du2023unipi}. This separates choosing what should happen from translating that outcome into commands. It also identifies a failure boundary: a plausible plan can be unreachable by the current robot, and a correct plan can be poorly translated into motor actions. Plan quality and action grounding require separate examination.
+
+Joint world--action models reduce this separation by learning future observations and commands together. DreamZero builds on a pretrained video diffusion model to generate video and actions~\cite{ye2026dreamzero}. Cosmos Policy encodes actions, future observations, and values within a video model's latent generation process, and examines direct-policy and planning modes~\cite{kim2026cosmospolicy}. These examples illustrate the interface convergence discussed in recent surveys~\cite{hou2026survey,lu2026survey}, without implying that every video-based policy performs an explicit future rollout at execution time.
+
+Table~\ref{tab:integration} compares the location of prediction in the pipeline. For a joint system, a predicted outcome may be consumed by action selection, shape training through an auxiliary loss, or remain another generated output. The mechanisms can coexist, but suggest different ablations. They should not be collapsed into an undifferentiated statement that a policy ``uses a world model.''
+
+\begin{table}[t]
+\caption{Prediction in policy learning and execution. Suggested comparisons are review criteria, not experiments asserted for every cited paper.}
+\label{tab:integration}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}YYY@{}}
+\toprule
+Integration route & Example & Model use & Controlled comparison \\
+\midrule
+Online planning & PETS; TD-MPC2~\cite{chua2018pets,hansen2024tdmpc2} & Candidate evaluation & Fix candidates and budget; vary predictor. \\
+\addlinespace
+Imagined learning & Dreamer; MBPO~\cite{hafner2020dreamer,janner2019mbpo} & Policy/value training & Fix real-data budget; vary synthetic use. \\
+\addlinespace
+Visual plan to action & UniPi~\cite{du2023unipi} & Plan generation and decoding & Separate plan errors from decoder errors. \\
+\addlinespace
+Joint generation & DreamZero~\cite{ye2026dreamzero} & Coupled video and actions & Vary predictive objective with matched training. \\
+\addlinespace
+Joint model plus selection & Cosmos Policy~\cite{kim2026cosmospolicy} & Direct policy or planning & Direct versus planning mode; report compute. \\
+\addlinespace
+Reasoner assistance & Astra studies~\cite{su2026astra,galbot2026astra} & Proposal review or editing & Fix policy; vary observation and prediction inputs. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 \subsection{Reasoning-Policy Hybrids: The Astra Case}
 Recent Astra evaluations motivate distinguishing direct numerical action generation from a hybrid interface that reviews a learned policy's proposals. In Su et al.'s technical report~\cite{su2026astra}, Astra can correct actions proposed by $\pi_{0.5}$. On ten selected RoboDojo tasks with five aligned cases per task, the authors report 48\% success for the hybrid and 26\% for direct Astra control. The public-policy comparisons use published reference scores rather than same-seed reruns. These findings support a bounded discussion of complementary action-generation and correction roles; they do not isolate a future-prediction mechanism.
 
@@ -16,7 +66,7 @@ For world-model research, these interfaces raise a specific attribution question
 \caption{Interfaces and study scope in the Astra discussion. This is a provenance table, not a cross-paper performance leaderboard.}
 \label{tab:astra}
 \small
-\begin{tabularx}{\linewidth}{@{}p{.19\linewidth}YY@{}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.19\linewidth}YY@{}}
 \toprule
 Source & Interface examined & Scope retained in the comparison \\
 \midrule

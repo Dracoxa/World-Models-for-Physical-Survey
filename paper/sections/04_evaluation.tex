@@ -1,12 +1,82 @@
 \section{Evaluation, Reliability, and Research Directions}
 \label{sec:evaluation}
 
-\subsection{Match Evidence to the Operational Claim}
-We distinguish three questions in evaluating a world-model-based system. First, does the predictor represent the variables relevant to its stated role? Second, do its outputs affect the downstream decision in the intended way? Third, does the complete system operate under the timing and environmental conditions of the claimed application? These questions define the structure of the evaluation discussion; they are not a single score or a ladder that every supporting dataset or component must climb.
+\subsection{Prediction Quality and Decision Utility}
+Evaluation should begin with the model's claimed role. A representation learner needs evidence about relevant downstream features; an action-conditioned predictor needs tests of the relationship between commands and outcomes; a planner needs evidence about executed behavior. These are complementary questions, not a single evidence ladder that every dataset, theoretical result, and component must climb.
 
-The Astra studies provide a useful case for this separation. A reported task outcome concerns an implemented control interface and a particular evaluation protocol. Establishing that an explicit world model caused an improvement requires an additional comparison that isolates the prediction component. Similarly, results collected with paused simulation do not test the consequences of reasoning delay in a continuously evolving environment. These distinctions determine which conclusions can be transferred from the reported experiment to a deployment setting.
+WorldArena compares perceptual quality with functional uses of embodied world models, including data generation, policy evaluation, and planning~\cite{shang2026worldarena}. WorldArena~2.0 expands toward visuotactile modalities, interactive learning, and multiple simulated and physical platforms~\cite{shang2026worldarena2}. This broadens evaluation beyond generated-video appearance. The resulting protocols provide evidence about tested functions and settings, rather than universal certification of a high-scoring model.
 
-\subsection{Reliability as a System Property}
-For each operational role, the review will connect potential failures to observable checks and available responses. A planner may select actions whose predicted consequences are inaccurate; a monitor may fail to detect divergence; a controller may fail to realize a selected command. The corresponding analysis should identify what is measured, how a discrepancy changes execution, and whether the response itself has been evaluated. This organization keeps safety claims attached to the behavior of the complete system.
+Policy benchmarks answer a related question. LIBERO studies knowledge transfer in robot learning~\cite{liu2023libero}; CALVIN evaluates language-conditioned long-horizon manipulation~\cite{mees2022calvin}. Both can assess a complete system, but task success alone does not identify the responsible component. Jena et al.~\cite{jena2026evaluation} foreground this distinction. Even within the same named suite, task subsets, demonstrations, initialization, and compute must be aligned before attributing differences to prediction.
 
-The next synthesis step is to populate these comparisons with verified studies of uncertainty, distribution shift, failure recovery, and runtime constraints. The current draft establishes the comparison structure. It does not yet claim comprehensive coverage of these topics or a completed systematic-review screening process.
+\begin{table}[t]
+\caption{Evaluation targets and reporting requirements. These criteria match evidence to claims without assigning a universal evidence grade.}
+\label{tab:evaluation}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}YYY@{}}
+\toprule
+Target & Example setting & Informative observation & Protocol detail \\
+\midrule
+Predictive content & Held-out trajectories & Error, consistency, or likelihood & Variable, horizon, units, and split. \\
+\addlinespace
+Action sensitivity & Same history; varied commands & Predicted differences match observed consequences & Action semantics and intervention coverage. \\
+\addlinespace
+Functional use & WorldArena series~\cite{shang2026worldarena,shang2026worldarena2} & Utility as data source, evaluator, planner, or environment & Specific role and downstream system. \\
+\addlinespace
+Task performance & LIBERO; CALVIN~\cite{liu2023libero,mees2022calvin} & Completion and sequential outcomes & Tasks, resets, trials, data, and budget. \\
+\addlinespace
+Safety behavior & SafeDreamer; Recovery RL~\cite{huang2024safedreamer,thananjeyan2021recovery} & Violations, interventions, and recovery & Cost, exposure, severity, and success. \\
+\addlinespace
+Runtime feasibility & Physical closed-loop execution & Delay and valid control outputs & Hardware, sensing, action duration, and paused physics. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Uncertainty, Constraints, and Recovery}
+Safety requires an account of what can go wrong and how the system responds. Uncertainty, constrained optimization, and recovery address different parts of this problem. PETS propagates uncertainty through candidate trajectories~\cite{chua2018pets}, but uncertainty-aware control is not itself a guarantee against hazardous outcomes. Uncertainty must be connected to an action rule and assessed under the relevant distribution changes.
+
+Constrained Policy Optimization formalizes learning with reward and cost constraints~\cite{achiam2017cpo}. SafeDreamer integrates cost-aware planning and Lagrangian mechanisms with a learned world model, evaluating behavior in Safety-Gymnasium~\cite{huang2024safedreamer}. These works motivate comparing task return with explicit costs, rather than interpreting success rate as safety. An expected-cost constraint need not exclude a rare severe event; its meaning depends on the event definition, horizon, and distribution used for evaluation.
+
+Recovery separates task progress from corrective behavior. Recovery RL learns task and recovery policies, using prior data to identify situations requiring intervention~\cite{thananjeyan2021recovery}. We include it as a complementary safety mechanism, not relabel it as a generative world model. For a predictive robot system, the corresponding design question is how a detected or forecast problem triggers replanning, switching, assistance, or stopping. Each implemented response needs its own evidence.
+
+Formal control tools offer another form of support. Control barrier functions express conditions for maintaining a system inside a specified safe set~\cite{ames2019cbf}. Their conclusions depend on assumptions about state, dynamics, control authority, and constraint feasibility. A learned predictor does not inherit a formal guarantee merely by being attached to such a controller. We distinguish guarantees under assumptions, empirical violation reduction, and recovery demonstrations.
+
+\begin{table}[t]
+\caption{Complementary safety mechanisms. Their scope follows their assumptions and evidence; rows are not ordered by safety strength.}
+\label{tab:safety}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.18\linewidth}YYY@{}}
+\toprule
+Mechanism & Source & Function & Required check \\
+\midrule
+Uncertainty propagation & PETS~\cite{chua2018pets} & Account for uncertain outcomes & Calibration under shift and the resulting action rule. \\
+\addlinespace
+Constrained learning & CPO~\cite{achiam2017cpo} & Reward optimization with costs & Cost meaning and bound assumptions. \\
+\addlinespace
+WM safety planning & SafeDreamer~\cite{huang2024safedreamer} & Plan with learned costs and rewards & Cost-prediction error and observed violations. \\
+\addlinespace
+Recovery control & Recovery RL~\cite{thananjeyan2021recovery} & Switch to corrective behavior & Missed hazards, false alarms, and recovery success. \\
+\addlinespace
+Constraint enforcement & Barrier functions~\cite{ames2019cbf} & Restrict control using a safe-set condition & State error, dynamics assumptions, and feasibility. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Operational Reliability and Attribution}
+Reliability depends on the complete observation--decision--execution loop. A planner can act on a stale observation; a controller can saturate; an action chunk can continue after the scene changes. This motivates reporting end-to-end latency and action timing, not just network inference time. The Astra evaluations in Section~\ref{sec:policy} also illustrate why simulation timing must be explicit: pausing an environment removes consequences of reasoning delay that remain present during continuous physical operation.
+
+Attribution requires controls at the relevant interface. To assess a predictive planner, hold candidate generation and scoring fixed where possible. To assess predictive pretraining, compare training signals with matched data and compute. For a reasoning-policy hybrid, distinguish additional observations, additional inference, proposal editing, and explicit consequence prediction. Not every study needs every comparison; the comparisons determine which explanation the study supports.
+
+A practical reporting unit is an episode with its outcome, elapsed time, intervention history, and failure type. Aggregation should retain denominators and variation across tasks, seeds, or environments. Reports that reuse experiments should be linked as evidence families when appropriate. This is important for rapidly released systems where an early project report and an expanded preprint may contain overlapping trials.
+
+\subsection{Research Directions and Synthesis}
+\paragraph{From prediction scores to useful decisions.}
+An important question is how changes in predictive quality alter decisions made with the model. This requires examining variables used by a planner, not just a visual aggregate score. Functional benchmarks provide one entry point~\cite{shang2026worldarena}. Further comparisons should examine cases in which plausible predictions misrank actions or omit consequential alternatives.
+
+\paragraph{Contact, hidden state, and embodiment.}
+The next literature pass should connect structured and multimodal models to concrete sensing and actuation problems: contact prediction, deformable interaction, touch and force, and robots with different control conventions. Each comparison should distinguish observing a previously hidden variable, predicting it more accurately, and changing how a policy uses it. These are collection priorities, not claims that relevant literature is absent.
+
+\paragraph{Adaptation and computation.}
+Online updates, longer memory, and larger inference budgets change a system's operating conditions. Comparisons should report adaptation data, regression, compute, and behavior under delayed or failed inference. Prediction and control need not run at the same rate. The design question is how to allocate computation while maintaining a response when prediction is uncertain, unavailable, or too slow.
+
+\paragraph{Synthesis.}
+World models connect experience to action through learned simulation, predictive representation, online planning, imagined learning, and joint world--action generation. These routes differ in what is predicted and where predictions are consumed. The review follows those dependencies from data and representation to behavior and reliability. The next stage is to broaden primary evidence for each route, especially contact-rich interaction, navigation and driving, and safety under distribution shift, while preserving the source-specific interpretation of each comparison.

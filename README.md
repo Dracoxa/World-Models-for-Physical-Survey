@@ -1,6 +1,6 @@
 # World Models for Physical AI
 
-ACM Computing Surveys 综述工作仓库。当前为 **v0.1 写作初稿**，不是已完成或已投稿版本。
+ACM Computing Surveys 综述工作仓库。当前为 **v0.2 第一轮内容稿**：四部分正文、1 图、7 表、31 条参考文献，尚非完整综述或投稿定稿。
 
 ## 阅读入口
 
@@ -9,6 +9,7 @@ ACM Computing Surveys 综述工作仓库。当前为 **v0.1 写作初稿**，不
 - [七类文献检索目录](literature/README.md)
 - [929 条分类记录 CSV](literature/catalog.csv)
 - [写作进度与证据说明](WRITING_STATUS.md)
+- [本轮补充文献与下一步缺口](literature/WRITING_GAPS.md)
 - [图 1：预测与控制接口](paper/figures/fig01_prediction_policy_interfaces.png)
 
 ## 文章结构

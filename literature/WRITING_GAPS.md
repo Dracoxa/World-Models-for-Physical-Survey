@@ -1,0 +1,72 @@
+# 边写边补：文献与内容缺口
+
+更新：2026-10-01；对应正文 v0.2。检索模式为 **rapid-scan（快速定向补充）**，不是穷尽检索或逐篇全文深核。
+
+## 本轮补了什么
+
+正文从 8 条参考文献扩到 31 条，新增 23 条引用。大部分是将协作表已有文献引入正文；下列 7 项在当前 929 条目录中按标题或标识符检索未找到，作为本轮补充记录另列。原 Excel 与生成的目录快照保持不变，不把补充数混入原快照统计。
+
+| 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
+|---|---|---|---|
+| Cosmos Policy [论文](https://arxiv.org/abs/2601.16163v1) | 世界模型与 VLA、规划 | 动作、未来状态和价值的联合建模；直接策略与规划模式 | 已读方法相关正文；正式发表版本元数据待统一 |
+| WorldArena [论文](https://arxiv.org/abs/2602.08971) | 评估、安全与 Benchmark | 区分视觉质量和功能用途 | 已核原始论文摘要与评估范围；逐项协议待提取 |
+| WorldArena 2.0 [论文](https://arxiv.org/abs/2605.17912v1) | 评估、安全与 Benchmark | 多模态、交互用途和平台扩展 | 已访问正文；各平台实验范围下一轮逐项核对 |
+| SafeDreamer [ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/ece182f93af26c64187ba3f7dfd4309a-Abstract-Conference.html) | 评估、安全与 Benchmark | 世界模型中的成本约束与安全规划 | 已核会议记录及方法概述；成本定义、消融和失败案例待深读 |
+| Recovery RL [论文](https://arxiv.org/abs/2010.15920v2) | 评估、安全与 Benchmark | 恢复策略作为互补安全机制 | 已核方法与实验范围；不将其归为生成式 WM |
+| Control Barrier Functions: Theory and Applications [论文](https://arxiv.org/abs/1903.11199) | 世界模型基础与控制；交叉安全 | 解释形式保证与经验安全结果的区别 | 已核来源与范围；具体定理假设和与学习模型的连接待补 |
+| Do World Models Make Better Robots? [综述](https://arxiv.org/abs/2609.29669v1) | 评估、安全与 Benchmark | 近期综述定位与评估组织方式 | 已查看正文与比较表；不照搬其文献统计与优先性主张 |
+
+DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
+
+## 接下来优先补哪些
+
+“缺”表示当前稿件的证据尚不充分，不表示这个领域没有论文。检索词是下一轮入口，不是已完成的检索。
+
+| 对应七类文献 | 当前正文已有支撑 | 还缺的关键内容 | 下一轮检索入口 | 优先级 |
+|---|---|---|---|---|
+| 世界模型基础与控制 | PlaNet、PETS、Dreamer、TD-MPC2、MBPO | 状态估计、部分可观测性与经典控制的联系；最新 latent-control 进展 | `world model belief state partial observability`; `latent model predictive control 2026` | 中 |
+| 视觉与视频世界模型 | UniPi、UniSim、DreamZero、Cosmos Policy | 2026 大规模交互模拟；长时滚动、动作一致性与失败案例 | `action-conditioned video world model interactive simulator 2026`; `long horizon rollout failure` | 高 |
+| Latent 与预测表示 | Dreamer、TD-MPC2、V-JEPA 2 | 新预测目标的系统比较；2026 JEPA 与动作表示、策略耦合方法 | `predictive representation robot action JEPA 2026`; `latent world model policy ablation` | 高 |
+| 结构化物理与多模态 | GNS；WorldArena 2.0 仅提供评估背景 | **目前最薄弱**：三维状态、接触、形变、触觉和力觉的模型级原始论文 | `visuotactile world model`; `contact dynamics prediction robot`; `3D structured world model 2026` | 最高 |
+| 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim | 人类第一视角数据、失败与恢复数据、跨本体动作对齐；训练测试重叠核查 | `egocentric video robot action alignment`; `robot failure recovery dataset`; `cross embodiment dynamics` | 高 |
+| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口 | 导航和驾驶实例；预测预训练与推理时预测的消融；重规划与记忆 | `navigation world model lookahead planning`; `occupancy world model closed loop driving`; `predictive pretraining policy ablation` | 最高 |
+| 评估、安全与 Benchmark | WorldArena 系列、LIBERO、CALVIN、SafeDreamer、CPO、Recovery RL | **安全段仍需加厚**：真实机器人分布外风险、校准、干预成本、形式控制与学习预测的连接 | `world model uncertainty calibration robot safety 2026`; `learned dynamics control barrier function`; `robot runtime assurance` | 最高 |
+
+下一轮优先补每个薄弱方向 2–3 篇能够真正进入比较表的代表工作。满足“不同机制、明确预测量、明确动作接口、可定位实验”的需要后再扩量，不以凑篇数代替覆盖。
+
+## 表格参考与实现
+
+本轮新增 6 表，加上已有 Astra 表，共 7 表：近期综述定位、数据资源、预测空间、策略融合、Astra 来源、评估协议、安全机制。均为可编辑 LaTeX 表，不是截图。
+
+- Lu 等 [2026 综述](https://arxiv.org/html/2609.16074v1)：参考按类别分组的方法表、指标与资源分表的组织方式。
+- Hou 等 [2026 综述](https://arxiv.org/html/2605.00080v1)：参考在架构比较中显式记录预测与动作的连接。
+- Jena 等 [2026 综述](https://arxiv.org/html/2609.29669v1)：参考综述定位与评估协议比较表的用途。
+
+已查看上述 HTML 排版表格，并读到 Lu 等源包的章节 LaTeX 片段。完整源码下载超时，因此没有声称完整检查或复用其表格源码。我们的实现沿用仓库已有 `booktabs`、`tabularx`，使用分组行、自动换行和少量横线；未复制原表数据、覆盖勾叉或能力排名。
+
+## 本轮检索与证据边界
+
+检索日期：2026-10-01。以现有目录为起点，定向搜索后回到 arXiv、PMLR、NeurIPS/ICLR 会议记录及作者项目页面。代表查询：
+
+1. `world models physical AI survey 2026 arxiv robot world action survey`
+2. `world models survey 2026 embodied intelligence taxonomy evaluation survey latex`
+3. `DreamZero World Action Models are Zero shot Policies 2026 arxiv`
+4. `Cosmos Policy fine tuning video models visuomotor control 2026 arxiv`
+5. `WorldArena 2026 benchmark embodied world models arxiv`
+6. `SafeDreamer world models safety constraints ICLR 2024 paper`
+7. `site.proceedings.mlr.press Recovery RL Safe Reinforcement Learning Learned Recovery Zones`
+8. `site.arxiv.org control barrier functions theory applications Ames 2019`
+
+现有目录与论文正文是两层记录：库里有论文不等于已读、已核或已在正文引用。本轮补的是方法级概述与文献定位，没有新增跨论文成功率排名，也没有宣称复现。部分早期论文通过 arXiv 可读版本引用，正式出版信息、完整作者列表与版本统一留待第二轮。
+
+## 第一轮自查
+
+| 稿件判断 | 支撑与状态 |
+|---|---|
+| 在线规划与想象训练是不同的模型使用位置 | PETS/PlaNet 与 Dreamer/MBPO 的方法描述支持；不推导谁普遍更优 |
+| 预测与动作可以联合建模 | DreamZero、Cosmos Policy 支持方法级描述；不据此断言因果物理理解 |
+| 视觉质量与功能评估应分别记录 | WorldArena 系列提供相关评估设计；我们的比较框架是综述组织选择 |
+| 成本约束、恢复与形式保证是不同安全机制 | SafeDreamer、CPO、Recovery RL、CBF 提供各自背景；不混写为统一安全保证 |
+| 触觉、导航、驾驶和分布外安全已被充分覆盖 | **不成立**；明确列为本文缺口，下一轮补证据 |
+
+自查结论：定位方面不声称“首个”或“最全面”；写作方面四部分已连通；实验支撑仅到方法概述和已有来源；评估覆盖仍有明确空缺；机制区分保留预测、策略、控制和防护的边界。下一轮再压缩重复论述、增加具体技术细节，并将正文里的写作阶段说明移到协作记录。

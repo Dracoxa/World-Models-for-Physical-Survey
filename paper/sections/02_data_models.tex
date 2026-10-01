@@ -1,10 +1,74 @@
 \section{Data, Representations, and Predictive Models}
 \label{sec:data}
 
-\subsection{Organizing Data by Available Supervision}
-We organize data sources by the supervision they provide for prediction and action. Passive observations support learning regularities of appearance and temporal evolution. Interaction records additionally associate an agent's commands with subsequent observations. The distinction is illustrated by the separate action-free and action-conditioned stages in V-JEPA~2~\cite{assran2025vjepa2}. For each dataset considered in the full review, the comparison will record which actions, timestamps, state measurements, and outcomes are available, and whether the data include failures or only successful demonstrations.
+\subsection{Data: From Observed Motion to Executed Actions}
+Training data determine which relationships a world model can learn directly and which require additional alignment. Passive video provides observations of interaction but does not necessarily contain the robot commands that produced it. Robot trajectories can pair images with commands and proprioception, while simulator rollouts can expose additional state variables. These resources provide different supervision; volume alone does not establish suitability for a particular control interface.
 
-\subsection{Comparing Representations by Their Use}
-The relevant prediction space depends on how a downstream system consumes the output. PlaNet illustrates planning within a learned latent dynamics model~\cite{hafner2019planet}; a system that generates observations for inspection exposes a different interface. Our model comparison will therefore connect each representation to a predicted variable, temporal horizon, action encoding, and use in learning or decision making. Model size and visual quality are retained as attributes rather than treated as substitutes for this functional description.
+DROID supplies distributed real-robot manipulation demonstrations~\cite{khazatsky2024droid}, while Open X-Embodiment aggregates robot datasets and studies cross-embodiment policy learning~\cite{oxe2024}. They illustrate diversity across real scenes and across robot data sources. Neither resource is itself a trained world model. Their relevance is the opportunity to learn relationships among observations, actions, and outcomes, subject to synchronization, sensing, and action conventions.
 
-The collection categories for visual prediction, latent representations, and structured physical or multimodal models provide the literature inputs to this comparison. They are not assumed to form disjoint mathematical classes: a system may use more than one representation, and its placement in the review should explain the role of each component.
+For a predictive-control comparison, we retain the action coordinate frame, command duration, control mode, observation frequency, and embodiment. Cartesian displacements, joint targets, and gripper commands are not interchangeable numerical vectors. A video of a human moving an object does not uniquely identify a command for a particular robot. Action alignment may require robot fine-tuning, inverse dynamics, or an embodiment-specific decoder. Table~\ref{tab:data-resources} separates resources by role; its extraction questions are not defects asserted for every resource.
+
+\begin{table}[t]
+\caption{Example resources organized by supervision and use. Collection corpora, learned simulators, and task benchmarks remain distinct.}
+\label{tab:data-resources}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.19\linewidth}YYY@{}}
+\toprule
+Resource / example & Learning signal & Role in a WM system & Extraction priority \\
+\midrule
+Passive video; V-JEPA~2~\cite{assran2025vjepa2} & Temporal visual observations & Representation before action adaptation & Which action labels are absent? \\
+\addlinespace
+DROID~\cite{khazatsky2024droid} & Real manipulation demonstrations & Observation--action learning & Timing, sensors, and scene splits. \\
+\addlinespace
+Open X-Embodiment~\cite{oxe2024} & Heterogeneous robot trajectories & Shared training across sources & Body, action units, and normalization. \\
+\addlinespace
+UniSim~\cite{yang2024unisim} & Learned visual transitions & Interactive synthetic experience & Supported controls and rollout validity. \\
+\addlinespace
+LIBERO / CALVIN~\cite{liu2023libero,mees2022calvin} & Tasks with interactive simulation & Downstream policy evaluation & Split, success test, and reset rules. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Visual Prediction and Learned Simulation}
+Visual world models expose future observations that can be inspected, scored, or passed to another model. This is useful when an outcome is difficult to specify as a small state vector, but depicting a desired future differs from predicting the consequence of an action. UniPi generates a visual plan from a goal and extracts control actions~\cite{du2023unipi}. UniSim learns interactive visual responses to commands and uses simulated experience for downstream learning~\cite{yang2024unisim}. One uses a future as an intermediate plan; the other uses a predictive environment as a source of interaction.
+
+The distinction matters when an agent queries a model repeatedly. A coherent sequence can still misrepresent contact, a grasp, or the displacement induced by a command. We therefore separate conditioning signals from generated outputs. Text-conditioned motion, inferred latent actions, and actuator commands offer different control over a rollout. A single generated clip also differs from an interactive simulator whose next input depends on its own previous outputs.
+
+Learned simulation connects data generation with policy improvement, but creates a validation dependency. A policy can exploit regularities of the learned environment. The relevant test is not only sample plausibility but whether a policy or evaluator trained with synthetic experience performs appropriately in an independently assessed environment. We treat generated experience as an additional data source whose utility must be measured, rather than an automatic substitute for physical interaction.
+
+\subsection{Latent and Structured Predictive Representations}
+Latent models trade direct visual interpretability for representations shaped by learning objectives. Dreamer learns behavior through imagined latent trajectories~\cite{hafner2020dreamer}; TD-MPC2 uses a decoder-free latent model for trajectory optimization~\cite{hansen2024tdmpc2}. V-JEPA~2 separates action-free representation learning from action-conditioned adaptation for planning~\cite{assran2025vjepa2}. Thus, ``latent'' identifies a prediction space, not a complete training objective or control algorithm.
+
+Structured models make selected physical entities explicit. Graph Network-based Simulators represent systems as interacting particles and learn their evolution through message passing~\cite{sanchez2020gns}. This provides an interface to physical state variables and relations. A deployed robot system may nevertheless need to infer those states from sensors, connect commands to boundary conditions, and account for unobserved quantities. Structured representation does not remove these estimation and control problems.
+
+Multimodal prediction raises a related issue. Vision, proprioception, touch, and force need not answer the same question. A contact event can be weakly visible but important for execution. We therefore ask what each modality makes observable, which future quantities are predicted, and how signals are synchronized. WorldArena~2.0 expands evaluation toward visuotactile modalities~\cite{shang2026worldarena2}; primary comparisons of tactile, force, and contact-aware architectures remain a priority for the next literature pass.
+
+\begin{table}[t]
+\caption{Prediction spaces and interfaces. A system may occupy several groups. The final column states a comparison question, not a ranking.}
+\label{tab:model-spaces}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.16\linewidth}YYY@{}}
+\toprule
+Prediction space & Representative sources & Information exposed & Comparison question \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Compact or structured dynamics}} \\
+Latent trajectories & PlaNet; Dreamer; TD-MPC2~\cite{hafner2019planet,hafner2020dreamer,hansen2024tdmpc2} & Features and task-related quantities & Which losses preserve decision-relevant information? \\
+\addlinespace
+Predictive embeddings & V-JEPA~2~\cite{assran2025vjepa2} & Feature targets and action adaptation & What changes between pretraining and planning? \\
+\addlinespace
+Physical structure & GNS~\cite{sanchez2020gns} & Particle states and interactions & How is state linked to sensing and actuation? \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Visual and joint action interfaces}} \\
+Future images & UniPi; UniSim~\cite{du2023unipi,yang2024unisim} & Plans or conditioned rollouts & Is the future a target or an action consequence? \\
+\addlinespace
+Video and actions & DreamZero~\cite{ye2026dreamzero} & Joint video and action outputs & Which representation is executable? \\
+\addlinespace
+Actions, state, value & Cosmos Policy~\cite{kim2026cosmospolicy} & Actions and outcomes for selection & When does prediction enter selection? \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Generalization Across Scenes and Embodiments}
+Generalization should specify what changes between training and deployment. An unfamiliar object, a new goal, a shifted camera, and a different robot body impose different demands. Open X-Embodiment provides a data-centered view of heterogeneous robot learning~\cite{oxe2024}; DreamZero studies video--action modeling and transfer with different embodiments~\cite{ye2026dreamzero}. These directions motivate distinguishing transferable visual structure from the mapping to executable commands.
+
+Our synthesis separates representation robustness, predictive validity, and action-interface compatibility. A system may share an encoder across robots while using separate action heads, or retain a predictor while recalibrating control. Both can be useful forms of transfer. Neither should be described as unrestricted embodiment generalization without recording which data, modules, and parameters changed during adaptation.
