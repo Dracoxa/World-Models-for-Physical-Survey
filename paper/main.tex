@@ -1,0 +1,48 @@
+% ACM Computing Surveys working draft. Use the official, unmodified acmart class.
+\documentclass[manuscript,review,anonymous]{acmart}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\acmJournal{CSUR}
+\setcopyright{none}
+\settopmatter{printacmref=false,printfolios=true}
+\acmDOI{}
+\acmYear{2026}
+\copyrightyear{2026}
+
+\title{World Models for Physical AI: Learning to Predict, Plan, and Act in the Real World}
+\author{Anonymous Author(s)}
+
+\begin{abstract}
+World models provide a means of representing how physical environments evolve and how an agent's actions may change them. Their relevance to Physical AI extends across predictive representation learning, simulation, planning, policy training, and execution monitoring. These roles place different demands on what a model predicts, how actions condition its predictions, and how the predictions are used. This survey examines world models through these three questions, connecting model-based control with visual and latent prediction, structured physical representations, multimodal interaction data, and robot policies. We organize the discussion into foundations, data and model design, integration with decision making, and evaluation and deployment. We further examine reasoning-policy hybrids as an emerging interface between general-purpose reasoning and robot control. The organizing objective is to connect each system-level claim to evidence appropriate to its role, distinguishing predictive quality, decision utility, and operational reliability.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010147.10010178.10010187.10010192</concept_id>
+  <concept_desc>Computing methodologies~Robotics</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010147.10010257.10010258.10010259</concept_id>
+  <concept_desc>Computing methodologies~Reinforcement learning</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Computing methodologies~Robotics}
+\ccsdesc[300]{Computing methodologies~Reinforcement learning}
+\keywords{world models, Physical AI, robot learning, predictive representations, vision-language-action models, model-based control}
+
+\begin{document}
+\maketitle
+\noindent\textit{Working draft v0.1, 1 October 2026. The four-part manuscript is under development; this version establishes the opening argument and a sourced discussion of reasoning-policy hybrids.}
+
+\input{sections/01_foundations}
+\input{sections/02_data_models}
+\input{sections/03_policy_integration}
+\input{sections/04_evaluation}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+\end{document}

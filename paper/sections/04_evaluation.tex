@@ -1,0 +1,12 @@
+\section{Evaluation, Reliability, and Research Directions}
+\label{sec:evaluation}
+
+\subsection{Match Evidence to the Operational Claim}
+We distinguish three questions in evaluating a world-model-based system. First, does the predictor represent the variables relevant to its stated role? Second, do its outputs affect the downstream decision in the intended way? Third, does the complete system operate under the timing and environmental conditions of the claimed application? These questions define the structure of the evaluation discussion; they are not a single score or a ladder that every supporting dataset or component must climb.
+
+The Astra studies provide a useful case for this separation. A reported task outcome concerns an implemented control interface and a particular evaluation protocol. Establishing that an explicit world model caused an improvement requires an additional comparison that isolates the prediction component. Similarly, results collected with paused simulation do not test the consequences of reasoning delay in a continuously evolving environment. These distinctions determine which conclusions can be transferred from the reported experiment to a deployment setting.
+
+\subsection{Reliability as a System Property}
+For each operational role, the review will connect potential failures to observable checks and available responses. A planner may select actions whose predicted consequences are inaccurate; a monitor may fail to detect divergence; a controller may fail to realize a selected command. The corresponding analysis should identify what is measured, how a discrepancy changes execution, and whether the response itself has been evaluated. This organization keeps safety claims attached to the behavior of the complete system.
+
+The next synthesis step is to populate these comparisons with verified studies of uncertainty, distribution shift, failure recovery, and runtime constraints. The current draft establishes the comparison structure. It does not yet claim comprehensive coverage of these topics or a completed systematic-review screening process.

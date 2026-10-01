@@ -1,0 +1,10 @@
+\section{Data, Representations, and Predictive Models}
+\label{sec:data}
+
+\subsection{Organizing Data by Available Supervision}
+We organize data sources by the supervision they provide for prediction and action. Passive observations support learning regularities of appearance and temporal evolution. Interaction records additionally associate an agent's commands with subsequent observations. The distinction is illustrated by the separate action-free and action-conditioned stages in V-JEPA~2~\cite{assran2025vjepa2}. For each dataset considered in the full review, the comparison will record which actions, timestamps, state measurements, and outcomes are available, and whether the data include failures or only successful demonstrations.
+
+\subsection{Comparing Representations by Their Use}
+The relevant prediction space depends on how a downstream system consumes the output. PlaNet illustrates planning within a learned latent dynamics model~\cite{hafner2019planet}; a system that generates observations for inspection exposes a different interface. Our model comparison will therefore connect each representation to a predicted variable, temporal horizon, action encoding, and use in learning or decision making. Model size and visual quality are retained as attributes rather than treated as substitutes for this functional description.
+
+The collection categories for visual prediction, latent representations, and structured physical or multimodal models provide the literature inputs to this comparison. They are not assumed to form disjoint mathematical classes: a system may use more than one representation, and its placement in the review should explain the role of each component.

@@ -1,0 +1,32 @@
+\section{Integration with Robot Policies}
+\label{sec:policy}
+
+\subsection{Reasoning-Policy Hybrids: The Astra Case}
+Recent Astra evaluations motivate distinguishing direct numerical action generation from a hybrid interface that reviews a learned policy's proposals. In Su et al.'s technical report~\cite{su2026astra}, Astra can correct actions proposed by $\pi_{0.5}$. On ten selected RoboDojo tasks with five aligned cases per task, the authors report 48\% success for the hybrid and 26\% for direct Astra control. The public-policy comparisons use published reference scores rather than same-seed reruns. These findings support a bounded discussion of complementary action-generation and correction roles; they do not isolate a future-prediction mechanism.
+
+A separate evaluation by Zhang et al.~\cite{zhang2026unexpected} covers all 42 RoboDojo tasks, with 50 episodes per task for Astra. It reports 22.48\% average success over 2,100 trials and a capability profile that varies substantially across task types. This broader result should be discussed alongside the selected-task hybrid study, while keeping their task sets and denominators separate.
+
+The Galbot team's September 29 preprint~\cite{galbot2026astra} extends the investigation across six domains, including cooperation with learned policies. Its gripper-manipulation discussion includes the same 48\% RoboDojo hybrid result. We treat the overlapping result as part of one evidence series rather than a second independent replication. The paper also documents inference constraints, including paused physics during its locomotion reasoning calls. This makes the relation between simulated success and time-critical control an explicit part of the discussion.
+
+Black Forest Labs' FLUX~3 Action report~\cite{bfl2026flux3action} examines another combination: a fast action policy supplies proposals that Astra may accept, edit, replace, or stop. The report connects hybrid performance to inference cost and elapsed time, alongside task completion. This provides an industrial case for evaluating the entire decision loop, with the report's own protocol and provenance retained.
+
+For world-model research, these interfaces raise a specific attribution question. Does a hybrid improve because it predicts action consequences, identifies the correct target, repairs a proposal, or uses more computation? A useful comparison would hold the base policy, observations, control limits, and inference budget fixed while varying the information supplied to the reviewer: current observations, proposed actions, and explicit predicted consequences. This comparison is a proposed evaluation design of the survey, not an experiment established by the cited reports. It connects the Astra discussion to the article's main question: when, and through which interface, does prediction change action selection?
+
+\begin{table}[t]
+\caption{Interfaces and study scope in the Astra discussion. This is a provenance table, not a cross-paper performance leaderboard.}
+\label{tab:astra}
+\small
+\begin{tabularx}{\linewidth}{@{}p{.19\linewidth}YY@{}}
+\toprule
+Source & Interface examined & Scope retained in the comparison \\
+\midrule
+Su et al.~\cite{su2026astra} & Direct action generation; review of $\pi_{0.5}$ proposals & Selected tasks and aligned cases; public policy scores are reference results. \\
+\addlinespace
+Zhang et al.~\cite{zhang2026unexpected} & LLM as policy & Full 42-task RoboDojo evaluation for Astra. \\
+\addlinespace
+Galbot Team~\cite{galbot2026astra} & Direct and hybrid interfaces across domains & Domain-specific protocols; overlap with the earlier report. \\
+\addlinespace
+Black Forest Labs~\cite{bfl2026flux3action} & FLUX~3 Action proposals with Astra review & Report-specific hybrid protocol and resource accounting. \\
+\bottomrule
+\end{tabularx}
+\end{table}
