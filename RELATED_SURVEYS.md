@@ -46,7 +46,7 @@
 
 - **正文定位**：优先逐表核对 Kirchner et al.、Hou et al.、Li et al. 与本稿的范围差异，删除无法守住的“更全面”“首次”等表达。
 - **文献补漏**：已将 NTUMARS、Li-Zn-H、OpenMOSS 三个仓库与本项目 929 条分类记录做题名和 arXiv ID 去重；结果见[新增候选摘要](literature/EXTERNAL_CANDIDATES.md)和[完整候选 CSV](literature/external_candidates.csv)。
-- **更新源分层**：JiahuaDong、NeuraLiying、Awesome-Physical-AI、agentic-robotics、RCL-Robotics、NUS WAM survey 与 NJU3DV 模拟器综述库暂作为发现源登记，尚未计入冻结的 341 个外部唯一 arXiv ID 或 253 条新增候选；下一次统一更新时再去重，避免把重叠列表直接累加。
+- **更新源分层**：JiahuaDong、NeuraLiying、Awesome-Physical-AI 与 agentic-robotics 暂作为发现源登记；RCL-Robotics、NUS WAM survey 与 NJU3DV 已完成单独增量去重，结果见[增量候选摘要](literature/EXTERNAL_CANDIDATES_DELTA_2026-10-02.md)和[增量候选 CSV](literature/external_candidates_delta_2026-10-02.csv)。359 条是待筛发现池，其中 14 条被至少两个来源共同收录，不能直接并入论文语料或原文证据。
 - **图表设计**：参考这些仓库的组织维度，但图表数据只从已核原文提取；优先做“预测空间 × 动作接口 × 验证环境”矩阵。
 - **GitHub 维护**：保留当前 CSV 和七类 Markdown 的可检索结构，后续增加“已核验”状态，而不是继续堆叠未经核验的数量。
 
@@ -61,6 +61,6 @@
 
 2026-10-02 的更新扫描另检查了 JiahuaDong、NeuraLiying、Awesome-Physical-AI、agentic-robotics 与 operator22th 五个仓库。前四项因能补充正式综述更新、Physical AI 系统栈或安全恢复邻域而保留；operator22th 清单结构较简、元数据字段不足，暂不加入持续追踪表。
 
-同日的第二次增量扫描新增检查 RCL-Robotics、NUS WAM survey、NJU3DV 模拟器综述库，以及若干个人维护的 WAM/VLA 清单。前三项分别因机器可读分类审查、明确的 action-path 纳入规则和模拟器--世界模型并列视角而保留；个人聚合清单与上述来源高度重叠，暂不单列。该扫描没有改变冻结候选数或正文证据数。
+同日的第二次增量扫描新增检查 RCL-Robotics、NUS WAM survey、NJU3DV 模拟器综述库，以及若干个人维护的 WAM/VLA 清单。前三项分别因机器可读分类审查、明确的 action-path 纳入规则和模拟器--世界模型并列视角而保留；个人聚合清单与上述来源高度重叠，暂不单列。随后对三个保留来源完成独立增量去重；新增发现池仍与原冻结候选和正文证据分开统计。
 
 检索盲点：本轮未进行 GitHub 全量 API 翻页、引文网络追踪或逐仓库链接完整性检查；部分 2026 项目仍处于预印本阶段。后续做正式 related-work 比较时，应以出版页面或 arXiv 当前版本为准。

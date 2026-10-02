@@ -1,0 +1,360 @@
+priority,year,title,arxiv_id,url,sources,source_count,priority_reason
+最高,2026,DriveDreamer-Policy: A Geometry-Grounded World-Action Model for Unified Generation and Planning (DriveDreamer-Policy),2604.01765,https://arxiv.org/abs/2604.01765,NUS-WAM; RCL,2,多源交叉、2026 新作且命中薄弱方向：geometry、planning
+最高,2026,VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs (VTAM),2603.23481,https://arxiv.org/abs/2603.23481,NUS-WAM; RCL,2,多源交叉、2026 新作且命中薄弱方向：tactile
+高,2026,3D-Anchored Lookahead Planning (3D-ALP),2604.11302,https://arxiv.org/abs/2604.11302,NUS-WAM,1,2026 新作且命中薄弱方向：3d、planning
+高,2026,3PoinTr: 3D Point Tracks for Robot Manipulation Pretraining from Casual Videos (3PoinTr),2603.08485,https://arxiv.org/abs/2603.08485,NUS-WAM,1,2026 新作且命中薄弱方向：3d
+高,2026,4D-WAM: 4D Consistent World Modeling for Autonomous Driving,2608.10107,https://arxiv.org/abs/2608.10107,RCL,1,2026 新作且命中薄弱方向：4d
+高,2026,4DGS-WAM: Bridging Past and Future with an Object-Centric World Action Model based on 4D Gaussian Splatting,2608.25956,https://arxiv.org/abs/2608.25956,RCL,1,2026 新作且命中薄弱方向：4d
+高,2026,Adaptive-WAM: Quality-Guided Early-Exit Planning from Intermediate Video-Diffusion Features,2608.06008,https://arxiv.org/abs/2608.06008,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,Beyond Task Success: Stage-Wise Reliability of World Model Planning under Sensing Degradation,2609.07126,https://arxiv.org/abs/2609.07126,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,Bridging Scene Generation and Planning: Driving with World Model via Unifying Vision and Motion Representation,2603.14948,https://arxiv.org/abs/2603.14948,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,"Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints",2609.09597,https://arxiv.org/abs/2609.09597,RCL,1,2026 新作且命中薄弱方向：force
+高,2026,Disentangling Visuo-Tactile Foresight: Oracle-Guided Interface Discovery for World Action Models,2608.00547,https://arxiv.org/abs/2608.00547,RCL,1,2026 新作且命中薄弱方向：tactile
+高,2026,DriveWAM: Video Generative Priors Enable Scalable World-Action Modeling for Autonomous Driving (DriveWAM),2605.28544,https://arxiv.org/abs/2605.28544,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2026,EWAM: An Enhanced World Action Model for Closed-Loop Online Adaptation in Embodied Intelligence,2606.12690,https://arxiv.org/abs/2606.12690,RCL,1,2026 新作且命中薄弱方向：closed loop
+高,2026,EgoGenesis: Egocentric World-Action Modeling with Online Anchored Projective Memory and Action-3D RoPE,2607.28243,https://arxiv.org/abs/2607.28243,RCL,1,2026 新作且命中薄弱方向：3d
+高,2026,EndoWAM: A Grounded World-Action Model for Generalizable Endoscopic Navigation,2608.01221,https://arxiv.org/abs/2608.01221,RCL,1,2026 新作且命中薄弱方向：navigation
+高,2026,FlowPilot: Real-Time World-Action Modeling for Agile UAV Navigation,2608.00635,https://arxiv.org/abs/2608.00635,RCL,1,2026 新作且命中薄弱方向：navigation
+高,2026,FolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects,2609.10243,https://arxiv.org/abs/2609.10243,RCL,1,2026 新作且命中薄弱方向：benchmark
+高,2026,GaussianWAM: Distilling Geometry and Semantics from 3D Gaussian Fields into World-Action Models,2608.24714,https://arxiv.org/abs/2608.24714,RCL,1,2026 新作且命中薄弱方向：3d、geometry
+高,2026,GeoSem-WAM: Geometry- and Semantic-Aware World Action Models,2606.03188,https://arxiv.org/abs/2606.03188,RCL,1,2026 新作且命中薄弱方向：geometry
+高,2026,GeoWAM: Visual Geometry World Action Models for Autonomous Driving,2608.23486,https://arxiv.org/abs/2608.23486,RCL,1,2026 新作且命中薄弱方向：geometry
+高,2026,GeoWorldAD: Geometry World Action Model for Autonomous Driving,2607.17521,https://arxiv.org/abs/2607.17521,RCL,1,2026 新作且命中薄弱方向：geometry
+高,2026,Geometry Guided Self-Consistency for Physical AI,2605.08638,https://arxiv.org/abs/2605.08638,RCL,1,2026 新作且命中薄弱方向：geometry
+高,2026,HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation,2608.19574,https://arxiv.org/abs/2608.19574,RCL,1,2026 新作且命中薄弱方向：contact、tactile
+高,2026,Hydra: A Navigation World Action Model with Discrete Latent Planning and Continuous Flow-Matching Execution,2608.28995,https://arxiv.org/abs/2608.28995,RCL,1,2026 新作且命中薄弱方向：navigation、planning
+高,2026,INSPATIO-WORLD: A Real-Time 4D World Simulator via Spatiotemporal Autoregressive Modeling,2604.07209,https://arxiv.org/abs/2604.07209,RCL,1,2026 新作且命中薄弱方向：4d
+高,2026,ImagineUAV: Aerial Vision-Language Navigation via World-Action Modeling and Kinodynamic Planning,2606.01205,https://arxiv.org/abs/2606.01205,RCL,1,2026 新作且命中薄弱方向：navigation、planning
+高,2026,LaMP: Learning Vision-Language-Action Policies with 3D Scene Flow as Latent Motion Prior (LaMP),2603.25399,https://arxiv.org/abs/2603.25399,NUS-WAM,1,2026 新作且命中薄弱方向：3d
+高,2026,Latent Energy Action Planning with World Models,2609.03294,https://arxiv.org/abs/2609.03294,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,Learning 4D Geometric Priors for Inference-Efficient World Action Models,2607.05468,https://arxiv.org/abs/2607.05468,RCL,1,2026 新作且命中薄弱方向：4d
+高,2026,ManipArena: A Controlled Benchmark for Diagnosing Generalization in Real-Robot Manipulation,2603.28545,https://arxiv.org/abs/2603.28545,RCL,1,2026 新作且命中薄弱方向：benchmark
+高,2026,Metis: A Generalizable and Efficient World-Action Model for Autonomous Driving and Urban Navigation,2606.15869,https://arxiv.org/abs/2606.15869,RCL,1,2026 新作且命中薄弱方向：navigation
+高,2026,NoiseGate: Learning Per-Latent Timestep Schedules as Information Gating in World Action Models (NoiseGate),2605.07794,https://arxiv.org/abs/2605.07794,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2026,NovaPlan: Zero-Shot Long-Horizon Manipulation via Closed-Loop Video Language Planning (NovaPlan),2602.20119,https://arxiv.org/abs/2602.20119,NUS-WAM,1,2026 新作且命中薄弱方向：closed loop、planning
+高,2026,Paired Exact-Reset Evaluation of a Prediction-Derived Medium-to-Full World-Model Cascade,2608.14650,https://arxiv.org/abs/2608.14650,RCL,1,2026 新作且命中薄弱方向：evaluation
+高,2026,Point Tracking Improves World Action Models (JOPAT),2605.23856,https://arxiv.org/abs/2605.23856,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2026,Pondering the Way: Spatial-perceiving World Action Model for Embodied Navigation,2606.29908,https://arxiv.org/abs/2606.29908,RCL,1,2026 新作且命中薄弱方向：navigation
+高,2026,RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning,2607.18060,https://arxiv.org/abs/2607.18060,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,SG-WAM: Self-Guided World Modeling in Geometry-Aware Policy Space,2608.01397,https://arxiv.org/abs/2608.01397,RCL,1,2026 新作且命中薄弱方向：geometry
+高,2026,SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation,2606.08278,https://arxiv.org/abs/2606.08278,RCL,1,2026 新作且命中薄弱方向：evaluation
+高,2026,SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators,2609.09155,https://arxiv.org/abs/2609.09155,RCL,1,2026 新作且命中薄弱方向：calibration
+高,2026,TacPAC: Tactile Prediction and Real-Time Action Correction in World-Action Models for Contact-Rich Manipulation,2609.05266,https://arxiv.org/abs/2609.05266,RCL,1,2026 新作且命中薄弱方向：contact、tactile
+高,2026,TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile Prediction,2607.28391,https://arxiv.org/abs/2607.28391,RCL,1,2026 新作且命中薄弱方向：tactile
+高,2026,Tactile-WAM: Touch-Aware World Action Model with Tactile Asymmetric Attention,2606.26663,https://arxiv.org/abs/2606.26663,RCL,1,2026 新作且命中薄弱方向：tactile
+高,2026,Test-Time Scaling for World Action Models via Zero-Shot Geometric Evaluation,2607.17454,https://arxiv.org/abs/2607.17454,RCL,1,2026 新作且命中薄弱方向：evaluation
+高,2026,The DAWN of World-Action Interactive Models (DAWN),2605.11550,https://arxiv.org/abs/2605.11550,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2026,Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning,2609.03565,https://arxiv.org/abs/2609.03565,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,Towards Surgical World-Action Modeling: A Preliminary Joint Visual-Trajectory Forecasting for Surgical Motion Planning,2608.20284,https://arxiv.org/abs/2608.20284,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,Uni-World VLA: Interleaved World Modeling and Planning for Autonomous Driving,2603.27287,https://arxiv.org/abs/2603.27287,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,"UniDrive-WM: Unified Understanding, Planning and Generation World Model for Autonomous Driving",2601.04453,https://arxiv.org/abs/2601.04453,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,"UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving",2604.02190,https://arxiv.org/abs/2604.02190,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,VAMPO: Policy Optimization for Improving Visual Dynamics in Video Action Models (VAMPO),2603.19370,https://arxiv.org/abs/2603.19370,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2026,WALL-WM: Carving World Action Modeling at the Event Joints (WALL-WM),2606.01955,https://arxiv.org/abs/2606.01955,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2026,WAM-Nav: Asymmetric Latent World-Action Modeling for Unified Visual Navigation,2606.04907,https://arxiv.org/abs/2606.04907,RCL,1,2026 新作且命中薄弱方向：navigation
+高,2026,WAM4D: Fast 4D World Action Model via Spatial Register Tokens,2606.14048,https://arxiv.org/abs/2606.14048,RCL,1,2026 新作且命中薄弱方向：4d
+高,2026,WNM-3D: A World Navigation Model with 3D Scene Conditioning for Closed-Loop VLN,2608.07267,https://arxiv.org/abs/2608.07267,RCL,1,2026 新作且命中薄弱方向：3d、closed loop、navigation
+高,2026,World-Coherent Decoding: Self-Verifying Test-Time Planning for World Action Models,2609.02159,https://arxiv.org/abs/2609.02159,RCL,1,2026 新作且命中薄弱方向：planning
+高,2026,WorldVLN: Autoregressive World Action Model for Aerial Vision-Language Navigation,2605.15964,https://arxiv.org/abs/2605.15964,RCL,1,2026 新作且命中薄弱方向：navigation
+高,2025,Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal Control,2503.14492,https://arxiv.org/abs/2503.14492,NJU3DV; RCL,2,被多个近邻仓库收录
+高,2025,FAST: Efficient Action Tokenization for Vision-Language-Action Models,2501.09747,https://arxiv.org/abs/2501.09747,NJU3DV; RCL,2,被多个近邻仓库收录
+高,2025,Learning Robot Manipulation from Audio World Models (Audio-WM),2512.08405,https://arxiv.org/abs/2512.08405,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2025,World Models for Learning Dexterous Hand-Object Interactions from Human Videos,2512.13644,https://arxiv.org/abs/2512.13644,NUS-WAM; RCL,2,被多个近邻仓库收录
+高,2023,ADriver-I: A General World Model for Autonomous Driving,2311.13549,https://arxiv.org/abs/2311.13549,NJU3DV; RCL,2,被多个近邻仓库收录
+高,2022,DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation,2210.02697,https://arxiv.org/abs/2210.02697,NJU3DV; RCL,2,被多个近邻仓库收录
+中,2026,A Watermark for Vision-Language-Action and World Action Models,2606.23574,https://arxiv.org/abs/2606.23574,RCL,1,2026 新作
+中,2026,ABot-M0.5: Unified Mobility-and-Manipulation World Action Model,2607.00678,https://arxiv.org/abs/2607.00678,RCL,1,2026 新作
+中,2026,ALAM: Algebraically Consistent Latent Action Model for Vision-Language-Action Models (ALAM),2605.10819,https://arxiv.org/abs/2605.10819,NUS-WAM,1,2026 新作
+中,2026,AcrossWAM1.0:A Modular Latent World-Action Stack for Compact Robot Policies,2608.29937,https://arxiv.org/abs/2608.29937,RCL,1,2026 新作
+中,2026,ActiveGlasses: Learning Manipulation with Active Vision from Ego-centric Human Demonstration,2604.08534,https://arxiv.org/abs/2604.08534,RCL,1,2026 新作
+中,2026,AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight,2607.14997,https://arxiv.org/abs/2607.14997,RCL,1,2026 新作
+中,2026,AeroPlace-Flow: Language-Grounded Object Placement for Aerial Manipulators via Visual Foresight and Object Flow (AeroPlace-Flow),2603.07744,https://arxiv.org/abs/2603.07744,NUS-WAM,1,2026 新作
+中,2026,Artificial Foveated Perception for Mitigating Shortcut Learning in Robotic Foundation Models,2607.10655,https://arxiv.org/abs/2607.10655,RCL,1,2026 新作
+中,2026,Attacking the Trusted Imagination: Oracle-Level Integrity Attacks on Imagine-then-Act World Models,2606.22966,https://arxiv.org/abs/2606.22966,RCL,1,2026 新作
+中,2026,AttenA+: Rectifying Action Inequality in Robotic Foundation Models,2605.13548,https://arxiv.org/abs/2605.13548,RCL,1,2026 新作
+中,2026,AutoMoT: A Unified Vision-Language-Action Model with Asynchronous Mixture-of-Transformers for End-to-End Autonomous Driving,2603.14851,https://arxiv.org/abs/2603.14851,RCL,1,2026 新作
+中,2026,BadWAM: When World-Action Models Dream Right but Act Wrong,2607.15207,https://arxiv.org/abs/2607.15207,RCL,1,2026 新作
+中,2026,Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models,2608.27550,https://arxiv.org/abs/2608.27550,RCL,1,2026 新作
+中,2026,Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA,2606.01095,https://arxiv.org/abs/2606.01095,RCL,1,2026 新作
+中,2026,BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving,2608.12854,https://arxiv.org/abs/2608.12854,RCL,1,2026 新作
+中,2026,Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation,2609.03557,https://arxiv.org/abs/2609.03557,RCL,1,2026 新作
+中,2026,CLAP: Contrastive Latent Action Pretraining for Learning Vision-Language-Action Models from Human Videos,2601.04061,https://arxiv.org/abs/2601.04061,RCL,1,2026 新作
+中,2026,CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs,2608.02578,https://arxiv.org/abs/2608.02578,RCL,1,2026 新作
+中,2026,CreFlow: Corrective Reflow for Sparse-Reward Embodied Video Diffusion RL (CreFlow),2605.14274,https://arxiv.org/abs/2605.14274,NUS-WAM,1,2026 新作
+中,2026,Critique of Agent Model,2606.23991,https://arxiv.org/abs/2606.23991,RCL,1,2026 新作
+中,2026,DC-WAM: Dynamic-Centric Visual Supervision and Reasoning for World-Action Models,2607.25918,https://arxiv.org/abs/2607.25918,RCL,1,2026 新作
+中,2026,DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation,2608.20114,https://arxiv.org/abs/2608.20114,RCL,1,2026 新作
+中,2026,DELE-w0.5: Inferring Action from Future Latent State for Robotic Manipulation,2608.22067,https://arxiv.org/abs/2608.22067,RCL,1,2026 新作
+中,2026,DIM-WAM: World-Action Modeling with Diverse Historical Event Memory,2606.27677,https://arxiv.org/abs/2606.27677,RCL,1,2026 新作
+中,2026,Data Pyramid for Embodied Manipulation: A Survey,2607.24744,https://arxiv.org/abs/2607.24744,RCL,1,2026 新作
+中,2026,Decoupling Intention from Trajectory: A Representational Deduction Framework for World Action Models,2608.06994,https://arxiv.org/abs/2608.06994,RCL,1,2026 新作
+中,2026,Dex4D: Task-Agnostic Point Track Policy for Sim-to-Real Dexterous Manipulation (Dex4D),2602.15828,https://arxiv.org/abs/2602.15828,NUS-WAM,1,2026 新作
+中,2026,Diagnosing and Mitigating Perception-Decision Misalignment in Omni-LLMs via Modality Subspace Activation,2608.14655,https://arxiv.org/abs/2608.14655,RCL,1,2026 新作
+中,2026,Diffusion Transformer World-Action Model for AV Scene Prediction,2606.12987,https://arxiv.org/abs/2606.12987,RCL,1,2026 新作
+中,2026,Do World Action Models Generalize Better than VLAs? A Robustness Study,2603.22078,https://arxiv.org/abs/2603.22078,RCL,1,2026 新作
+中,2026,DreamAvoid: Critical-Phase Test-Time Dreaming to Avoid Failures in VLA Policies (DreamAvoid),2605.11750,https://arxiv.org/abs/2605.11750,NUS-WAM,1,2026 新作
+中,2026,DreamWAM: Beyond RGB Future Prediction for World Action Models,2608.04996,https://arxiv.org/abs/2608.04996,RCL,1,2026 新作
+中,2026,DreamerAD: Efficient Reinforcement Learning via Latent World Model for Autonomous Driving,2603.24587,https://arxiv.org/abs/2603.24587,RCL,1,2026 新作
+中,2026,Dreaming the Unseen: World Model-regularized Diffusion Policy for Out-of-Distribution Robustness (DDP),2603.21017,https://arxiv.org/abs/2603.21017,NUS-WAM,1,2026 新作
+中,2026,Dreaming when Necessary: Advancing World Action Models with Adaptive Multi-Modal Reasoning,2606.07089,https://arxiv.org/abs/2606.07089,RCL,1,2026 新作
+中,2026,Drive-HWM: Hierarchical World Models for Dynamic-Latent Guided Autonomous Driving,2609.03572,https://arxiv.org/abs/2609.03572,RCL,1,2026 新作
+中,2026,DriveVA: Video Action Models are Zero-Shot Drivers,2604.04198,https://arxiv.org/abs/2604.04198,RCL,1,2026 新作
+中,2026,DynVLA: Learning World Dynamics for Action Reasoning in Autonomous Driving,2603.11041,https://arxiv.org/abs/2603.11041,RCL,1,2026 新作
+中,2026,DynamicWAM: Dual-Path Motion Conditioning for World-Action Models in Dynamic Manipulation,2608.00793,https://arxiv.org/abs/2608.00793,RCL,1,2026 新作
+中,2026,Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors,2606.31101,https://arxiv.org/abs/2606.31101,RCL,1,2026 新作
+中,2026,EgoExo-WM: Unlocking Exo Video for Ego World Models (EgoExo-WM),2605.15477,https://arxiv.org/abs/2605.15477,NUS-WAM,1,2026 新作
+中,2026,EgoWAM: World Action Models Beyond Pixels with In-the-Wild Egocentric Human Data,2607.08436,https://arxiv.org/abs/2607.08436,RCL,1,2026 新作
+中,2026,EmboAlign: Aligning Video Generation with Compositional Constraints for Zero-Shot Manipulation (EmboAlign),2603.05757,https://arxiv.org/abs/2603.05757,NUS-WAM,1,2026 新作
+中,2026,Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots,2607.02501,https://arxiv.org/abs/2607.02501,RCL,1,2026 新作
+中,2026,Enhancing Policy Learning with World-Action Model,2603.28955,https://arxiv.org/abs/2603.28955,RCL,1,2026 新作
+中,2026,EventVLA: Event-Driven Visual Evidence Memory for Long-Horizon Vision-Language-Action Policies,2606.20092,https://arxiv.org/abs/2606.20092,RCL,1,2026 新作
+中,2026,FACT: Failure-Aware Causal Training for World-Action Models,2608.10232,https://arxiv.org/abs/2608.10232,RCL,1,2026 新作
+中,2026,FBFM: A Training-Free Asynchronous Feedback Mechanism for Flow-Matching in World-Action Models Execution,2607.29235,https://arxiv.org/abs/2607.29235,RCL,1,2026 新作
+中,2026,Factored Latent Action World Models,2602.16229,https://arxiv.org/abs/2602.16229,RCL,1,2026 新作
+中,2026,Feedback World Model Enables Precise Guidance of Diffusion Policy (Feedback-WM),2605.15705,https://arxiv.org/abs/2605.15705,NUS-WAM,1,2026 新作
+中,2026,FlowDAgger: Human-in-the-Loop Adaptation of Generative Robot Policies in Latent Space,2607.08877,https://arxiv.org/abs/2607.08877,RCL,1,2026 新作
+中,2026,FlowWAM: Optical Flow as a Unified Action Representation for World Action Models,2607.13017,https://arxiv.org/abs/2607.13017,RCL,1,2026 新作
+中,2026,Foresight Without Seeing: Latent Futures for World Action Models,2608.11605,https://arxiv.org/abs/2608.11605,RCL,1,2026 新作
+中,2026,From Imagined Futures to Executable Actions: Mixture of Latent Actions for Robot Manipulation (MoLA),2605.12167,https://arxiv.org/abs/2605.12167,NUS-WAM,1,2026 新作
+中,2026,From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence,2607.11689,https://arxiv.org/abs/2607.11689,RCL,1,2026 新作
+中,2026,From World Models to World Action Models: A Concise Tutorial for Robotics,2607.00836,https://arxiv.org/abs/2607.00836,RCL,1,2026 新作
+中,2026,GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation,2609.04193,https://arxiv.org/abs/2609.04193,RCL,1,2026 新作
+中,2026,GameWAM: A World Action Model for Video Games,2608.26200,https://arxiv.org/abs/2608.26200,RCL,1,2026 新作
+中,2026,Geometric Action Model for Robot Policy Learning,2606.17046,https://arxiv.org/abs/2606.17046,RCL,1,2026 新作
+中,2026,GigaWorld-Policy-0.5: A Faster and Stronger WAM Empowered by AutoResearch,2607.13960,https://arxiv.org/abs/2607.13960,RCL,1,2026 新作
+中,2026,Grasp as You Dream: Imitating Functional Grasping from Generated Human Demonstrations (GraspDreamer),2604.07517,https://arxiv.org/abs/2604.07517,NUS-WAM,1,2026 新作
+中,2026,Grounding Generated Video Plans in Simulation Towards Versatile Dexterous Controllers,2609.10050,https://arxiv.org/abs/2609.10050,RCL,1,2026 新作
+中,2026,HALO-WA: Hybrid-Attention Latent-Guided Online Reinforcement Learning for World-Action Models,2607.04265,https://arxiv.org/abs/2607.04265,RCL,1,2026 新作
+中,2026,HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy,2609.09941,https://arxiv.org/abs/2609.09941,RCL,1,2026 新作
+中,2026,Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents,2607.08448,https://arxiv.org/abs/2607.08448,RCL,1,2026 新作
+中,2026,HarnessWAM: Bridging Prediction and Deliberation in World Action Models,2608.09516,https://arxiv.org/abs/2608.09516,RCL,1,2026 新作
+中,2026,HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone,2607.25895,https://arxiv.org/abs/2607.25895,RCL,1,2026 新作
+中,2026,Hierarchical Latent Action Model,2603.05815,https://arxiv.org/abs/2603.05815,RCL,1,2026 新作
+中,2026,How to Instruct Your Robot: Dense Language Annotations Power Robot Policy Learning,2605.17077,https://arxiv.org/abs/2605.17077,RCL,1,2026 新作
+中,2026,How to Learn from What a Human Would Avoid? Intervention-Aware World Models with Real-World RL for Dexterous Manipulation,2609.06009,https://arxiv.org/abs/2609.06009,RCL,1,2026 新作
+中,2026,HumanX: Toward Agile and Generalizable Humanoid Interaction Skills from Human Videos,2602.02473,https://arxiv.org/abs/2602.02473,RCL,1,2026 新作
+中,2026,Hydra-0: Action Flow for Generalist World Modeling and Control,2608.18077,https://arxiv.org/abs/2608.18077,RCL,1,2026 新作
+中,2026,ICLR: In-Context Imitation Learning with Visual Reasoning (ICLR-VR),2603.07530,https://arxiv.org/abs/2603.07530,NUS-WAM,1,2026 新作
+中,2026,"ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?",2606.19531,https://arxiv.org/abs/2606.19531,RCL,1,2026 新作
+中,2026,Is the Future Compatible? Diagnosing Dynamic Consistency in World Action Models,2605.07514,https://arxiv.org/abs/2605.07514,RCL,1,2026 新作
+中,2026,JEPA Policy: Diffusion-Free Imitation Learning via Paired Action and Future Representation Prediction,2609.09630,https://arxiv.org/abs/2609.09630,RCL,1,2026 新作
+中,2026,"Keep the Future, Drop the Rollout: RIFT for World Action Models",2608.11521,https://arxiv.org/abs/2608.11521,RCL,1,2026 新作
+中,2026,Key-Gram: Extensible World Knowledge for Embodied Manipulation,2605.18556,https://arxiv.org/abs/2605.18556,RCL,1,2026 新作
+中,2026,LMGenDrive: Bridging Multimodal Understanding and Generative World Modeling for End-to-End Driving,2604.08719,https://arxiv.org/abs/2604.08719,RCL,1,2026 新作
+中,2026,Latent Action as Intention Enables Efficient Future Imagination for World Action Models,2608.24882,https://arxiv.org/abs/2608.24882,RCL,1,2026 新作
+中,2026,Latent-WAM: Latent World Action Modeling for End-to-End Autonomous Driving,2603.24581,https://arxiv.org/abs/2603.24581,RCL,1,2026 新作
+中,2026,LeapBot-WA: World-Anchor Action Models via Predictive Latent Alignments,2607.23969,https://arxiv.org/abs/2607.23969,RCL,1,2026 新作
+中,2026,Learning Counterfactual World Models for Embodied Reasoning under Partial Observability,2609.05834,https://arxiv.org/abs/2609.05834,RCL,1,2026 新作
+中,2026,Learning Vision-Language-Action World Models for Autonomous Driving,2604.09059,https://arxiv.org/abs/2604.09059,RCL,1,2026 新作
+中,2026,Learning Visual Feature-Based World Models via Residual Latent Action,2605.07079,https://arxiv.org/abs/2605.07079,RCL,1,2026 新作
+中,2026,Learning to Use Imagination: Progress-Conditioned Future Utilization for World Action Models,2609.06578,https://arxiv.org/abs/2609.06578,RCL,1,2026 新作
+中,2026,Learning to unfold cloth: Scaling up world models to deformable object manipulation,2602.16675,https://arxiv.org/abs/2602.16675,RCL,1,2026 新作
+中,2026,MEM: Multi-Scale Embodied Memory for Vision Language Action Models,2603.03596,https://arxiv.org/abs/2603.03596,RCL,1,2026 新作
+中,2026,Making Latent Evolution Explicit: Operator-Structured Transitions for World Action Models,2608.27259,https://arxiv.org/abs/2608.27259,RCL,1,2026 新作
+中,2026,MaskWAM: Unifying Mask Prompting and Prediction for World-Action Models,2606.13515,https://arxiv.org/abs/2606.13515,RCL,1,2026 新作
+中,2026,MemoryVAM: Integrating Memory into Video Action Model for Robot Manipulation,2606.20679,https://arxiv.org/abs/2606.20679,RCL,1,2026 新作
+中,2026,MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight,2608.04657,https://arxiv.org/abs/2608.04657,RCL,1,2026 新作
+中,2026,Motus2: A Self-Evolving General World Model for Dexterous Manipulation,2608.30237,https://arxiv.org/abs/2608.30237,RCL,1,2026 新作
+中,2026,Next Forcing: Causal World Modeling with Multi-Chunk Prediction,2606.11187,https://arxiv.org/abs/2606.11187,RCL,1,2026 新作
+中,2026,OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation,2605.25829,https://arxiv.org/abs/2605.25829,RCL,1,2026 新作
+中,2026,On the Capability Separation Between World-Model Policy Learning and Imitated World-Action Models,2608.22197,https://arxiv.org/abs/2608.22197,RCL,1,2026 新作
+中,2026,PALM: Progress-Aware Policy Learning via Affordance Reasoning for Long-Horizon Robotic Manipulation (PALM),2601.07060,https://arxiv.org/abs/2601.07060,NUS-WAM,1,2026 新作
+中,2026,"Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action (Pelican-Unify 1.0)",2605.15153,https://arxiv.org/abs/2605.15153,NUS-WAM,1,2026 新作
+中,2026,PerceptDrive: Perception Prior World-Action Modeling with Adaptive Expert Routing for End-to-End Autonomous Driving,2607.20175,https://arxiv.org/abs/2607.20175,RCL,1,2026 新作
+中,2026,"PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud",2608.03682,https://arxiv.org/abs/2608.03682,RCL,1,2026 新作
+中,2026,Privileged Foresight Distillation: Zero-Cost Future Correction for World Action Models,2604.25859,https://arxiv.org/abs/2604.25859,RCL,1,2026 新作
+中,2026,Programmable World Model,2609.10540,https://arxiv.org/abs/2609.10540,RCL,1,2026 新作
+中,2026,QuantWAMs: Calibrating at the Right Granularity for World Action Models,2607.28405,https://arxiv.org/abs/2607.28405,RCL,1,2026 新作
+中,2026,RISE: Adaptive Imagination for World Action Models,2608.20430,https://arxiv.org/abs/2608.20430,RCL,1,2026 新作
+中,2026,RL Token: Bootstrapping Online RL with Vision-Language-Action Models,2604.23073,https://arxiv.org/abs/2604.23073,RCL,1,2026 新作
+中,2026,ReWorld: Representation Learning for World Action Models,2606.27504,https://arxiv.org/abs/2606.27504,RCL,1,2026 新作
+中,2026,Rethink Before You Execute: Adaptive Execution for World Action Models,2608.09492,https://arxiv.org/abs/2608.09492,RCL,1,2026 新作
+中,2026,"Retrieve, Don't Retrain: Extending Vision Language Action Models to New Tasks at Test Time",2606.15631,https://arxiv.org/abs/2606.15631,RCL,1,2026 新作
+中,2026,RoboFlow4D: A Lightweight Flow World Model Toward Real-Time Flow-Guided Robotic Manipulation (RoboFlow4D),2605.17522,https://arxiv.org/abs/2605.17522,NUS-WAM,1,2026 新作
+中,2026,RoboSynChallenge: Mastering Real-World Dexterity via Generalizing Synthesized Manipulation Skills,2608.12416,https://arxiv.org/abs/2608.12416,RCL,1,2026 新作
+中,2026,SAMoE-VLA: A Scene Adaptive Mixture-of-Experts Vision-Language-Action Model for Autonomous Driving,2603.08113,https://arxiv.org/abs/2603.08113,RCL,1,2026 新作
+中,2026,SANTS: A State-Adaptive Scheduler for World Action Models,2605.27947,https://arxiv.org/abs/2605.27947,RCL,1,2026 新作
+中,2026,SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation,2608.09771,https://arxiv.org/abs/2608.09771,RCL,1,2026 新作
+中,2026,SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving,2609.03602,https://arxiv.org/abs/2609.03602,RCL,1,2026 新作
+中,2026,SWEET: Sparse World Modeling with Image Editing for Embodied Task Execution (SWEET),2605.19319,https://arxiv.org/abs/2605.19319,NUS-WAM,1,2026 新作
+中,2026,Selective Cross-View Consistency for World Action Models: Held-Out Viewpoint Robustness Without Test-Time Camera Information,2608.21402,https://arxiv.org/abs/2608.21402,RCL,1,2026 新作
+中,2026,Self-Correcting VLA: Online Action Refinement via Sparse World Imagination,2602.21633,https://arxiv.org/abs/2602.21633,RCL,1,2026 新作
+中,2026,SimWAM: A Simple World Action Model for End-to-End Autonomous Driving,2608.07468,https://arxiv.org/abs/2608.07468,RCL,1,2026 新作
+中,2026,StageWAM: Joint-Embedding Stage Prediction for World-Action Models in Robot Manipulation,2608.10780,https://arxiv.org/abs/2608.10780,RCL,1,2026 新作
+中,2026,Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control,2607.14943,https://arxiv.org/abs/2607.14943,RCL,1,2026 新作
+中,2026,Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning,2608.11204,https://arxiv.org/abs/2608.11204,RCL,1,2026 新作
+中,2026,Teach and Grow: An Agent-Centered Architecture for General Robot Learning,2608.17209,https://arxiv.org/abs/2608.17209,RCL,1,2026 新作
+中,2026,TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image,2609.04911,https://arxiv.org/abs/2609.04911,RCL,1,2026 新作
+中,2026,Toward Physically Consistent Driving Video World Models under Challenging Trajectories,2603.24506,https://arxiv.org/abs/2603.24506,RCL,1,2026 新作
+中,2026,Turning Video Models into Generalist Robot Policies (VERA),2605.27817,https://arxiv.org/abs/2605.27817,NUS-WAM,1,2026 新作
+中,2026,UNIVERSE: Unified Video Action Models for Autonomous Driving with Flexible Mask-Modulated Modality Generation,2607.05133,https://arxiv.org/abs/2607.05133,RCL,1,2026 新作
+中,2026,Understanding and Mitigating the Video-Action Generalization Gap via Temporal Ratio,2607.08127,https://arxiv.org/abs/2607.08127,RCL,1,2026 新作
+中,2026,Unified Video-Action Joint Denoising for Dexterous Action and Data Generation,2606.03868,https://arxiv.org/abs/2606.03868,RCL,1,2026 新作
+中,2026,Unifying Language-Action Understanding and Generation for Autonomous Driving,2603.01441,https://arxiv.org/abs/2603.01441,RCL,1,2026 新作
+中,2026,Valerant: An Automatic Navigable Game Map Generator via Action-Conditioned World Model Exploration,2609.09418,https://arxiv.org/abs/2609.09418,RCL,1,2026 新作
+中,2026,Vega: Learning to Drive with Natural Language Instructions,2603.25741,https://arxiv.org/abs/2603.25741,RCL,1,2026 新作
+中,2026,Vid2WAM: Distilling Video Diffusion Priors into World Action Models,2608.08558,https://arxiv.org/abs/2608.08558,RCL,1,2026 新作
+中,2026,VideoWorld 2: Learning Transferable Knowledge from Real-world Videos,2602.10102,https://arxiv.org/abs/2602.10102,RCL,1,2026 新作
+中,2026,WAM-OPD: On-Policy Distillation for World Action Models,2608.22364,https://arxiv.org/abs/2608.22364,RCL,1,2026 新作
+中,2026,WAM-RL: World-Action Model Reinforcement Learning with Reconstruction Rewards and Online Video SFT,2606.17906,https://arxiv.org/abs/2606.17906,RCL,1,2026 新作
+中,2026,WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models,2609.03681,https://arxiv.org/abs/2609.03681,RCL,1,2026 新作
+中,2026,What Matters for Latent Actions in Robot Learning,2608.19613,https://arxiv.org/abs/2608.19613,RCL,1,2026 新作
+中,2026,World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays,2606.27374,https://arxiv.org/abs/2606.27374,RCL,1,2026 新作
+中,2026,World Action Models in Real Time: An Empirical Study of Smooth Execution via Asynchronous Deployment,2608.01880,https://arxiv.org/abs/2608.01880,RCL,1,2026 新作
+中,2026,World Tokens: Enhancing Embodied Policies with Training-Time World Modeling,2608.09730,https://arxiv.org/abs/2608.09730,RCL,1,2026 新作
+中,2026,"World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis",2606.05979,https://arxiv.org/abs/2606.05979,RCL,1,2026 新作
+中,2026,WorldAgen: Unified State-Action Prediction with Test-Time World Model Training,2609.08162,https://arxiv.org/abs/2609.08162,RCL,1,2026 新作
+中,2026,X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving,2603.19979,https://arxiv.org/abs/2603.19979,RCL,1,2026 新作
+中,2026,Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization,2608.26103,https://arxiv.org/abs/2608.26103,RCL,1,2026 新作
+中,2026,ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training,2609.00188,https://arxiv.org/abs/2609.00188,RCL,1,2026 新作
+中,2026,dVLA-RL: Reinforcement Learning over Denoising Trajectories for Discrete Diffusion Vision-Language-Action Models,2606.23623,https://arxiv.org/abs/2606.23623,RCL,1,2026 新作
+中,2026,ω-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation,2608.06375,https://arxiv.org/abs/2608.06375,RCL,1,2026 新作
+中,2025,3D Flow Diffusion Policy: Visuomotor Policy Learning via Generating Flow in 3D Space (3D-FDP),2509.18676,https://arxiv.org/abs/2509.18676,NUS-WAM,1,命中薄弱方向：3d
+中,2025,Ego-Vision World Model for Humanoid Contact Planning,2510.11682,https://arxiv.org/abs/2510.11682,RCL,1,命中薄弱方向：contact、planning
+中,2025,"Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation",2512.08186,https://arxiv.org/abs/2512.08186,RCL,1,命中薄弱方向：navigation
+中,2025,"Humanoid Locomotion and Manipulation: Current Progress and Challenges in Control, Planning, and Learning",2501.02116,https://arxiv.org/abs/2501.02116,NJU3DV,1,命中薄弱方向：planning
+中,2025,MoWM: Mixture-of-World-Models for Embodied Planning via Latent-to-Pixel Feature Modulation,2509.21797,https://arxiv.org/abs/2509.21797,RCL,1,命中薄弱方向：planning
+中,2025,RoboTransfer: Controllable Geometry-Consistent Video Diffusion for Manipulation Policy Transfer,2505.23171,https://arxiv.org/abs/2505.23171,RCL,1,命中薄弱方向：geometry
+中,2025,StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling,2507.05240,https://arxiv.org/abs/2507.05240,RCL,1,命中薄弱方向：navigation
+中,2025,UniGoal: Towards Universal Zero-shot Goal-oriented Navigation,2503.10630,https://arxiv.org/abs/2503.10630,NJU3DV,1,命中薄弱方向：navigation
+中,2025,Vtla: Vision-tactile-language-action model with preference learning for insertion manipulation,2505.09577,https://arxiv.org/abs/2505.09577,RCL,1,命中薄弱方向：tactile
+中,2024,3D-VLA: A 3D Vision-Language-Action Generative World Model,2403.09631,https://arxiv.org/abs/2403.09631,NJU3DV,1,命中薄弱方向：3d
+中,2024,3d diffusion policy,2403.03954,https://arxiv.org/abs/2403.03954,NJU3DV,1,命中薄弱方向：3d
+中,2024,DriveArena: A Closed-loop Generative Simulation Platform for Autonomous Driving,2408.00415,https://arxiv.org/abs/2408.00415,NJU3DV,1,命中薄弱方向：closed loop
+中,2024,DriveDreamer4D: World Models Are Effective Data Machines for 4D Driving Scene Representation,2410.13571,https://arxiv.org/abs/2410.13571,NJU3DV,1,命中薄弱方向：4d
+中,2024,DriveWorld: 4D Pre-trained Scene Understanding via World Models for Autonomous Driving,2405.04390,https://arxiv.org/abs/2405.04390,NJU3DV,1,命中薄弱方向：4d
+中,2024,GaussianWorld: Gaussian World Model for Streaming 3D Occupancy Prediction,2412.10373,https://arxiv.org/abs/2412.10373,NJU3DV,1,命中薄弱方向：3d
+中,2024,Generalizable Humanoid Manipulation with 3D Diffusion Policies,2410.10803,https://arxiv.org/abs/2410.10803,NJU3DV,1,命中薄弱方向：3d
+中,2024,SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation,2410.08189,https://arxiv.org/abs/2410.08189,NJU3DV,1,命中薄弱方向：3d、navigation
+中,2024,"SpringGrasp: Synthesizing Compliant, Dexterous Grasps under Shape Uncertainty",2404.13532,https://arxiv.org/abs/2404.13532,NJU3DV,1,命中薄弱方向：uncertainty
+中,2024,TriHelper: Zero-Shot Object Navigation with Dynamic Assistance,2403.15223,https://arxiv.org/abs/2403.15223,NJU3DV,1,命中薄弱方向：navigation
+中,2023,3D Gaussian Splatting for Real-Time Radiance Field Rendering,2308.04079,https://arxiv.org/abs/2308.04079,RCL,1,命中薄弱方向：3d
+中,2023,Act3d: 3d feature field transformers for multi-task robotic manipulation,2306.17817,https://arxiv.org/abs/2306.17817,NJU3DV,1,命中薄弱方向：3d
+中,2023,DREAMWALKER: Mental Planning for Continuous Vision-Language Navigation,2308.07498,https://arxiv.org/abs/2308.07498,RCL,1,命中薄弱方向：navigation、planning
+中,2023,L3MVN: Leveraging Large Language Models for Visual Target Navigation,2304.05501,https://arxiv.org/abs/2304.05501,NJU3DV,1,命中薄弱方向：navigation
+中,2023,MagicDrive: Street View Generation with Diverse 3D Geometry Control,2310.02601,https://arxiv.org/abs/2310.02601,NJU3DV,1,命中薄弱方向：3d、geometry
+中,2022,HandoverSim: A Simulation Framework and Benchmark for Human-to-Robot Object Handovers,2205.09747,https://arxiv.org/abs/2205.09747,NJU3DV,1,命中薄弱方向：benchmark
+中,2022,Socially Compliant Navigation Dataset (SCAND): A Large-Scale Dataset of Demonstrations for Social Navigation,2203.15041,https://arxiv.org/abs/2203.15041,RCL,1,命中薄弱方向：navigation
+中,2021,BEVDet: High-performance Multi-camera 3D Object Detection in Bird-Eye-View,2112.11790,https://arxiv.org/abs/2112.11790,RCL,1,命中薄弱方向：3d
+中,2021,Pathdreamer: A World Model for Indoor Navigation,2105.08756,https://arxiv.org/abs/2105.08756,RCL,1,命中薄弱方向：navigation
+中,2021,Simultaneous Scene Reconstruction and Whole-Body Motion Planning for Safe Operation in Dynamic Environments,2103.03958,https://arxiv.org/abs/2103.03958,NJU3DV,1,命中薄弱方向：planning
+中,2019,A Large-scale Study of Representation Learning with the Visual Task Adaptation Benchmark,1910.04867,https://arxiv.org/abs/1910.04867,RCL,1,命中薄弱方向：benchmark
+中,2019,General Evaluation for Instruction Conditioned Navigation using Dynamic Time Warping,1907.05446,https://arxiv.org/abs/1907.05446,RCL,1,命中薄弱方向：evaluation、navigation
+中,2019,Human-in-the-loop Robotic Manipulation Planning for Collaborative Assembly,1909.11280,https://arxiv.org/abs/1909.11280,NJU3DV,1,命中薄弱方向：planning
+中,2018,On Evaluation of Embodied Navigation Agents,1807.06757,https://arxiv.org/abs/1807.06757,RCL,1,命中薄弱方向：evaluation、navigation
+中,2017,Continuous-time Gaussian process motion planning via probabilistic inference,1707.07383,https://arxiv.org/abs/1707.07383,NJU3DV,1,命中薄弱方向：planning
+中,2011,Sampling-based Algorithms for Optimal Motion Planning,1105.1186,https://arxiv.org/abs/1105.1186,NJU3DV,1,命中薄弱方向：planning
+低,2025,A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation,2507.05331,https://arxiv.org/abs/2507.05331,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,A Survey: Learning Embodied Intelligence from Physical Simulators and World Models,2507.00917,https://arxiv.org/abs/2507.00917,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,A Unified and General Humanoid Whole-Body Controller for Fine-Grained Locomotion,2502.03206,https://arxiv.org/abs/2502.03206,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,AMPLIFY: Actionless Motion Priors for Robot Learning from Videos,2506.14198,https://arxiv.org/abs/2506.14198,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,ASAP: Aligning simulation and real-world physics for learning agile humanoid whole-body skills,2502.01143,https://arxiv.org/abs/2502.01143,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning,2506.13757,https://arxiv.org/abs/2506.13757,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities,2503.05652,https://arxiv.org/abs/2503.05652,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,Cosmos-Drive: Multi-Modal World Model for Autonomous Driving,2506.09042,https://arxiv.org/abs/2506.09042,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,Cosmos-Reason1: From Physical Common Sense To Embodied Reasoning,2503.15558,https://arxiv.org/abs/2503.15558,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,Critique of World Model,2507.05169,https://arxiv.org/abs/2507.05169,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,DINOv3,2508.10104,https://arxiv.org/abs/2508.10104,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,DexGrasp Anything: Towards Universal Robotic Dexterous Grasping with Physics Awareness,2503.08257,https://arxiv.org/abs/2503.08257,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping,2502.20900,https://arxiv.org/abs/2502.20900,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,Dexterity from Smart Lenses: Multi-Fingered Robot Manipulation with In-the-Wild Human Demonstrations,2511.16661,https://arxiv.org/abs/2511.16661,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,DualDiff+: Dual-Branch Diffusion for High-Fidelity Video Generation with Reward Guidance,2503.03689,https://arxiv.org/abs/2503.03689,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,EgoDex: Learning Dexterous Manipulation from Large-Scale Egocentric Video,2505.11709,https://arxiv.org/abs/2505.11709,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success,2502.19645,https://arxiv.org/abs/2502.19645,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,Gemma 3 Technical Report,2503.19786,https://arxiv.org/abs/2503.19786,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,GigaBrain-0: A World Model-Powered Vision-Language-Action Model,2510.19430,https://arxiv.org/abs/2510.19430,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,Hi robot: Open-ended instruction following with hierarchical vision-language-action models,2502.19417,https://arxiv.org/abs/2502.19417,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,"HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models (HiF-VLA)",2512.09928,https://arxiv.org/abs/2512.09928,NUS-WAM,1,单一来源，需先判断与综述范围的关系
+低,2025,IRL-VLA: Training an Vision-Language-Action Policy via Reward World Model,2508.06571,https://arxiv.org/abs/2508.06571,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models,2510.13626,https://arxiv.org/abs/2510.13626,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,LatBot: Distilling Universal Latent Actions for Vision-Language-Action Models,2511.23034,https://arxiv.org/abs/2511.23034,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning Generalizable Robot Policy with Human Demonstration Video as a Prompt,2505.20795,https://arxiv.org/abs/2505.20795,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning Massively Multitask World Models for Continuous Control,2511.19584,https://arxiv.org/abs/2511.19584,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,LongScape: Advancing Long-Horizon Embodied World Models with Context-Aware MoE,2509.21790,https://arxiv.org/abs/2509.21790,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,MimicDreamer: Aligning Human and Robot Demonstrations for Scalable VLA Training,2509.22199,https://arxiv.org/abs/2509.22199,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,MindDrive: An All-in-One Framework Bridging World Models and Vision-Language Model for End-to-End Autonomous Driving,2512.04441,https://arxiv.org/abs/2512.04441,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,MoVieDrive: Urban Scene Synthesis with Multi-Modal Multi-View Video Diffusion Transformer,2508.14327,https://arxiv.org/abs/2508.14327,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,MobileH2R: Learning Generalizable Human to Mobile Robot Handover Exclusively from Scalable and Diverse Synthetic Data,2501.04595,https://arxiv.org/abs/2501.04595,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,"PAN: A World Model for General, Interactable, and Long-Horizon World Simulation",2511.09057,https://arxiv.org/abs/2511.09057,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,ProphetDWM: A Driving World Model for Rolling Out Future Actions and Videos,2505.18650,https://arxiv.org/abs/2505.18650,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,Seedance 1.0: Exploring the Boundaries of Video Generation Models,2506.09113,https://arxiv.org/abs/2506.09113,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,SocialGesture: Delving into Multi-person Gesture Understanding,2504.02244,https://arxiv.org/abs/2504.02244,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,Spatial Policy: Guiding Visuomotor Robotic Manipulation with Spatial-Aware Modeling and Reasoning,2508.15874,https://arxiv.org/abs/2508.15874,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,Towards a Generalizable Bimanual Foundation Policy via Flow-based Video Prediction,2505.24156,https://arxiv.org/abs/2505.24156,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,VaViM and VaVAM: Autonomous Driving through Video Generative Modeling,2502.15672,https://arxiv.org/abs/2502.15672,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,"Vision-Language-Action Models: Concepts, Progress, Applications and Challenges",2505.04769,https://arxiv.org/abs/2505.04769,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,Visual Imitation Enables Contextual Humanoid Control,2505.03729,https://arxiv.org/abs/2505.03729,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2025,WorldLens: Full-Spectrum Evaluations of Driving World Models in Real World,2512.10958,https://arxiv.org/abs/2512.10958,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,πRL: Online RL Fine-tuning for Flow-based Vision-Language-Action Models,2510.25889,https://arxiv.org/abs/2510.25889,RCL,1,单一来源，需先判断与综述范围的关系
+低,2025,π^0.6: a VLA That Learns From Experience,2511.14759,https://arxiv.org/abs/2511.14759,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,CoPeD-Advancing Multi-Robot Collaborative Perception: A Comprehensive Dataset in Real-World Environments,2405.14731,https://arxiv.org/abs/2405.14731,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer,2408.06072,https://arxiv.org/abs/2408.06072,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,Dexcap: Scalable and portable mocap data collection system for dexterous manipulation,2403.07788,https://arxiv.org/abs/2403.07788,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Diffuseloco: Real-time legged locomotion control with diffusion from offline datasets,2404.19264,https://arxiv.org/abs/2404.19264,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,DynaMo: In-Domain Dynamics Pretraining for Visuo-Motor Control,2409.12192,https://arxiv.org/abs/2409.12192,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,ExBody2: Advanced Expressive Humanoid Whole-Body Control,2412.13196,https://arxiv.org/abs/2412.13196,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,"FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",2408.14035,https://arxiv.org/abs/2408.14035,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,"GenH2R: Learning Generalizable Human-to-Robot Handover via Scalable Simulation, Demonstration, and Imitation",2401.00929,https://arxiv.org/abs/2401.00929,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Harmon: Whole-body motion generation of humanoid robots from language descriptions,2410.12773,https://arxiv.org/abs/2410.12773,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,HoloDrive: Holistic View-Aware World Model for Autonomous Driving,2412.01407,https://arxiv.org/abs/2412.01407,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Humanoid parkour learning,2406.10759,https://arxiv.org/abs/2406.10759,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,JRDB-Social: A Multifaceted Robotic Dataset for Understanding of Context and Dynamics of Human Interactions Within Social Groups,2404.04458,https://arxiv.org/abs/2404.04458,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,"MRAC Track 1: 2nd Workshop on Multimodal, Generative and Responsible Affective Computing",2409.07256,https://arxiv.org/abs/2409.07256,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control,2411.13807,https://arxiv.org/abs/2411.13807,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning,2406.08858,https://arxiv.org/abs/2406.08858,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Open-television: Teleoperation with immersive active visual feedback,2407.01512,https://arxiv.org/abs/2407.01512,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,PaliGemma: A versatile 3B VLM for transfer,2407.07726,https://arxiv.org/abs/2407.07726,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,Panacea+: Panoramic and Controllable Video Generation for Autonomous Driving,2408.07605,https://arxiv.org/abs/2408.07605,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning,2410.21845,https://arxiv.org/abs/2410.21845,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,Predictive Inverse Dynamics Models are Scalable Learners for Robotic Manipulation,2412.15109,https://arxiv.org/abs/2412.15109,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,ReconDreamer: Crafting World Models for Driving Scene Reconstruction via Online Restoration,2411.19548,https://arxiv.org/abs/2411.19548,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Review of Embodied AI,2407.06886,https://arxiv.org/abs/2407.06886,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,SEM2: Enhance Sample Efficiency and Robustness of End-to-end Urban Autonomous Driving via Semantic Masked World Model,2403.16987,https://arxiv.org/abs/2403.16987,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,SERL: A Software Suite for Sample-Efficient Robotic Reinforcement Learning,2401.16013,https://arxiv.org/abs/2401.16013,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,STIV: Scalable Text and Image Conditioned Video Generation,2412.07730,https://arxiv.org/abs/2412.07730,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Scaling Offline Model-Based RL via Jointly-Optimized World-Action Model Pretraining,2410.00564,https://arxiv.org/abs/2410.00564,RCL,1,单一来源，需先判断与综述范围的关系
+低,2024,ShelfHelp: Empowering Humans to Perform Vision-Independent Manipulation Tasks with a Socially Assistive Robotic Cane,2405.20501,https://arxiv.org/abs/2405.20501,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,The Call for Socially Aware Language Technologies,2405.02411,https://arxiv.org/abs/2405.02411,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Think2Drive: Efficient Reinforcement Learning by Thinking in Latent World Model for Quasi-Realistic Autonomous Driving,2402.16720,https://arxiv.org/abs/2402.16720,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,"TinyVLA: Towards Fast, Data-Efficient Vision-Language-Action Models for Robotic Manipulation",2409.12514,https://arxiv.org/abs/2409.12514,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Towards Social AI: A Survey on Understanding Social Interactions,2409.15316,https://arxiv.org/abs/2409.15316,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,UnO: Unsupervised Occupancy Fields for Perception and Forecasting,2406.08691,https://arxiv.org/abs/2406.08691,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2024,Whale: Towards generalizable and scalable world models for embodied decision-making,2411.05619,https://arxiv.org/abs/2411.05619,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,LLaMA: Open and Efficient Foundation Language Models,2302.13971,https://arxiv.org/abs/2302.13971,RCL,1,单一来源，需先判断与综述范围的关系
+低,2023,MUVO: A Multimodal Generative World Model for Autonomous Driving with Geometric Representations,2311.11762,https://arxiv.org/abs/2311.11762,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,Open-world object manipulation using pre-trained vision-language models,2303.00905,https://arxiv.org/abs/2303.00905,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,Pre-training Contextualized World Models with In-the-wild Videos for Reinforcement Learning,2305.18499,https://arxiv.org/abs/2305.18499,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,"Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond",2308.12966,https://arxiv.org/abs/2308.12966,RCL,1,单一来源，需先判断与综述范围的关系
+低,2023,Rotating without Seeing: Towards In-hand Dexterity through Touch,2303.10880,https://arxiv.org/abs/2303.10880,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,Sigmoid Loss for Language Image Pre-Training,2303.15343,https://arxiv.org/abs/2303.15343,RCL,1,单一来源，需先判断与综述范围的关系
+低,2023,Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets,2311.15127,https://arxiv.org/abs/2311.15127,RCL,1,单一来源，需先判断与综述范围的关系
+低,2023,The Audio-Visual Conversational Graph: From an Egocentric-Exocentric Perspective,2312.12870,https://arxiv.org/abs/2312.12870,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,TrafficBots: Towards World Models for Autonomous Driving Simulation and Motion Prediction,2303.04116,https://arxiv.org/abs/2303.04116,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,UGG: Unified Generative Grasping,2311.16917,https://arxiv.org/abs/2311.16917,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,Uniworld: Autonomous Driving Pre-training via World Models,2308.07234,https://arxiv.org/abs/2308.07234,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,ViDAR: Visual Point Cloud Forecasting for Autonomous Driving,2312.17655,https://arxiv.org/abs/2312.17655,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,Video Prediction Models as Rewards for Reinforcement Learning (VIPER),2305.14343,https://arxiv.org/abs/2305.14343,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2023,WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation,2312.02934,https://arxiv.org/abs/2312.02934,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2022,DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection,2203.03605,https://arxiv.org/abs/2203.03605,RCL,1,单一来源，需先判断与综述范围的关系
+低,2022,Iso-Dream: Isolating and Leveraging Noncontrollable Visual Dynamics in World Models,2205.13817,https://arxiv.org/abs/2205.13817,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2022,TartanDrive: A Large-Scale Dataset for Learning Off-Road Dynamics Models,2205.01791,https://arxiv.org/abs/2205.01791,RCL,1,单一来源，需先判断与综述范围的关系
+低,2022,Werewolf among us: Multimodal resources for modeling persuasion behaviors in social deduction games,2212.08279,https://arxiv.org/abs/2212.08279,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2021,A Survey of Embodied AI,2103.04918,https://arxiv.org/abs/2103.04918,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2021,BERT: A Review of Applications in Natural Language Processing and Understanding,2103.11943,https://arxiv.org/abs/2103.11943,RCL,1,单一来源，需先判断与综述范围的关系
+低,2021,Graph Based Network with Contextualized Representations of Turns in Dialogue,2109.04008,https://arxiv.org/abs/2109.04008,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2021,High-Resolution Image Synthesis With Latent Diffusion Models,2112.10752,https://arxiv.org/abs/2112.10752,RCL,1,单一来源，需先判断与综述范围的关系
+低,2021,Mitigating Covariate Shift in Imitation Learning via Offline Data With Partial Coverage,2106.03207,https://arxiv.org/abs/2106.03207,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2020,Deep differentiable grasp planner for high-dof grippers,2002.01530,https://arxiv.org/abs/2002.01530,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2020,Language Models are Few-Shot Learners,2005.14165,https://arxiv.org/abs/2005.14165,RCL,1,单一来源，需先判断与综述范围的关系
+低,2019,6-DOF Grasping for Target-driven Object Manipulation in Clutter,1912.03628,https://arxiv.org/abs/1912.03628,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2019,Behaviour Suite for Reinforcement Learning,1908.03568,https://arxiv.org/abs/1908.03568,RCL,1,单一来源，需先判断与综述范围的关系
+低,2019,DialogueGCN: A Graph Convolutional Neural Network for Emotion Recognition in Conversation,1908.11540,https://arxiv.org/abs/1908.11540,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2019,Iterative Reinforcement Learning Based Design of Dynamic Locomotion Skills for Cassie,1903.09537,https://arxiv.org/abs/1903.09537,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2019,LIC-Fusion: LiDAR-Inertial-Camera Odometry,1909.04102,https://arxiv.org/abs/1909.04102,RCL,1,单一来源，需先判断与综述范围的关系
+低,2018,Towards Accurate Generative Models of Video: A New Metric &amp; Challenges,1812.01717,https://arxiv.org/abs/1812.01717,RCL,1,单一来源，需先判断与综述范围的关系
+低,2017,Emergence of locomotion behaviours in rich environments,1707.02286,https://arxiv.org/abs/1707.02286,NJU3DV,1,单一来源，需先判断与综述范围的关系
+低,2017,Matterport3D: Learning from RGB-D Data in Indoor Environments,1709.06158,https://arxiv.org/abs/1709.06158,RCL,1,单一来源，需先判断与综述范围的关系
+低,2017,Neural Discrete Representation Learning,1711.00937,https://arxiv.org/abs/1711.00937,RCL,1,单一来源，需先判断与综述范围的关系
+低,2017,Sim-to-Real Transfer of Robotic Control with Dynamics Randomization,1710.06537,https://arxiv.org/abs/1710.06537,RCL,1,单一来源，需先判断与综述范围的关系
+低,2017,The Kinetics Human Action Video Dataset,1705.06950,https://arxiv.org/abs/1705.06950,RCL,1,单一来源，需先判断与综述范围的关系
+低,2013,Auto-Encoding Variational Bayes,1312.6114,https://arxiv.org/abs/1312.6114,RCL,1,单一来源，需先判断与综述范围的关系

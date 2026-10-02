@@ -40,6 +40,7 @@ The review profile remains a **structured narrative review with a critical evide
 | R18 | 2026-10-02 | GitHub update scan; repository pages and web search | CQ1--CQ6 | 5 candidate repositories inspected | 4 retained as discovery neighbors; none added to the frozen candidate count | [Related surveys](../RELATED_SURVEYS.md) |
 | R19 | 2026-10-02 | Targeted CVPR 2026 scan; official CVF pages and primary full text | CQ1--CQ4, CQ6 | 11 unique title candidates; 7 absent from catalog | 8 full-text evidence records | [Batch 11](EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md), [Batch 12](EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md) |
 | R20 | 2026-10-02 | GitHub survey delta scan; repository and survey pages | CQ1--CQ6 | 7 candidate repositories inspected | 3 retained as discovery sources; no paper-level evidence added | [Related surveys](../RELATED_SURVEYS.md) |
+| R21 | 2026-10-02 | Frozen bibliography comparison for R20 sources | CQ1--CQ6 | 633 unique arXiv IDs; 359 absent from catalog and tracked supplements | 14 multi-source candidates prioritized; no paper-level evidence added | [Delta candidates](EXTERNAL_CANDIDATES_DELTA_2026-10-02.md) |
 
 The twelve paper-level evidence batches contain 55 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
@@ -146,6 +147,10 @@ Four recorded queries targeted official CVF pages: `site:openaccess.thecvf.com/c
 ### R20: GitHub Survey Delta Scan II
 
 Four exact web queries were used: `site:github.com world models physical AI survey robotics 2026 awesome`, `site:github.com world model robotics survey VLA world action model awesome 2026`, `site:github.com embodied world models survey benchmark robotics`, and `site:github.com physical AI survey world model robot literature`. Seven previously unlisted candidate repositories were inspected. Three were retained: RCL-Robotics/Awesome-World-Action-Models provides the machine-readable companion catalog and classification audit for Lu et al.; world-action-models/awesome-world-action-models gives a narrow action-path inclusion rule and three WAM families; NJU3DV-LoongGroup/Embodied-World-Models-Survey links physical simulator properties with world-model resources. Four personal or derivative WAM/VLA lists were not retained because their coverage substantially overlaps these sources without adding a distinct audit or taxonomy interface. No repository entry was treated as paper-level evidence, and no frozen candidate count changed.
+
+### R21: Frozen Comparison of R20 Sources
+
+The three retained sources were frozen at RCL-Robotics/Awesome-World-Action-Models `7985fa2`, world-action-models/awesome-world-action-models `9be4441`, and NJU3DV-LoongGroup/Embodied-World-Models-Survey `185871d`. Their Markdown bibliographies yielded 633 unique arXiv IDs. Matching by arXiv ID, normalized title, and near-title against the 929-row catalog, the previous external-candidate CSV, the writing-gap tracker, and the manuscript bibliography left 359 raw discovery candidates; one unresolved title per source was excluded from that count. Fourteen candidates occurred in at least two sources and form the first screening queue. These are source-specific discovery counts, not a claim that 359 papers satisfy the review's inclusion criteria or have verified metadata, methods, or results.
 
 ## Screening and Evidence Handling
 

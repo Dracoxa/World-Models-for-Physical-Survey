@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import tempfile
 import unicodedata
 from collections import defaultdict
 from difflib import get_close_matches
@@ -13,6 +14,7 @@ from pathlib import Path
 
 
 ARXIV_RE = re.compile(r"arxiv\.org/(?:abs|pdf)/([0-9]{4}\.[0-9]{4,5})", re.I)
+MARKDOWN_LINK_RE = re.compile(r"\[([^]]+)\]\(([^)]+)\)")
 PRIORITY_TERMS = {
     "benchmark",
     "evaluation",
@@ -54,20 +56,58 @@ def clean_title(block: str, arxiv_id: str) -> str:
     return f"Untitled external record {arxiv_id}"
 
 
+def title_from_line(line: str, arxiv_id: str) -> str:
+    generic_labels = {"arxiv", "paper", "pdf", "paper link", "project"}
+    for label, url in MARKDOWN_LINK_RE.findall(line):
+        if arxiv_id in url and normalize_title(label) not in generic_labels:
+            return re.sub(r"^[^A-Za-z0-9]+", "", label).strip()
+
+    if "|" in line:
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        for index, cell in enumerate(cells):
+            if arxiv_id not in cell:
+                continue
+            for candidate in reversed(cells[:index]):
+                candidate = MARKDOWN_LINK_RE.sub(r"\1", candidate)
+                candidate = re.sub(r"[*_]", "", candidate).replace(chr(96), "").strip()
+                if candidate and not re.fullmatch(r"\d{4}(?:-\d{1,2})?", candidate):
+                    return candidate
+    return ""
+
+
 def extract_records(path: Path, source: str) -> list[dict[str, str]]:
     text = path.read_text(encoding="utf-8")
-    blocks = re.split(r"(?m)(?=^-\s+)", text)
     records = []
     seen = set()
+    for line in text.splitlines():
+        for match in ARXIV_RE.finditer(line):
+            arxiv_id = match.group(1)
+            if arxiv_id in seen:
+                continue
+            title = title_from_line(line, arxiv_id)
+            if not title:
+                continue
+            seen.add(arxiv_id)
+            records.append(
+                {
+                    "source": source,
+                    "arxiv_id": arxiv_id,
+                    "title": title,
+                    "normalized_title": normalize_title(title),
+                    "year": str(2000 + int(arxiv_id[:2])),
+                    "url": f"https://arxiv.org/abs/{arxiv_id}",
+                }
+            )
+
+    blocks = re.split(r"(?m)(?=^-\s+)", text)
     for block in blocks:
         match = ARXIV_RE.search(block)
         if not match:
             continue
         arxiv_id = match.group(1)
-        key = (source, arxiv_id)
-        if key in seen:
+        if arxiv_id in seen:
             continue
-        seen.add(key)
+        seen.add(arxiv_id)
         title = clean_title(block, arxiv_id)
         year = str(2000 + int(arxiv_id[:2]))
         records.append(
@@ -95,13 +135,31 @@ def load_catalog(path: Path) -> tuple[dict[str, list[dict]], dict[str, list[dict
     return by_arxiv, by_title
 
 
-def load_known(paths: list[Path]) -> set[str]:
-    known = set()
+def load_known(paths: list[Path]) -> tuple[set[str], set[str]]:
+    known_ids = set()
+    known_titles = set()
     for path in paths:
         text = path.read_text(encoding="utf-8")
-        known.update(ARXIV_RE.findall(text))
-        known.update(re.findall(r"\b([0-9]{4}\.[0-9]{4,5})\b", text))
-    return known
+        known_ids.update(ARXIV_RE.findall(text))
+        known_ids.update(re.findall(r"\b([0-9]{4}\.[0-9]{4,5})\b", text))
+        if path.suffix == ".csv":
+            known_titles.update(
+                normalize_title(row["title"])
+                for row in csv.DictReader(text.splitlines())
+                if row.get("title")
+            )
+        elif path.suffix == ".bib":
+            known_titles.update(
+                normalize_title(match.group(1))
+                for match in re.finditer(r'(?mi)^\s*title\s*=\s*[{\"](.+)[}\"]\s*,?\s*$', text)
+            )
+        else:
+            known_titles.update(
+                normalize_title(label)
+                for label, _ in MARKDOWN_LINK_RE.findall(text)
+                if len(normalize_title(label).split()) >= 2
+            )
+    return known_ids, known_titles
 
 
 def nearest_title(title: str, catalog_titles: list[str]) -> tuple[str, float]:
@@ -117,30 +175,37 @@ def priority(record: dict) -> tuple[str, str]:
     hits = sorted(term for term in PRIORITY_TERMS if f" {term} " in padded)
     recent = record["year"] == "2026"
     repeated = record["source_count"] >= 2
-    if (recent and hits) or (repeated and hits):
+    if repeated and hits:
         signals = []
+        signals.append("多源交叉")
         if recent:
             signals.append("2026 新作")
-        if repeated:
-            signals.append("多源交叉")
         return "最高", "、".join(signals) + "且命中薄弱方向：" + "、".join(hits)
-    if recent or repeated:
-        return "高", "2026 新作" if recent else "被多个近邻仓库收录"
-    if hits:
-        return "中", "命中薄弱方向：" + "、".join(hits)
+    if repeated or (recent and hits):
+        if repeated:
+            return "高", "被多个近邻仓库收录"
+        return "高", "2026 新作且命中薄弱方向：" + "、".join(hits)
+    if recent or hits:
+        return "中", "2026 新作" if recent else "命中薄弱方向：" + "、".join(hits)
     return "低", "单一来源，需先判断与综述范围的关系"
 
 
 def compare(catalog: Path, known_paths: list[Path], sources: list[tuple[str, Path]]) -> tuple[list[dict], dict]:
     by_arxiv, by_title = load_catalog(catalog)
-    known_ids = load_known(known_paths)
+    known_ids, known_titles = load_known(known_paths)
     catalog_titles = list(by_title)
     merged: dict[str, dict] = {}
     source_stats = {}
 
     for source, path in sources:
         records = extract_records(path, source)
-        source_stats[source] = {"extracted": len(records), "catalog": 0, "known": 0, "candidates": 0}
+        source_stats[source] = {
+            "extracted": len(records),
+            "catalog": 0,
+            "known": 0,
+            "unresolved": 0,
+            "candidates": 0,
+        }
         for record in records:
             key = record["arxiv_id"]
             if key not in merged:
@@ -162,12 +227,14 @@ def compare(catalog: Path, known_paths: list[Path], sources: list[tuple[str, Pat
                 matches = by_title[nearest]
                 match_type = f"near_title:{ratio:.3f}"
 
-        status = "catalog" if matches else "known" if record["arxiv_id"] in known_ids else "candidates"
+        known = record["arxiv_id"] in known_ids or record["normalized_title"] in known_titles
+        unresolved = record["title"].startswith("Untitled external record")
+        status = "catalog" if matches else "known" if known else "unresolved" if unresolved else "candidates"
         for source in record["sources"]:
             source_stats[source][status] += 1
         if matches:
             continue
-        if record["arxiv_id"] in known_ids:
+        if known or unresolved:
             continue
 
         record["sources"] = sorted(record["sources"])
@@ -201,7 +268,7 @@ def write_csv(path: Path, candidates: list[dict]) -> None:
 
 def write_markdown(path: Path, candidates: list[dict], stats: dict, source_meta: list[str]) -> None:
     lines = [
-        "# 外部调研库去重新增候选",
+        "# 外部调研库去重后新增候选",
         "",
         "生成日期：2026-10-02。该文件由 `compare_external_surveys.py` 生成，是待核验候选，不代表已纳入正文。",
         "",
@@ -210,18 +277,22 @@ def write_markdown(path: Path, candidates: list[dict], stats: dict, source_meta:
         *[f"- {item}" for item in source_meta],
         f"- 本地基线：929 条分类记录，{stats['catalog_unique_titles']} 个规范化题名；跨类别重复保留。",
         "- 去重顺序：arXiv ID、规范化题名、相似度不低于 0.94 的近似题名。",
+        "- GitHub 仓库条目只用于发现；候选数量不代表纳入数量、证据数量或已核验论文数量。",
         "",
         "## 去重结果",
         "",
-        "| 来源 | 提取 arXiv 条目 | 已在目录 | 已在补充材料追踪 | 新增候选 |",
-        "|---|---:|---:|---:|---:|",
+        "| 来源 | 提取 arXiv 条目 | 已在目录 | 已在补充材料追踪 | 题名待解析 | 新增候选 |",
+        "|---|---:|---:|---:|---:|---:|",
     ]
     for source, row in stats["source_stats"].items():
-        lines.append(f"| {source} | {row['extracted']} | {row['catalog']} | {row['known']} | {row['candidates']} |")
+        lines.append(
+            f"| {source} | {row['extracted']} | {row['catalog']} | {row['known']} | "
+            f"{row['unresolved']} | {row['candidates']} |"
+        )
     lines.extend(
         [
             "",
-            f"三个来源合并后得到 {stats['external_unique_arxiv']} 个唯一 arXiv ID，其中 {stats['candidate_count']} 个未在本地目录中找到。完整清单见 [external_candidates.csv](external_candidates.csv)。",
+            f"{len(stats['source_stats'])} 个来源合并后得到 {stats['external_unique_arxiv']} 个唯一 arXiv ID，其中 {stats['candidate_count']} 个未在本地目录或已跟踪材料中找到。完整清单见配套 CSV。",
             "",
             "## 优先核验候选",
             "",
@@ -258,6 +329,19 @@ def self_check() -> None:
     assert normalize_title("World-Action Models: A Survey") == "world action models a survey"
     sample = '- **Demo**: "A 3D World Model", arXiv 2026.\n  [[Paper](https://arxiv.org/pdf/2601.12345)]'
     assert clean_title(sample, "2601.12345") == "A 3D World Model"
+    direct = "| 2026-01 | [A Robot World Model](https://arxiv.org/abs/2601.12345) | Video |"
+    assert title_from_line(direct, "2601.12345") == "A Robot World Model"
+    labeled = "| 2026-01 | A Robot World Model | [arXiv](https://arxiv.org/abs/2601.12345) |"
+    assert title_from_line(labeled, "2601.12345") == "A Robot World Model"
+    with tempfile.TemporaryDirectory() as directory:
+        bib = Path(directory, "known.bib")
+        bib.write_text("@article{x,\n  title={Cosmos Policy: Robot Control},\n}\n", encoding="utf-8")
+        _, titles = load_known([bib])
+        assert normalize_title("Cosmos Policy: Robot Control") in titles
+    screening = {"normalized_title": "robot planning", "year": "2026", "source_count": 1}
+    assert priority(screening)[0] == "高"
+    screening["source_count"] = 2
+    assert priority(screening)[0] == "最高"
 
 
 def main() -> None:
