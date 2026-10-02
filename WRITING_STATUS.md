@@ -21,6 +21,7 @@
 - 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、45 篇原文核验记录及当前 adequate for bounded claims 保证边界。
 - 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R14 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
 - 已完成首批 11 条正式版本解析：升级 10 条预印本记录，并为已有 ICRA 运行时监测记录补全 DOI 与出版方；其余条目仍按 V01 继续核对。
+- 已清除正文中“下一轮检索”“collection priorities”和首页工作稿状态等协作阶段措辞，将其改写为受当前证据图谱边界约束的研究议程与综合判断；ACM 引用条按模板要求恢复显示。
 - 已建立[暂定 publication-family 语料](literature/PUBLICATION_FAMILIES.md)：929 条源记录中排除 15 条非论文占位项，将 914 条论文候选解析为 758 个暂定论文族；修正 4 条身份/链接元数据并记录 11 个人工合并判断。
 - 已修正目录中 `2408.14197` 被误写为 Drive-WM、NavForesee 被误标为 CVPR 2026 正式论文，以及 OccWorld 作者名错误；目录统计仍为 929 条分类记录。
 - 当前目录未检索到的 28 项补充文献及下一轮缺口见[边写边补清单](literature/WRITING_GAPS.md)。

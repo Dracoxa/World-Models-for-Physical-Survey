@@ -12,8 +12,8 @@
 | WorldArena [论文](https://arxiv.org/abs/2602.08971) | 评估、安全与 Benchmark | 区分视觉质量和功能用途 | 已核原始论文摘要与评估范围；逐项协议待提取 |
 | WorldArena 2.0 [论文](https://arxiv.org/abs/2605.17912v1) | 评估、安全与 Benchmark | 多模态、交互用途和平台扩展 | 已访问正文；各平台实验范围下一轮逐项核对 |
 | SafeDreamer [ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/ece182f93af26c64187ba3f7dfd4309a-Abstract-Conference.html) | 评估、安全与 Benchmark | 世界模型中的成本约束与安全规划 | 已核成本定义、主实验、消融和作者局限；见核验批次 02 |
-| Recovery RL [论文](https://arxiv.org/abs/2010.15920v2) | 评估、安全与 Benchmark | 恢复策略作为互补安全机制 | 已核方法与实验范围；不将其归为生成式 WM |
-| Control Barrier Functions: Theory and Applications [论文](https://arxiv.org/abs/1903.11199) | 世界模型基础与控制；交叉安全 | 解释形式保证与经验安全结果的区别 | 已核来源与范围；具体定理假设和与学习模型的连接待补 |
+| Recovery RL [RA-L 2021](https://doi.org/10.1109/LRA.2021.3070252) | 评估、安全与 Benchmark | 恢复策略作为互补安全机制 | 已核正式版本、方法与实验范围；不将其归为生成式 WM |
+| Control Barrier Functions: Theory and Applications [ECC 2019](https://doi.org/10.23919/ECC.2019.8796030) | 世界模型基础与控制；交叉安全 | 解释形式保证与经验安全结果的区别 | 已核正式版本、来源与范围；具体定理假设和与学习模型的连接待补 |
 | Do World Models Make Better Robots? [综述](https://arxiv.org/abs/2609.29669v1) | 评估、安全与 Benchmark | 近期综述定位与评估组织方式 | 已查看正文与比较表；不照搬其文献统计与优先性主张 |
 | Safety Guardrails for LLM-Enabled Robots [论文](https://arxiv.org/abs/2503.07885v2) | 评估、安全与 Benchmark | 语义世界模型、LTL 计划约束与越狱攻击 | 已核实体与仿真实验、试验分母和作者局限；见核验批次 03 |
 | Verifiable Foundation Models for Robot Safety [论文](https://arxiv.org/abs/2606.23754v1) | 评估、安全与 Benchmark | 可验证低维安全模块、选择性护盾与实体迁移 | 已核 18 回合实体试验、认证域和传感器前提；见核验批次 03 |
