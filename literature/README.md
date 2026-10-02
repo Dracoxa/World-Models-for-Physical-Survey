@@ -18,6 +18,7 @@
 
 - 在分类页按标题或作者查找；下载 [catalog.csv](catalog.csv) 可按年份、类别、来源筛选。
 - `publication_status` 为原表填写，不代表本目录确认接受或发表状态。
+- 原始论文核验后确认的 7 条元数据修正由 `export_catalog.py` 中的 `VERIFIED_OVERRIDES` 保留，重新导出不会退回旧值。
 - 32 条记录暂未导出可用的公开链接；校园代理、临时签名下载链接和不完整链接不进入公开目录。链接能打开也不等于标题与原文已经核验。
 - 记录编号用于定位当前快照，不作为论文永久标识。后续核验优先记录 DOI、arXiv ID 和正式出版版本。
 - 更新分类与元数据后重新导出：`python export_catalog.py path/to/workbook.xlsx`。依赖：`openpyxl`。
@@ -33,6 +34,8 @@
 2026-10-02 已完成第三批运行时安全核验，详见[实体运行时监测、语义护栏与可验证安全模块证据表](EVIDENCE_BATCH_03_RUNTIME_SAFETY.md)。Model-Based Runtime Monitoring 已在原目录中并修正正式发表元数据，其余 3 篇作为正文补充来源单列。
 
 2026-10-02 已完成第四批接触与结构化三维核验，详见[接触、触觉与结构化三维世界模型证据表](EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md)。ContactWorld 已在原目录中并更新到 v3；TouchWorld、DexTouch-WM、ParticleFormer 与 MVISTA-4D 作为正文补充来源单列。
+
+2026-10-02 已完成第五批导航与驾驶核验，详见[导航与自动驾驶中的预测--决策接口证据表](EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md)。5 篇均在原目录中；本轮修正了 NavForesee 的预印本状态、OccWorld 作者与正式版本，以及被错配到 `2408.14197` 的 Drive-OccWorld 记录。
 
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 

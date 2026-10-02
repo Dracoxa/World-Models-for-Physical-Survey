@@ -14,6 +14,36 @@ with an initial action or chunk executed before replanning. Here $r$ scores pred
 
 Rollout length trades anticipation of delayed effects against reliance on increasingly uncertain predictions. Frequent feedback limits open-loop execution but cannot make an inaccurate model harmless: the first selected action can itself place a robot in a difficult state. Horizon, sampling budget, and control rate therefore belong in a method comparison alongside architecture. A planning result is most interpretable when predictive quality and action-selection behavior are examined under the same task conditions.
 
+\subsection{Driving and Navigation as an Interface Test}
+Driving studies make the model--decision interface unusually explicit. Drive-WM conditions multiview video prediction on candidate ego trajectories and scores the generated futures with map and object rewards~\cite{wang2024drivewm}. In its nuScenes offline evaluation, selecting among three high-level commands reduces average trajectory error and collision rate relative to a random-command condition, approaching a planner given the ground-truth command. The evidence supports candidate ranking under logged-scene metrics; it is not an interactive road deployment or a general safety guarantee.
+
+Occupancy models expose a related distinction. OccWorld jointly generates future 3D occupancy and ego trajectory tokens~\cite{zheng2024occworld}; the trajectory is a model output rather than a candidate whose consequences are compared. Drive-OccWorld instead conditions future occupancy on trajectory proposals and scores them with agent, road, and learned-volume costs~\cite{yang2025driveoccworld}. Its cost ablations connect structured predictions to trajectory selection, but evaluation remains open-loop on nuScenes and does not remove the complete predictive module while holding the planner fixed. Joint prediction and counterfactual planning should therefore remain separate categories.
+
+Prediction can also influence a policy only during training. DriveVLA-W0 adds autoregressive or diffusion future-image objectives to a driving VLA, yet bypasses both visual-generation paths during driving inference~\cite{li2026drivevlaw0}. Its action-only comparisons and data-scale study support dense predictive supervision as a representation-learning mechanism, especially at the largest reported scale. The 70-million-frame dataset is proprietary, some smaller-scale metrics do not improve monotonically, and NAVSIM is a predictive-driver-model benchmark rather than a physical closed loop.
+
+Navigation introduces language-conditioned long horizons. The NavForesee preprint jointly predicts short-horizon geometry, long-horizon milestones, and waypoints under a hierarchical language plan~\cite{liu2026navforesee}. Removing either prediction horizon degrades its R2R-CE simulator results, while removing the language planner causes a larger drop. This supports complementarity within that system, not attribution of the whole gain to prediction. Its RxR-CE result is less uniformly favorable, and the current evidence is simulated and preprint-only.
+
+\begin{table}[t]
+\caption{Distinct predictive interfaces in driving and navigation. Metrics and limitations refer to each paper's own protocol and are not a cross-paper ranking.}
+\label{tab:driving-navigation}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.18\linewidth}YY@{}}
+\toprule
+System & Prediction--decision interface & Evidence boundary \\
+\midrule
+Drive-WM~\cite{wang2024drivewm} & Candidate-conditioned video rollout and image-based reward & Offline nuScenes planning; three command branches. \\
+\addlinespace
+OccWorld~\cite{zheng2024occworld} & Joint future occupancy and ego-trajectory generation & No explicit candidate-action comparison; strongest variant uses ground-truth occupancy. \\
+\addlinespace
+Drive-OccWorld~\cite{yang2025driveoccworld} & Candidate-conditioned occupancy rollout and occupancy cost & Open-loop nuScenes metrics; protocol and ego-status choices matter. \\
+\addlinespace
+DriveVLA-W0~\cite{li2026drivevlaw0} & Future-image auxiliary objective during training & Generation bypassed at inference; proprietary largest-scale data. \\
+\addlinespace
+NavForesee~\cite{liu2026navforesee} & Dual-horizon prediction inside a language-conditioned policy & Habitat simulation; arXiv preprint. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 \subsection{Policy Learning with Imagined Experience}
 A world model can influence behavior without conducting a full online search at every control step. Dreamer learns an actor through imagined latent trajectories~\cite{hafner2020dreamer}. MBPO uses short synthetic rollouts branched from real experience for policy optimization~\cite{janner2019mbpo}. These approaches move some predictive computation into learning. They differ from online planning in deployment cost, interaction requirements, and where model errors affect behavior.
 

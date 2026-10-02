@@ -119,12 +119,12 @@
 | S07-0112 | 2023 | [UniSim: Learning Interactive Real-World Simulators](<https://arxiv.org/abs/2310.06114>) | Aniruddha Agarwal et al. | arXiv | 预印本/公开稿 |
 | S07-0113 | 2023 | [GAIA-1: A Generative World Model for Autonomous Driving](<https://arxiv.org/abs/2309.17080>) | Anthony Hu et al. | arXiv | 预印本/公开稿 |
 | S07-0114 | 2023 | [DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving](<https://arxiv.org/abs/2309.09777>) | Guanghan Wang et al. | arXiv | 预印本/公开稿 |
-| S07-0115 | 2023 | [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](<https://arxiv.org/abs/2311.16038>) | Yihan Zheng et al. | arXiv | 预印本/公开稿 |
+| S07-0115 | 2024 | [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](<https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/2024_ECCV_2024_paper.php>) | Wenzhao Zheng et al. | ECCV 2024 | 正式会议论文 |
 | S07-0116 | 2024 | [TD-MPC2: Scalable, Robust World Models for Continuous Control](<https://www.tdmpc2.com/>) | Nicklas Hansen; Hao Su; Xiaolong Wang | tdmpc2.com | 来源待核验 |
 | S07-0117 | 2024 | [Genie: Generative Interactive Environments](<https://arxiv.org/abs/2402.15391>) | Tim Bruce et al. | arXiv | 预印本/公开稿 |
 | S07-0118 | 2024 | [V-JEPA: Revisiting Feature Prediction for Learning Visual Representations from Video](<https://arxiv.org/abs/2404.08471>) | Adrien Bardes et al. | arXiv | 预印本/公开稿 |
 | S07-0119 | 2024 | [RoboDreamer: Learning Compositional World Models for Robot Imagination](<https://arxiv.org/abs/2404.12377>) | Xiaofeng Wang et al. | arXiv | 预印本/公开稿 |
-| S07-0120 | 2024 | [Drive-WM: Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving](<https://arxiv.org/abs/2408.14197>) | World model autonomous driving team | arXiv | 预印本/公开稿 |
+| S07-0120 | 2025 | [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](<https://ojs.aaai.org/index.php/AAAI/article/view/33010>) | Yu Yang, Jianbiao Mei, Yukai Ma, Siliang Du, Wenqing Chen, Yijie Qian, Yuxiang Feng, Yong Liu | AAAI 2025 | 正式会议论文 |
 | S07-0121 | 2025 | [Cosmos World Foundation Model Platform for Physical AI](<https://arxiv.org/abs/2501.03575>) | NVIDIA Research team | arXiv | 预印本/公开稿 |
 | S07-0122 | 2025 | [1X World Model Challenge: Learning a World Model from Real-World Humanoid Robot Data](<https://github.com/1x-technologies/1x-world-model-challenge>) | 1X Technologies / research team | github.com | 来源待核验 |
 | S07-0123 | 2023 | [Open X-Embodiment: Robotic Learning Datasets and RT-X Models](<https://arxiv.org/abs/2310.08864>) | Open X-Embodiment Collaboration; 相关机器人学习团队 | arXiv | 预印本/公开稿 |

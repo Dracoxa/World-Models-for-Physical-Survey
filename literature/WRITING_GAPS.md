@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 50 条。大部分是将协作表已有文献引入正文；下列 14 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 55 条。大部分是将协作表已有文献引入正文；下列 14 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -27,6 +27,8 @@ DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **Worl
 
 ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只将题名、作者和版本更新到 arXiv v3，并在正文按接触表示与预测规划讨论。
 
+导航与驾驶批次的 5 篇也都来自现有目录，不增加上述 14 项。核验后已更正两个关键身份：目录 `S07-0120` 的 `2408.14197` 是 AAAI 2025 的 Drive-OccWorld，不是 Drive-WM；`S06-0109` 的 NavForesee 当前按 arXiv:2512.01550v2 预印本记录，未沿用原表的 CVPR 2026 正式发表标注。
+
 ## 接下来优先补哪些
 
 “缺”表示当前稿件的证据尚不充分，不表示这个领域没有论文。检索词是下一轮入口，不是已完成的检索。
@@ -38,14 +40,14 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 | Latent 与预测表示 | Dreamer、TD-MPC2、V-JEPA 2 | 新预测目标的系统比较；2026 JEPA 与动作表示、策略耦合方法 | `predictive representation robot action JEPA 2026`; `latent world model policy ablation` | 高 |
 | 结构化物理与多模态 | GNS、TesserAct、OmniVTA、ContactWorld、TouchWorld、DexTouch-WM、ParticleFormer、MVISTA-4D | 长时组合接触、跨触觉硬件迁移、力觉校准与场景无关的形变动力学 | `compositional contact world model`; `cross sensor tactile world model`; `force calibrated predictive control` | 高 |
 | 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim | 人类第一视角数据、失败与恢复数据、跨本体动作对齐；训练测试重叠核查 | `egocentric video robot action alignment`; `robot failure recovery dataset`; `cross embodiment dynamics` | 高 |
-| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口 | 导航和驾驶实例；预测预训练与推理时预测的消融；重规划与记忆 | `navigation world model lookahead planning`; `occupancy world model closed loop driving`; `predictive pretraining policy ablation` | 最高 |
+| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；Drive-WM、OccWorld、Drive-OccWorld、DriveVLA-W0、NavForesee | 真实道路/机器人闭环；交互式失效恢复；预测预训练与推理时预测的统一消融；重规划与记忆 | `navigation world model real robot closed loop`; `occupancy world model interactive driving`; `predictive pretraining inference rollout ablation` | 最高 |
 | 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、条件性证书、短视规避、可达性护盾、预测式人工干预、语义计划护栏、可验证安全模块 | **仍缺可泛化实体证据**：跨操作者/平台复现、分布外校准、事故严重度、干预成本和动态接触风险 | `world model uncertainty calibration robot safety 2026`; `robot safety intervention cost physical evaluation`; `contact-rich runtime assurance` | 最高 |
 
 下一轮优先补每个薄弱方向 2–3 篇能够真正进入比较表的代表工作。满足“不同机制、明确预测量、明确动作接口、可定位实验”的需要后再扩量，不以凑篇数代替覆盖。
 
 ## 表格参考与实现
 
-本轮新增 6 表，加上已有 Astra 表，共 7 表：近期综述定位、数据资源、预测空间、策略融合、Astra 来源、评估协议、安全机制。均为可编辑 LaTeX 表，不是截图。
+本轮新增 7 表，加上已有 Astra 表，共 8 表：近期综述定位、数据资源、预测空间、策略融合、导航与驾驶接口、Astra 来源、评估协议、安全机制。均为可编辑 LaTeX 表，不是截图。
 
 - Lu 等 [2026 综述](https://arxiv.org/html/2609.16074v1)：参考按类别分组的方法表、指标与资源分表的组织方式。
 - Hou 等 [2026 综述](https://arxiv.org/html/2605.00080v1)：参考在架构比较中显式记录预测与动作的连接。
@@ -76,6 +78,6 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 | 预测与动作可以联合建模 | DreamZero、Cosmos Policy 支持方法级描述；不据此断言因果物理理解 |
 | 视觉质量与功能评估应分别记录 | WorldArena 系列提供相关评估设计；我们的比较框架是综述组织选择 |
 | 成本约束、恢复与形式保证是不同安全机制 | SafeDreamer、CPO、Recovery RL、CBF 提供各自背景；不混写为统一安全保证 |
-| 触觉、导航、驾驶和分布外安全已被充分覆盖 | **不成立**；触觉已形成首轮实体证据，但长时组合接触、导航、驾驶和分布外安全仍是缺口 |
+| 触觉、导航、驾驶和分布外安全已被充分覆盖 | **不成立**；触觉和导航/驾驶已有首轮接口证据，但真实闭环、长时组合接触和分布外安全仍是缺口 |
 
 自查结论：定位方面不声称“首个”或“最全面”；写作方面四部分已连通；实验支撑仅到方法概述和已有来源；评估覆盖仍有明确空缺；机制区分保留预测、策略、控制和防护的边界。下一轮再压缩重复论述、增加具体技术细节，并将正文里的写作阶段说明移到协作记录。

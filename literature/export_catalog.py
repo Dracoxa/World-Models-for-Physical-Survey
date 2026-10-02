@@ -22,6 +22,49 @@ CATEGORIES = [
 ]
 FIELDS = ["record_id", "category", "source_row", "title", "authors", "year", "venue", "publication_status", "url"]
 
+# Original-source corrections verified after the workbook snapshot was frozen.
+VERIFIED_OVERRIDES = {
+    "S06-0109": {
+        "authors": "Fei Liu, Shichao Xie, Minghua Luo, Zedong Chu, Junjun Hu, Xiaolong Wu, Mu Xu（Amap / Alibaba Group）",
+        "venue": "arXiv:2512.01550v2",
+        "publication_status": "预印本（2026-03-13；未核到正式会议版本）",
+        "url": "https://arxiv.org/abs/2512.01550v2",
+    },
+    "S06-0119": {
+        "title": "ContactWorld: What Representations Matter for Vision-Tactile Latent World Models in Contact-Rich Manipulation",
+        "authors": "Zhiyuan Zhang, Pokuang Zhou, Kaidi Zhang, Adeesh Desai, Temitope Amosa, Davood Soleymanzadeh, Jiuzhou Lei, Yuhao Zhou, Minghui Zheng, Yu She",
+        "publication_status": "预印本（v3: 2026-09-24；未见正式同行评审信息）",
+        "url": "https://arxiv.org/abs/2606.13877v3",
+    },
+    "S07-0029": {
+        "venue": "NeurIPS 2017",
+        "publication_status": "正式发表/会议",
+        "url": "https://proceedings.neurips.cc/paper/2017/hash/766ebcd59621e305170616ba3d3dac32-Abstract.html",
+    },
+    "S07-0115": {
+        "authors": "Wenzhao Zheng et al.",
+        "year": "2024",
+        "venue": "ECCV 2024",
+        "publication_status": "正式会议论文",
+        "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/2024_ECCV_2024_paper.php",
+    },
+    "S07-0120": {
+        "title": "Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving",
+        "authors": "Yu Yang, Jianbiao Mei, Yukai Ma, Siliang Du, Wenqing Chen, Yijie Qian, Yuxiang Feng, Yong Liu",
+        "year": "2025",
+        "venue": "AAAI 2025",
+        "publication_status": "正式会议论文",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/33010",
+    },
+    "S07-0158": {
+        "authors": "Huihan Liu; Shivin Dass; Roberto Martín-Martín; Yuke Zhu",
+        "year": "2024",
+        "venue": "ICRA 2024",
+        "publication_status": "正式发表/会议",
+    },
+    "S07-0245": {"year": "2021"},
+}
+
 
 def text(value):
     return " ".join(str(value if value is not None else "").split())
@@ -77,6 +120,7 @@ def main():
             if not link and sheet.cell(source_row, 7).hyperlink:
                 link = public_url(sheet.cell(source_row, 7).hyperlink.target)
             record = dict(zip(FIELDS, [f"S{number:02d}-{source_row:04d}", name, source_row, text(values[1]), text(values[2]), text(values[3]), text(values[4]), text(values[5]), link]))
+            record.update(VERIFIED_OVERRIDES.get(record["record_id"], {}))
             rows.append(record)
         records.extend(rows)
         navigation.append(f"| [{name}](categories/{slug}.md) | {len(rows)} |")
