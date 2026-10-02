@@ -27,6 +27,8 @@
 
 暂定论文族层见 [PUBLICATION_FAMILIES.md](PUBLICATION_FAMILIES.md) 与 [publication_families.csv](publication_families.csv)。构建脚本保留全部源记录编号，排除已明确标为“待补文献”的非论文占位项，按规范化题名、arXiv ID 和已记录人工判断合并；错链修正与明确不合并判断保存在 [publication_family_decisions.json](publication_family_decisions.json)。
 
+已执行检索、发现渠道、精确查询和未记录字段统一见 [SEARCH_LOG.md](SEARCH_LOG.md)。早期搜索未保存的结果数或查询字符串标为 `NR`，不根据后续入选论文反推检索过程。
+
 外部开源调研库冻结版本：
 
 - NTUMARS/Awesome-World-Model-for-Robotics-Policy @ 5f69b4e

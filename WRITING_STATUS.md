@@ -19,6 +19,7 @@
 - 已核验 WorldSample、Hi-WM、WorldSync 与 FoMo-FD，区分真实在线 RL、模型内人工纠正、off-expert 动作跟随和离线失败监测；见[核验批次 09](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md)。
 - 已核验 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord，区分世界模型合成恢复数据、人工恢复示范、诊断回滚和实体任务续接；见[核验批次 10](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md)。
 - 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、45 篇原文核验记录及当前 adequate for bounded claims 保证边界。
+- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R13 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
 - 已建立[暂定 publication-family 语料](literature/PUBLICATION_FAMILIES.md)：929 条源记录中排除 15 条非论文占位项，将 914 条论文候选解析为 758 个暂定论文族；修正 4 条身份/链接元数据并记录 11 个人工合并判断。
 - 已修正目录中 `2408.14197` 被误写为 Drive-WM、NavForesee 被误标为 CVPR 2026 正式论文，以及 OccWorld 作者名错误；目录统计仍为 929 条分类记录。
 - 当前目录未检索到的 28 项补充文献及下一轮缺口见[边写边补清单](literature/WRITING_GAPS.md)。
@@ -38,7 +39,7 @@
 | 数据与模型 | 已补 4D、触觉、点云多材料动力学和长时交互模拟器案例；继续补长时组合接触、跨传感器校准、人类视频和失败数据 |
 | 策略融合 | 已补隐式规划、模型--策略共进化、导航/驾驶接口、长期记忆、预测式风险门控及受控失败后的实体纠正；继续补跨平台复现和统一实体消融 |
 | 评估与安全 | 已补条件性保证、短视规避、可达性护盾、成本规划、校准式失败检测、求助率、人工恢复数据及任务续接；继续补真实分布偏移下的在线干预效果与跨平台复现 |
-| 综述方法与定位 | 已固化基础语料、外部库 commit、去重协议及 758 个暂定 publication family；继续补正式版本解析、数据库检索日志、逐条排除理由、引文追踪和最终流程统计 |
+| 综述方法与定位 | 已固化基础语料、外部库 commit、R00--R13 检索日志、去重协议及 758 个暂定 publication family；继续执行统一数据库检索、正式版本解析、逐条排除理由、引文追踪和最终流程统计 |
 
 ## 尚待作者完成
 
