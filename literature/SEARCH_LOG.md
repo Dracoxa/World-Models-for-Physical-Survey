@@ -54,8 +54,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R32 | 2026-10-02 | Closest-work check around V-JEPA Policy; frozen catalog, external candidates, and arXiv primary full text | CQ1--CQ4, CQ6 | 2 direct JEPA-policy neighbors deduplicated and retained | 2 full-text evidence records and 2 manuscript additions | [Batch 20](EVIDENCE_BATCH_20_JEPA_POLICY_NEIGHBORS.md) |
 | R33 | 2026-10-02 | High-priority external-candidate follow-up; frozen catalog and arXiv primary full text | CQ1--CQ4, CQ6 | 1 predictive-representation candidate deduplicated and retained | 1 full-text evidence record and 1 manuscript addition | [Batch 21](EVIDENCE_BATCH_21_JEPA_VLA_REPRESENTATION.md) |
 | R34 | 2026-10-02 | Follow-up of RCL external candidate; exact-title/arXiv search and primary arXiv v2 full text | CQ1--CQ4, CQ6 | 1 candidate absent from 929-row catalog; identity, version, method, results, and stated workshop acceptance checked | 1 full-text evidence record and 1 manuscript addition | [Batch 22](EVIDENCE_BATCH_22_PHYSICALLY_GROUNDED_JEPA.md) |
+| R35 | 2026-10-02 | Exact arXiv ID/title follow-up and primary full text for embodied evaluation gaps | CQ1--CQ4 | 2 papers: WoW-World-Eval and RoboWorld | 2 full-text evidence records and 2 manuscript additions; human-score calibration and policy-level correlation units explicitly bounded | [Batch 23](EVIDENCE_BATCH_23_POLICY_AND_WORLD_MODEL_EVALUATION.md) |
 
-The twenty-two paper-level evidence batches contain 84 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The twenty-three paper-level evidence batches contain 86 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -216,6 +217,10 @@ The first external-candidate list's high-priority record *JEPA-VLA: Video Predic
 ### R34: Physically Grounded JEPA Planning Follow-up
 
 Recorded query: `"Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning" arXiv 2609.03565`. The exact title and arXiv ID were checked against arXiv's v2 record and full HTML. The candidate was absent from the 929-row catalog and present in the RCL discovery delta. The primary record states acceptance to the IROS 2026 Workshop on Physical World Models for Scaling Embodied AI. Full-text review found action-conditioned latent rollouts with CEM, training-only alignment to measured task state, four simulated tasks, and an internal three-seed/50-problem protocol. The reported DINO-WM, PLDM, and LeWorldModel rows use values taken from LeWorldModel rather than a common re-evaluation. Batch 22 records the evidence and simulation-only boundary; it does not infer physical-robot performance.
+
+### R35: Policy-Evaluation Proxy and Embodied Capability Benchmark
+
+Exact arXiv IDs and primary full texts were checked for `2601.04137` (*WoW-World-Eval*) and `2607.01060` (*RoboWorld*). WoW-World-Eval contributes a multi-axis benchmark over 609 real manipulation samples, human-rating alignment, and an inverse-dynamics actionability probe; the batch records that score mappings were tuned on a human-rated development set. RoboWorld compares closed-loop generated rollouts with the RoboArena real-world leaderboard; its reported correlation is computed over eight open-source policy aggregates despite 4,186 generated rollouts. Batch 23 adds the two works as distinct evaluation layers and does not treat either as a general substitute for physical validation.
 
 ## Screening and Evidence Handling
 
