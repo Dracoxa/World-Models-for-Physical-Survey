@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 111 条。大部分是将协作表已有文献引入正文；下列 62 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 113 条。大部分是将协作表已有文献引入正文；下列 63 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -39,6 +39,7 @@
 | VLAW [ICML 2026](https://proceedings.mlr.press/v306/guo26i.html) | 世界模型与 VLA、规划；数据与跨本体 | 实体失败 rollout 校准世界模型，再以筛选后的合成 rollout 更新 VLA | 已核五类实体任务、两轮更新和等实体 rollout 对照；见核验批次 09 |
 | Task-Sufficient World Models [ICML 2026](https://proceedings.mlr.press/v306/feng26aa.html) | 世界模型基础与控制；Latent 与预测表示 | 主动探测与结构化表示共同学习任务充分 latent | 已核四套仿真基准、5-seed 结果、表示探测和组件消融；无实体机器人验证，见核验批次 09 |
 | V-JEPA Policy [论文](https://arxiv.org/abs/2609.37250v1) | Latent 与预测表示；世界模型与 VLA、规划 | 冻结预测视觉表示、future-latent predictor 与 action expert 的直接耦合 | 已核 future-loss 匹配消融、DROID predictor 预训练和两项实体任务；单 seed、额外上游预算和非动作条件预测边界见核验批次 19 |
+| VLA-JEPA [论文](https://arxiv.org/abs/2602.10098v2) | Latent 与预测表示；数据与跨本体；世界模型与 VLA、规划 | 人类视频上的 latent transition 预训练与动作头适配 | 已核 220K 人类视频、76K DROID、三套仿真和实体协议；人类视频增益基准依赖、每任务 10 次且非候选动作条件，见核验批次 20 |
 | Latent Reasoning VLA [ICML 2026](https://proceedings.mlr.press/v306/bai26h.html) | 世界模型与 VLA、规划；边界对照 | 当前观测与指令预测 future latent，再由逆动力学监督和动作头生成动作 | 已核全文、仿真消融及四类实体任务分母；无候选动作条件的前向接口，保留为边界对照 |
 | DynBridge [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Wang_DynBridge_Bridging_Imagination_and_Control_through_Interaction_Dynamics_for_Robot_CVPR_2026_paper.html) | 世界模型与 VLA、规划；边界对照 | 未来轨迹重建与动作模仿共同学习交互 latent | 已核全文、三种仿真协议和五项实体任务；10 次实体试验、无候选动作查询，见核验批次 11 |
 | MM-ACT [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Liang_MM-ACT_Learn_from_Multimodal_Parallel_Generation_to_Act_CVPR_2026_paper.html) | 世界模型与 VLA、规划；边界对照 | 文本、未来图像和动作共享上下文联合监督 | 已核全文、仿真消融和三项实体任务；实体主比较未隔离预测目标，见核验批次 11 |
@@ -102,6 +103,8 @@ R28 定向全文核验 TacPAC、DreamAvoid、WHIRL 与 CoWAM。前三篇进入�
 R29 定向全文核验 sim-to-real WAM、SCVC、Temporal Ratio 与 Zero-WAM，补充记录增至 61 项。该轮把训练环境、相机、对象--目标组合和测试时任务提示拆成四种泛化契约；仍没有同一 WAM 在多个实体平台或操作者间按统一协议复现。
 
 R31 在 V-JEPA 2 正式版本核查中发现并全文核验 V-JEPA Policy，补充记录增至 62 项。该工作填补预测视觉 latent 与 action expert 耦合的直接消融，但 predictor 不读取候选动作，且额外 DROID 预训练不是同总预算比较。
+
+R32 以 V-JEPA Policy 为锚点核验两个直接最近邻。VLA-JEPA 已在首轮外部候选、但未在 929 条目录中命中，使补充记录增至 63 项；JEPA-WAM 已对应目录 `S01-0067`、`S02-0036`、`S06-0035`，不重复计为补充。两者补齐了人类视频 latent-transition 预训练和训练期 joint current--future target 的证据，同时明确：JEPA-WAM 部署时移除 transition branch，VLA-JEPA 的人类视频收益跨基准不一致，二者都不是候选动作条件的在线规划器。
 
 ## 接下来优先补哪些
 

@@ -33,7 +33,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、2 图、8 表、111 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、2 图、8 表、113 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -64,7 +64,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ## 七类文献导航
 
-按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[检索、筛选与证据协议](literature/SEARCH_PROTOCOL.md) · [检索与发现日志](literature/SEARCH_LOG.md) · [主张溯源索引](literature/CLAIM_TRACE.md) · [暂定论文族与清洗决策](literature/PUBLICATION_FAMILIES.md) · [论文族 CSV](literature/publication_families.csv) · [完整目录与统计口径](literature/README.md) · [首轮外部库去重候选](literature/EXTERNAL_CANDIDATES.md) · [第二轮增量候选](literature/EXTERNAL_CANDIDATES_DELTA_2026-10-02.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · [实体在线学习与虚拟纠正核验](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) · [失败后恢复与任务续接核验](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) · [CVPR 2026 策略融合核验](literature/EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md) · [CVPR 2026 物理表示核验](literature/EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md) · [几何驾驶与触觉 WAM 核验](literature/EVIDENCE_BATCH_13_GEOMETRY_TACTILE_WAM.md) · [预测接口与后训练核验](literature/EVIDENCE_BATCH_14_PREDICTIVE_INTERFACES.md) · [生成调度与事件级执行核验](literature/EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md) · [诊断评估与预测完整性核验](literature/EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md) · [实体在线干预与纠正核验](literature/EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md) · [泛化契约核验](literature/EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md) · [V-JEPA Policy 核验](literature/EVIDENCE_BATCH_19_VJEPA_POLICY.md) · 快照日期：2026-10-02。
+按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[检索、筛选与证据协议](literature/SEARCH_PROTOCOL.md) · [检索与发现日志](literature/SEARCH_LOG.md) · [主张溯源索引](literature/CLAIM_TRACE.md) · [暂定论文族与清洗决策](literature/PUBLICATION_FAMILIES.md) · [论文族 CSV](literature/publication_families.csv) · [完整目录与统计口径](literature/README.md) · [首轮外部库去重候选](literature/EXTERNAL_CANDIDATES.md) · [第二轮增量候选](literature/EXTERNAL_CANDIDATES_DELTA_2026-10-02.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · [实体在线学习与虚拟纠正核验](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) · [失败后恢复与任务续接核验](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) · [CVPR 2026 策略融合核验](literature/EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md) · [CVPR 2026 物理表示核验](literature/EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md) · [几何驾驶与触觉 WAM 核验](literature/EVIDENCE_BATCH_13_GEOMETRY_TACTILE_WAM.md) · [预测接口与后训练核验](literature/EVIDENCE_BATCH_14_PREDICTIVE_INTERFACES.md) · [生成调度与事件级执行核验](literature/EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md) · [诊断评估与预测完整性核验](literature/EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md) · [实体在线干预与纠正核验](literature/EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md) · [泛化契约核验](literature/EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md) · [V-JEPA Policy 核验](literature/EVIDENCE_BATCH_19_VJEPA_POLICY.md) · [JEPA 策略最近邻核验](literature/EVIDENCE_BATCH_20_JEPA_POLICY_NEIGHBORS.md) · 快照日期：2026-10-02。
 
 | 分类 | 检索方向 | 分类记录 |
 |:---|:---|---:|
@@ -84,6 +84,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 | 日期 | 更新 |
 |:---|:---|
+| 2026-10-02 | 核验 VLA-JEPA 与 JEPA-WAM，区分人类视频预训练、训练期 transition target 和部署期 predictor，并保留混合基准结果与非在线 rollout 边界。 |
 | 2026-10-02 | 全文核验 V-JEPA Policy，补入 future-loss 匹配消融、DROID predictor 预训练和两项实体双臂任务，并保留单 seed 与额外上游预算边界。 |
 | 2026-10-02 | 核验仿真到实体、未见相机、组合任务和人类视频提示四种泛化契约，明确它们不能合并为跨本体结论。 |
 | 2026-10-02 | 核验 TacPAC、DreamAvoid 与 WHIRL，区分动作块内触觉纠正、关键阶段未来重排和接管风险驱动的实体在线学习。 |
