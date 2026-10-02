@@ -49,6 +49,7 @@ The review profile remains a **structured narrative review with a critical evide
 | R27 | 2026-10-02 | Gap-driven screening of R21 evaluation/reliability candidates; primary full text and CVF record | CQ3--CQ5 | 23 title matches screened; 6 retained | 6 full-text evidence records and 6 manuscript additions | [Batch 16](EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md) |
 | R28 | 2026-10-02 | Gap-driven screening of R21 physical intervention/correction candidates; primary arXiv full text | CQ2--CQ5 | 4 candidates checked; 3 retained | 3 full-text evidence records and 3 manuscript additions; 1 simulation-only boundary | [Batch 17](EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md) |
 | R29 | 2026-10-02 | Gap-driven screening of R21 generalization candidates; primary arXiv full text | CQ1--CQ4, CQ6 | 4 candidates checked and retained | 4 full-text evidence records and 4 manuscript additions | [Batch 18](EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md) |
+| R30 | 2026-10-02 | Formal-version resolution; arXiv, ECCV accepted-paper list, institutional publication record | Publication status | 4 cited records checked | 2 acceptance statuses resolved; 2 records retained as preprints; no entry upgraded to proceedings | [Formal-version audit](FORMAL_VERSION_AUDIT_2026-10-02.md) |
 
 The eighteen paper-level evidence batches contain 79 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
@@ -192,6 +193,10 @@ The R21 delta was queried for intervention, correction, avoidance, failure, and 
 
 The R21 delta was screened for sim-to-real, viewpoint, compositional, transfer, and cross-task terms. Four primary arXiv full texts were retained because they test distinct changes rather than repeating a generic generalization claim: synthetic-only training to one real Franka, held-out simulated camera regions, unseen object--receptacle compositions on one YAM platform, and human-video-specified unseen task configurations on one bimanual Franka. The evidence is recorded by changed variable, adaptation budget, endpoint, and denominator. No retained study evaluates the same WAM across multiple physical robot platforms or operators under a common protocol.
 
+### R30: Formal Publication Versions IV
+
+Four cited records were checked against arXiv, the official ECCV 2026 accepted-paper list, and an institutional publication record. DexWM was confirmed on the ECCV 2026 accepted list, which remains preliminary pending publisher checks, and Audio-WM was confirmed as an ICRA 2026 workshop paper whose author-hosted accepted manuscript lists no DOI. Both remain `@misc` entries because this check found no formal per-paper proceedings record. V-JEPA 2 and ADriver-I remain preprints after no official venue page was found in this check. The audit records status rather than changing any experimental interpretation, and it does not treat search failure as proof that no later formal version exists.
+
 ## Screening and Evidence Handling
 
 - Candidate discovery and evidence inclusion are separate decisions. Repository lists, project pages, and surveys locate papers but do not validate experimental claims.
@@ -210,7 +215,7 @@ The following required runs have not been executed and therefore have no fabrica
 | D02 | Venue census for major robotics, ML, vision, and control venues | Possible venue-specific omissions |
 | C01 | Backward citation decisions for foundational and closest survey seeds | Historical lineage may remain incomplete |
 | C02 | Forward citation decisions for foundational and recent anchor papers | Recent follow-on work may remain incomplete |
-| V01 | Formal publication-version resolution for remaining preprints; 14 cited records resolved in R14--R16 | Partially complete; some canonical citations may still change |
+| V01 | Formal publication-version resolution for remaining preprints; 23 cited records checked in R14--R16 and R30 | Partially complete; 14 records were upgraded or completed, two acceptance statuses were resolved without inventing proceedings metadata, and some canonical citations may still change |
 | S01 | Title/abstract and full-text exclusion log with reasons | No final PRISMA flow count |
 | P01 | Independent PRESS-style review of the search strategy | Search design has only internal review |
 

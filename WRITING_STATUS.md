@@ -21,7 +21,7 @@
 - 已核验 CVPR 2026 的 Motus、DynBridge 与 MM-ACT，区分联合视频--动作生成、预测 latent 辅助和训练时未来图像监督；见[核验批次 11](literature/EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md)。
 - 已核验 CVPR 2026 的 DWM、PhyWM、PhysInOne、GeoWorld 与 ModularAgent，区分视觉后果查询、视觉代理干预、合成物理数据、程序步骤规划和仿真语义--动力学耦合；见[核验批次 12](literature/EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md)。
 - 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、79 篇原文核验记录及当前 adequate for bounded claims 保证边界。
-- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R29 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
+- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R30 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
 - 已更新[同类开源调研与差异化定位](RELATED_SURVEYS.md)，新增 4 个可持续发现源；它们尚未并入冻结候选计数，避免重叠清单未经去重直接累加。
 - 已完成第二轮 GitHub 增量扫描，补入 RCL-Robotics、NUS WAM survey 与 NJU3DV 模拟器综述库；仍只作为发现源，不用仓库条目数替代论文去重或原文证据。
 - 已将上述三个新增发现源冻结到 commit 并与目录、首轮候选、写作缺口和正文参考文献去重：633 个唯一 arXiv ID 中留下 359 条待筛发现线索，14 条由至少两个来源共同收录；见[第二轮增量候选](literature/EXTERNAL_CANDIDATES_DELTA_2026-10-02.md)。
@@ -34,7 +34,7 @@
 - 已全文核验 sim-to-real WAM、SCVC、Temporal Ratio 与 Zero-WAM，把训练环境、相机、组合任务和任务提示四种变化轴分别写入正文，并保留单平台、仿真闭环、提示模态差异和未隔离组件边界；见[核验批次 18](literature/EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md)。
 - 已新增检查 AwesomeWMAD、NYU-ECE-AV-Group driving world-model list 与 Foundation Models Meet Driving World Models；只登记为自动驾驶专题发现源，未改动冻结候选计数。
 - 已全文核验 ICML 2026 Latent Reasoning VLA：其 future latent 不以候选动作作为输入，正文按预测辅助 VLA 的边界案例讨论，不计为可查询前向世界模型。
-- 已完成 14 条正式版本解析：R14 升级 10 条预印本记录并补全 1 条 ICRA 记录，R15 将 Cosmos Policy 和 TesserAct 分别升级为 ICLR 2026 与 ICCV 2025，R16 将 uncertainty-aware reachability certificate 升级为 IEEE T-ASE 2024 正式版本；其余条目仍按 V01 继续核对。
+- 已在 R14--R16 与 R30 核对 23 条引用记录：其中 14 条升级或补全为正式版本；DexWM 与 Audio-WM 仅更新为可由官方来源确认的接收状态，仍保留为 `@misc`，其余条目继续按 V01 核对。详见[正式版本核验记录](literature/FORMAL_VERSION_AUDIT_2026-10-02.md)。
 - 已清除正文中“下一轮检索”“collection priorities”和首页工作稿状态等协作阶段措辞，将其改写为受当前证据图谱边界约束的研究议程与综合判断；ACM 引用条按模板要求恢复显示。
 - 已将同类综述定位从主题覆盖比较改为系统论断追踪：统一记录预测对象、动作接口、系统用途与证据环境，并避免以他文未列出的主题推断其缺失。
 - 已重写摘要的综合结论，明确区分预测质量、仿真闭环、实体效用、部件归因与不同类型的安全证据，不引入当前语料无法支撑的性能结论。
@@ -59,7 +59,7 @@
 | 数据与模型 | 已补 4D、触觉、点云多材料动力学和长时交互模拟器案例；继续补长时组合接触、跨传感器校准、人类视频和失败数据 |
 | 策略融合 | 已补隐式规划、模型--策略共进化、导航/驾驶接口、长期记忆、预测式风险门控及受控失败后的实体纠正；继续补跨平台复现和统一实体消融 |
 | 评估与安全 | 已补条件性保证、校准式失败检测、实体关键阶段重排、实时触觉纠正、人工恢复数据及任务续接；继续补带 abstention 的校准干预、真实分布偏移和跨操作者/平台复现 |
-| 综述方法与定位 | 已固化基础语料、外部库 commit、R00--R29 检索日志、去重协议及 758 个暂定 publication family；继续执行统一数据库检索、正式版本解析、逐条排除理由、引文追踪和最终流程统计 |
+| 综述方法与定位 | 已固化基础语料、外部库 commit、R00--R30 检索日志、去重协议及 758 个暂定 publication family；继续执行统一数据库检索、正式版本解析、逐条排除理由、引文追踪和最终流程统计 |
 
 ## 尚待作者完成
 
