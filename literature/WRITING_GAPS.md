@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 76 条。大部分是将协作表已有文献引入正文；下列 28 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 78 条。大部分是将协作表已有文献引入正文；下列 31 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -36,6 +36,9 @@
 | REBOOT [论文](https://arxiv.org/abs/2609.22591v1) | 数据、模拟与跨本体；评估与安全 | 阶段级真实失败与人工恢复数据、有效续接状态定义 | 已核 2,160 条轨迹、18 任务和单操作者边界；未评估自主恢复，见核验批次 10 |
 | VLA-FixBench [ICML 2026](https://proceedings.mlr.press/v306/yan26r.html) | 评估、安全与 Benchmark；边界对照 | 停止、回滚、三维纠正和误触发代价 | 已核正式论文；35 点增益为人工上界，实体分母未明，见核验批次 10 |
 | AgentChord [论文](https://arxiv.org/abs/2605.11951v1) | 世界模型与 VLA、规划；边界对照 | 预编译恢复分支、状态修复后重新接入原任务 | 已核六个实体任务、20 次/任务和预设故障边界；非世界模型，见核验批次 10 |
+| VLAW [ICML 2026](https://proceedings.mlr.press/v306/guo26i.html) | 世界模型与 VLA、规划；数据与跨本体 | 实体失败 rollout 校准世界模型，再以筛选后的合成 rollout 更新 VLA | 已核五类实体任务、两轮更新和等实体 rollout 对照；见核验批次 09 |
+| Task-Sufficient World Models [ICML 2026](https://proceedings.mlr.press/v306/feng26aa.html) | 世界模型基础与控制；Latent 与预测表示 | 主动探测与结构化表示共同学习任务充分 latent | 已核正式摘要与出版元数据；具体基准、消融和适用边界待全文提取 |
+| Latent Reasoning VLA [ICML 2026](https://proceedings.mlr.press/v306/bai26h.html) | 世界模型与 VLA、规划；边界对照 | 连续 latent 推理与预测用于动作生成 | 已核正式摘要；尚需确认是否包含可独立评估的前向动力学模型，不先归为世界模型 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -53,6 +56,8 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 
 失败后恢复批次中的 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord 均未检出，因此补充记录增至 28 项。Dream2Fix 补入世界模型合成失败数据到实体纠正的闭环，REBOOT 给出有效续接状态与真实恢复示范，VLA-FixBench 和 AgentChord 提供非世界模型的诊断回滚与任务续接边界。核心缺口收窄为：跨平台、跨操作者、开放故障且同时报告校准报警、事故后果和最终任务完成的世界模型恢复证据。
 
+ICML 2026 PMLR 卷的定向检查新增 VLAW、Task-Sufficient World Models 与 Latent Reasoning VLA 三项，补充记录增至 31 项。VLAW 已完成原文级核验并进入正文；Task-Sufficient World Models 仅用于方法定位；Latent Reasoning VLA 暂列边界对照，避免把所有 latent reasoning 策略自动归为世界模型。
+
 ## 接下来优先补哪些
 
 “缺”表示当前稿件的证据尚不充分，不表示这个领域没有论文。检索词是下一轮入口，不是已完成的检索。
@@ -64,7 +69,7 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 | Latent 与预测表示 | Dreamer、TD-MPC2、V-JEPA 2 | 新预测目标的系统比较；2026 JEPA 与动作表示、策略耦合方法 | `predictive representation robot action JEPA 2026`; `latent world model policy ablation` | 高 |
 | 结构化物理与多模态 | GNS、TesserAct、OmniVTA、ContactWorld、TouchWorld、DexTouch-WM、ParticleFormer、MVISTA-4D | 长时组合接触、跨触觉硬件迁移、力觉校准与场景无关的形变动力学 | `compositional contact world model`; `cross sensor tactile world model`; `force calibrated predictive control` | 高 |
 | 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim、REBOOT | 人类第一视角数据、跨本体动作对齐；恢复数据的跨操作者采集与训练测试重叠核查 | `egocentric video robot action alignment`; `multi-operator robot recovery dataset`; `cross embodiment dynamics` | 高 |
-| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；WorldSample、Hi-WM、WorldSync、Dream2Fix；导航/驾驶闭环；Mem-World、WorldScape 2.0 与 FARL | 跨平台实体复现；开放故障后的状态恢复；虚拟纠正数据与实体纠正数据的等预算比较 | `cross-platform physical robot recovery world model`; `virtual intervention versus physical correction robot`; `world model online recovery ablation` | 最高 |
+| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；WorldSample、VLAW、Hi-WM、WorldSync、Dream2Fix；导航/驾驶闭环；Mem-World、WorldScape 2.0 与 FARL | 跨平台实体复现；开放故障后的状态恢复；虚拟纠正数据与实体纠正数据的等预算比较 | `cross-platform physical robot recovery world model`; `virtual intervention versus physical correction robot`; `world model online recovery ablation` | 最高 |
 | 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、FARL、Foresight、FoMo-FD、VLA-FixBench、AgentChord、ViFailback 与 LIBERO-Recover | **仍缺完整世界模型实体证据链**：校准报警触发在线动作、跨操作者/平台外推、事故严重度、检测提前量、干预持续时间和开放故障恢复 | `world model online intervention real robot`; `failure alarm detection lead time incident severity`; `cross-platform calibrated robot recovery` | 最高 |
 
 下一轮优先补每个薄弱方向 2–3 篇能够真正进入比较表的代表工作。满足“不同机制、明确预测量、明确动作接口、可定位实验”的需要后再扩量，不以凑篇数代替覆盖。
