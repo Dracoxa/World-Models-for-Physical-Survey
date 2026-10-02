@@ -68,4 +68,64 @@ ax.text(.35, .08, "Conceptual interfaces. Reasoning alone does not establish an 
 for extension in ("png", "pdf", "svg"):
     fig.savefig(OUT / f"fig01_prediction_policy_interfaces.{extension}", dpi=220, facecolor="white")
 plt.close(fig)
-print(OUT / "fig01_prediction_policy_interfaces.png")
+
+
+fig, ax = plt.subplots(figsize=(7, 4.15))
+fig.subplots_adjust(left=0.025, right=0.985, top=0.97, bottom=0.04)
+ax.set(xlim=(0, 15), ylim=(0, 8))
+ax.axis("off")
+OLIVE = "#6D7935"
+columns = [
+    ("1", "Predicted quantity", ["pixels / latents", "geometry /\ncontact", "reward / value /\nrisk"], TEAL),
+    ("2", "Action relation", ["passive context", "action-\nconditioned", "generated /\nrevised"], BLUE),
+    ("3", "Operational use", ["representation /\ndata", "planning /\nselection", "policy /\nmonitoring"], RUST),
+    ("4", "Evidence setting", ["held-out offline", "simulated\nclosed loop", "physical\nclosed loop"], OLIVE),
+    ("5", "Supported claim", ["predictive\ncontent", "decision utility", "operational\nreliability"], "#7B5268"),
+]
+
+ax.text(.3, 7.63, "From model design to a supportable Physical AI claim", fontsize=13, weight="bold", color=INK)
+ax.text(.3, 7.25, "Read left to right; retain the interface, setting, and denominator", fontsize=8, color=MUTED)
+
+x_positions = [.25, 3.25, 6.25, 9.25, 12.25]
+for (number, title, items, color), x in zip(columns, x_positions):
+    ax.text(x, 6.61, number, fontsize=8, weight="bold", color="white", ha="center", va="center",
+            bbox={"boxstyle": "circle,pad=.28", "facecolor": color, "edgecolor": color})
+    ax.text(x + .35, 6.61, title, fontsize=8.3, weight="bold", color=INK, va="center")
+    patch = FancyBboxPatch((x, 3.65), 2.48, 2.45, boxstyle="round,pad=0.04,rounding_size=0.04",
+                           linewidth=1.05, edgecolor=color, facecolor="white")
+    ax.add_patch(patch)
+    for index, item in enumerate(items):
+        y = 5.48 - index * .73
+        ax.plot([x + .18, x + .35], [y, y], linewidth=2.1, color=color)
+        ax.text(x + .48, y, item, fontsize=6.9, color=INK, va="center", linespacing=1.05)
+
+for left in x_positions[:-1]:
+    arrow((left + 2.54, 4.88), (left + 2.91, 4.88), MUTED)
+
+ax.text(.3, 3.08, "Attribution controls", fontsize=8.8, weight="bold", color=INK)
+controls = [
+    "matched data\nand compute",
+    "fixed candidates\nand controller",
+    "ablate predictor\nor use interface",
+    "report tasks, trials,\ninterventions, latency",
+]
+for index, label in enumerate(controls):
+    x = .3 + index * 3.65
+    patch = FancyBboxPatch((x, 1.15), 3.05, 1.38, boxstyle="round,pad=0.035,rounding_size=0.04",
+                           linewidth=.9, edgecolor=GRAY, facecolor="#F7F9F9")
+    ax.add_patch(patch)
+    ax.text(x + .22, 2.22, f"{index + 1:02d}", fontsize=7, weight="bold", color=MUTED)
+    ax.text(x + 1.53, 1.76, label, fontsize=7.8, color=INK, ha="center", va="center", linespacing=1.25)
+
+ax.plot([.3, 14.7], [.75, .75], color=GRAY, linewidth=.7)
+ax.text(.3, .35, "Trace, not hierarchy: a farther-right setting changes the supported claim but does not rank every paper.",
+        fontsize=7, color=MUTED)
+
+for extension in ("png", "pdf", "svg"):
+    fig.savefig(OUT / f"fig02_claim_evidence_trace.{extension}", dpi=220, facecolor="white")
+plt.close(fig)
+
+outputs = [OUT / f"fig{number:02d}_{name}.{extension}" for number, name in (
+    (1, "prediction_policy_interfaces"), (2, "claim_evidence_trace")) for extension in ("png", "pdf", "svg")]
+assert all(path.exists() and path.stat().st_size > 0 for path in outputs)
+print("\n".join(str(path) for path in outputs))

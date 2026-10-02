@@ -38,6 +38,16 @@ Screening separates direct world-model evidence from supporting resources and bo
 
 For paper-level verification, we record publication identity, predicted quantity, action interface, system role, experimental setting, denominator, result, author conclusion, claim supported by this review, limitations, and source location. Ten focused evidence batches currently contain 45 such records; the manuscript cites 76 sources overall. A companion search log records exact queries where contemporaneous notes exist and marks unrecorded queries or yields as NR rather than reconstructing them retrospectively. This provides traceability for bounded, source-specific claims but not a PRISMA-style completeness guarantee: formal-version resolution, unified database searches, exclusion counts, and forward and backward citation-search logs remain incomplete.
 
+Figure~\ref{fig:claim-trace} turns this protocol into a claim-to-evidence trace. Its columns are questions rather than a maturity ladder: the evaluation setting changes what can be concluded, while attribution still depends on matched data, computation, candidate actions, controllers, and reporting denominators. A physical success rate can support a system-level observation without identifying which predictive component caused it.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/fig02_claim_evidence_trace.pdf}
+  \caption{Claim-to-evidence trace used throughout the review. A method is described by its prediction target, relation to action, operational use, and evaluation setting before a claim is assigned. The lower checks address attribution and reporting; they are not requirements that every supporting resource satisfy a complete physical pipeline.}
+  \Description{Five columns connect predicted quantities, action relations, operational uses, evaluation settings, and supported claims. A separate lower row lists matched data and compute, fixed candidates and controllers, component ablation, and reporting of tasks, trials, interventions, and latency as attribution controls.}
+  \label{fig:claim-trace}
+\end{figure}
+
 \subsection{From Learned Dynamics to Predictive Robot Systems}
 World-model research comprises interacting directions rather than a single replacement sequence. One direction learns dynamics for online decisions. PETS uses probabilistic ensembles and trajectory sampling to propagate uncertainty when evaluating actions~\cite{chua2018pets}; PlaNet brings planning into a learned latent space~\cite{hafner2019planet}. Another direction uses predicted experience to train a policy. Dreamer optimizes behavior through imagined latent trajectories~\cite{hafner2020dreamer}, whereas MBPO augments policy learning with short model rollouts initialized from collected experience~\cite{janner2019mbpo}. The distinction concerns when the model is queried, not whether the final policy is a neural network.
 

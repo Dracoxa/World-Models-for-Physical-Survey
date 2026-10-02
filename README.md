@@ -32,7 +32,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、8 表、76 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、2 图、8 表、76 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -159,7 +159,7 @@ python literature/export_catalog.py path/to/workbook.xlsx
 <details>
 <summary><b>图表源文件</b></summary>
 
-`paper/build_figure.py` 使用 Matplotlib 生成 PDF、SVG 和 PNG。矢量文件用于论文，PNG 用于预览。图 1 是接口概念图，不包含实验统计或模型能力排名。
+`paper/build_figure.py` 使用 Matplotlib 生成 PDF、SVG 和 PNG。矢量文件用于论文，PNG 用于预览。图 1 比较控制接口，图 2 连接模型设计、系统用途和可支持论断；两图均不表示实验性能或模型排名。
 
 </details>
 
