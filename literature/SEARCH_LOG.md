@@ -38,8 +38,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R16 | 2026-10-02 | Formal-version resolution; IEEE/DOI record, arXiv, project pages | Publication status | 4 cited records checked | 1 preprint upgraded; 3 retained as preprints after no formal venue page was found in this check | [Bibliography](../paper/references.bib) |
 | R17 | 2026-10-02 | Targeted ICML 2026 PMLR volume scan and primary full text | CQ1--CQ4, CQ6 | 3 absent candidates retained | 2 full-text evidence records; 1 full-text boundary comparator resolved | [Batch 09](EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md), [gap tracker](WRITING_GAPS.md) |
 | R18 | 2026-10-02 | GitHub update scan; repository pages and web search | CQ1--CQ6 | 5 candidate repositories inspected | 4 retained as discovery neighbors; none added to the frozen candidate count | [Related surveys](../RELATED_SURVEYS.md) |
+| R19 | 2026-10-02 | Targeted CVPR 2026 scan; official CVF pages and primary full text | CQ1--CQ4, CQ6 | 11 unique title candidates; 7 absent from catalog | 3 full-text evidence records | [Batch 11](EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md) |
 
-The ten paper-level evidence batches contain 47 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The eleven paper-level evidence batches contain 50 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -136,6 +137,10 @@ The newly published PMLR volume 306 was searched for world-model and VLA terms, 
 ### R18: GitHub Survey Update Scan
 
 GitHub repository and web searches inspected five previously unlisted collections: JiahuaDong/Awesome-World-Models, NeuraLiying/Awesome-World-Models, autonomousdrivingkr/Awesome-Physical-AI, w-xb/awesome-agentic-robotics, and operator22th/awesome-world-models-for-robots. The first four were retained as discovery neighbors because they respectively add a 2026 survey update stream, a broad categorized bibliography, a Physical AI systems view, and an agentic safety/recovery neighborhood. The operator22th list was not retained for ongoing tracking because its metadata and update structure are comparatively sparse. No paper-level evidence or candidate count was changed: these repositories must first be deduplicated against the frozen corpus, and their entries remain discovery leads rather than evidence.
+
+### R19: Targeted CVPR 2026 Policy-Integration Scan
+
+Four recorded queries targeted official CVF pages: `site:openaccess.thecvf.com/content/CVPR2026/html "world model" robot`, `"world models" embodied`, `"action-conditioned" robot`, and `predictive planning robot`. Eleven unique title candidates were retained from the returned official pages. Motus, Chain of World, 4DWorldBench, and RoboWM-Bench were already in the 929-record catalog. Dexterous World Models, DynBridge, ModularAgent, Physical Object Understanding with a Physically Controllable World Model, GeoWorld, MM-ACT, and PhysInOne were absent by full title. DynBridge, Motus, and MM-ACT were selected for full-text inspection because they most directly test how prediction enters policy learning or execution. The run is a targeted query pass, not a complete CVPR 2026 title census, and therefore only advances rather than completes D02.
 
 ## Screening and Evidence Handling
 
