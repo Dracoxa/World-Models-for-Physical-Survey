@@ -50,8 +50,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R28 | 2026-10-02 | Gap-driven screening of R21 physical intervention/correction candidates; primary arXiv full text | CQ2--CQ5 | 4 candidates checked; 3 retained | 3 full-text evidence records and 3 manuscript additions; 1 simulation-only boundary | [Batch 17](EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md) |
 | R29 | 2026-10-02 | Gap-driven screening of R21 generalization candidates; primary arXiv full text | CQ1--CQ4, CQ6 | 4 candidates checked and retained | 4 full-text evidence records and 4 manuscript additions | [Batch 18](EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md) |
 | R30 | 2026-10-02 | Formal-version resolution; arXiv, ECCV accepted-paper list, institutional publication record | Publication status | 4 cited records checked | 2 acceptance statuses resolved; 2 records retained as preprints; no entry upgraded to proceedings | [Formal-version audit](FORMAL_VERSION_AUDIT_2026-10-02.md) |
+| R31 | 2026-10-02 | Latest-paper follow-up from V-JEPA formal-version check; arXiv primary full text | CQ1--CQ4, CQ6 | 1 post-freeze candidate found, deduplicated, and retained | 1 full-text evidence record and 1 manuscript addition | [Batch 19](EVIDENCE_BATCH_19_VJEPA_POLICY.md) |
 
-The eighteen paper-level evidence batches contain 79 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The nineteen paper-level evidence batches contain 80 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -196,6 +197,10 @@ The R21 delta was screened for sim-to-real, viewpoint, compositional, transfer, 
 ### R30: Formal Publication Versions IV
 
 Four cited records were checked against arXiv, the official ECCV 2026 accepted-paper list, and an institutional publication record. DexWM was confirmed on the ECCV 2026 accepted list, which remains preliminary pending publisher checks, and Audio-WM was confirmed as an ICRA 2026 workshop paper whose author-hosted accepted manuscript lists no DOI. Both remain `@misc` entries because this check found no formal per-paper proceedings record. V-JEPA 2 and ADriver-I remain preprints after no official venue page was found in this check. The audit records status rather than changing any experimental interpretation, and it does not treat search failure as proof that no later formal version exists.
+
+### R31: V-JEPA Policy Full-Text Check
+
+The V-JEPA 2 formal-version check surfaced the new arXiv record *V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents*. Exact arXiv-ID and title checks found no match in the 929-row catalog, either external-candidate set, the gap tracker, or the manuscript bibliography. Primary arXiv full text was inspected. The paper was retained because it adds a matched future-loss control, predictor-only pretraining transfer, and two physical tasks with 20 trials each. Batch 19 records that the predictor is not candidate-action-conditioned, the ablation uses one training seed, upstream pretraining adds data and computation, and physical evidence remains limited to one platform. This is a post-freeze corpus amendment, not evidence that the latest-paper search is exhaustive.
 
 ## Screening and Evidence Handling
 

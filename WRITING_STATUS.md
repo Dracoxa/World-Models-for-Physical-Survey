@@ -5,7 +5,7 @@
 - 已建立 ACM `acmart` / `CSUR` 项目和四部分正文文件。
 - 四部分已有连贯第一轮内容，保留摘要、引言、概念边界与 Astra 专题。
 - 扩写数据、模型、规划、想象学习、联合动作生成、评估和安全；仍需更多技术细节与领域实例。
-- 新增 7 张 LaTeX 比较表，连同 Astra 表共 8 表；正文参考文献从 8 条增至 110 条。
+- 新增 7 张 LaTeX 比较表，连同 Astra 表共 8 表；正文参考文献从 8 条增至 111 条。
 - 新增[同类开源调研与差异化定位](RELATED_SURVEYS.md)，并将 2026 年已发表、与 Physical AI 控制视角高度重合的综述纳入正文定位比较。
 - 已将 NTUMARS、Li-Zn-H、OpenMOSS 三个高相关开源库与 929 条目录按 arXiv ID 和题名去重，新增候选及优先级见[外部调研库去重结果](literature/EXTERNAL_CANDIDATES.md)。
 - 已对最高优先级中的 OmniVTA、Interactive World Simulator、World-VLA-Loop、TesserAct 和 WAV 完成原文级快速核验，并将证据、可支撑判断和局限写入[核验批次 01](literature/EVIDENCE_BATCH_01.md)。
@@ -20,8 +20,8 @@
 - 已核验 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord，区分世界模型合成恢复数据、人工恢复示范、诊断回滚和实体任务续接；见[核验批次 10](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md)。
 - 已核验 CVPR 2026 的 Motus、DynBridge 与 MM-ACT，区分联合视频--动作生成、预测 latent 辅助和训练时未来图像监督；见[核验批次 11](literature/EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md)。
 - 已核验 CVPR 2026 的 DWM、PhyWM、PhysInOne、GeoWorld 与 ModularAgent，区分视觉后果查询、视觉代理干预、合成物理数据、程序步骤规划和仿真语义--动力学耦合；见[核验批次 12](literature/EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md)。
-- 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、79 篇原文核验记录及当前 adequate for bounded claims 保证边界。
-- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R30 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
+- 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、80 篇原文核验记录及当前 adequate for bounded claims 保证边界。
+- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R31 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
 - 已更新[同类开源调研与差异化定位](RELATED_SURVEYS.md)，新增 4 个可持续发现源；它们尚未并入冻结候选计数，避免重叠清单未经去重直接累加。
 - 已完成第二轮 GitHub 增量扫描，补入 RCL-Robotics、NUS WAM survey 与 NJU3DV 模拟器综述库；仍只作为发现源，不用仓库条目数替代论文去重或原文证据。
 - 已将上述三个新增发现源冻结到 commit 并与目录、首轮候选、写作缺口和正文参考文献去重：633 个唯一 arXiv ID 中留下 359 条待筛发现线索，14 条由至少两个来源共同收录；见[第二轮增量候选](literature/EXTERNAL_CANDIDATES_DELTA_2026-10-02.md)。
@@ -32,6 +32,7 @@
 - 已全文核验 WorldLens、ManipArena、stage-wise reliability、GeoBoN、trusted-imagination attack 与 WAM--VLA robustness study，将生成世界的功能评价、实体协议、退化传播、候选筛选、预测完整性和异配排行榜边界写入正文；见[核验批次 16](literature/EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md)。
 - 已全文核验 TacPAC、DreamAvoid 与 WHIRL，将动作块内触觉纠正、关键阶段实体候选重排和人类接管风险学习写入正文，并保留单平台、暂停执行、单操作者和任务内随机化边界；见[核验批次 17](literature/EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md)。
 - 已全文核验 sim-to-real WAM、SCVC、Temporal Ratio 与 Zero-WAM，把训练环境、相机、组合任务和任务提示四种变化轴分别写入正文，并保留单平台、仿真闭环、提示模态差异和未隔离组件边界；见[核验批次 18](literature/EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md)。
+- 已全文核验最新 V-JEPA Policy，将冻结预测视觉表示、future-loss 匹配消融、DROID predictor 预训练和两项实体双臂任务写入正文，并保留单 seed、额外上游预算和非动作条件预测边界；见[核验批次 19](literature/EVIDENCE_BATCH_19_VJEPA_POLICY.md)。
 - 已新增检查 AwesomeWMAD、NYU-ECE-AV-Group driving world-model list 与 Foundation Models Meet Driving World Models；只登记为自动驾驶专题发现源，未改动冻结候选计数。
 - 已全文核验 ICML 2026 Latent Reasoning VLA：其 future latent 不以候选动作作为输入，正文按预测辅助 VLA 的边界案例讨论，不计为可查询前向世界模型。
 - 已在 R14--R16 与 R30 核对 23 条引用记录：其中 14 条升级或补全为正式版本；DexWM 与 Audio-WM 仅更新为可由官方来源确认的接收状态，仍保留为 `@misc`，其余条目继续按 V01 核对。详见[正式版本核验记录](literature/FORMAL_VERSION_AUDIT_2026-10-02.md)。
@@ -42,7 +43,7 @@
 - 已建立[暂定 publication-family 语料](literature/PUBLICATION_FAMILIES.md)：929 条源记录中排除 15 条非论文占位项，将 914 条论文候选解析为 758 个暂定论文族；修正 5 条身份/链接元数据并记录 11 个人工合并判断。
 - 已修正目录中 `2408.14197` 被误写为 Drive-WM、NavForesee 被误标为 CVPR 2026 正式论文，以及 OccWorld 作者名错误；目录统计仍为 929 条分类记录。
 - 已修正 `S05-0063` 将 Motus 错配为另一组作者和 CoRL 2026 的硬元数据错误；公开目录保留原编号并改用 CVPR 2026 官方作者与入口。
-- 当前目录未检索到的 61 项补充文献及下一轮缺口见[边写边补清单](literature/WRITING_GAPS.md)。
+- 当前目录未检索到的 62 项补充文献及下一轮缺口见[边写边补清单](literature/WRITING_GAPS.md)。
 - 已绘制 2 张论证型框架图：控制接口图与 claim-to-evidence trace，并提供英文图注和可访问性描述。
 - 已从最新协作表导出七类文献目录；共 929 条分类记录，保留跨类重复。
 
@@ -59,7 +60,7 @@
 | 数据与模型 | 已补 4D、触觉、点云多材料动力学和长时交互模拟器案例；继续补长时组合接触、跨传感器校准、人类视频和失败数据 |
 | 策略融合 | 已补隐式规划、模型--策略共进化、导航/驾驶接口、长期记忆、预测式风险门控及受控失败后的实体纠正；继续补跨平台复现和统一实体消融 |
 | 评估与安全 | 已补条件性保证、校准式失败检测、实体关键阶段重排、实时触觉纠正、人工恢复数据及任务续接；继续补带 abstention 的校准干预、真实分布偏移和跨操作者/平台复现 |
-| 综述方法与定位 | 已固化基础语料、外部库 commit、R00--R30 检索日志、去重协议及 758 个暂定 publication family；继续执行统一数据库检索、正式版本解析、逐条排除理由、引文追踪和最终流程统计 |
+| 综述方法与定位 | 已固化基础语料、外部库 commit、R00--R31 检索日志、去重协议及 758 个暂定 publication family；继续执行统一数据库检索、正式版本解析、逐条排除理由、引文追踪和最终流程统计 |
 
 ## 尚待作者完成
 
