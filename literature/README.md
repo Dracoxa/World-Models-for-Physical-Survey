@@ -43,6 +43,8 @@
 
 2026-10-02 已完成第八批风险校准与干预代价核验，详见[分布偏移校准、选择性求助与干预代价证据表](EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md)。Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger 均作为补充来源单列；只有 Foresight 是直接世界模型证据，其余用于界定求助和人工接管的评估接口。
 
+2026-10-02 已完成第九批实体在线学习与虚拟纠正核验，详见[实体在线学习、虚拟人工纠正与动作跟随证据表](EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md)。WorldSample 已在原目录；Hi-WM、WorldSync 与 FoMo-FD 作为补充来源单列。当前仍只有 FARL 接近“世界模型风险预测直接触发实体动作替换”的完整接口。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)

@@ -28,7 +28,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、8 表、68 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**，保留跨主题重复，不代表唯一论文数或已核验论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、8 表、72 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**，保留跨主题重复，不代表唯一论文数或已核验论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -59,7 +59,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ## 七类文献导航
 
-按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · 快照日期：2026-10-01。
+按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · [实体在线学习与虚拟纠正核验](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) · 快照日期：2026-10-01。
 
 | 分类 | 检索方向 | 分类记录 |
 |:---|:---|---:|
@@ -79,6 +79,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 | 日期 | 更新 |
 |:---|:---|
+| 2026-10-02 | 核验 WorldSample、Hi-WM、WorldSync 与 FoMo-FD，区分真实在线 RL、模型内人工纠正、动作跟随和离线失败检测。 |
 | 2026-10-02 | 核验 Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger，区分失败检测、校准求助、在线干预及其人工代价。 |
 | 2026-10-02 | 区分长期记忆、失败前风险预测、失败后纠正与状态恢复，核验 Mem-World、WorldScape Policy 2.0、FARL、ViFailback 和 LIBERO-Recover。 |
 | 2026-10-02 | 核验 NWM、DreamerNav、NavThinker 与 NavWAM，补入闭环层级、实体分母和预测是否直接参与动作选择的边界。 |

@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 68 条。大部分是将协作表已有文献引入正文；下列 21 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 72 条。大部分是将协作表已有文献引入正文；下列 24 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -29,6 +29,9 @@
 | KnowNo [CoRL 2023](https://proceedings.mlr.press/v229/ren23a.html) | 评估、安全与 Benchmark；边界对照 | conformal prediction set 到选择性求助的决策接口 | 已核实体试验、help rate 与规划假设；非世界模型，见核验批次 08 |
 | CoFineLLM [L4DC 2026](https://proceedings.mlr.press/v331/wang26c.html) | 评估、安全与 Benchmark；边界对照 | 同时优化覆盖、预测集大小与求助率 | 已核 PMLR 正式摘要；硬件 OOD 详细协议仍待全文提取，见核验批次 08 |
 | ThriftyDAgger [CoRL 2021](https://proceedings.mlr.press/v164/hoque22a.html) | 评估、安全与 Benchmark；边界对照 | 人工干预频率、持续时间和上下文切换成本 | 已核单任务实体分母及人工动作数；非世界模型，见核验批次 08 |
+| Hi-WM [论文](https://arxiv.org/abs/2604.21741v2) | 世界模型与 VLA、规划；数据与跨本体 | 在可交互世界模型内采集人工纠正分支用于实体策略后训练 | 已核三任务、两策略和基线；实体试验分母缺失，预印本，见核验批次 09 |
+| WorldSync / WorldEcho [论文](https://arxiv.org/abs/2608.24885v1) | 视觉与视频世界模型；评估与 Benchmark | off-expert 动作跟随、视觉完整性和干预效应对齐 | 已核 50 任务协议、仿真消融和单任务实体策略改进；预印本，见核验批次 09 |
+| FoMo-FD [论文](https://arxiv.org/abs/2607.27511v1) | 评估、安全与 Benchmark；结构化物理与多模态 | 手术操作中的动作条件 latent 失败检测 | 已核固定校准阈值、实体失败模式分母和吞吐；仅离线检测，预印本，见核验批次 09 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -42,6 +45,8 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 
 风险校准与干预代价批次中的 Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger 均未按完整题名或标识符检出，因此补充记录增至 21 项。该批次补齐了检测、求助和人工负担的评估接口，但尚未出现同一真实机器人协议内从世界模型报警到在线干预、事故后果和恢复完成的完整证据链。
 
+实体在线学习与虚拟纠正批次中，WorldSample 对应原目录 `S06-0121`；Hi-WM、WorldSync 与 FoMo-FD 未检出，因此补充记录增至 24 项。这些工作补齐了真实在线 RL、模型内人工纠正、off-expert 动作跟随和手术失败检测，但未改变上一批次的核心缺口：只有 FARL 接近从世界模型风险预测到实体动作替换，且仍缺事故严重度、报警提前量与失败后任务恢复。
+
 ## 接下来优先补哪些
 
 “缺”表示当前稿件的证据尚不充分，不表示这个领域没有论文。检索词是下一轮入口，不是已完成的检索。
@@ -53,8 +58,8 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 | Latent 与预测表示 | Dreamer、TD-MPC2、V-JEPA 2 | 新预测目标的系统比较；2026 JEPA 与动作表示、策略耦合方法 | `predictive representation robot action JEPA 2026`; `latent world model policy ablation` | 高 |
 | 结构化物理与多模态 | GNS、TesserAct、OmniVTA、ContactWorld、TouchWorld、DexTouch-WM、ParticleFormer、MVISTA-4D | 长时组合接触、跨触觉硬件迁移、力觉校准与场景无关的形变动力学 | `compositional contact world model`; `cross sensor tactile world model`; `force calibrated predictive control` | 高 |
 | 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim | 人类第一视角数据、失败与恢复数据、跨本体动作对齐；训练测试重叠核查 | `egocentric video robot action alignment`; `robot failure recovery dataset`; `cross embodiment dynamics` | 高 |
-| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；导航/驾驶闭环；Mem-World、WorldScape 2.0 与 FARL | 跨平台实体复现；预设扰动后的状态恢复；预测预训练与推理时预测的统一实体消融 | `physical robot state restoration after failure`; `world model online recovery ablation`; `future prediction physical navigation ablation` | 最高 |
-| 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、FARL、Foresight、KnowNo、CoFineLLM、ThriftyDAgger、ViFailback 与 LIBERO-Recover | **仍缺完整实体证据链**：校准报警触发在线动作、跨操作者/平台外推、事故严重度、检测提前量、干预持续时间和最终恢复结果 | `world model online intervention real robot`; `failure alarm detection lead time incident severity`; `cross-platform calibrated robot recovery` | 最高 |
+| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；WorldSample、Hi-WM、WorldSync；导航/驾驶闭环；Mem-World、WorldScape 2.0 与 FARL | 跨平台实体复现；预设扰动后的状态恢复；虚拟纠正数据与实体纠正数据的等预算比较 | `physical robot state restoration after failure`; `virtual intervention versus physical correction robot`; `world model online recovery ablation` | 最高 |
+| 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、FARL、Foresight、FoMo-FD、KnowNo、CoFineLLM、ThriftyDAgger、ViFailback 与 LIBERO-Recover | **仍缺完整实体证据链**：校准报警触发在线动作、跨操作者/平台外推、事故严重度、检测提前量、干预持续时间和最终恢复结果 | `world model online intervention real robot`; `failure alarm detection lead time incident severity`; `cross-platform calibrated robot recovery` | 最高 |
 
 下一轮优先补每个薄弱方向 2–3 篇能够真正进入比较表的代表工作。满足“不同机制、明确预测量、明确动作接口、可定位实验”的需要后再扩量，不以凑篇数代替覆盖。
 
