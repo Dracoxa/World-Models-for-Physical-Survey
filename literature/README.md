@@ -55,6 +55,8 @@
 
 2026-10-02 已完成第十五批递归驾驶、生成调度与事件级执行核验，详见[递归驾驶、生成调度与事件级执行证据表](EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md)。DriveWAM、NoiseGate、DAWN、WALL-WM 与 ADriver-I 均作为目录外补充来源单列；其离线驾驶、仿真和内部实体协议保持分开，不形成跨论文排名。
 
+2026-10-02 已完成第十六批诊断评估与预测完整性核验，详见[诊断评估、扰动鲁棒性与预测完整性证据表](EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md)。WorldLens、ManipArena、stage-wise reliability、GeoBoN、trusted-imagination attack 与 WAM--VLA robustness study 均来自第二轮目录外候选；真实机器人、仿真闭环、离线诊断和白盒攻击结果分别记录。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)

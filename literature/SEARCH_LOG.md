@@ -46,8 +46,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R24 | 2026-10-02 | Primary full text for remaining R22 priority candidates | CQ1--CQ4, CQ6 | 4 papers | 4 full-text evidence records and 4 manuscript additions | [Batch 14](EVIDENCE_BATCH_14_PREDICTIVE_INTERFACES.md) |
 | R25 | 2026-10-02 | GitHub driving-world-model survey scan | CQ1--CQ6 | 4 search queries; 3 repositories retained | Discovery sources only; frozen candidate count unchanged | [Related surveys](../RELATED_SURVEYS.md) |
 | R26 | 2026-10-02 | Primary full text for R22 second-queue candidates | CQ1--CQ4, CQ6 | 5 papers | 5 full-text evidence records and 5 manuscript additions | [Batch 15](EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md) |
+| R27 | 2026-10-02 | Gap-driven screening of R21 evaluation/reliability candidates; primary full text and CVF record | CQ3--CQ5 | 23 title matches screened; 6 retained | 6 full-text evidence records and 6 manuscript additions | [Batch 16](EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md) |
 
-The fifteen paper-level evidence batches contain 66 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The sixteen paper-level evidence batches contain 72 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -176,6 +177,10 @@ Four exact web queries were used: `site:github.com world action models survey aw
 ### R26: Generation-Schedule and Event-Interface Full-Text Check
 
 The five R22 second-queue papers were checked in full text. DriveWAM exposes generated-future-conditioned action decoding and bounded history but evaluates only logged driving; NoiseGate optimizes per-latent denoising schedules with simulator reward and reports one seed; DAWN provides matched reciprocal world--action and rollout-horizon ablations without real-vehicle evidence; WALL-WM provides internal real-robot Task Progress but combines event execution with cross-view changes and omits physical trial denominators; ADriver-I provides an early modular interleaved loop whose recurrent-driving evidence is qualitative and model-internal. Batch 15 records these boundaries. All five entered the manuscript as interface examples, not as evidence of deployment safety or a common performance scale.
+
+### R27: Diagnostic Evaluation and Prediction-Integrity Full-Text Check
+
+The 359-candidate R21 delta was filtered by title for benchmark, evaluation, reliability, safety, risk, uncertainty, failure, robustness, degradation, attack, guard, monitor, and causal terms. Twenty-three records matched; this is a gap-driven title screen, not a complete title/abstract review of the remaining delta. Six papers were retained because they add distinct evaluation endpoints already required by the manuscript: WorldLens for driving generation-to-control evaluation, ManipArena for controlled physical policy comparison, stage-wise sensing degradation for pipeline diagnosis, GeoBoN for prediction-based candidate selection and compute gating, the trusted-imagination attack for downstream prediction integrity, and the WAM--VLA robustness study for perturbation profiles. Primary arXiv or CVF full text was checked for all six. Two arXiv records have title differences between their abstract metadata and HTML/PDF; the evidence batch records those version-level inconsistencies instead of silently choosing a title. None of the simulation-only results is interpreted as physical safety, and the mixed-training robustness table is not used for a causal model-family ranking.
 
 ## Screening and Evidence Handling
 
