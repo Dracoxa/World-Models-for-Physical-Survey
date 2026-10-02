@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 86 条。大部分是将协作表已有文献引入正文；下列 37 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 97 条。大部分是将协作表已有文献引入正文；下列 48 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -45,6 +45,17 @@
 | Physical Object Understanding with a Physically Controllable World Model [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Venkatesh_Physical_Object_Understanding_with_a_Physically_Controllable_World_Model_CVPR_2026_paper.html) | 结构化物理与多模态；边界对照 | 视觉代理干预、对象与支撑关系发现 | 已核训练规模和结构理解结果；光流 poke 不是机器人动作，见核验批次 12 |
 | PhysInOne [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_PhysInOne_Visual_Physics_Learning_and_Reasoning_in_One_Suite_CVPR_2026_paper.html) | 数据、模拟与跨本体 | 大规模合成物理视频、密集标签与资产隔离划分 | 已核数据协议和混合微调结果；无机器人动作或真实验证，见核验批次 12 |
 | GeoWorld [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_GeoWorld_Geometric_World_Models_CVPR_2026_paper.html) | Latent 与预测表示；规划边界 | 双曲 latent 与教学视频程序步骤规划 | 已核 CrossTask/COIN 匹配比较；不等于机器人动作执行，见核验批次 12 |
+| DriveDreamer-Policy [论文](https://arxiv.org/abs/2604.01765v1) | 世界模型与 VLA、规划；自动驾驶 | 深度、未来视频和轨迹的有序联合监督 | 已核 NAVSIM v1/v2、组件消融与伪深度边界；无物理车辆闭环，见核验批次 13 |
+| VTAM [论文](https://arxiv.org/abs/2603.23481v1) | 结构化物理与多模态；世界模型与 VLA、规划 | 视觉--触觉--动作联合生成与接触控制 | 已核 80 次/模型实体比较和十次消融；预测质量仅定性，见核验批次 13 |
+| JOPAT [论文](https://arxiv.org/abs/2605.23856v1) | 世界模型与 VLA、规划；结构化物理 | future latent、二维点轨迹、可见性和动作联合去噪 | 已核 LIBERO 匹配消融和四任务各十次实体试验；点跟踪监督及小样本受限，见核验批次 14 |
+| VAMPO [论文](https://arxiv.org/abs/2603.19370v1) | 世界模型与 VLA、规划 | 用专家未来 latent 奖励后训练视频预测器 | 已核 predictor-only 与动作重适配分解；实体分母缺失、检查点波动，见核验批次 14 |
+| Audio-WM [论文](https://arxiv.org/abs/2512.08405v1) | 结构化物理与多模态 | 未来音频作为操作策略的前瞻输入 | 已核 30 次实体任务和仿真 lookahead；非动作条件且无匹配实体消融，见核验批次 14 |
+| DexWM [论文](https://arxiv.org/abs/2512.13644v2) | 世界模型与 VLA、规划；数据与跨本体 | 人类手部视频预训练、关键点动作和 latent CEM | 已核仿真比较及 12 次实体抓取；仍使用四小时模拟机器人适配，见核验批次 14 |
+| DriveWAM [论文](https://arxiv.org/abs/2605.28544v1) | 世界模型与 VLA、规划；自动驾驶 | 生成未来 latent 条件动作和选择性 KV memory | 已核 NAVSIM、PhysicalAI-AV 与缓存消融；作者筛选测试集、无车辆闭环，见核验批次 15 |
+| NoiseGate [论文](https://arxiv.org/abs/2605.07794v1) | 世界模型与 VLA、规划 | 学习 per-latent 去噪时间作为动作信息门控 | 已核 50 任务主比较与 15 任务消融；单 seed、仿真 rollout 后训练，见核验批次 15 |
+| DAWN [论文](https://arxiv.org/abs/2605.11550v1) | 世界模型与 VLA、规划；自动驾驶 | 短 latent rollout 与动作假设递归双向修正 | 已核 NAVSIM/nuScenes、双向交互和 rollout 时延消融；无真实车辆，见核验批次 15 |
+| WALL-WM [论文](https://arxiv.org/abs/2606.01955v2) | 世界模型与 VLA、规划；数据与跨本体 | 事件级视频--动作预训练和可变长执行 | 已核实体 Task Progress 与 RoboTwin；关键消融同时改变多视角模块，实体分母缺失，见核验批次 15 |
+| ADriver-I [论文](https://arxiv.org/abs/2311.13549v1) | 世界模型与 VLA、规划；自动驾驶 | 早期 interleaved 控制--视频递归生成接口 | 已核控制和视频指标；持续驾驶仅模型内定性递归，无真实闭环，见核验批次 15 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -65,6 +76,10 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 ICML 2026 PMLR 卷的定向检查新增 VLAW、Task-Sufficient World Models 与 Latent Reasoning VLA 三项，补充记录增至 31 项。三项均已完成原文级核验并进入正文：前两项分别提供实体模型--策略共进化和仿真主动探索--结构化表示证据；Latent Reasoning VLA 的 future latent 不接收候选动作，作为预测辅助策略的边界对照，不计为核心世界模型。
 
 CVPR 2026 定向检查从 11 个官方页面候选中全文核验 8 篇。Motus 已在原目录中，不另计；DynBridge、MM-ACT、DWM、PhyWM、PhysInOne 与 GeoWorld 进入正文或补充清单，使目录外补充记录增至 37 项。ModularAgent 也完成核验，但因仅覆盖 DMC 仿真且未承担当前正文的独立论断，只保留在证据批次 12。该轮把联合生成、视觉代理干预、合成数据、程序步骤规划和可执行机器人控制分开记录。
+
+R22 第一队列的 DriveDreamer-Policy、VTAM、JOPAT、VAMPO、Audio-WM 与 DexWM 均未在目录中命中，补充记录由 37 项增至 43 项。它们进入正文时分别按训练时预测监督、触觉联合生成、结构化 future state、预测器后训练、外生音频前瞻和人类视频迁移讨论，不合并成 WAM 性能排名。
+
+R22 第二队列的 DriveWAM、NoiseGate、DAWN、WALL-WM 与 ADriver-I 也均未在目录中命中，补充记录增至 48 项。五篇完成全文核验并按不同推理接口进入正文；当前仍无任何一篇同时提供多平台真实闭环、匹配的预测机制消融和可复算不确定性。
 
 ## 接下来优先补哪些
 

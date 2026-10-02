@@ -53,6 +53,8 @@
 
 2026-10-02 已完成第十批失败后恢复与任务续接核验，详见[失败后恢复、状态修复与任务续接证据表](EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md)。Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord 均作为补充来源单列。Dream2Fix 补入世界模型合成恢复数据到实体纠正的早期闭环证据；跨平台、跨操作者和开放故障恢复仍未闭合。
 
+2026-10-02 已完成第十五批递归驾驶、生成调度与事件级执行核验，详见[递归驾驶、生成调度与事件级执行证据表](EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md)。DriveWAM、NoiseGate、DAWN、WALL-WM 与 ADriver-I 均作为目录外补充来源单列；其离线驾驶、仿真和内部实体协议保持分开，不形成跨论文排名。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)

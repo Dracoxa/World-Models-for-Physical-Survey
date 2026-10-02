@@ -15,6 +15,8 @@
 | [OpenMOSS/Awesome-WAM](https://github.com/OpenMOSS/Awesome-WAM) | [arXiv:2605.12090](https://arxiv.org/abs/2605.12090) | Cascaded / Joint World Action Models、训练数据与评估 | WAM 与 VLA 交叉部分更新快，并提供 benchmark 组织和论文解读 | “首次”或能力比较等主张必须独立核对，不能由仓库自述直接支撑 |
 | [RCL-Robotics/Awesome-World-Action-Models](https://github.com/RCL-Robotics/Awesome-World-Action-Models) | [arXiv:2609.16074](https://arxiv.org/abs/2609.16074) 的配套仓库 | WAM、VLA、基础方法、数据、指标、benchmark 与组件 | 提供机器可读目录、分类审查和逐篇阅读记录，适合复核身份、角色与分类修正 | 564 条是多类 bibliographic records，不是 564 个核心 WAM，也不能替代原文核验 |
 | [world-action-models/awesome-world-action-models](https://github.com/world-action-models/awesome-world-action-models) | [arXiv:2606.20781](https://arxiv.org/abs/2606.20781) 的配套仓库 | Render-and-Decode、Latent-Only、Video-Generation-Free 三类 WAM | 其纳入规则明确要求预测未来进入动作生成、评分、训练或检查，适合校验我们的动作接口边界 | 范围聚焦 action path；不覆盖所有被动视频、模拟器、物理数据或独立安全层 |
+| [FengZicai/AwesomeWMAD](https://github.com/FengZicai/AwesomeWMAD) | [arXiv:2501.11260v4](https://arxiv.org/abs/2501.11260v4) 的配套仓库 | 驾驶世界生成、行为规划、预测--规划交互、数据与训练 | 其 open-loop、uncontrollable closed-loop 与 controllable closed-loop 分区适合复核驾驶接口术语 | 聚焦自动驾驶，论文列表不能替代具体实验协议核验 |
+| [honalele/Foundation-Models-Meet-Driving-World-Models](https://github.com/honalele/Foundation-Models-Meet-Driving-World-Models) | 投稿中综述的公开材料；尚未确认正式录用 | Foundation Model 作为 encoder、simulator、reasoner 与 data engine | 适合补 2023--2026 驾驶基础模型、产业报告和 data-flywheel 邻域 | 属叙述性综述和投稿中材料；覆盖数字、产业主张和效果仍须回原始来源 |
 
 ## 适合持续追踪的文献库
 
@@ -28,6 +30,7 @@
 | [autonomousdrivingkr/Awesome-Physical-AI](https://github.com/autonomousdrivingkr/Awesome-Physical-AI) | 从感知、表示、世界模型到规划、控制，并列出数据、仿真和工具链 | 用于检查 Physical AI 系统栈中的非论文资源与 sim-to-real 基础设施，不作为世界模型论文边界 |
 | [w-xb/awesome-agentic-robotics](https://github.com/w-xb/awesome-agentic-robotics) | 覆盖机器人记忆、规划、世界模型、验证、失败检测与恢复 | 用于第 3、4 部分的邻域检索，尤其发现非世界模型安全层和恢复系统作为边界对照 |
 | [NJU3DV-LoongGroup/Embodied-World-Models-Survey](https://github.com/NJU3DV-LoongGroup/Embodied-World-Models-Survey) | 对应 [arXiv:2507.00917](https://arxiv.org/abs/2507.00917)，并列整理物理模拟器、机器人能力和世界模型 | 用于补模拟器物性、传感器、机器人平台与 world-model 训练环境，不直接作为方法效果证据 |
+| [NYU-ECE-AV-Group/World-Models-Autonomous-Driving-Latest-Survey](https://github.com/NYU-ECE-AV-Group/World-Models-Autonomous-Driving-Latest-Survey) | 按年份与 venue 持续整理驾驶世界模型、数据和 benchmark | 用于驾驶专题的 venue 补漏、代码入口和早期工作回溯；条目年份与发表状态逐篇核对 |
 
 这些列表的作用是“发现”，不是“证明”。进入正文的论文仍应核对题名、作者、版本、发表状态、实验环境、关键图表和可支撑结论。
 
@@ -62,5 +65,7 @@
 2026-10-02 的更新扫描另检查了 JiahuaDong、NeuraLiying、Awesome-Physical-AI、agentic-robotics 与 operator22th 五个仓库。前四项因能补充正式综述更新、Physical AI 系统栈或安全恢复邻域而保留；operator22th 清单结构较简、元数据字段不足，暂不加入持续追踪表。
 
 同日的第二次增量扫描新增检查 RCL-Robotics、NUS WAM survey、NJU3DV 模拟器综述库，以及若干个人维护的 WAM/VLA 清单。前三项分别因机器可读分类审查、明确的 action-path 纳入规则和模拟器--世界模型并列视角而保留；个人聚合清单与上述来源高度重叠，暂不单列。随后对三个保留来源完成独立增量去重；新增发现池仍与原冻结候选和正文证据分开统计。
+
+第三次专题扫描使用四个 GitHub/web 查询检查驾驶与 Physical AI 近邻。AwesomeWMAD、NYU-ECE-AV-Group 的持续清单和 Foundation Models Meet Driving World Models 分别提供预测--规划接口、venue 级更新和基础模型角色三种互补视角，因此登记为发现源。一个以占位 arXiv 编号自称综述的仓库未保留。该扫描没有重新计算冻结候选数，也没有把仓库自述作为论文效果证据。
 
 检索盲点：本轮未进行 GitHub 全量 API 翻页、引文网络追踪或逐仓库链接完整性检查；部分 2026 项目仍处于预印本阶段。后续做正式 related-work 比较时，应以出版页面或 arXiv 当前版本为准。

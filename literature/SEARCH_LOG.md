@@ -44,8 +44,10 @@ The review profile remains a **structured narrative review with a critical evide
 | R22 | 2026-10-02 | Primary arXiv identity and abstract screening | CQ1--CQ6 | 14 multi-source candidates screened | 6 prioritized for full-text review; 5 deferred; 3 retained only as support/boundaries | [Screening table](EXTERNAL_CANDIDATE_SCREENING_2026-10-02.md) |
 | R23 | 2026-10-02 | Primary full text for top geometry/tactile candidates | CQ1--CQ4, CQ6 | 2 papers | 2 full-text evidence records and 2 manuscript additions | [Batch 13](EVIDENCE_BATCH_13_GEOMETRY_TACTILE_WAM.md) |
 | R24 | 2026-10-02 | Primary full text for remaining R22 priority candidates | CQ1--CQ4, CQ6 | 4 papers | 4 full-text evidence records and 4 manuscript additions | [Batch 14](EVIDENCE_BATCH_14_PREDICTIVE_INTERFACES.md) |
+| R25 | 2026-10-02 | GitHub driving-world-model survey scan | CQ1--CQ6 | 4 search queries; 3 repositories retained | Discovery sources only; frozen candidate count unchanged | [Related surveys](../RELATED_SURVEYS.md) |
+| R26 | 2026-10-02 | Primary full text for R22 second-queue candidates | CQ1--CQ4, CQ6 | 5 papers | 5 full-text evidence records and 5 manuscript additions | [Batch 15](EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md) |
 
-The fourteen paper-level evidence batches contain 61 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The fifteen paper-level evidence batches contain 66 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -166,6 +168,14 @@ DriveDreamer-Policy and VTAM were checked in full text. DriveDreamer-Policy cont
 ### R24: Predictive-Interface Full-Text Check
 
 The remaining four R22 priority papers were checked in full text. JOPAT contributes matched pixel/track/action ablations and ten physical rollouts per task; VAMPO separates predictor-only post-training from subsequent action-module adaptation on CALVIN but omits physical evaluation denominators; Audio-WM contributes a 30-trial closed-loop audio-anticipation case without a matched physical no-lookahead ablation; DexWM contributes simulation and 12-trial physical transfer evidence while relying on four hours of simulated robot adaptation. Batch 14 records these distinctions. All four entered the manuscript as interface-specific examples, not as evidence for a cross-paper performance ranking or a general causal relationship between prediction accuracy and physical control.
+
+### R25: GitHub Driving-World-Model Survey Scan
+
+Four exact web queries were used: `site:github.com world action models survey awesome 2026 robotics`, `site:github.com embodied world models survey 2026`, `site:github.com "World Models for Physical AI" survey`, and `site:github.com autonomous driving world model survey awesome`. AwesomeWMAD, NYU-ECE-AV-Group/World-Models-Autonomous-Driving-Latest-Survey, and Foundation-Models-Meet-Driving-World-Models were retained because they add, respectively, a prediction--planning interaction taxonomy, a venue-organized update stream, and a foundation-model-role view of driving world models. A repository with a placeholder arXiv identifier was not retained. The three sources remain discovery aids; no paper-level claim, frozen candidate count, or evidence grade changed.
+
+### R26: Generation-Schedule and Event-Interface Full-Text Check
+
+The five R22 second-queue papers were checked in full text. DriveWAM exposes generated-future-conditioned action decoding and bounded history but evaluates only logged driving; NoiseGate optimizes per-latent denoising schedules with simulator reward and reports one seed; DAWN provides matched reciprocal world--action and rollout-horizon ablations without real-vehicle evidence; WALL-WM provides internal real-robot Task Progress but combines event execution with cross-view changes and omits physical trial denominators; ADriver-I provides an early modular interleaved loop whose recurrent-driving evidence is qualitative and model-internal. Batch 15 records these boundaries. All five entered the manuscript as interface examples, not as evidence of deployment safety or a common performance scale.
 
 ## Screening and Evidence Handling
 
