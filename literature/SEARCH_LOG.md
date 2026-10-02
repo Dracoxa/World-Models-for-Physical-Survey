@@ -42,8 +42,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R20 | 2026-10-02 | GitHub survey delta scan; repository and survey pages | CQ1--CQ6 | 7 candidate repositories inspected | 3 retained as discovery sources; no paper-level evidence added | [Related surveys](../RELATED_SURVEYS.md) |
 | R21 | 2026-10-02 | Frozen bibliography comparison for R20 sources | CQ1--CQ6 | 633 unique arXiv IDs; 359 absent from catalog and tracked supplements | 14 multi-source candidates prioritized; no paper-level evidence added | [Delta candidates](EXTERNAL_CANDIDATES_DELTA_2026-10-02.md) |
 | R22 | 2026-10-02 | Primary arXiv identity and abstract screening | CQ1--CQ6 | 14 multi-source candidates screened | 6 prioritized for full-text review; 5 deferred; 3 retained only as support/boundaries | [Screening table](EXTERNAL_CANDIDATE_SCREENING_2026-10-02.md) |
+| R23 | 2026-10-02 | Primary full text for top geometry/tactile candidates | CQ1--CQ4, CQ6 | 2 papers | 2 full-text evidence records and 2 manuscript additions | [Batch 13](EVIDENCE_BATCH_13_GEOMETRY_TACTILE_WAM.md) |
 
-The twelve paper-level evidence batches contain 55 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The thirteen paper-level evidence batches contain 57 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -156,6 +157,10 @@ The three retained sources were frozen at RCL-Robotics/Awesome-World-Action-Mode
 ### R22: Multi-Source Candidate Screening
 
 The current arXiv identity, version, and abstract were checked for all 14 candidates occurring in at least two R21 sources. Six direct world-model papers were assigned to the first full-text queue: DriveDreamer-Policy, VTAM, JOPAT, VAMPO, Audio-WM, and DexWM. Five direct but less urgent driving, inference-scheduling, or system-design papers were deferred to a second queue. Cosmos-Transfer1, FAST, and DexGraspNet were retained only as data, component, or boundary sources. Abstract screening establishes neither experimental validity nor publication status beyond the arXiv record.
+
+### R23: Geometry and Tactile World--Action Full-Text Check
+
+DriveDreamer-Policy and VTAM were checked in full text. DriveDreamer-Policy contributes matched NAVSIM ablations for joint depth/video/action supervision, but its evaluation is predictive-driver-model based and its depth target is DA3 pseudo-depth. VTAM contributes 80 physical trials per model across contact-rich tasks, plus a ten-trial chip-task ablation, but reports only qualitative future-prediction assessment. Both entered the manuscript with these limits preserved; neither supports a general causal claim that lower prediction error produces physical closed-loop gains.
 
 ## Screening and Evidence Handling
 
