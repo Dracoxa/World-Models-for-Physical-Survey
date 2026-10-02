@@ -59,7 +59,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ## 七类文献导航
 
-按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[完整目录与统计口径](literature/README.md) · 快照日期：2026-10-01。
+按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · 快照日期：2026-10-01。
 
 | 分类 | 检索方向 | 分类记录 |
 |:---|:---|---:|

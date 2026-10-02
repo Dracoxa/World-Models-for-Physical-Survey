@@ -1,0 +1,254 @@
+priority,year,title,arxiv_id,url,sources,source_count,priority_reason
+最高,2026,"A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds",2604.14268,https://arxiv.org/abs/2604.14268,Li-Zn-H,1,2026 新作且命中薄弱方向：3d
+最高,2026,Fast and Reliable Neural Simulators for Generalist Robot Policy Evaluation,2607.01060,https://arxiv.org/abs/2607.01060,Li-Zn-H,1,2026 新作且命中薄弱方向：evaluation
+最高,2026,Interactive World Simulator for Robot Policy Training and Evaluation,2603.08546,https://arxiv.org/abs/2603.08546,Li-Zn-H; NTUMARS; OpenMOSS,3,2026 新作、多源交叉且命中薄弱方向：evaluation
+最高,2026,Kinema4D: Kinematic 4D World Modeling for Spatiotemporal Embodied Simulation,2603.16669,https://arxiv.org/abs/2603.16669,NTUMARS,1,2026 新作且命中薄弱方向：4d
+最高,2026,MVISTA-4D: View-Consistent 4D World Model with Test-Time Action Inference for Robotic Manipulation,2602.09878,https://arxiv.org/abs/2602.09878,OpenMOSS,1,2026 新作且命中薄弱方向：4d
+最高,2026,Multi-View Video Diffusion Policy: A 3D Spatio-Temporal-Aware Video Action Model,2604.03181,https://arxiv.org/abs/2604.03181,NTUMARS,1,2026 新作且命中薄弱方向：3d
+最高,2026,OmniVTA: Visuo-Tactile World Modeling for Contact-Rich Robotic Manipulation,2603.19201,https://arxiv.org/abs/2603.19201,OpenMOSS,1,2026 新作且命中薄弱方向：contact、tactile
+最高,2026,Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation,2606.03159,https://arxiv.org/abs/2606.03159,Li-Zn-H,1,2026 新作且命中薄弱方向：closed loop
+最高,2026,Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising,2604.26694,https://arxiv.org/abs/2604.26694,NTUMARS; OpenMOSS,2,2026 新作、多源交叉且命中薄弱方向：4d
+最高,2026,View Planning with Multi-Turn VLM Agents,2605.29563,https://arxiv.org/abs/2605.29563,Li-Zn-H,1,2026 新作且命中薄弱方向：planning
+最高,2026,World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy,2602.06508,https://arxiv.org/abs/2602.06508,Li-Zn-H; NTUMARS,2,2026 新作、多源交叉且命中薄弱方向：closed loop
+最高,2026,World-Value-Action Model: Implicit Planning for Vision-Language-Action Systems,2604.14732,https://arxiv.org/abs/2604.14732,NTUMARS; OpenMOSS,2,2026 新作、多源交叉且命中薄弱方向：planning
+最高,2026,"Wow, wo, val! A Comprehensive Embodied World Model Evaluation Turing Test",2601.04137,https://arxiv.org/abs/2601.04137,NTUMARS,1,2026 新作且命中薄弱方向：evaluation
+最高,2025,3DFlowAction: Learning Cross-Embodiment Manipulation from 3D Flow World Model,2506.06199,https://arxiv.org/abs/2506.06199,Li-Zn-H; OpenMOSS,2,多源交叉且命中薄弱方向：3d、cross embodiment
+最高,2025,Geometry-aware 4D Video Generation for Robot Manipulation,2507.01099,https://arxiv.org/abs/2507.01099,Li-Zn-H; OpenMOSS,2,多源交叉且命中薄弱方向：4d、geometry
+最高,2025,TesserAct: Learning 4D Embodied World Models,2504.20995,https://arxiv.org/abs/2504.20995,Li-Zn-H; NTUMARS; OpenMOSS,3,多源交叉且命中薄弱方向：4d
+最高,2025,World-in-World: World Models in a Closed-Loop World,2510.18135,https://arxiv.org/abs/2510.18135,Li-Zn-H; NTUMARS,2,多源交叉且命中薄弱方向：closed loop
+高,2026,A Unified VLA Model for Embodied Multimodal Chain-of-Thought Reasoning,2602.21157,https://arxiv.org/abs/2602.21157,NTUMARS,1,2026 新作
+高,2026,AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing,2606.09811,https://arxiv.org/abs/2606.09811,OpenMOSS,1,2026 新作
+高,2026,AIM: Intent-Aware Unified world action Modeling with Spatial Value Maps,2604.11135,https://arxiv.org/abs/2604.11135,NTUMARS; OpenMOSS,2,2026 新作
+高,2026,Action100M: A Large-scale Video Action Dataset,2601.10592,https://arxiv.org/abs/2601.10592,NTUMARS,1,2026 新作
+高,2026,AdaWorldPolicy: World-Model-Driven Diffusion Policy with Online Adaptive Learning for Robotic Manipulation,2602.20057,https://arxiv.org/abs/2602.20057,OpenMOSS,1,2026 新作
+高,2026,Autoregressive Egocentric Interaction Generation via Free-Space Hand Gestures,2602.09600,https://arxiv.org/abs/2602.09600,Li-Zn-H,1,2026 新作
+高,2026,BagelVLA: Enhancing Long-Horizon Manipulation via Interleaved Vision-Language-Action Generation,2602.09849,https://arxiv.org/abs/2602.09849,NTUMARS,1,2026 新作
+高,2026,C$^3$ache: Accelerating World Action Models with Cross Inference Chunk Cache,2606.08962,https://arxiv.org/abs/2606.08962,OpenMOSS,1,2026 新作
+高,2026,CKT-WAM: Parameter-Efficient Context Knowledge Transfer Between World Action Models,2605.06247,https://arxiv.org/abs/2605.06247,NTUMARS,1,2026 新作
+高,2026,Causal World Modeling for Robot Control (LingBot-VA),2601.21998,https://arxiv.org/abs/2601.21998,NTUMARS; OpenMOSS,2,2026 新作
+高,2026,Cortex 2.0: Grounding World Models in Real-World Industrial Deployment,2604.20246,https://arxiv.org/abs/2604.20246,NTUMARS,1,2026 新作
+高,2026,DexWorldModel: Causal Latent World Modeling towards Automated Learning of Embodied Tasks,2604.16484,https://arxiv.org/abs/2604.16484,NTUMARS; OpenMOSS,2,2026 新作
+高,2026,DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable Robot Control,2603.10448,https://arxiv.org/abs/2603.10448,NTUMARS; OpenMOSS,2,2026 新作
+高,2026,EA-WM: Event-Aware Generative World Model with Structured Kinematic-to-Visual Action Fields,2605.06192,https://arxiv.org/abs/2605.06192,NTUMARS,1,2026 新作
+高,2026,EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards,2603.17808,https://arxiv.org/abs/2603.17808,NTUMARS,1,2026 新作
+高,2026,Efficient Reinforcement Fine-Tuning of Vision-Language Planners via Video World Models,2603.16860,https://arxiv.org/abs/2603.16860,NTUMARS,1,2026 新作
+高,2026,Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination,2606.10040,https://arxiv.org/abs/2606.10040,OpenMOSS,1,2026 新作
+高,2026,Egocentric World Simulator for Embodied Interaction Generation,2604.01001,https://arxiv.org/abs/2604.01001,Li-Zn-H,1,2026 新作
+高,2026,Fast-WAM: Do World Action Models Need Test-time Future Imagination?,2603.16666,https://arxiv.org/abs/2603.16666,NTUMARS; OpenMOSS,2,2026 新作
+高,2026,Interactive World Foundation Model for Robotic Manipulation with Physics Alignment,2603.23376,https://arxiv.org/abs/2603.23376,NTUMARS,1,2026 新作
+高,2026,"InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation",2601.02456,https://arxiv.org/abs/2601.02456,NTUMARS,1,2026 新作
+高,2026,Learning Physics from Pretrained Video Models: A Multimodal Continuous and Sequential World Interaction Models for Robotic Manipulation,2603.00110,https://arxiv.org/abs/2603.00110,OpenMOSS,1,2026 新作
+高,2026,Learning Robot World Models from Autonomous Play,2603.09030,https://arxiv.org/abs/2603.09030,NTUMARS,1,2026 新作
+高,2026,MV-WAM: Manifold-Aware World Action Model with Value Augmentation,2606.21088,https://arxiv.org/abs/2606.21088,OpenMOSS,1,2026 新作
+高,2026,Making Foresight Actionable: Repurposing Representation Alignment in World Action Models,2606.12217,https://arxiv.org/abs/2606.12217,OpenMOSS,1,2026 新作
+高,2026,Mask World Model: Predicting What Matters for Robust Robot Policy Learning,2604.19683,https://arxiv.org/abs/2604.19683,OpenMOSS,1,2026 新作
+高,2026,MemoryWAM: Efficient World Action Modeling with Persistent Memory,2606.20562,https://arxiv.org/abs/2606.20562,OpenMOSS,1,2026 新作
+高,2026,MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation,2606.09215,https://arxiv.org/abs/2606.09215,OpenMOSS,1,2026 新作
+高,2026,Omnimodal World Models for Physical AI,2606.02800,https://arxiv.org/abs/2606.02800,Li-Zn-H,1,2026 新作
+高,2026,Persistent Robot World Models: Stabilizing Multi-Step Rollouts via Reinforcement Learning,2603.25685,https://arxiv.org/abs/2603.25685,NTUMARS,1,2026 新作
+高,2026,Reinforcement World Model Learning for LLM-based Agents,2602.05842,https://arxiv.org/abs/2602.05842,OpenMOSS,1,2026 新作
+高,2026,Rethinking Video Generation Model for the Embodied World,2601.15282,https://arxiv.org/abs/2601.15282,NTUMARS,1,2026 新作
+高,2026,RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation,2601.05241,https://arxiv.org/abs/2601.05241,NTUMARS,1,2026 新作
+高,2026,S-VAM: Shortcut Video-Action Model by Self-Distilling Geometric and Semantic Foresight,2603.16195,https://arxiv.org/abs/2603.16195,OpenMOSS,1,2026 新作
+高,2026,STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation,2604.26848,https://arxiv.org/abs/2604.26848,NTUMARS,1,2026 新作
+高,2026,Scaling World Model for Hierarchical Manipulation Policies,2602.10983,https://arxiv.org/abs/2602.10983,NTUMARS,1,2026 新作
+高,2026,Semantic-Temporal World Action Model for Robust Manipulation under Visual Distribution Shifts,2607.28993,https://arxiv.org/abs/2607.28993,Li-Zn-H,1,2026 新作
+高,2026,Stable End-to-End Joint-Embedding Predictive Architecture from Pixels,2603.19312,https://arxiv.org/abs/2603.19312,Li-Zn-H; NTUMARS,2,2026 新作
+高,2026,TC-IDM: Grounding Video Generation for Executable Zero-shot Robot Motion,2601.18323,https://arxiv.org/abs/2601.18323,NTUMARS,1,2026 新作
+高,2026,Towards Practical World Model-based Reinforcement Learning for Vision-Language-Action Models,2603.20607,https://arxiv.org/abs/2603.20607,NTUMARS,1,2026 新作
+高,2026,Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving,2602.06521,https://arxiv.org/abs/2602.06521,Li-Zn-H,1,2026 新作
+高,2026,Unifying Embodied World Modeling through Language-Conditioned Video Generation,2606.17030,https://arxiv.org/abs/2606.17030,Li-Zn-H,1,2026 新作
+高,2026,Unlocking Dense Features in Video Self-Supervised Learning,2603.14482,https://arxiv.org/abs/2603.14482,Li-Zn-H; NTUMARS,2,2026 新作
+高,2026,Untitled external record 2606.05254,2606.05254,https://arxiv.org/abs/2606.05254,OpenMOSS,1,2026 新作
+高,2026,Untitled external record 2606.10363,2606.10363,https://arxiv.org/abs/2606.10363,OpenMOSS,1,2026 新作
+高,2026,VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model,2602.10098,https://arxiv.org/abs/2602.10098,NTUMARS; OpenMOSS,2,2026 新作
+高,2026,VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model,2602.12063,https://arxiv.org/abs/2602.12063,NTUMARS,1,2026 新作
+高,2026,Veo-Act: How Far Can Frontier Video Models Advance Generalizable Robot Manipulation?,2604.04502,https://arxiv.org/abs/2604.04502,OpenMOSS,1,2026 新作
+高,2026,ViVa: A Video-Generative Value Model for Robot Reinforcement Learning,2604.08168,https://arxiv.org/abs/2604.08168,NTUMARS,1,2026 新作
+高,2026,Video Predictive Embedding is Needed for VLA Models,2602.11832,https://arxiv.org/abs/2602.11832,NTUMARS,1,2026 新作
+高,2026,When to Trust Imagination: Adaptive Action Execution for World Action Models,2605.06222,https://arxiv.org/abs/2605.06222,NTUMARS,1,2026 新作
+高,2026,WoVR: World Models as Reliable Simulators for Post-Training VLA Policies with RL,2602.13977,https://arxiv.org/abs/2602.13977,Li-Zn-H; NTUMARS; OpenMOSS,3,2026 新作
+高,2026,World Guidance: World Modeling in Condition Space for Action Generation,2602.22010,https://arxiv.org/abs/2602.22010,NTUMARS,1,2026 新作
+高,2026,World Pilot: Steering Vision-Language-Action Models with World-Action Priors,2606.12403,https://arxiv.org/abs/2606.12403,OpenMOSS,1,2026 新作
+高,2026,World-Gymnast: Training Robots with Reinforcement Learning in a World Model,2602.02454,https://arxiv.org/abs/2602.02454,NTUMARS; OpenMOSS,2,2026 新作
+高,2026,a VLA That Learns From World Model-Based Reinforcement Learning,2602.12099,https://arxiv.org/abs/2602.12099,NTUMARS,1,2026 新作
+高,2026,pi0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities,2604.15483,https://arxiv.org/abs/2604.15483,OpenMOSS,1,2026 新作
+高,2025,F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions,2509.06951,https://arxiv.org/abs/2509.06951,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,Large Video Planner Enables Generalizable Robot Control,2512.15840,https://arxiv.org/abs/2512.15840,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,NovaFlow: Zero-shot Manipulation via Actionable Flow from Generated Videos,2510.08568,https://arxiv.org/abs/2510.08568,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,PhysWorld: Robot Learning from a Physical World Model,2511.07416,https://arxiv.org/abs/2511.07416,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,RoboEnvision: A Long-Horizon Video Generation Model for Multi-Task Robot Manipulation,2506.22007,https://arxiv.org/abs/2506.22007,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,RynnVLA-002: A Unified Vision-Language-Action and World Model,2511.17502,https://arxiv.org/abs/2511.17502,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete Denoising Diffusion Process,2511.01718,https://arxiv.org/abs/2511.01718,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,Unified Video Action Model,2503.00200,https://arxiv.org/abs/2503.00200,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,VLA-RFT: Vision-Language-Action Reinforcement Fine-tuning with Verified Rewards in World Simulators,2510.00406,https://arxiv.org/abs/2510.00406,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,Video Generators are Robot Policies,2508.00795,https://arxiv.org/abs/2508.00795,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,VideoVLA: Video Generators Can Be Generalizable Robot Manipulators,2512.06963,https://arxiv.org/abs/2512.06963,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,WMPO: World Model-based Policy Optimization for Vision-Language-Action Models,2511.09515,https://arxiv.org/abs/2511.09515,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,World-Env: Leveraging World Model as a Virtual Environment for VLA Post-Training,2509.24948,https://arxiv.org/abs/2509.24948,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,mimic-video: Video-Action Models for Generalizable Robot Control Beyond VLAs,2512.15692,https://arxiv.org/abs/2512.15692,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+高,2025,villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models,2507.23682,https://arxiv.org/abs/2507.23682,Li-Zn-H; OpenMOSS,2,被多个近邻仓库收录
+高,2023,Learning to Act from Actionless Videos through Dense Correspondences,2310.08576,https://arxiv.org/abs/2310.08576,NTUMARS; OpenMOSS,2,被多个近邻仓库收录
+中,2025,3D Geometry-Informed Driving World Model with Precise Action Control,2505.22421,https://arxiv.org/abs/2505.22421,Li-Zn-H,1,命中薄弱方向：3d、geometry
+中,2025,4D Autoregressive Video Generation as a World Model,2506.01103,https://arxiv.org/abs/2506.01103,Li-Zn-H,1,命中薄弱方向：4d
+中,2025,"A 3D Point Cloud World Model for Multi-Object, Multi-Material Robotic Manipulation",2506.23126,https://arxiv.org/abs/2506.23126,Li-Zn-H,1,命中薄弱方向：3d
+中,2025,A Humanoid Visual-Tactile-Action Dataset for Contact-Rich Manipulation,2510.25725,https://arxiv.org/abs/2510.25725,NTUMARS,1,命中薄弱方向：contact、tactile
+中,2025,A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments,2506.23468,https://arxiv.org/abs/2506.23468,Li-Zn-H,1,命中薄弱方向：navigation
+中,2025,A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation,2501.14729,https://arxiv.org/abs/2501.14729,Li-Zn-H,1,命中薄弱方向：3d
+中,2025,Adaptive World Model based Planning for Autonomous Driving,2501.13072,https://arxiv.org/abs/2501.13072,Li-Zn-H,1,命中薄弱方向：planning
+中,2025,Do Vision-Language Models Have Internal World Models? Towards an Atomic Evaluation,2506.21876,https://arxiv.org/abs/2506.21876,NTUMARS,1,命中薄弱方向：evaluation
+中,2025,Dream2Flow: Bridging Video Generation and Open-World Manipulation with 3D Object Flow,2512.24766,https://arxiv.org/abs/2512.24766,OpenMOSS,1,命中薄弱方向：3d
+中,2025,End-to-End Driving with Online Trajectory Evaluation via BEV World Model,2504.01941,https://arxiv.org/abs/2504.01941,Li-Zn-H,1,命中薄弱方向：evaluation
+中,2025,FreeTacMan: Robot-Free Visuo-Tactile Data Collection System for Contact-Rich Manipulation,2506.01941,https://arxiv.org/abs/2506.01941,NTUMARS,1,命中薄弱方向：contact、tactile
+中,2025,"Hoi!: A Multimodal Dataset for Force-Grounded, Cross-View Articulated Manipulation",2512.04884,https://arxiv.org/abs/2512.04884,NTUMARS,1,命中薄弱方向：force
+中,2025,Integrating Vision-Language Models into World Models for Object Goal Navigation,2503.02247,https://arxiv.org/abs/2503.02247,Li-Zn-H,1,命中薄弱方向：navigation
+中,2025,Learning 3D Persistent Embodied World Models,2505.05495,https://arxiv.org/abs/2505.05495,Li-Zn-H,1,命中薄弱方向：3d
+中,2025,Marrying Video Diffusion and 3D Representation for Consistent World Modeling,2507.07982,https://arxiv.org/abs/2507.07982,Li-Zn-H,1,命中薄弱方向：3d
+中,2025,Martian World Models: Controllable Video Synthesis with Physically Accurate 3D Reconstructions,2507.07978,https://arxiv.org/abs/2507.07978,Li-Zn-H,1,命中薄弱方向：3d
+中,2025,Navigation World Model for Driving Simulation via Multimodal Trajectory Prompting and Motion Alignment,2504.18576,https://arxiv.org/abs/2504.18576,Li-Zn-H,1,命中薄弱方向：navigation
+中,2025,Semi-Supervised Vision-Centric 3D Occupancy World Model for Autonomous Driving,2502.07309,https://arxiv.org/abs/2502.07309,Li-Zn-H,1,命中薄弱方向：3d
+中,2025,VILP: Imitation Learning with Latent Video Planning,2502.01784,https://arxiv.org/abs/2502.01784,OpenMOSS,1,命中薄弱方向：planning
+中,2025,Vidarc: Embodied Video Diffusion Model for Closed-loop Control,2512.17661,https://arxiv.org/abs/2512.17661,NTUMARS,1,命中薄弱方向：closed loop
+中,2025,Vision-Language Guided Safety-Aware Reinforcement Learning with World Models for Autonomous Driving,2505.16377,https://arxiv.org/abs/2505.16377,Li-Zn-H,1,命中薄弱方向：safety
+中,2025,World Modeling Makes a Better Planner: Dual Preference Optimization for Embodied Task Planning,2503.10480,https://arxiv.org/abs/2503.10480,Li-Zn-H,1,命中薄弱方向：planning
+中,2024,4D Occupancy Generation Models as World Simulators for Autonomous Driving,2405.20337,https://arxiv.org/abs/2405.20337,Li-Zn-H,1,命中薄弱方向：4d
+中,2024,Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning,2403.07376,https://arxiv.org/abs/2403.07376,Li-Zn-H,1,命中薄弱方向：navigation
+中,2024,Closed-Loop Autonomous Driving with Large World Model,2412.09627,https://arxiv.org/abs/2412.09627,Li-Zn-H,1,命中薄弱方向：closed loop
+中,2024,Controllable 3D Generation for Any-View Rendering in Street Scenes,2405.14475,https://arxiv.org/abs/2405.14475,Li-Zn-H,1,命中薄弱方向：3d
+中,2024,End-to-end generalizable navigation via world modeling,2410.17491,https://arxiv.org/abs/2410.17491,Li-Zn-H,1,命中薄弱方向：navigation
+中,2024,Large-Scale 4D Occupancy Generation from Dynamic Scenes,2410.18084,https://arxiv.org/abs/2410.18084,Li-Zn-H,1,命中薄弱方向：4d
+中,2024,Navigation-Guided Sparse Scene Representation for End-to-End Autonomous Driving,2409.18341,https://arxiv.org/abs/2409.18341,Li-Zn-H,1,命中薄弱方向：navigation
+中,2024,Planning with Adaptive World Models for Autonomous Driving,2406.10714,https://arxiv.org/abs/2406.10714,Li-Zn-H,1,命中薄弱方向：planning
+中,2024,This&That: Language-Gesture Controlled Video Generation for Robot Planning,2407.05530,https://arxiv.org/abs/2407.05530,OpenMOSS,1,命中薄弱方向：planning
+中,2024,Unbounded and Controllable Dynamic 3D Driving Scene Generation with World-Guided Video Models,2412.03934,https://arxiv.org/abs/2412.03934,Li-Zn-H,1,命中薄弱方向：3d
+中,2024,Unifying Driving World Modeling and Planning with Multi-modal Autoregressive Transformers,2412.18607,https://arxiv.org/abs/2412.18607,Li-Zn-H,1,命中薄弱方向：planning
+中,2024,World Model with Self-Supervised 3D Label,2409.11356,https://arxiv.org/abs/2409.11356,Li-Zn-H,1,命中薄弱方向：3d
+中,2024,benchmark introduced in,2410.15461,https://arxiv.org/abs/2410.15461,NTUMARS,1,命中薄弱方向：benchmark
+中,2020,Planning from Pixels using Inverse Dynamics Models,2012.02419,https://arxiv.org/abs/2012.02419,Li-Zn-H,1,命中薄弱方向：planning
+低,2025,A Joint Predictive Agent Model in Egocentric Worlds,2502.05857,https://arxiv.org/abs/2502.05857,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,A Stream-Centric Generative World Model for Long-Horizon Driving-Scene Simulation,2506.13138,https://arxiv.org/abs/2506.13138,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,A Unified Understanding and Prediction Model for Embodied Agent,2501.18867,https://arxiv.org/abs/2501.18867,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,A Zero-Shot Framework from Image Generation World Model to Robotic Manipulation,2506.23919,https://arxiv.org/abs/2506.23919,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,ActiveUMI: Robotic Manipulation with Active Perception from Robot-Free Human Demonstrations,2510.01607,https://arxiv.org/abs/2510.01607,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Adapting World Models with Latent-State Dynamics Residuals,2504.02252,https://arxiv.org/abs/2504.02252,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Adding Scene-Centric Forecasting Control to Occupancy World Model,2506.13260,https://arxiv.org/abs/2506.13260,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Advancing Real2Sim2Real Transfer for Policy Training via Embodied World Modeling,2507.05198,https://arxiv.org/abs/2507.05198,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,An Aerial Generative World Model with Motion Controllability,2507.08885,https://arxiv.org/abs/2507.08885,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,An Interactive World Generation Model,2507.17744,https://arxiv.org/abs/2507.17744,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,An LLM-Assisted Multi-View World Model for Long-Horizon Robotic Manipulation,2501.06605,https://arxiv.org/abs/2501.06605,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Autoregressive Diffusion World Model for Autonomous Driving,2506.24113,https://arxiv.org/abs/2506.24113,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Back to the Features: DINO as a Foundation for Video World Models,2507.19468,https://arxiv.org/abs/2507.19468,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Being-h0: Vision-Language-Action Pretraining from Large-scale Human Videos,2507.15597,https://arxiv.org/abs/2507.15597,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Bringing Long Context to Diffusion World Models,2505.22246,https://arxiv.org/abs/2505.22246,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Building Structured World Models with Object-Centric Representations,2507.03298,https://arxiv.org/abs/2507.03298,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models,2503.22020,https://arxiv.org/abs/2503.22020,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2025,CoVAR: Co-generation of Video and Action for Robotic Manipulation via Multi-Modal Diffusion,2512.16023,https://arxiv.org/abs/2512.16023,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2025,Consistent World Models via Foresight Diffusion,2505.16474,https://arxiv.org/abs/2505.16474,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Cross-Granularity Distillation for Building a Long-Term Driving World Model,2506.01546,https://arxiv.org/abs/2506.01546,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Delta-Triplane Transformers as Occupancy World Models,2503.07338,https://arxiv.org/abs/2503.07338,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Discrete Codebook World Models for Continuous Control,2503.00653,https://arxiv.org/abs/2503.00653,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Dual-Stream Diffusion for World-Model Augmented Vision-Language-Action Model,2510.27607,https://arxiv.org/abs/2510.27607,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2025,Dynamics-adaptive World Action Model for Generalizable Non-prehensile Manipulation,2503.16806,https://arxiv.org/abs/2503.16806,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Ego-centric Learning of Communicative World Models for Autonomous Driving,2506.08149,https://arxiv.org/abs/2506.08149,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,End-to-End Autonomous Driving via Intention-aware Physical Latent World Model,2507.00603,https://arxiv.org/abs/2507.00603,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Envisioning Embodied Future Space for Robotics Manipulation,2501.01895,https://arxiv.org/abs/2501.01895,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Fast-Slow Lane Segment Topology Reasoning with Latent World Models,2507.23325,https://arxiv.org/abs/2507.23325,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,FastUMI-100K: Advancing Data-Driven Robotic Manipulation with a Large-scale UMI-style Dataset,2510.08022,https://arxiv.org/abs/2510.08022,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Galaxea Open-World Dataset and G0 Dual-System VLA Model,2509.00576,https://arxiv.org/abs/2509.00576,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,General Robotic Bimanual Manipulation with Hierarchical Gaussian World Model,2506.19842,https://arxiv.org/abs/2506.19842,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Genie Envisioner's parallel flow-matching action expert with cross-attention to a video-diffusion world model,2508.05635,https://arxiv.org/abs/2508.05635,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Geometric-Aware Unified World Modeling,2503.18945,https://arxiv.org/abs/2503.18945,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,GigaWorld-0,2511.19861,https://arxiv.org/abs/2511.19861,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Goal-Driven Reward by Video Diffusion Models for Reinforcement Learning,2512.00961,https://arxiv.org/abs/2512.00961,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2025,Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humanoid Manipulation,2510.08807,https://arxiv.org/abs/2510.08807,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Improving Transformer World Models for Data-Efficient RL,2502.01591,https://arxiv.org/abs/2502.01591,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,In-N-On: Scaling Egocentric Manipulation with In-the-Wild and On-Task Data,2511.15704,https://arxiv.org/abs/2511.15704,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Latent Policy Steering with Embodiment-Agnostic Pretrained World Models,2507.13340,https://arxiv.org/abs/2507.13340,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning Adaptable World Models with Latent Actions,2503.18938,https://arxiv.org/abs/2503.18938,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning Humanoid Locomotion with World Model Reconstruction,2502.16230,https://arxiv.org/abs/2502.16230,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning Local Causal World Models with State Space Models and Attention,2505.02074,https://arxiv.org/abs/2505.02074,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning Transformer-based World Models with Contrastive Predictive Coding,2503.04416,https://arxiv.org/abs/2503.04416,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning World Models for Interactive Video Generation,2505.21996,https://arxiv.org/abs/2505.21996,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Learning physics-informed world models for non-prehensile manipulation,2504.16693,https://arxiv.org/abs/2504.16693,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Long-Context State-Space Video World Models,2505.20171,https://arxiv.org/abs/2505.20171,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Mask2IV: Interaction-Centric Video Generation via Mask Trajectories,2510.03135,https://arxiv.org/abs/2510.03135,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Multi-view Intensive-fidelity Long-term Video Generation World Model for Autonomous Driving,2503.15875,https://arxiv.org/abs/2503.15875,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Object-Centric World Model for Language-Guided Manipulation,2503.06170,https://arxiv.org/abs/2503.06170,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Occupancy World Model for Robots,2505.05512,https://arxiv.org/abs/2505.05512,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,One-Shot Visual Imitation for Unseen Tasks using World-Model-Guided Trajectory Generation,2505.20425,https://arxiv.org/abs/2505.20425,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Other Vehicle Trajectories Are Also Needed: A Driving World Model Unifies Ego-Other Vehicle Trajectories in Video Latent Space,2503.09215,https://arxiv.org/abs/2503.09215,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Overcoming Challenges of Long-Horizon Prediction in Driving World Models,2507.13162,https://arxiv.org/abs/2507.13162,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Physics-informed Embodied World Model,2506.23135,https://arxiv.org/abs/2506.23135,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Prompting with the Future: Open-World Model Predictive Control with Interactive Digital Twins,2506.13761,https://arxiv.org/abs/2506.13761,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Reimagination with Test-time Observation Interventions: Distractor-Robust World Model Predictions for Visual Model Predictive Control,2506.16565,https://arxiv.org/abs/2506.16565,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Reinforcement Learning with Aligned World Models for End-to-End Autonomous Driving (in CARLA v2),2505.16394,https://arxiv.org/abs/2505.16394,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Reinforcing Action Policies by Prophesying,2511.20633,https://arxiv.org/abs/2511.20633,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Reinforcing World Model Reasoning for Multi-Turn VLM Agents,2510.16907,https://arxiv.org/abs/2510.16907,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,"RoboMIND 2.0: A Multimodal, Bimanual Mobile Manipulation Dataset for Generalizable Embodied Intelligence",2512.24653,https://arxiv.org/abs/2512.24653,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Robotic Manipulation by Imitating Generated Videos Without Physical Demonstrations,2507.00990,https://arxiv.org/abs/2507.00990,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2025,SRPO: Self-Referential Policy Optimization for Vision-Language-Action Models,2511.15605,https://arxiv.org/abs/2511.15605,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2025,"Seeing the Future, Perceiving the Future: A Unified Driving World Model for Future Generation and Perception",2503.13587,https://arxiv.org/abs/2503.13587,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Self-Supervised Representation Learning with Joint Embedding Predictive Architecture for Automotive LiDAR Object Detection,2501.04969,https://arxiv.org/abs/2501.04969,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Self-evolving Agent with Continual World Model for Long-Horizon Tasks,2502.05907,https://arxiv.org/abs/2502.05907,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Steering Camera Pose for Generative World Models with Self-supervised Depth,2505.01729,https://arxiv.org/abs/2505.01729,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Synergizing Reasoning and Imagination in End-to-End Generalist Policy,2503.24388,https://arxiv.org/abs/2503.24388,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,"Synergizing Reasoning, Acting, and World Model Simulation in AI Agents",2506.00320,https://arxiv.org/abs/2506.00320,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,"TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System",2511.02832,https://arxiv.org/abs/2511.02832,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Test-Time Scaling with World Models for Spatial Reasoning,2507.12508,https://arxiv.org/abs/2507.12508,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Thinking Visually with Spatio-Temporal CoT for Autonomous Driving,2505.17685,https://arxiv.org/abs/2505.17685,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Towards Physical Intelligence World Models Via Unbounded Surface Evolution,2506.03173,https://arxiv.org/abs/2506.03173,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Towards foundational LiDAR world models with efficient latent flow matching,2506.23434,https://arxiv.org/abs/2506.23434,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Training World Models with Reinforcement Learning,2505.13934,https://arxiv.org/abs/2505.13934,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,Trajectory World Models for Heterogeneous Environments,2502.01366,https://arxiv.org/abs/2502.01366,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,TriVLA: A Triple-System-Based Unified Vision-Language-Action Model for General Robot Control,2507.01424,https://arxiv.org/abs/2507.01424,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Unified Vision-Language-Action Model,2506.19850,https://arxiv.org/abs/2506.19850,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Untitled external record 2511.11520,2511.11520,https://arxiv.org/abs/2511.11520,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2025,Vidar: Embodied Video Diffusion Model for Generalist Bimanual Manipulation,2507.12898,https://arxiv.org/abs/2507.12898,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2025,Video World Models with Long-term Spatial Memory,2506.05284,https://arxiv.org/abs/2506.05284,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,World Models For Embodied Open-Vocabulary Object Localization,2506.01600,https://arxiv.org/abs/2506.01600,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2025,a Real-Time and Open-Source Interactive World Model on Minecraft,2504.08388,https://arxiv.org/abs/2504.08388,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,A Multimodal World Simulator for Autonomous Driving via Scene-Level BEV Latents,2407.05679,https://arxiv.org/abs/2407.05679,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,ARDuP: Active Region Video Diffusion for Universal Policies,2406.13301,https://arxiv.org/abs/2406.13301,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2024,Advancing Humanoid Locomotion: Mastering Challenging Terrains with Denoising World Model Learning,2408.14472,https://arxiv.org/abs/2408.14472,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,An Occupancy-Language-Action Generative World Model for Autonomous Driving,2409.03272,https://arxiv.org/abs/2409.03272,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Breaking Time Limits in Driving World Models,2412.01522,https://arxiv.org/abs/2412.01522,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Building Explicit World Model for Precise Articulated Object Dexterous Manipulation,2409.08750,https://arxiv.org/abs/2409.08750,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Compositional World Models for Embodied Multi-Agent Cooperation,2404.10775,https://arxiv.org/abs/2404.10775,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Dream to Manipulate: Compositional World Models Empowering Robot Imitation Learning with Imagination,2410.04587,https://arxiv.org/abs/2410.04587,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2024,Dream to Manipulate: Compositional World Models Empowering Robot Imitation Learning with Imagination,2412.14957,https://arxiv.org/abs/2412.14957,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Dynamic Gaussian Splatting for Multi-task Robotic Manipulation,2403.08321,https://arxiv.org/abs/2403.08321,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,EgoMimic: Scaling Imitation Learning via Egocentric Video,2410.24221,https://arxiv.org/abs/2410.24221,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2024,Empowering Embodied Manipulation: A Bimanual-Mobile Robot Manipulation Dataset for Household Tasks,2405.18860,https://arxiv.org/abs/2405.18860,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2024,Enhancing End-to-End Autonomous Driving with Latent World Model,2406.08481,https://arxiv.org/abs/2406.08481,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Flow as the Cross-Domain Manipulation Interface,2407.15208,https://arxiv.org/abs/2407.15208,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2024,GHIL-Glue: Hierarchical Control with Filtered Subgoal Images,2410.20018,https://arxiv.org/abs/2410.20018,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2024,GR-MG: Leveraging Partially-Annotated Data via Multi-Modal Goal-Conditioned Policy,2408.14368,https://arxiv.org/abs/2408.14368,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2024,Generative End-to-End Autonomous Driving,2402.11502,https://arxiv.org/abs/2402.11502,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Generative LiDAR Simulation in a Generated World,2404.02903,https://arxiv.org/abs/2404.02903,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Grounding Video Models to Actions through Goal Conditioned Exploration,2411.07223,https://arxiv.org/abs/2411.07223,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2024,Learning to Follow Instructions via Chain-of-Imagination for Simulated-World Control,2403.12037,https://arxiv.org/abs/2403.12037,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Mitigating Covariate Shift in Imitation Learning for Autonomous Vehicles Using Latent Space Generative World Models,2409.16663,https://arxiv.org/abs/2409.16663,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Omni World Model for Consistent Long Video Generation,2412.09600,https://arxiv.org/abs/2412.09600,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Physical Informed Driving World Model,2412.08410,https://arxiv.org/abs/2412.08410,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Physically Embodied Gaussian Splatting: A Realtime Correctable World Model for Robotics,2406.10788,https://arxiv.org/abs/2406.10788,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Prediction with Action: Visual Policy Learning via Joint Denoising Process,2411.18179,https://arxiv.org/abs/2411.18179,OpenMOSS,1,单一来源，需先判断与综述范围的关系
+低,2024,RH20T-P: A Primitive-Level Robotic Manipulation Dataset Towards Composable Generalization Agents in Real-World Scenarios,2403.19622,https://arxiv.org/abs/2403.19622,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2024,Self-driving with Learned Object-Centric Representations,2407.15843,https://arxiv.org/abs/2407.15843,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Taming Diffusion Model into High-Fidelity Controllable Occupancy World Model,2410.10429,https://arxiv.org/abs/2410.10429,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Towards General World Model with Natural Language Actions and Video States,2406.09455,https://arxiv.org/abs/2406.09455,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Towards General World Models for Video Generation via Predicting Masked Tokens,2401.09985,https://arxiv.org/abs/2401.09985,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Unleashing Generalization of End-to-End Autonomous Driving with Controllable Long Video Generation,2406.01349,https://arxiv.org/abs/2406.01349,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,Untitled external record 2412.13772,2412.13772,https://arxiv.org/abs/2412.13772,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,VidMan: Exploiting Implicit Dynamics from Video Diffusion Model for Effective Robot Manipulation,2411.09153,https://arxiv.org/abs/2411.09153,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2024,World Model-Based Perception for Visual Legged Locomotion,2409.16784,https://arxiv.org/abs/2409.16784,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2024,WorldSimBench: Towards Video Generation Models as World Simulators,2410.18072,https://arxiv.org/abs/2410.18072,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2023,Learning Unsupervised World Models for Autonomous Driving via Discrete Diffusion,2311.01017,https://arxiv.org/abs/2311.01017,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2023,State-Maintaining Language Models for Embodied Reasoning,2306.17840,https://arxiv.org/abs/2306.17840,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2023,Transformer-based World Models Are Happy With 100k Interactions,2303.07109,https://arxiv.org/abs/2303.07109,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2023,Zero-Shot Robotic Manipulation with Pretrained Image-Editing Diffusion Models,2310.10639,https://arxiv.org/abs/2310.10639,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2022,Differentiable Raycasting for Self-Supervised Occupancy Forecasting,2210.01917,https://arxiv.org/abs/2210.01917,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2022,Enhance Sample Efficiency and Robustness of End-to-End Urban Autonomous Driving via Semantic Masked World Model,2210.04017,https://arxiv.org/abs/2210.04017,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2022,Perception-Action Causal Transformer for Autoregressive Robotics Pre-Training,2209.11133,https://arxiv.org/abs/2209.11133,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2022,Reinforcement Learning with Transformer World Models,2202.09481,https://arxiv.org/abs/2202.09481,Li-Zn-H,1,单一来源，需先判断与综述范围的关系
+低,2020,Hindsight for Foresight: Unsupervised Structured Dynamics Models from Physical Interaction,2008.00456,https://arxiv.org/abs/2008.00456,NTUMARS,1,单一来源，需先判断与综述范围的关系
+低,2020,Model-based Reinforcement Learning by Latent Imagination without Reconstruction,2007.14535,https://arxiv.org/abs/2007.14535,Li-Zn-H,1,单一来源，需先判断与综述范围的关系

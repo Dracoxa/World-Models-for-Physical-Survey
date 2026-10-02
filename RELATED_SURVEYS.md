@@ -38,7 +38,7 @@
 ## 下一轮怎么用
 
 - **正文定位**：优先逐表核对 Kirchner et al.、Hou et al.、Li et al. 与本稿的范围差异，删除无法守住的“更全面”“首次”等表达。
-- **文献补漏**：以 NTUMARS、Li-Zn-H、OpenMOSS 三个仓库为高相关候选池，与本项目 929 条分类记录做题名和 arXiv ID 去重。
+- **文献补漏**：已将 NTUMARS、Li-Zn-H、OpenMOSS 三个仓库与本项目 929 条分类记录做题名和 arXiv ID 去重；结果见[新增候选摘要](literature/EXTERNAL_CANDIDATES.md)和[完整候选 CSV](literature/external_candidates.csv)。
 - **图表设计**：参考这些仓库的组织维度，但图表数据只从已核原文提取；优先做“预测空间 × 动作接口 × 验证环境”矩阵。
 - **GitHub 维护**：保留当前 CSV 和七类 Markdown 的可检索结构，后续增加“已核验”状态，而不是继续堆叠未经核验的数量。
 
