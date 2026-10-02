@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 45 条。大部分是将协作表已有文献引入正文；下列 10 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 50 条。大部分是将协作表已有文献引入正文；下列 14 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -18,8 +18,14 @@
 | Safety Guardrails for LLM-Enabled Robots [论文](https://arxiv.org/abs/2503.07885v2) | 评估、安全与 Benchmark | 语义世界模型、LTL 计划约束与越狱攻击 | 已核实体与仿真实验、试验分母和作者局限；见核验批次 03 |
 | Verifiable Foundation Models for Robot Safety [论文](https://arxiv.org/abs/2606.23754v1) | 评估、安全与 Benchmark | 可验证低维安全模块、选择性护盾与实体迁移 | 已核 18 回合实体试验、认证域和传感器前提；见核验批次 03 |
 | Rethinking World Models for Safety-Critical Embodied Systems [观点](https://arxiv.org/abs/2609.03774v2) | 评估、安全与 Benchmark | 2026 风险知情世界模型研究议程 | 已核全文；无自身实验，不参与方法效果比较 |
+| TouchWorld [论文](https://arxiv.org/abs/2607.07287v2) | 结构化物理与多模态 | 触觉子目标预测与快速残差控制的分层接口 | 已核实体任务、预测表、消融和作者局限；见核验批次 04 |
+| DexTouch-WM [论文](https://arxiv.org/abs/2609.20649v2) | 结构化物理与多模态；数据与跨本体 | 人类触觉与动作对齐、策略评估代理和合成数据 | 已核数据规模、真实评价和混合下游结果；见核验批次 04 |
+| ParticleFormer [CoRL 2025](https://proceedings.mlr.press/v305/huang25c.html) | 结构化物理与多模态 | 点云多材料动力学与实体 MPPI | 已核正式版本、任务、动作接口和三次实体 rollout 限制；见核验批次 04 |
+| MVISTA-4D [ICML 2026](https://proceedings.mlr.press/v306/wang26jw.html) | 结构化物理与多模态 | 多视角 RGB-D 未来与测试时动作反演 | 已核正式版本、消融、实体对比和推理时延；见核验批次 04 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
+
+ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只将题名、作者和版本更新到 arXiv v3，并在正文按接触表示与预测规划讨论。
 
 ## 接下来优先补哪些
 
@@ -30,7 +36,7 @@ DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **Worl
 | 世界模型基础与控制 | PlaNet、PETS、Dreamer、TD-MPC2、MBPO | 状态估计、部分可观测性与经典控制的联系；最新 latent-control 进展 | `world model belief state partial observability`; `latent model predictive control 2026` | 中 |
 | 视觉与视频世界模型 | UniPi、UniSim、DreamZero、Cosmos Policy | 2026 大规模交互模拟；长时滚动、动作一致性与失败案例 | `action-conditioned video world model interactive simulator 2026`; `long horizon rollout failure` | 高 |
 | Latent 与预测表示 | Dreamer、TD-MPC2、V-JEPA 2 | 新预测目标的系统比较；2026 JEPA 与动作表示、策略耦合方法 | `predictive representation robot action JEPA 2026`; `latent world model policy ablation` | 高 |
-| 结构化物理与多模态 | GNS；WorldArena 2.0 仅提供评估背景 | **目前最薄弱**：三维状态、接触、形变、触觉和力觉的模型级原始论文 | `visuotactile world model`; `contact dynamics prediction robot`; `3D structured world model 2026` | 最高 |
+| 结构化物理与多模态 | GNS、TesserAct、OmniVTA、ContactWorld、TouchWorld、DexTouch-WM、ParticleFormer、MVISTA-4D | 长时组合接触、跨触觉硬件迁移、力觉校准与场景无关的形变动力学 | `compositional contact world model`; `cross sensor tactile world model`; `force calibrated predictive control` | 高 |
 | 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim | 人类第一视角数据、失败与恢复数据、跨本体动作对齐；训练测试重叠核查 | `egocentric video robot action alignment`; `robot failure recovery dataset`; `cross embodiment dynamics` | 高 |
 | 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口 | 导航和驾驶实例；预测预训练与推理时预测的消融；重规划与记忆 | `navigation world model lookahead planning`; `occupancy world model closed loop driving`; `predictive pretraining policy ablation` | 最高 |
 | 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、条件性证书、短视规避、可达性护盾、预测式人工干预、语义计划护栏、可验证安全模块 | **仍缺可泛化实体证据**：跨操作者/平台复现、分布外校准、事故严重度、干预成本和动态接触风险 | `world model uncertainty calibration robot safety 2026`; `robot safety intervention cost physical evaluation`; `contact-rich runtime assurance` | 最高 |
@@ -70,6 +76,6 @@ DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **Worl
 | 预测与动作可以联合建模 | DreamZero、Cosmos Policy 支持方法级描述；不据此断言因果物理理解 |
 | 视觉质量与功能评估应分别记录 | WorldArena 系列提供相关评估设计；我们的比较框架是综述组织选择 |
 | 成本约束、恢复与形式保证是不同安全机制 | SafeDreamer、CPO、Recovery RL、CBF 提供各自背景；不混写为统一安全保证 |
-| 触觉、导航、驾驶和分布外安全已被充分覆盖 | **不成立**；明确列为本文缺口，下一轮补证据 |
+| 触觉、导航、驾驶和分布外安全已被充分覆盖 | **不成立**；触觉已形成首轮实体证据，但长时组合接触、导航、驾驶和分布外安全仍是缺口 |
 
 自查结论：定位方面不声称“首个”或“最全面”；写作方面四部分已连通；实验支撑仅到方法概述和已有来源；评估覆盖仍有明确空缺；机制区分保留预测、策略、控制和防护的边界。下一轮再压缩重复论述、增加具体技术细节，并将正文里的写作阶段说明移到协作记录。
