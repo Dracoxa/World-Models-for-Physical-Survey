@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 103 条。大部分是将协作表已有文献引入正文；下列 54 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 106 条。大部分是将协作表已有文献引入正文；下列 57 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -62,6 +62,9 @@
 | Test-Time Scaling for WAMs [论文](https://arxiv.org/abs/2607.17454v1) | 世界模型与 VLA、规划；评估与 Benchmark | 跨视角几何候选筛选和选择性额外采样 | 已核三套仿真 benchmark、四 seed 和延迟；无实体机器人，见核验批次 16 |
 | Trusted Imagination Attack [论文](https://arxiv.org/abs/2606.22966v1) | 评估、安全与 Benchmark | 被 verifier 或 planner 信任的预测 latent 完整性 | 已核白盒攻击、reactive null 和单任务闭环 MPC；不能外推为普遍脆弱，见核验批次 16 |
 | WAM--VLA Robustness Study [论文](https://arxiv.org/abs/2603.22078v5) | 评估、安全与 Benchmark；世界模型与 VLA、规划 | 七类扰动下的模型族轮廓与推理时延 | 已核 RoboTwin 2.0-Plus/LIBERO-Plus；训练数据和来源异配，不做因果排名，见核验批次 16 |
+| TacPAC [论文](https://arxiv.org/abs/2609.05266v1) | 结构化物理与多模态；世界模型与 VLA、规划 | 预测触觉缓存驱动动作块内实时纠正 | 已核五任务、每方法任务 20 次实体试验和延迟；单平台/传感器，见核验批次 17 |
+| DreamAvoid [论文](https://arxiv.org/abs/2605.11750v2) | 世界模型与 VLA、规划；评估、安全与 Benchmark | 关键阶段触发、未来视频候选排序与实体动作替换 | 已核四任务、160 次/方法和失败审计；预测时暂停高层执行，见核验批次 17 |
+| WHIRL [论文](https://arxiv.org/abs/2609.06009v1) | 世界模型与 VLA、规划；评估、安全与 Benchmark | 用实体接管标签训练前瞻 intervention head 并进行 actor 风险整形 | 已核五项实体任务与组件对照；单 seed、单操作者、任务内随机化，见核验批次 17 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -89,6 +92,8 @@ R22 第二队列的 DriveWAM、NoiseGate、DAWN、WALL-WM 与 ADriver-I 也均�
 
 R27 从 359 条增量候选中按评估、安全、鲁棒性与故障诊断词筛出 23 个题名，并全文核验其中 6 篇，补充记录增至 54 项。WorldLens 是正式 CVPR 2026 论文，其余五篇按当前预印本版本处理。该轮补齐了实体 benchmark、阶段级退化诊断、预测候选筛选和预测完整性攻击面，但没有闭合真实机器人在线干预、跨平台复现或开放故障恢复证据链。
 
+R28 定向全文核验 TacPAC、DreamAvoid、WHIRL 与 CoWAM。前三篇进入正文，补充记录增至 57 项；CoWAM 因只有仿真而保留为 selector 评估边界。该轮补入动作块内实时纠正、关键阶段实体候选重排和接管风险学习，但三项实体证据仍各自限于单一平台，没有跨操作者或真实分布偏移复现。
+
 ## 接下来优先补哪些
 
 “缺”表示当前稿件的证据尚不充分，不表示这个领域没有论文。检索词是下一轮入口，不是已完成的检索。
@@ -98,10 +103,10 @@ R27 从 359 条增量候选中按评估、安全、鲁棒性与故障诊断词�
 | 世界模型基础与控制 | PlaNet、PETS、Dreamer、TD-MPC2、MBPO | 状态估计、部分可观测性与经典控制的联系；最新 latent-control 进展 | `world model belief state partial observability`; `latent model predictive control 2026` | 中 |
 | 视觉与视频世界模型 | UniPi、UniSim、DreamZero、Cosmos Policy | 2026 大规模交互模拟；长时滚动、动作一致性与失败案例 | `action-conditioned video world model interactive simulator 2026`; `long horizon rollout failure` | 高 |
 | Latent 与预测表示 | Dreamer、TD-MPC2、V-JEPA 2 | 新预测目标的系统比较；2026 JEPA 与动作表示、策略耦合方法 | `predictive representation robot action JEPA 2026`; `latent world model policy ablation` | 高 |
-| 结构化物理与多模态 | GNS、TesserAct、OmniVTA、ContactWorld、TouchWorld、DexTouch-WM、ParticleFormer、MVISTA-4D | 长时组合接触、跨触觉硬件迁移、力觉校准与场景无关的形变动力学 | `compositional contact world model`; `cross sensor tactile world model`; `force calibrated predictive control` | 高 |
+| 结构化物理与多模态 | GNS、TesserAct、OmniVTA、ContactWorld、TouchWorld、DexTouch-WM、ParticleFormer、MVISTA-4D、TacPAC | 长时组合接触、跨触觉硬件迁移、力觉校准与场景无关的形变动力学 | `compositional contact world model`; `cross sensor tactile world model`; `force calibrated predictive control` | 高 |
 | 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim、REBOOT | 人类第一视角数据、跨本体动作对齐；恢复数据的跨操作者采集与训练测试重叠核查 | `egocentric video robot action alignment`; `multi-operator robot recovery dataset`; `cross embodiment dynamics` | 高 |
-| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；WorldSample、VLAW、Hi-WM、WorldSync、Dream2Fix；导航/驾驶闭环；Mem-World、WorldScape 2.0 与 FARL | 跨平台实体复现；开放故障后的状态恢复；虚拟纠正数据与实体纠正数据的等预算比较 | `cross-platform physical robot recovery world model`; `virtual intervention versus physical correction robot`; `world model online recovery ablation` | 最高 |
-| 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、FARL、Foresight、FoMo-FD、VLA-FixBench、AgentChord、ViFailback 与 LIBERO-Recover | **仍缺完整世界模型实体证据链**：校准报警触发在线动作、跨操作者/平台外推、事故严重度、检测提前量、干预持续时间和开放故障恢复 | `world model online intervention real robot`; `failure alarm detection lead time incident severity`; `cross-platform calibrated robot recovery` | 最高 |
+| 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；WorldSample、VLAW、Hi-WM、WorldSync、Dream2Fix、WHIRL、DreamAvoid；导航/驾驶闭环；Mem-World、WorldScape 2.0 与 FARL | 跨平台实体复现；开放故障后的状态恢复；虚拟纠正数据与实体纠正数据的等预算比较 | `cross-platform physical robot recovery world model`; `virtual intervention versus physical correction robot`; `world model online recovery ablation` | 最高 |
+| 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、FARL、Foresight、FoMo-FD、DreamAvoid、WHIRL、VLA-FixBench、AgentChord、ViFailback 与 LIBERO-Recover | **仍缺完整世界模型实体证据链**：带 abstention 的校准触发、跨操作者/平台外推、真实分布偏移、事故严重度、检测提前量和开放故障恢复 | `world model calibrated abstention real robot`; `failure alarm lead time incident severity`; `cross-platform calibrated robot recovery` | 最高 |
 
 下一轮优先补每个薄弱方向 2–3 篇能够真正进入比较表的代表工作。满足“不同机制、明确预测量、明确动作接口、可定位实验”的需要后再扩量，不以凑篇数代替覆盖。
 

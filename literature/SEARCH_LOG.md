@@ -47,8 +47,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R25 | 2026-10-02 | GitHub driving-world-model survey scan | CQ1--CQ6 | 4 search queries; 3 repositories retained | Discovery sources only; frozen candidate count unchanged | [Related surveys](../RELATED_SURVEYS.md) |
 | R26 | 2026-10-02 | Primary full text for R22 second-queue candidates | CQ1--CQ4, CQ6 | 5 papers | 5 full-text evidence records and 5 manuscript additions | [Batch 15](EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md) |
 | R27 | 2026-10-02 | Gap-driven screening of R21 evaluation/reliability candidates; primary full text and CVF record | CQ3--CQ5 | 23 title matches screened; 6 retained | 6 full-text evidence records and 6 manuscript additions | [Batch 16](EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md) |
+| R28 | 2026-10-02 | Gap-driven screening of R21 physical intervention/correction candidates; primary arXiv full text | CQ2--CQ5 | 4 candidates checked; 3 retained | 3 full-text evidence records and 3 manuscript additions; 1 simulation-only boundary | [Batch 17](EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md) |
 
-The sixteen paper-level evidence batches contain 72 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The seventeen paper-level evidence batches contain 75 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -181,6 +182,10 @@ The five R22 second-queue papers were checked in full text. DriveWAM exposes gen
 ### R27: Diagnostic Evaluation and Prediction-Integrity Full-Text Check
 
 The 359-candidate R21 delta was filtered by title for benchmark, evaluation, reliability, safety, risk, uncertainty, failure, robustness, degradation, attack, guard, monitor, and causal terms. Twenty-three records matched; this is a gap-driven title screen, not a complete title/abstract review of the remaining delta. Six papers were retained because they add distinct evaluation endpoints already required by the manuscript: WorldLens for driving generation-to-control evaluation, ManipArena for controlled physical policy comparison, stage-wise sensing degradation for pipeline diagnosis, GeoBoN for prediction-based candidate selection and compute gating, the trusted-imagination attack for downstream prediction integrity, and the WAM--VLA robustness study for perturbation profiles. Primary arXiv or CVF full text was checked for all six. Two arXiv records have title differences between their abstract metadata and HTML/PDF; the evidence batch records those version-level inconsistencies instead of silently choosing a title. None of the simulation-only results is interpreted as physical safety, and the mixed-training robustness table is not used for a causal model-family ranking.
+
+### R28: Physical Intervention and Execution-Time Correction Check
+
+The R21 delta was queried for intervention, correction, avoidance, failure, and real-time tactile terms. Four direct candidates were checked in primary arXiv full text. TacPAC was retained for within-chunk tactile correction with 20 physical trials per method and task; DreamAvoid for trigger--future--rerank physical execution with 40 trials per task and method; and WHIRL for turning physical HIL takeover labels into actor-side predictive risk shaping. CoWAM was not added to the manuscript because all eight tasks are simulated, although its matched candidate-pool design is retained in Batch 17 as a methodological boundary. The three retained studies use one physical platform each. None supports cross-platform, cross-operator, calibrated abstention, or open-distribution recovery claims.
 
 ## Screening and Evidence Handling
 
