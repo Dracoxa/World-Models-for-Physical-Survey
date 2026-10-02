@@ -10,13 +10,29 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 OUT = Path(__file__).resolve().parent / "figures"
 OUT.mkdir(exist_ok=True)
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "pdf.fonttype": 42, "svg.fonttype": "none"})
+plt.rcParams.update({
+    "font.family": "DejaVu Sans",
+    "font.size": 10,
+    "pdf.fonttype": 42,
+    "svg.fonttype": "none",
+    "svg.hashsalt": "world-models-physical-ai",
+})
 fig, ax = plt.subplots(figsize=(7, 4.6))
 fig.subplots_adjust(left=0.025, right=0.985, top=0.97, bottom=0.035)
 ax.set(xlim=(0, 14), ylim=(0, 8))
 ax.axis("off")
 INK, MUTED, GRAY = "#21333B", "#64747A", "#D5DFE2"
 TEAL, BLUE, RUST = "#267D76", "#426FA3", "#A26839"
+
+
+def save_outputs(figure, stem):
+    metadata = {
+        "png": {"Software": "Matplotlib"},
+        "pdf": {"CreationDate": None, "ModDate": None},
+        "svg": {"Date": None},
+    }
+    for extension in ("png", "pdf", "svg"):
+        figure.savefig(OUT / f"{stem}.{extension}", dpi=220, facecolor="white", metadata=metadata[extension])
 
 
 def block(x, y, label, width=2.05, color=TEAL):
@@ -65,8 +81,7 @@ ax.text(6.2, .47, "Action interface", fontsize=7.5, color=BLUE)
 ax.text(9.4, .47, "Operational use", fontsize=7.5, color=TEAL)
 ax.text(.35, .08, "Conceptual interfaces. Reasoning alone does not establish an explicit future-state model.", fontsize=7, color=MUTED)
 
-for extension in ("png", "pdf", "svg"):
-    fig.savefig(OUT / f"fig01_prediction_policy_interfaces.{extension}", dpi=220, facecolor="white")
+save_outputs(fig, "fig01_prediction_policy_interfaces")
 plt.close(fig)
 
 
@@ -121,8 +136,7 @@ ax.plot([.3, 14.7], [.75, .75], color=GRAY, linewidth=.7)
 ax.text(.3, .35, "Trace, not hierarchy: a farther-right setting changes the supported claim but does not rank every paper.",
         fontsize=7, color=MUTED)
 
-for extension in ("png", "pdf", "svg"):
-    fig.savefig(OUT / f"fig02_claim_evidence_trace.{extension}", dpi=220, facecolor="white")
+save_outputs(fig, "fig02_claim_evidence_trace")
 plt.close(fig)
 
 outputs = [OUT / f"fig{number:02d}_{name}.{extension}" for number, name in (
