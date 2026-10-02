@@ -24,6 +24,12 @@ FIELDS = ["record_id", "category", "source_row", "title", "authors", "year", "ve
 
 # Original-source corrections verified after the workbook snapshot was frozen.
 VERIFIED_OVERRIDES = {
+    "S05-0063": {
+        "authors": "Hongzhe Bi; Hengkai Tan; Shenghao Xie; Zeyuan Wang; Shuhe Huang; Haitian Liu; Ruowen Zhao; Yao Feng; Chendong Xiang; Yinze Rong; Hongyan Zhao; Hanyu Liu; Zhizhong Su; Lei Ma; Hang Su; Jun Zhu",
+        "venue": "CVPR 2026",
+        "publication_status": "正式会议论文",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bi_Motus_A_Unified_Latent_Action_World_Model_CVPR_2026_paper.html",
+    },
     "S06-0109": {
         "authors": "Fei Liu, Shichao Xie, Minghua Luo, Zedong Chu, Junjun Hu, Xiaolong Wu, Mu Xu（Amap / Alibaba Group）",
         "venue": "arXiv:2512.01550v2",
