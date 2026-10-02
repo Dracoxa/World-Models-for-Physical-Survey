@@ -15,7 +15,7 @@ The count is reproducible but not final: exact normalized titles, verified arXiv
 | Provisional publication families | 758 |
 | Families containing multiple source rows | 117 |
 | Families touched by a manual merge decision | 11 |
-| Identity or metadata corrections applied in this layer | 4 |
+| Identity or metadata corrections applied in this layer | 5 |
 
 ## Source Categories
 
@@ -53,6 +53,7 @@ The count is reproducible but not final: exact normalized titles, verified arXiv
 - `S05-0159`: The original 2505.07096 link belongs to X-Sim, not Cross-Sim-to-Real; no replacement primary source was verified. Sources: [https://arxiv.org/abs/2505.07096](https://arxiv.org/abs/2505.07096)
 - `S06-0014`: Replace a tracking redirect with the canonical arXiv record for RoboCat. Sources: [https://arxiv.org/abs/2306.11706](https://arxiv.org/abs/2306.11706)
 - `S06-0065`: The original 2603.07904 link belongs to DyQ-VLA. Crossref and the publisher identify the formal DynaVLA article under this title and DOI. Sources: [https://doi.org/10.1016/j.engappai.2026.115988](https://doi.org/10.1016/j.engappai.2026.115988), [https://arxiv.org/abs/2603.07904](https://arxiv.org/abs/2603.07904)
+- `S07-0030`: Replace the 2022 preprint metadata with the formal IEEE T-ASE volume version and its complete author list. Sources: [https://doi.org/10.1109/TASE.2023.3292388](https://doi.org/10.1109/TASE.2023.3292388), [https://arxiv.org/abs/2210.07553](https://arxiv.org/abs/2210.07553)
 
 ## Manual Merge Decisions
 

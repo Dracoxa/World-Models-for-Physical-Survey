@@ -35,6 +35,7 @@ The review profile remains a **structured narrative review with a critical evide
 | R13 | 2026-10-02 | Identity normalization and publication-family resolution | Corpus integrity | 929 source rows | 15 placeholders excluded; 914 candidates resolved to 758 provisional families | [Family audit](PUBLICATION_FAMILIES.md) |
 | R14 | 2026-10-02 | Formal-version resolution; PMLR, ICLR Proceedings, RSS, IEEE/DOI records | Publication status | 11 cited records checked | 10 preprint citations upgraded; 1 conference record completed with its DOI | [Bibliography](../paper/references.bib) |
 | R15 | 2026-10-02 | Formal-version resolution; ICLR and CVF proceedings, arXiv | Publication status | 4 cited records checked | 2 preprints upgraded; 2 retained as preprints after no official proceedings page was found in this check | [Bibliography](../paper/references.bib) |
+| R16 | 2026-10-02 | Formal-version resolution; IEEE/DOI record, arXiv, project pages | Publication status | 4 cited records checked | 1 preprint upgraded; 3 retained as preprints after no formal venue page was found in this check | [Bibliography](../paper/references.bib) |
 
 The ten paper-level evidence batches contain 45 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
@@ -122,6 +123,10 @@ Eleven cited records with unambiguous official publication entries were resolved
 
 Four cited records were checked against official proceedings pages and arXiv. Cosmos Policy was upgraded to its ICLR 2026 proceedings entry, and TesserAct was upgraded to its ICCV 2025 entry under the formal title *Learning 4D Embodied World Models*. V-JEPA 2 and *World Action Models are Zero-shot Policies* were retained as preprints because this check did not find official proceedings pages for them. Citation keys were retained, no DOI was inferred, and publication status was not used to strengthen experimental claims.
 
+### R16: Formal Publication Versions III
+
+Four cited records were checked against an official IEEE/DOI record, arXiv, and author project pages. *Safe Model-Based Reinforcement Learning With an Uncertainty-Aware Reachability Certificate* was upgraded from its 2022 preprint to the IEEE T-ASE 2024 volume version; the formal author list adds Yuming Yin and changes the author order. WorldSample, Dream2Fix, and Hi-WM were retained as preprints because this check did not find formal venue pages for them. The publication upgrade does not alter the paper's simulation-only evidence boundary.
+
 ## Screening and Evidence Handling
 
 - Candidate discovery and evidence inclusion are separate decisions. Repository lists, project pages, and surveys locate papers but do not validate experimental claims.
@@ -140,7 +145,7 @@ The following required runs have not been executed and therefore have no fabrica
 | D02 | Venue census for major robotics, ML, vision, and control venues | Possible venue-specific omissions |
 | C01 | Backward citation decisions for foundational and closest survey seeds | Historical lineage may remain incomplete |
 | C02 | Forward citation decisions for foundational and recent anchor papers | Recent follow-on work may remain incomplete |
-| V01 | Formal publication-version resolution for remaining preprints; 13 cited records resolved in R14--R15 | Partially complete; some canonical citations may still change |
+| V01 | Formal publication-version resolution for remaining preprints; 14 cited records resolved in R14--R16 | Partially complete; some canonical citations may still change |
 | S01 | Title/abstract and full-text exclusion log with reasons | No final PRISMA flow count |
 | P01 | Independent PRESS-style review of the search strategy | Search design has only internal review |
 

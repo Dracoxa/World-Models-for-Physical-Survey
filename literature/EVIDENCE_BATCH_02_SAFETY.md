@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | [Berkenkamp et al.](https://proceedings.neurips.cc/paper/2017/hash/766ebcd59621e305170616ba3d3dac32-Abstract.html) | NeurIPS 2017 | 已认证吸引域内的稳定性 | 理论分析；单个仿真倒立摆 | 学得动力学可与 Lyapunov 证书结合，但保证依赖初始安全策略、模型置信界和光滑性假设。 |
 | [Thomas et al.](https://proceedings.neurips.cc/paper/2021/hash/73b277c11266681122132d024f53a75b-Abstract.html) | NeurIPS 2021 | 对可短期预见的失效进行规避 | 理论分析；4 个 MuJoCo 任务、5 个随机种子 | 短视模型滚动可减少训练期违规；理论结论要求已知不安全状态、有限预见时域和校准模型。 |
-| [Yu et al.](https://arxiv.org/abs/2210.07553) | arXiv v1 预印本 | 不确定性感知的可达性证书与护盾 | 4 个仿真控制/导航任务、7 个基线 | 分布式可达性估计可驱动动作覆盖与护盾干预；真实机器人效果尚未验证。 |
+| [Yu et al.](https://doi.org/10.1109/TASE.2023.3292388) | IEEE T-ASE 2024 | 不确定性感知的可达性证书与护盾 | 4 个仿真控制/导航任务、7 个基线 | 分布式可达性估计可驱动动作覆盖与护盾干预；真实机器人效果尚未验证。 |
 | [SafeDreamer](https://proceedings.iclr.cc/paper_files/paper/2024/hash/ece182f93af26c64187ba3f7dfd4309a-Abstract-Conference.html) | ICLR 2024 | 约束 MDP 中的成本控制 | Safety-Gymnasium 仿真；5 个视觉任务及低维任务 | 世界模型可同时预测奖励和成本并参与在线或背景规划，但接近零成本不等于现实世界无风险。 |
 | [Modular Safety Guardrails](https://arxiv.org/abs/2602.04056) | arXiv v1 预印本 | 动作、决策和以人为中心的系统安全 | 分类、架构和部署示例；无自身实验评估 | 监测层与干预层是有用的系统组织框架；论文不能支撑该架构已降低实体机器人事故。 |
 
@@ -42,7 +42,7 @@
 
 **可支撑判断。** 该工作支持“模型不确定性可以进入可达性证书和动作护盾，而不仅是作为预测误差报告”。
 
-**局限与待核验。** 当前只有 arXiv v1；所有实验都在仿真基准，作者将真实机器人部署列为未来工作。DRC 与护盾的经验结果不能被改写为开放世界中的形式认证。证据位置：第 III--V 节，图 4--6，第 VI 节。
+**局限与待核验。** 正式版本发表于 IEEE T-ASE 2024；所有实验仍在仿真基准，作者将真实机器人部署列为未来工作。DRC 与护盾的经验结果不能被改写为开放世界中的形式认证。原始实验核验依据为 arXiv v1，第 III--V 节，图 4--6，第 VI 节。
 
 ## 4. SafeDreamer
 

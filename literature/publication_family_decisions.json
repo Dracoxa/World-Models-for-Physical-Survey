@@ -86,6 +86,20 @@
         "https://doi.org/10.1016/j.engappai.2026.115988",
         "https://arxiv.org/abs/2603.07904"
       ]
+    },
+    "S07-0030": {
+      "fields": {
+        "authors": "Dongjie Yu; Wenjun Zou; Yujie Yang; Haitong Ma; Shengbo Eben Li; Yuming Yin; Jianyu Chen; Jingliang Duan",
+        "year": "2024",
+        "venue": "IEEE Transactions on Automation Science and Engineering 21(3):4129-4142",
+        "publication_status": "Formal journal article",
+        "url": "https://doi.org/10.1109/TASE.2023.3292388"
+      },
+      "reason": "Replace the 2022 preprint metadata with the formal IEEE T-ASE volume version and its complete author list.",
+      "source_urls": [
+        "https://doi.org/10.1109/TASE.2023.3292388",
+        "https://arxiv.org/abs/2210.07553"
+      ]
     }
   },
   "merges": [
