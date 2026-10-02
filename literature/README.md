@@ -30,6 +30,8 @@
 
 2026-10-02 已完成第二批 5 篇安全原始来源核验，详见[安全保证、经验降风险与运行时护栏证据表](EVIDENCE_BATCH_02_SAFETY.md)。其中 4 篇已在原目录中，SafeDreamer 仍作为正文补充来源单列。
 
+2026-10-02 已完成第三批运行时安全核验，详见[实体运行时监测、语义护栏与可验证安全模块证据表](EVIDENCE_BATCH_03_RUNTIME_SAFETY.md)。Model-Based Runtime Monitoring 已在原目录中并修正正式发表元数据，其余 3 篇作为正文补充来源单列。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)

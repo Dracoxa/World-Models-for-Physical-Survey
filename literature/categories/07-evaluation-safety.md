@@ -162,7 +162,7 @@
 | S07-0155 | 2024 | [SafeEmbodAI: A Safety Framework for Mobile Robots in Embodied AI Systems](<https://arxiv.org/abs/2409.01630>) | Wenxiao Zhang; Xiangrui Kong; Thomas Braunl; Jin B. Hong | arXiv | 预印本/公开稿 |
 | S07-0156 | 2024 | [BAKU: An Efficient Transformer for Multi-Task Policy Learning](<https://arxiv.org/abs/2406.07539>) | 相关作者团队 | arXiv | 预印本/公开稿 |
 | S07-0157 | 2023 | [ScenarioNet: Open-Source Platform for Large-Scale Traffic Scenario Modeling and Simulation](<https://arxiv.org/abs/2306.12241>) | Quanyi Li; Zhenghao Peng; Lan Feng; Zhizheng Liu; Chenda Duan; Wenjie Mo; Bolei Zhou | arXiv | 预印本/公开稿 |
-| S07-0158 | 2023 | [Model-Based Runtime Monitoring with Interactive Imitation Learning](<https://arxiv.org/abs/2310.17552>) | 相关作者团队 | arXiv | 预印本/公开稿 |
+| S07-0158 | 2024 | [Model-Based Runtime Monitoring with Interactive Imitation Learning](<https://arxiv.org/abs/2310.17552>) | Huihan Liu; Shivin Dass; Roberto Martín-Martín; Yuke Zhu | ICRA 2024 | 正式发表/会议 |
 | S07-0159 | 2023 | [FurnitureBench: The Benchmark for Long-Horizon Complex Furniture Assembly](<https://arxiv.org/abs/2305.12821>) | M. Heo; Y. Lee; D. Lee; J. J. Lim | arXiv | 预印本/公开稿 |
 | S07-0160 | 2023 | [PlayFusion: Skill Acquisition via Diffusion from Language-Annotated Play](<https://arxiv.org/abs/2303.01497>) | Lili Chen; S. Bahl; Deepak Pathak | arXiv | 预印本/公开稿 |
 | S07-0161 | 2023 | [Sequential Dexterity: Chaining Dexterous Policies for Long-Horizon Manipulation](<https://arxiv.org/abs/2309.00987>) | Y. Chen; C. Wang; L. Fei-Fei; C. K. Liu | arXiv | 预印本/公开稿 |

@@ -33,7 +33,7 @@ Runtime feasibility & Physical closed-loop execution & Delay and valid control o
 \end{tabularx}
 \end{table}
 
-\subsection{Uncertainty, Constraints, and Recovery}
+\subsection{Uncertainty, Constraints, and Runtime Guardrails}
 Safety requires an account of what can go wrong, which quantity is constrained, and how the system responds. These choices lead to different claims. PETS propagates model uncertainty through candidate trajectories~\cite{chua2018pets}; CPO optimizes reward under expected-cost constraints~\cite{achiam2017cpo}; neither mechanism alone establishes that a physical robot will avoid every hazardous event. The uncertainty or cost must be tied to an action rule, a safety definition, and an operating distribution.
 
 Formal certificates are conditional. Berkenkamp et al. combine a statistical dynamics model with Lyapunov verification and prove high-probability stability within an estimated region of attraction~\cite{berkenkamp2017safe}. The result assumes, among other conditions, Lipschitz dynamics and policies, calibrated confidence bounds, a Lyapunov function, and an initial safe policy. Its experiment is a simulated inverted pendulum. Thomas et al. instead penalize trajectories that a short-horizon model predicts will become unsafe~\cite{thomas2021imagining}. Their theorem requires a specified unsafe set, a finite horizon within which irrecoverable states fail, and a calibrated set-valued model; experiments on four MuJoCo tasks report fewer, not zero, violations.
@@ -43,6 +43,8 @@ Uncertainty-aware shielding offers a third interface. Yu et al. learn a distribu
 Recovery separates task progress from corrective behavior. Recovery RL learns task and recovery policies, using prior data to identify situations requiring intervention~\cite{thananjeyan2021recovery}. We include it as a complementary safety mechanism, not relabel it as a generative world model. Control barrier functions can restrict control through a specified safe-set condition~\cite{ames2019cbf}; their conclusions still depend on state estimation, dynamics, control authority, and feasibility.
 
 At the system level, Kim et al. divide foundation-model-enabled robot safety into action, decision, and human-centered dimensions and propose monitoring and intervention layers~\cite{kim2026guardrails}. This is an architectural position paper without an evaluation of the proposed stack. It therefore motivates separate decision and action gates, but does not show that the architecture reduces physical incidents. Across these mechanisms, we distinguish guarantees under stated assumptions, empirical violation reduction, recovery demonstrations, and unvalidated design proposals.
+
+Recent systems instantiate narrower parts of this architecture. Liu et al. use latent future rollouts to request human supervision before predicted manipulation failures~\cite{liu2024runtime}; two physical tasks improve over a matched-intervention baseline, although each task uses one human supervisor and the paper does not report a single physical-trial denominator. RoboGuard translates rules and a semantic world model into temporal-logic constraints for an LLM planner~\cite{ravichandran2026roboguard}. On a physical Jackal, it blocks all tested RoboPAIR attacks across 35 harmful prompts while preserving 10 safe behaviors, but assumes an accurate world model and does not cover all dynamics-dependent risks. FEARL separates a foundation-model controller from a small verifiable safety-action module~\cite{corsi2026fearl}. In 18 physical navigation episodes, shielding changes the collision rate from 27.8\% to zero with the same 61.1\% task success; this evidence remains conditional on calibrated low-dimensional safety sensors and the verified input domain.
 
 \begin{table}[t]
 \caption{Complementary safety mechanisms. Their scope follows their assumptions and evidence; rows are not ordered by safety strength.}
@@ -63,6 +65,12 @@ WM cost planning & SafeDreamer~\cite{huang2024safedreamer} & Plan with learned c
 Recovery control & Recovery RL~\cite{thananjeyan2021recovery} & Switch to corrective behavior & Missed hazards, false alarms, and recovery success. \\
 \addlinespace
 Modular guardrails & Kim et al.~\cite{kim2026guardrails} & Separate monitoring and decision/action gates & Implemented modules, latency, independence, and incident reduction. \\
+\addlinespace
+Predictive monitor & Liu et al.~\cite{liu2024runtime} & Request human help from latent rollouts & Trial denominator, supervisor variation, and intervention burden. \\
+\addlinespace
+Semantic plan guard & RoboGuard~\cite{ravichandran2026roboguard} & Convert rules and a world model into plan constraints & Map integrity, rule coverage, adaptive attacks, and dynamics. \\
+\addlinespace
+Verified safety module & FEARL~\cite{corsi2026fearl} & Certify a small sensor-to-action module & Sensor calibration, verified domain, specification coverage, and transfer. \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -77,6 +85,8 @@ A practical reporting unit is an episode with its outcome, elapsed time, interve
 \subsection{Research Directions and Synthesis}
 \paragraph{From prediction scores to useful decisions.}
 An important question is how changes in predictive quality alter decisions made with the model. This requires examining variables used by a planner, not just a visual aggregate score. Functional benchmarks provide one entry point~\cite{shang2026worldarena}. Further comparisons should examine cases in which plausible predictions misrank actions or omit consequential alternatives.
+
+A recent risk-informed world-model perspective sharpens this gap as three mismatches: likelihood versus risk, prediction versus intervention, and finite prediction horizon versus accumulated consequences~\cite{ma2026riskinformed}. Its proposed representation, counterfactual reasoning, memory, and assurance components form a research agenda rather than an evaluated architecture. The testable question is whether preserving rare, action-changing evidence alters action ranking, intervention, recovery, or abstention under matched information and compute.
 
 \paragraph{Contact, hidden state, and embodiment.}
 The next literature pass should connect structured and multimodal models to concrete sensing and actuation problems: contact prediction, deformable interaction, touch and force, and robots with different control conventions. Each comparison should distinguish observing a previously hidden variable, predicting it more accurately, and changing how a policy uses it. These are collection priorities, not claims that relevant literature is absent.

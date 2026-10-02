@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 41 条。大部分是将协作表已有文献引入正文；下列 7 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 45 条。大部分是将协作表已有文献引入正文；下列 10 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -15,6 +15,9 @@
 | Recovery RL [论文](https://arxiv.org/abs/2010.15920v2) | 评估、安全与 Benchmark | 恢复策略作为互补安全机制 | 已核方法与实验范围；不将其归为生成式 WM |
 | Control Barrier Functions: Theory and Applications [论文](https://arxiv.org/abs/1903.11199) | 世界模型基础与控制；交叉安全 | 解释形式保证与经验安全结果的区别 | 已核来源与范围；具体定理假设和与学习模型的连接待补 |
 | Do World Models Make Better Robots? [综述](https://arxiv.org/abs/2609.29669v1) | 评估、安全与 Benchmark | 近期综述定位与评估组织方式 | 已查看正文与比较表；不照搬其文献统计与优先性主张 |
+| Safety Guardrails for LLM-Enabled Robots [论文](https://arxiv.org/abs/2503.07885v2) | 评估、安全与 Benchmark | 语义世界模型、LTL 计划约束与越狱攻击 | 已核实体与仿真实验、试验分母和作者局限；见核验批次 03 |
+| Verifiable Foundation Models for Robot Safety [论文](https://arxiv.org/abs/2606.23754v1) | 评估、安全与 Benchmark | 可验证低维安全模块、选择性护盾与实体迁移 | 已核 18 回合实体试验、认证域和传感器前提；见核验批次 03 |
+| Rethinking World Models for Safety-Critical Embodied Systems [观点](https://arxiv.org/abs/2609.03774v2) | 评估、安全与 Benchmark | 2026 风险知情世界模型研究议程 | 已核全文；无自身实验，不参与方法效果比较 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -30,7 +33,7 @@ DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **Worl
 | 结构化物理与多模态 | GNS；WorldArena 2.0 仅提供评估背景 | **目前最薄弱**：三维状态、接触、形变、触觉和力觉的模型级原始论文 | `visuotactile world model`; `contact dynamics prediction robot`; `3D structured world model 2026` | 最高 |
 | 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim | 人类第一视角数据、失败与恢复数据、跨本体动作对齐；训练测试重叠核查 | `egocentric video robot action alignment`; `robot failure recovery dataset`; `cross embodiment dynamics` | 高 |
 | 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口 | 导航和驾驶实例；预测预训练与推理时预测的消融；重规划与记忆 | `navigation world model lookahead planning`; `occupancy world model closed loop driving`; `predictive pretraining policy ablation` | 最高 |
-| 评估、安全与 Benchmark | WorldArena 系列、LIBERO、CALVIN、SafeDreamer、条件性稳定证书、短视规避、可达性护盾、Recovery RL | **安全段仍缺实体证据**：真实机器人分布外风险、校准、干预成本和运行时护栏对照 | `world model uncertainty calibration robot safety 2026`; `robot safety guardrail real-world evaluation`; `robot runtime assurance` | 最高 |
+| 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、条件性证书、短视规避、可达性护盾、预测式人工干预、语义计划护栏、可验证安全模块 | **仍缺可泛化实体证据**：跨操作者/平台复现、分布外校准、事故严重度、干预成本和动态接触风险 | `world model uncertainty calibration robot safety 2026`; `robot safety intervention cost physical evaluation`; `contact-rich runtime assurance` | 最高 |
 
 下一轮优先补每个薄弱方向 2–3 篇能够真正进入比较表的代表工作。满足“不同机制、明确预测量、明确动作接口、可定位实验”的需要后再扩量，不以凑篇数代替覆盖。
 
