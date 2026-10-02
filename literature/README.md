@@ -26,6 +26,8 @@
 
 2026-10-01 v0.2 写作补充另见[文献与内容缺口清单](WRITING_GAPS.md)，其中 7 项另列，不计入 929 条原快照。
 
+2026-10-02 已完成第一批 5 篇新增候选的原文核验，详见[接触、4D、模拟器与策略闭环证据表](EVIDENCE_BATCH_01.md)。这些条目仍与 929 条原快照分开统计。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)

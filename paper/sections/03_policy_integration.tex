@@ -19,12 +19,16 @@ A world model can influence behavior without conducting a full online search at 
 
 DayDreamer anchors this discussion in physical sensing and actuation~\cite{wu2023daydreamer}. More generally, imagined learning involves two coupled feedback loops: interaction updates the model, and the model changes the policy that collects subsequent interaction. Analysis should record both loops, including the reward source and whether policy-induced distribution changes are reflected in model updates.
 
+World-VLA-Loop makes the second loop explicit~\cite{liu2026worldvlaloop}. It trains an action-conditioned video model with successful and near-success trajectories, predicts both future frames and rewards, performs VLA reinforcement learning inside the model, and then uses rollouts from the updated physical policy to refine the next model. The reported two-task robot study improves after two iterations, but still requires task-specific demonstrations and new physical rollouts. The result therefore supports co-adaptation under policy shift, not elimination of real interaction.
+
 Synthetic volume is not a sufficient measure of training value. MBPO's restricted rollouts illustrate that model use can be selective rather than maximized~\cite{janner2019mbpo}. For foundation-scale systems, the corresponding comparison should account for generating, filtering, and training on synthetic trajectories. Real interaction, synthetic interaction, and computation remain separate resources; a reduction in one is not automatically a reduction in all three.
 
 \subsection{Visual Plans and Joint World--Action Models}
 A generated future can serve as an intermediate action representation. UniPi synthesizes goal-conditioned video and extracts actions from it~\cite{du2023unipi}. This separates choosing what should happen from translating that outcome into commands. It also identifies a failure boundary: a plausible plan can be unreachable by the current robot, and a correct plan can be poorly translated into motor actions. Plan quality and action grounding require separate examination.
 
 Joint world--action models reduce this separation by learning future observations and commands together. DreamZero builds on a pretrained video diffusion model to generate video and actions~\cite{ye2026dreamzero}. Cosmos Policy encodes actions, future observations, and values within a video model's latent generation process, and examines direct-policy and planning modes~\cite{kim2026cosmospolicy}. These examples illustrate the interface convergence discussed in recent surveys~\cite{hou2026survey,lu2026survey}, without implying that every video-based policy performs an explicit future rollout at execution time.
+
+WAV combines a future-state model, a trajectory-value model, and action decoding through iterative latent inference~\cite{li2026wav}. Removing its latent planning stage reduces its reported LIBERO average from 98.1 to 96.4, with the largest drop on the Long suite. Its three-task physical comparison also favors WAV over a baseline that shares its video-pretrained model, although each task uses a separate model and only 15 trials. This is evidence for an implicit planning interface under those conditions, rather than a universal advantage over explicit search.
 
 Table~\ref{tab:integration} compares the location of prediction in the pipeline. For a joint system, a predicted outcome may be consumed by action selection, shape training through an auxiliary loss, or remain another generated output. The mechanisms can coexist, but suggest different ablations. They should not be collapsed into an undifferentiated statement that a policy ``uses a world model.''
 
@@ -45,6 +49,10 @@ Visual plan to action & UniPi~\cite{du2023unipi} & Plan generation and decoding 
 Joint generation & DreamZero~\cite{ye2026dreamzero} & Coupled video and actions & Vary predictive objective with matched training. \\
 \addlinespace
 Joint model plus selection & Cosmos Policy~\cite{kim2026cosmospolicy} & Direct policy or planning & Direct versus planning mode; report compute. \\
+\addlinespace
+Implicit latent planning & WAV~\cite{li2026wav} & Iterative future/value inference & Remove planning with the same model and data. \\
+\addlinespace
+Co-evolving simulator and policy & World-VLA-Loop~\cite{liu2026worldvlaloop} & Model-based RL plus model refresh & Track physical data and gains per iteration. \\
 \addlinespace
 Reasoner assistance & Astra studies~\cite{su2026astra,galbot2026astra} & Proposal review or editing & Fix policy; vary observation and prediction inputs. \\
 \bottomrule

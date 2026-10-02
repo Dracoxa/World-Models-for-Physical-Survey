@@ -6,6 +6,8 @@ Evaluation should begin with the model's claimed role. A representation learner 
 
 WorldArena compares perceptual quality with functional uses of embodied world models, including data generation, policy evaluation, and planning~\cite{shang2026worldarena}. WorldArena~2.0 expands toward visuotactile modalities, interactive learning, and multiple simulated and physical platforms~\cite{shang2026worldarena2}. This broadens evaluation beyond generated-video appearance. The resulting protocols provide evidence about tested functions and settings, rather than universal certification of a high-scoring model.
 
+Interactive World Simulator illustrates why the functional role also needs an external check~\cite{wang2026interactive}. Besides reporting video metrics over 192-step rollouts, it trains policies on generated demonstrations and compares policy rankings in the learned and physical environments. The observed positive association is more relevant to policy selection than pixel error alone, but it is not a calibration guarantee: the study covers four correlation tasks, training-distribution initial configurations, and a simulator that is slightly optimistic on three of them.
+
 Policy benchmarks answer a related question. LIBERO studies knowledge transfer in robot learning~\cite{liu2023libero}; CALVIN evaluates language-conditioned long-horizon manipulation~\cite{mees2022calvin}. Both can assess a complete system, but task success alone does not identify the responsible component. Jena et al.~\cite{jena2026evaluation} foreground this distinction. Even within the same named suite, task subsets, demonstrations, initialization, and compute must be aligned before attributing differences to prediction.
 
 \begin{table}[t]
@@ -20,7 +22,7 @@ Predictive content & Held-out trajectories & Error, consistency, or likelihood &
 \addlinespace
 Action sensitivity & Same history; varied commands & Predicted differences match observed consequences & Action semantics and intervention coverage. \\
 \addlinespace
-Functional use & WorldArena series~\cite{shang2026worldarena,shang2026worldarena2} & Utility as data source, evaluator, planner, or environment & Specific role and downstream system. \\
+Functional use & WorldArena series; Interactive World Simulator~\cite{shang2026worldarena,shang2026worldarena2,wang2026interactive} & Utility as data source, evaluator, planner, or environment & Specific role and downstream system. \\
 \addlinespace
 Task performance & LIBERO; CALVIN~\cite{liu2023libero,mees2022calvin} & Completion and sequential outcomes & Tasks, resets, trials, data, and budget. \\
 \addlinespace

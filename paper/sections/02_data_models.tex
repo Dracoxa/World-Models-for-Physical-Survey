@@ -36,12 +36,18 @@ The distinction matters when an agent queries a model repeatedly. A coherent seq
 
 Learned simulation connects data generation with policy improvement, but creates a validation dependency. A policy can exploit regularities of the learned environment. The relevant test is not only sample plausibility but whether a policy or evaluator trained with synthetic experience performs appropriately in an independently assessed environment. We treat generated experience as an additional data source whose utility must be measured, rather than an automatic substitute for physical interaction.
 
+Interactive World Simulator provides a recent test of both uses~\cite{wang2026interactive}. Its action-conditioned latent dynamics support long autoregressive interaction, synthetic demonstration collection, and policy evaluation. On the reported tasks, some imitation policies trained on 100 generated demonstrations approach counterparts trained on 100 real demonstrations, while $\pi_{0.5}$ retains a substantial real-data advantage. Policy scores in the learned simulator are positively associated with physical scores over four tasks, but the comparison uses training-distribution initial states and shows a slight optimistic bias. This evidence supports a bounded surrogate role, not unrestricted replacement of physical evaluation.
+
 \subsection{Latent and Structured Predictive Representations}
 Latent models trade direct visual interpretability for representations shaped by learning objectives. Dreamer learns behavior through imagined latent trajectories~\cite{hafner2020dreamer}; TD-MPC2 uses a decoder-free latent model for trajectory optimization~\cite{hansen2024tdmpc2}. V-JEPA~2 separates action-free representation learning from action-conditioned adaptation for planning~\cite{assran2025vjepa2}. Thus, ``latent'' identifies a prediction space, not a complete training objective or control algorithm.
 
-Structured models make selected physical entities explicit. Graph Network-based Simulators represent systems as interacting particles and learn their evolution through message passing~\cite{sanchez2020gns}. This provides an interface to physical state variables and relations. A deployed robot system may nevertheless need to infer those states from sensors, connect commands to boundary conditions, and account for unobserved quantities. Structured representation does not remove these estimation and control problems.
+Structured models make selected physical entities explicit. Graph Network-based Simulators represent systems as interacting particles and learn their evolution through message passing~\cite{sanchez2020gns}. TesserAct instead generates RGB, depth, and surface-normal sequences, reconstructs a time-varying point cloud, and uses an inverse-dynamics model to recover actions~\cite{zhen2025tesseract}. Its nine-task RLBench study reports higher success than its video baseline on seven tasks, but does not include physical closed-loop control. This distinction matters: a geometrically structured future can aid action decoding without being a forward model queried by candidate robot actions.
 
-Multimodal prediction raises a related issue. Vision, proprioception, touch, and force need not answer the same question. A contact event can be weakly visible but important for execution. We therefore ask what each modality makes observable, which future quantities are predicted, and how signals are synchronized. WorldArena~2.0 expands evaluation toward visuotactile modalities~\cite{shang2026worldarena2}; primary comparisons of tactile, force, and contact-aware architectures remain a priority for the next literature pass.
+Making geometry explicit does not remove state-estimation and control problems. A deployed system still needs to infer state from sensors, connect commands to boundary conditions, and account for unobserved quantities. TesserAct also identifies a concrete representation limit: its single-view RGB--depth--normal sequence captures only one visible surface.
+
+Multimodal prediction raises a related issue. Vision, proprioception, touch, and force need not answer the same question. A contact event can be weakly visible but important for execution. OmniVTA predicts short-horizon visuotactile evolution, feeds predicted tactile features to a diffusion policy, and applies a 60-Hz controller to deviations between predicted and observed touch~\cite{zheng2026omnivta}. On six groups of xArm7 tasks, the full system exceeds its no-controller variant across the reported object, geometry, and perturbation settings. Its ablations support a role for tactile prediction in this system, while the single platform and sensor configuration limit wider conclusions.
+
+We therefore ask what each modality makes observable, which future quantities are predicted, and how signals are synchronized. WorldArena~2.0 expands evaluation toward visuotactile modalities~\cite{shang2026worldarena2}; OmniVTA supplies a model-level case, but broader comparisons of force, contact, and deformable interaction remain necessary.
 
 \begin{table}[t]
 \caption{Prediction spaces and interfaces. A system may occupy several groups. The final column states a comparison question, not a ranking.}
@@ -60,6 +66,10 @@ Physical structure & GNS~\cite{sanchez2020gns} & Particle states and interaction
 \midrule
 \multicolumn{4}{@{}l}{\textbf{Visual and joint action interfaces}} \\
 Future images & UniPi; UniSim~\cite{du2023unipi,yang2024unisim} & Plans or conditioned rollouts & Is the future a target or an action consequence? \\
+\addlinespace
+RGB--depth--normal & TesserAct~\cite{zhen2025tesseract} & Time-varying point clouds & Is geometry predicted from actions or decoded into actions? \\
+\addlinespace
+Visuotactile futures & OmniVTA~\cite{zheng2026omnivta} & Contact evolution for policy and feedback & Which gain follows prediction rather than sensing alone? \\
 \addlinespace
 Video and actions & DreamZero~\cite{ye2026dreamzero} & Joint video and action outputs & Which representation is executable? \\
 \addlinespace
