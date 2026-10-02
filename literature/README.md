@@ -59,6 +59,8 @@
 
 2026-10-02 已完成第十七批实体在线干预与执行期纠正核验，详见[实体在线干预、执行期纠正与接管风险学习证据表](EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md)。TacPAC、DreamAvoid 与 WHIRL 均来自第二轮目录外候选；它们分别改变动作后缀、关键阶段候选选择和训练期 actor 风险整形，仍未形成跨平台或跨操作者复现。
 
+2026-10-02 已完成第十八批泛化契约核验，详见[仿真到实体、相机外推与组合任务证据表](EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md)。四篇候选分别改变训练环境、相机视角、对象--目标组合和测试时任务提示；当前仍没有同一 WAM 的多平台、多操作者统一协议。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)

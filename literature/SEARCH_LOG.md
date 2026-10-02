@@ -48,8 +48,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R26 | 2026-10-02 | Primary full text for R22 second-queue candidates | CQ1--CQ4, CQ6 | 5 papers | 5 full-text evidence records and 5 manuscript additions | [Batch 15](EVIDENCE_BATCH_15_GENERATION_SCHEDULES_EVENTS.md) |
 | R27 | 2026-10-02 | Gap-driven screening of R21 evaluation/reliability candidates; primary full text and CVF record | CQ3--CQ5 | 23 title matches screened; 6 retained | 6 full-text evidence records and 6 manuscript additions | [Batch 16](EVIDENCE_BATCH_16_DIAGNOSTIC_EVALUATION.md) |
 | R28 | 2026-10-02 | Gap-driven screening of R21 physical intervention/correction candidates; primary arXiv full text | CQ2--CQ5 | 4 candidates checked; 3 retained | 3 full-text evidence records and 3 manuscript additions; 1 simulation-only boundary | [Batch 17](EVIDENCE_BATCH_17_PHYSICAL_INTERVENTION_CORRECTION.md) |
+| R29 | 2026-10-02 | Gap-driven screening of R21 generalization candidates; primary arXiv full text | CQ1--CQ4, CQ6 | 4 candidates checked and retained | 4 full-text evidence records and 4 manuscript additions | [Batch 18](EVIDENCE_BATCH_18_GENERALIZATION_CONTRACTS.md) |
 
-The seventeen paper-level evidence batches contain 75 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The eighteen paper-level evidence batches contain 79 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -186,6 +187,10 @@ The 359-candidate R21 delta was filtered by title for benchmark, evaluation, rel
 ### R28: Physical Intervention and Execution-Time Correction Check
 
 The R21 delta was queried for intervention, correction, avoidance, failure, and real-time tactile terms. Four direct candidates were checked in primary arXiv full text. TacPAC was retained for within-chunk tactile correction with 20 physical trials per method and task; DreamAvoid for trigger--future--rerank physical execution with 40 trials per task and method; and WHIRL for turning physical HIL takeover labels into actor-side predictive risk shaping. CoWAM was not added to the manuscript because all eight tasks are simulated, although its matched candidate-pool design is retained in Batch 17 as a methodological boundary. The three retained studies use one physical platform each. None supports cross-platform, cross-operator, calibrated abstention, or open-distribution recovery claims.
+
+### R29: Generalization-Contract Check
+
+The R21 delta was screened for sim-to-real, viewpoint, compositional, transfer, and cross-task terms. Four primary arXiv full texts were retained because they test distinct changes rather than repeating a generic generalization claim: synthetic-only training to one real Franka, held-out simulated camera regions, unseen object--receptacle compositions on one YAM platform, and human-video-specified unseen task configurations on one bimanual Franka. The evidence is recorded by changed variable, adaptation budget, endpoint, and denominator. No retained study evaluates the same WAM across multiple physical robot platforms or operators under a common protocol.
 
 ## Screening and Evidence Handling
 
