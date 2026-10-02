@@ -16,9 +16,9 @@
 - 已核验 NWM、DreamerNav、NavThinker 与 NavWAM，区分离线显式规划、latent policy、候选动作 look-ahead 与联合世界--动作闭环；实体证据分母与局限见[核验批次 06](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md)。
 - 已核验 Mem-World、WorldScape Policy 2.0、FARL、ViFailback 与 LIBERO-Recover，区分记忆保持、进度跟踪、提前避险、失败后纠正和状态恢复；见[核验批次 07](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md)。
 - 已核验 Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger，区分动作条件失败检测、校准式求助与人工接管成本；见[核验批次 08](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md)。
-- 已核验 WorldSample、VLAW、Hi-WM、WorldSync 与 FoMo-FD，区分真实在线 RL、模型--策略共进化、模型内人工纠正、off-expert 动作跟随和离线失败监测；见[核验批次 09](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md)。
+- 已核验 WorldSample、VLAW、Hi-WM、WorldSync、FoMo-FD 与 MIST-WM，区分真实在线 RL、模型--策略共进化、仿真主动探索、模型内人工纠正、off-expert 动作跟随和离线失败监测；见[核验批次 09](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md)。
 - 已核验 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord，区分世界模型合成恢复数据、人工恢复示范、诊断回滚和实体任务续接；见[核验批次 10](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md)。
-- 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、46 篇原文核验记录及当前 adequate for bounded claims 保证边界。
+- 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、47 篇原文核验记录及当前 adequate for bounded claims 保证边界。
 - 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R17 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
 - 已完成 14 条正式版本解析：R14 升级 10 条预印本记录并补全 1 条 ICRA 记录，R15 将 Cosmos Policy 和 TesserAct 分别升级为 ICLR 2026 与 ICCV 2025，R16 将 uncertainty-aware reachability certificate 升级为 IEEE T-ASE 2024 正式版本；其余条目仍按 V01 继续核对。
 - 已清除正文中“下一轮检索”“collection priorities”和首页工作稿状态等协作阶段措辞，将其改写为受当前证据图谱边界约束的研究议程与综合判断；ACM 引用条按模板要求恢复显示。

@@ -37,7 +37,7 @@
 | VLA-FixBench [ICML 2026](https://proceedings.mlr.press/v306/yan26r.html) | 评估、安全与 Benchmark；边界对照 | 停止、回滚、三维纠正和误触发代价 | 已核正式论文；35 点增益为人工上界，实体分母未明，见核验批次 10 |
 | AgentChord [论文](https://arxiv.org/abs/2605.11951v1) | 世界模型与 VLA、规划；边界对照 | 预编译恢复分支、状态修复后重新接入原任务 | 已核六个实体任务、20 次/任务和预设故障边界；非世界模型，见核验批次 10 |
 | VLAW [ICML 2026](https://proceedings.mlr.press/v306/guo26i.html) | 世界模型与 VLA、规划；数据与跨本体 | 实体失败 rollout 校准世界模型，再以筛选后的合成 rollout 更新 VLA | 已核五类实体任务、两轮更新和等实体 rollout 对照；见核验批次 09 |
-| Task-Sufficient World Models [ICML 2026](https://proceedings.mlr.press/v306/feng26aa.html) | 世界模型基础与控制；Latent 与预测表示 | 主动探测与结构化表示共同学习任务充分 latent | 已核正式摘要与出版元数据；具体基准、消融和适用边界待全文提取 |
+| Task-Sufficient World Models [ICML 2026](https://proceedings.mlr.press/v306/feng26aa.html) | 世界模型基础与控制；Latent 与预测表示 | 主动探测与结构化表示共同学习任务充分 latent | 已核四套仿真基准、5-seed 结果、表示探测和组件消融；无实体机器人验证，见核验批次 09 |
 | Latent Reasoning VLA [ICML 2026](https://proceedings.mlr.press/v306/bai26h.html) | 世界模型与 VLA、规划；边界对照 | 连续 latent 推理与预测用于动作生成 | 已核正式摘要；尚需确认是否包含可独立评估的前向动力学模型，不先归为世界模型 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
@@ -56,7 +56,7 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 
 失败后恢复批次中的 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord 均未检出，因此补充记录增至 28 项。Dream2Fix 补入世界模型合成失败数据到实体纠正的闭环，REBOOT 给出有效续接状态与真实恢复示范，VLA-FixBench 和 AgentChord 提供非世界模型的诊断回滚与任务续接边界。核心缺口收窄为：跨平台、跨操作者、开放故障且同时报告校准报警、事故后果和最终任务完成的世界模型恢复证据。
 
-ICML 2026 PMLR 卷的定向检查新增 VLAW、Task-Sufficient World Models 与 Latent Reasoning VLA 三项，补充记录增至 31 项。VLAW 已完成原文级核验并进入正文；Task-Sufficient World Models 仅用于方法定位；Latent Reasoning VLA 暂列边界对照，避免把所有 latent reasoning 策略自动归为世界模型。
+ICML 2026 PMLR 卷的定向检查新增 VLAW、Task-Sufficient World Models 与 Latent Reasoning VLA 三项，补充记录增至 31 项。VLAW 与 Task-Sufficient World Models 已完成原文级核验并进入正文，分别提供实体模型--策略共进化和仿真主动探索--结构化表示证据；Latent Reasoning VLA 暂列边界对照，避免把所有 latent reasoning 策略自动归为世界模型。
 
 ## 接下来优先补哪些
 
