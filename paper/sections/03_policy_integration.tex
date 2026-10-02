@@ -23,6 +23,10 @@ Prediction can also influence a policy only during training. DriveVLA-W0 adds au
 
 Navigation introduces language-conditioned long horizons. The NavForesee preprint jointly predicts short-horizon geometry, long-horizon milestones, and waypoints under a hierarchical language plan~\cite{liu2026navforesee}. Removing either prediction horizon degrades its R2R-CE simulator results, while removing the language planner causes a larger drop. This supports complementarity within that system, not attribution of the whole gain to prediction. Its RxR-CE result is less uniformly favorable, and the current evidence is simulated and preprint-only.
 
+Visual goal navigation provides a more direct prediction--selection interface. Navigation World Models (NWM) predicts future views under continuous actions and uses CEM either to construct a trajectory or to rerank samples from an external policy~\cite{bar2025nwm}. Its RECON results establish that generated futures can enter an offline trajectory objective, but they are not physical closed-loop trials; the paper also reports context loss in unfamiliar scenes and difficulty modeling pedestrians. DreamerNav instead learns a DreamerV3 policy from latent dynamics while following a static global A* path~\cite{shanks2025dreamernav}. Its main comparisons use one simulated warehouse, followed by preliminary demonstrations on two quadruped platforms without a reported physical-trial denominator. These works therefore connect prediction to action selection and deployment, respectively, without jointly establishing robust real-world replanning.
+
+Recent preprints move closer to a measured feedback loop. NavThinker queries action-conditioned next-state features and predicted pedestrian trajectories inside a social-navigation policy~\cite{hu2026navthinker}. Its Social-HM3D ablation improves success when look-ahead features are added, but its Unitree Go2 result is a qualitative scenario without repeated-trial statistics. NavWAM jointly predicts action chunks, future views, states, and goal-progress values, then executes direct action chunks and re-queries the model after new observations~\cite{azuma2026navwam}. In 24 image-goal episodes per method across four indoor environments, the preprint reports 19 successes for NavWAM, 14 for OmniVLA, and 4 for NWM. This is closed-loop physical evidence within one small protocol. It does not isolate future-view prediction in the physical comparison: future views and values accompany the default policy output but are not required for execution, while the predictive-head ablations are offline.
+
 \begin{table}[t]
 \caption{Distinct predictive interfaces in driving and navigation. Metrics and limitations refer to each paper's own protocol and are not a cross-paper ranking.}
 \label{tab:driving-navigation}
@@ -40,6 +44,14 @@ Drive-OccWorld~\cite{yang2025driveoccworld} & Candidate-conditioned occupancy ro
 DriveVLA-W0~\cite{li2026drivevlaw0} & Future-image auxiliary objective during training & Generation bypassed at inference; proprietary largest-scale data. \\
 \addlinespace
 NavForesee~\cite{liu2026navforesee} & Dual-horizon prediction inside a language-conditioned policy & Habitat simulation; arXiv preprint. \\
+\addlinespace
+NWM~\cite{bar2025nwm} & Action-conditioned future views scored by CEM or policy reranking & Logged RECON trajectories; no physical closed loop. \\
+\addlinespace
+DreamerNav~\cite{shanks2025dreamernav} & Latent imagined learning with static A* global guidance & One simulated warehouse; preliminary two-platform demonstrations. \\
+\addlinespace
+NavThinker~\cite{hu2026navthinker} & Candidate-action look-ahead and predicted-trajectory reward & Simulation ablation; qualitative Go2 deployment; preprint. \\
+\addlinespace
+NavWAM~\cite{azuma2026navwam} & Joint future, value, and action prediction in a receding feedback loop & 24 physical episodes per method; one platform; preprint. \\
 \bottomrule
 \end{tabularx}
 \end{table}

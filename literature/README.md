@@ -37,6 +37,8 @@
 
 2026-10-02 已完成第五批导航与驾驶核验，详见[导航与自动驾驶中的预测--决策接口证据表](EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md)。5 篇均在原目录中；本轮修正了 NavForesee 的预印本状态、OccWorld 作者与正式版本，以及被错配到 `2408.14197` 的 Drive-OccWorld 记录。
 
+2026-10-02 已完成第六批闭环导航核验，详见[导航世界模型的闭环、实体部署与重规划证据表](EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md)。DreamerNav 与 NavThinker 已在原目录；NWM 与 NavWAM 作为正文补充来源单列。现有实体证据仍以受控演示和单平台小样本为主。
+
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 
 - GPT 6 Astra as an Embodied Policy [技术报告与代码](https://github.com/anonymous-report-421/GPT-as-Policy)
