@@ -18,6 +18,7 @@
 - 已核验 Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger，区分动作条件失败检测、校准式求助与人工接管成本；见[核验批次 08](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md)。
 - 已核验 WorldSample、Hi-WM、WorldSync 与 FoMo-FD，区分真实在线 RL、模型内人工纠正、off-expert 动作跟随和离线失败监测；见[核验批次 09](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md)。
 - 已核验 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord，区分世界模型合成恢复数据、人工恢复示范、诊断回滚和实体任务续接；见[核验批次 10](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md)。
+- 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、45 篇原文核验记录及当前 adequate for bounded claims 保证边界。
 - 已修正目录中 `2408.14197` 被误写为 Drive-WM、NavForesee 被误标为 CVPR 2026 正式论文，以及 OccWorld 作者名错误；目录统计仍为 929 条分类记录。
 - 当前目录未检索到的 28 项补充文献及下一轮缺口见[边写边补清单](literature/WRITING_GAPS.md)。
 - 已绘制图 1，并提供英文图注和可访问性描述。
@@ -36,7 +37,7 @@
 | 数据与模型 | 已补 4D、触觉、点云多材料动力学和长时交互模拟器案例；继续补长时组合接触、跨传感器校准、人类视频和失败数据 |
 | 策略融合 | 已补隐式规划、模型--策略共进化、导航/驾驶接口、长期记忆、预测式风险门控及受控失败后的实体纠正；继续补跨平台复现和统一实体消融 |
 | 评估与安全 | 已补条件性保证、短视规避、可达性护盾、成本规划、校准式失败检测、求助率、人工恢复数据及任务续接；继续补真实分布偏移下的在线干预效果与跨平台复现 |
-| 综述方法与定位 | 真实检索日志、筛选理由、已有综述差异和最终统计 |
+| 综述方法与定位 | 已固化基础语料、外部库 commit、去重与证据提取协议；继续补唯一 publication-family 语料、数据库检索日志、排除理由、引文追踪和最终流程统计 |
 
 ## 尚待作者完成
 

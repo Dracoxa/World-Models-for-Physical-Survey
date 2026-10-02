@@ -16,6 +16,7 @@
 
 ## 检索和维护
 
+- 检索范围、语料冻结、去重、纳入排除与证据提取规则见[检索、筛选与证据追踪协议](SEARCH_PROTOCOL.md)。当前保证为 adequate for bounded claims，不声称完整系统综述召回率。
 - 在分类页按标题或作者查找；下载 [catalog.csv](catalog.csv) 可按年份、类别、来源筛选。
 - `publication_status` 为原表填写，不代表本目录确认接受或发表状态。
 - 原始论文核验后确认的 7 条元数据修正由 `export_catalog.py` 中的 `VERIFIED_OVERRIDES` 保留，重新导出不会退回旧值。
