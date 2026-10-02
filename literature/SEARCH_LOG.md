@@ -53,8 +53,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R31 | 2026-10-02 | Latest-paper follow-up from V-JEPA formal-version check; arXiv primary full text | CQ1--CQ4, CQ6 | 1 post-freeze candidate found, deduplicated, and retained | 1 full-text evidence record and 1 manuscript addition | [Batch 19](EVIDENCE_BATCH_19_VJEPA_POLICY.md) |
 | R32 | 2026-10-02 | Closest-work check around V-JEPA Policy; frozen catalog, external candidates, and arXiv primary full text | CQ1--CQ4, CQ6 | 2 direct JEPA-policy neighbors deduplicated and retained | 2 full-text evidence records and 2 manuscript additions | [Batch 20](EVIDENCE_BATCH_20_JEPA_POLICY_NEIGHBORS.md) |
 | R33 | 2026-10-02 | High-priority external-candidate follow-up; frozen catalog and arXiv primary full text | CQ1--CQ4, CQ6 | 1 predictive-representation candidate deduplicated and retained | 1 full-text evidence record and 1 manuscript addition | [Batch 21](EVIDENCE_BATCH_21_JEPA_VLA_REPRESENTATION.md) |
+| R34 | 2026-10-02 | Follow-up of RCL external candidate; exact-title/arXiv search and primary arXiv v2 full text | CQ1--CQ4, CQ6 | 1 candidate absent from 929-row catalog; identity, version, method, results, and stated workshop acceptance checked | 1 full-text evidence record and 1 manuscript addition | [Batch 22](EVIDENCE_BATCH_22_PHYSICALLY_GROUNDED_JEPA.md) |
 
-The twenty-one paper-level evidence batches contain 83 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The twenty-two paper-level evidence batches contain 84 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -211,6 +212,10 @@ VLA-JEPA and JEPA-WAM were selected as direct methodological neighbors of V-JEPA
 ### R33: JEPA-VLA Predictive-Representation Check
 
 The first external-candidate list's high-priority record *JEPA-VLA: Video Predictive Embedding is Needed for VLA Models* was checked against the catalog, delta candidates, supplement tracker, and manuscript by exact title and arXiv ID. It was absent from the 929-row catalog and tracked supplements, so it was retained as one additional post-freeze amendment. Primary arXiv full text was inspected. The paper contributes matched within-implementation comparisons for adding frozen V-JEPA 2 history embeddings to basic and OpenVLA-OFT policies, but the intervention also adds encoder capacity and fusion modules. Batch 21 records that no downstream future target or transition model is trained, the physical study is one task with an ambiguous per-condition denominator, Table 7 duplicates a DINOv2 label, and no multi-seed or systems-cost results are reported. It is used as a predictive-pretraining representation boundary, not as online world-model evidence.
+
+### R34: Physically Grounded JEPA Planning Follow-up
+
+Recorded query: `"Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning" arXiv 2609.03565`. The exact title and arXiv ID were checked against arXiv's v2 record and full HTML. The candidate was absent from the 929-row catalog and present in the RCL discovery delta. The primary record states acceptance to the IROS 2026 Workshop on Physical World Models for Scaling Embodied AI. Full-text review found action-conditioned latent rollouts with CEM, training-only alignment to measured task state, four simulated tasks, and an internal three-seed/50-problem protocol. The reported DINO-WM, PLDM, and LeWorldModel rows use values taken from LeWorldModel rather than a common re-evaluation. Batch 22 records the evidence and simulation-only boundary; it does not infer physical-robot performance.
 
 ## Screening and Evidence Handling
 
