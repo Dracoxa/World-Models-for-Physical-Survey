@@ -34,13 +34,15 @@ Runtime feasibility & Physical closed-loop execution & Delay and valid control o
 \end{table}
 
 \subsection{Uncertainty, Constraints, and Recovery}
-Safety requires an account of what can go wrong and how the system responds. Uncertainty, constrained optimization, and recovery address different parts of this problem. PETS propagates uncertainty through candidate trajectories~\cite{chua2018pets}, but uncertainty-aware control is not itself a guarantee against hazardous outcomes. Uncertainty must be connected to an action rule and assessed under the relevant distribution changes.
+Safety requires an account of what can go wrong, which quantity is constrained, and how the system responds. These choices lead to different claims. PETS propagates model uncertainty through candidate trajectories~\cite{chua2018pets}; CPO optimizes reward under expected-cost constraints~\cite{achiam2017cpo}; neither mechanism alone establishes that a physical robot will avoid every hazardous event. The uncertainty or cost must be tied to an action rule, a safety definition, and an operating distribution.
 
-Constrained Policy Optimization formalizes learning with reward and cost constraints~\cite{achiam2017cpo}. SafeDreamer integrates cost-aware planning and Lagrangian mechanisms with a learned world model, evaluating behavior in Safety-Gymnasium~\cite{huang2024safedreamer}. These works motivate comparing task return with explicit costs, rather than interpreting success rate as safety. An expected-cost constraint need not exclude a rare severe event; its meaning depends on the event definition, horizon, and distribution used for evaluation.
+Formal certificates are conditional. Berkenkamp et al. combine a statistical dynamics model with Lyapunov verification and prove high-probability stability within an estimated region of attraction~\cite{berkenkamp2017safe}. The result assumes, among other conditions, Lipschitz dynamics and policies, calibrated confidence bounds, a Lyapunov function, and an initial safe policy. Its experiment is a simulated inverted pendulum. Thomas et al. instead penalize trajectories that a short-horizon model predicts will become unsafe~\cite{thomas2021imagining}. Their theorem requires a specified unsafe set, a finite horizon within which irrecoverable states fail, and a calibrated set-valued model; experiments on four MuJoCo tasks report fewer, not zero, violations.
 
-Recovery separates task progress from corrective behavior. Recovery RL learns task and recovery policies, using prior data to identify situations requiring intervention~\cite{thananjeyan2021recovery}. We include it as a complementary safety mechanism, not relabel it as a generative world model. For a predictive robot system, the corresponding design question is how a detected or forecast problem triggers replanning, switching, assistance, or stopping. Each implemented response needs its own evidence.
+Uncertainty-aware shielding offers a third interface. Yu et al. learn a distributional reachability certificate and a shield policy, reporting comparable return with fewer training violations on four simulated tracking and navigation tasks~\cite{yu2022drc}. The paper is a 2022 preprint and lists physical-robot deployment as future work. SafeDreamer integrates cost-aware planning and Lagrangian updates with a learned world model~\cite{huang2024safedreamer}. Across Safety-Gymnasium simulation tasks it improves the reward--cost tradeoff, but its nearly zero-cost result is specific to the benchmark cost definition and does not certify open-world physical safety.
 
-Formal control tools offer another form of support. Control barrier functions express conditions for maintaining a system inside a specified safe set~\cite{ames2019cbf}. Their conclusions depend on assumptions about state, dynamics, control authority, and constraint feasibility. A learned predictor does not inherit a formal guarantee merely by being attached to such a controller. We distinguish guarantees under assumptions, empirical violation reduction, and recovery demonstrations.
+Recovery separates task progress from corrective behavior. Recovery RL learns task and recovery policies, using prior data to identify situations requiring intervention~\cite{thananjeyan2021recovery}. We include it as a complementary safety mechanism, not relabel it as a generative world model. Control barrier functions can restrict control through a specified safe-set condition~\cite{ames2019cbf}; their conclusions still depend on state estimation, dynamics, control authority, and feasibility.
+
+At the system level, Kim et al. divide foundation-model-enabled robot safety into action, decision, and human-centered dimensions and propose monitoring and intervention layers~\cite{kim2026guardrails}. This is an architectural position paper without an evaluation of the proposed stack. It therefore motivates separate decision and action gates, but does not show that the architecture reduces physical incidents. Across these mechanisms, we distinguish guarantees under stated assumptions, empirical violation reduction, recovery demonstrations, and unvalidated design proposals.
 
 \begin{table}[t]
 \caption{Complementary safety mechanisms. Their scope follows their assumptions and evidence; rows are not ordered by safety strength.}
@@ -50,15 +52,17 @@ Formal control tools offer another form of support. Control barrier functions ex
 \toprule
 Mechanism & Source & Function & Required check \\
 \midrule
-Uncertainty propagation & PETS~\cite{chua2018pets} & Account for uncertain outcomes & Calibration under shift and the resulting action rule. \\
+Stability certificate & Berkenkamp et al.~\cite{berkenkamp2017safe} & Certify a region of attraction & Initial safe set, confidence coverage, smoothness, and dimension. \\
 \addlinespace
-Constrained learning & CPO~\cite{achiam2017cpo} & Reward optimization with costs & Cost meaning and bound assumptions. \\
+Near-future avoidance & Thomas et al.~\cite{thomas2021imagining} & Penalize predicted unsafe rollouts & Unsafe-set definition, model calibration, and sufficient horizon. \\
 \addlinespace
-WM safety planning & SafeDreamer~\cite{huang2024safedreamer} & Plan with learned costs and rewards & Cost-prediction error and observed violations. \\
+Reachability shield & Yu et al.~\cite{yu2022drc} & Override actions using uncertainty-aware risk & Coverage, intervention rate, false alarms, and physical transfer. \\
+\addlinespace
+WM cost planning & SafeDreamer~\cite{huang2024safedreamer} & Plan with learned costs and rewards & Cost-prediction error, exposure, and observed violations. \\
 \addlinespace
 Recovery control & Recovery RL~\cite{thananjeyan2021recovery} & Switch to corrective behavior & Missed hazards, false alarms, and recovery success. \\
 \addlinespace
-Constraint enforcement & Barrier functions~\cite{ames2019cbf} & Restrict control using a safe-set condition & State error, dynamics assumptions, and feasibility. \\
+Modular guardrails & Kim et al.~\cite{kim2026guardrails} & Separate monitoring and decision/action gates & Implemented modules, latency, independence, and incident reduction. \\
 \bottomrule
 \end{tabularx}
 \end{table}
