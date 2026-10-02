@@ -37,6 +37,7 @@ The review profile remains a **structured narrative review with a critical evide
 | R15 | 2026-10-02 | Formal-version resolution; ICLR and CVF proceedings, arXiv | Publication status | 4 cited records checked | 2 preprints upgraded; 2 retained as preprints after no official proceedings page was found in this check | [Bibliography](../paper/references.bib) |
 | R16 | 2026-10-02 | Formal-version resolution; IEEE/DOI record, arXiv, project pages | Publication status | 4 cited records checked | 1 preprint upgraded; 3 retained as preprints after no formal venue page was found in this check | [Bibliography](../paper/references.bib) |
 | R17 | 2026-10-02 | Targeted ICML 2026 PMLR volume scan and primary full text | CQ1--CQ4, CQ6 | 3 absent candidates retained | 2 full-text evidence records; 1 boundary candidate triaged | [Batch 09](EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md), [gap tracker](WRITING_GAPS.md) |
+| R18 | 2026-10-02 | GitHub update scan; repository pages and web search | CQ1--CQ6 | 5 candidate repositories inspected | 4 retained as discovery neighbors; none added to the frozen candidate count | [Related surveys](../RELATED_SURVEYS.md) |
 
 The ten paper-level evidence batches contain 47 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
@@ -131,6 +132,10 @@ Four cited records were checked against an official IEEE/DOI record, arXiv, and 
 ### R17: Targeted ICML 2026 Scan
 
 The newly published PMLR volume 306 was searched for world-model and VLA terms, then candidate titles were checked against the 929-record catalog. VLAW, *Learning Task-Sufficient World Models by Synergizing Agentic Exploration and Structured Modeling*, and *Latent Reasoning VLA* were absent. VLAW and the task-sufficient paper were checked at full-text level, added to Batch 09, and used in the manuscript with their respective physical and simulation evidence boundaries. *Latent Reasoning VLA* remains a boundary candidate until its forward-model status is checked. This targeted pass is not a complete ICML 2026 venue census and does not complete D02.
+
+### R18: GitHub Survey Update Scan
+
+GitHub repository and web searches inspected five previously unlisted collections: JiahuaDong/Awesome-World-Models, NeuraLiying/Awesome-World-Models, autonomousdrivingkr/Awesome-Physical-AI, w-xb/awesome-agentic-robotics, and operator22th/awesome-world-models-for-robots. The first four were retained as discovery neighbors because they respectively add a 2026 survey update stream, a broad categorized bibliography, a Physical AI systems view, and an agentic safety/recovery neighborhood. The operator22th list was not retained for ongoing tracking because its metadata and update structure are comparatively sparse. No paper-level evidence or candidate count was changed: these repositories must first be deduplicated against the frozen corpus, and their entries remain discovery leads rather than evidence.
 
 ## Screening and Evidence Handling
 

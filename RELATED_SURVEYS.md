@@ -9,6 +9,7 @@
 | [tsinghua-fib-lab/World-Model](https://github.com/tsinghua-fib-lab/World-Model) | [ACM Computing Surveys 2025](https://doi.org/10.1145/3746449) | 通用世界模型、视频生成、具身与城市智能 | 最接近目标期刊；可参考综述叙事、路线图和持续更新方式 | 范围明显宽于 Physical AI，不宜照搬其应用分类 |
 | [NTUMARS/Awesome-World-Model-for-Robotics-Policy](https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy) | [arXiv:2605.00080](https://arxiv.org/abs/2605.00080) | 机器人策略、学习模拟器、评估、数据和视频世界模型 | 与我们的“预测如何进入策略”主线最接近；其 benchmark 和 dataset 分区适合交叉补漏 | 当前为预印本；具体结论仍需回到原始论文核验 |
 | [Li-Zn-H/AwesomeWorldModels](https://github.com/Li-Zn-H/AwesomeWorldModels) | [arXiv:2510.16732v3](https://arxiv.org/abs/2510.16732v3) | 具身世界模型；功能、时间建模和空间表示三轴分类 | 适合核对表示类型、自动驾驶/机器人覆盖和物理一致性评价 | 分类粒度很细，不应让我们的四部分正文退化为长目录 |
+| [JiahuaDong/Awesome-World-Models](https://github.com/JiahuaDong/Awesome-World-Models) | 2026 TechRxiv 综述配套仓库 | 强化学习、观测生成、latent、对象中心模型及机器人/驾驶/科学应用 | 已持续补入 ICML、ECCV 2026 条目，适合做会议级更新检查和 benchmark/指标交叉核对 | 范围远宽于 Physical AI；仓库标签和性能汇总需回原始论文验证 |
 | [clearlab-sustech/WorldModelSurvey](https://github.com/clearlab-sustech/WorldModelSurvey) | [arXiv:2607.00836](https://arxiv.org/abs/2607.00836) | 从 world model 到 world action model 的机器人教程 | 定义图、输入输出接口图和四类 WAM 范式清楚，适合检查概念图表达 | 是简明教程而非大规模证据综述 |
 | [FutureTwT/awesome-world-models-for-vla-agents](https://github.com/FutureTwT/awesome-world-models-for-vla-agents) | 2026 TechRxiv 预印本配套仓库 | World Planner、World Action Model、World Synthesizer、World Simulator | 适合补 VLA 集成方式、基础模型、指标和 benchmark | 只覆盖 VLA 近邻，不代表全部 Physical AI |
 | [OpenMOSS/Awesome-WAM](https://github.com/OpenMOSS/Awesome-WAM) | [arXiv:2605.12090](https://arxiv.org/abs/2605.12090) | Cascaded / Joint World Action Models、训练数据与评估 | WAM 与 VLA 交叉部分更新快，并提供 benchmark 组织和论文解读 | “首次”或能力比较等主张必须独立核对，不能由仓库自述直接支撑 |
@@ -21,6 +22,9 @@
 | [leofan90/Awesome-World-Models](https://github.com/leofan90/Awesome-World-Models) | 大规模整理视频、具身、VLA、驾驶、数据集与 benchmark | 用于检查七类目录是否存在明显主题漏项 |
 | [LMD0311/Awesome-World-Model](https://github.com/LMD0311/Awesome-World-Model) | 长期跟踪自动驾驶、机器人和近期综述 | 用于发现最新条目和专题综述，不直接采用其发表状态标签 |
 | [OpenEnvision/Awesome-World-Modeling](https://github.com/OpenEnvision/Awesome-World-Modeling) | 以生成式、表征式和 agentic world modeling 组织大型目录 | 用于术语扩展、历史线索和跨领域检索词发现 |
+| [NeuraLiying/Awesome-World-Models](https://github.com/NeuraLiying/Awesome-World-Models) | 340+ 条目，按视频、机器人、3D/4D、物理模拟、效率和评估等主题组织 | 用于季度级高召回补漏，尤其检查 2026 robotics、physics-grounded 与 benchmark 条目 |
+| [autonomousdrivingkr/Awesome-Physical-AI](https://github.com/autonomousdrivingkr/Awesome-Physical-AI) | 从感知、表示、世界模型到规划、控制，并列出数据、仿真和工具链 | 用于检查 Physical AI 系统栈中的非论文资源与 sim-to-real 基础设施，不作为世界模型论文边界 |
+| [w-xb/awesome-agentic-robotics](https://github.com/w-xb/awesome-agentic-robotics) | 覆盖机器人记忆、规划、世界模型、验证、失败检测与恢复 | 用于第 3、4 部分的邻域检索，尤其发现非世界模型安全层和恢复系统作为边界对照 |
 
 这些列表的作用是“发现”，不是“证明”。进入正文的论文仍应核对题名、作者、版本、发表状态、实验环境、关键图表和可支撑结论。
 
@@ -39,6 +43,7 @@
 
 - **正文定位**：优先逐表核对 Kirchner et al.、Hou et al.、Li et al. 与本稿的范围差异，删除无法守住的“更全面”“首次”等表达。
 - **文献补漏**：已将 NTUMARS、Li-Zn-H、OpenMOSS 三个仓库与本项目 929 条分类记录做题名和 arXiv ID 去重；结果见[新增候选摘要](literature/EXTERNAL_CANDIDATES.md)和[完整候选 CSV](literature/external_candidates.csv)。
+- **更新源分层**：JiahuaDong、NeuraLiying、Awesome-Physical-AI 与 agentic-robotics 暂作为发现源登记，尚未计入冻结的 341 个外部唯一 arXiv ID 或 253 条新增候选；下一次统一更新时再去重，避免把重叠列表直接累加。
 - **图表设计**：参考这些仓库的组织维度，但图表数据只从已核原文提取；优先做“预测空间 × 动作接口 × 验证环境”矩阵。
 - **GitHub 维护**：保留当前 CSV 和七类 Markdown 的可检索结构，后续增加“已核验”状态，而不是继续堆叠未经核验的数量。
 
@@ -50,5 +55,7 @@
 | Web search | `site:github.com world models embodied AI survey GitHub` | 补足 GitHub 搜索未召回的论文配套仓库 |
 | Title search | 具体综述题名 + `GitHub` | 核对论文入口、仓库归属和是否存在配套项目 |
 | Repository inspection | README、论文链接、最近提交、许可证 | 区分论文配套仓库、资源列表和个人笔记 |
+
+2026-10-02 的更新扫描另检查了 JiahuaDong、NeuraLiying、Awesome-Physical-AI、agentic-robotics 与 operator22th 五个仓库。前四项因能补充正式综述更新、Physical AI 系统栈或安全恢复邻域而保留；operator22th 清单结构较简、元数据字段不足，暂不加入持续追踪表。
 
 检索盲点：本轮未进行 GitHub 全量 API 翻页、引文网络追踪或逐仓库链接完整性检查；部分 2026 项目仍处于预印本阶段。后续做正式 related-work 比较时，应以出版页面或 arXiv 当前版本为准。

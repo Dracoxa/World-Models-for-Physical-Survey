@@ -19,7 +19,8 @@
 - 已核验 WorldSample、VLAW、Hi-WM、WorldSync、FoMo-FD 与 MIST-WM，区分真实在线 RL、模型--策略共进化、仿真主动探索、模型内人工纠正、off-expert 动作跟随和离线失败监测；见[核验批次 09](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md)。
 - 已核验 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord，区分世界模型合成恢复数据、人工恢复示范、诊断回滚和实体任务续接；见[核验批次 10](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md)。
 - 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、47 篇原文核验记录及当前 adequate for bounded claims 保证边界。
-- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R17 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
+- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R18 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
+- 已更新[同类开源调研与差异化定位](RELATED_SURVEYS.md)，新增 4 个可持续发现源；它们尚未并入冻结候选计数，避免重叠清单未经去重直接累加。
 - 已完成 14 条正式版本解析：R14 升级 10 条预印本记录并补全 1 条 ICRA 记录，R15 将 Cosmos Policy 和 TesserAct 分别升级为 ICLR 2026 与 ICCV 2025，R16 将 uncertainty-aware reachability certificate 升级为 IEEE T-ASE 2024 正式版本；其余条目仍按 V01 继续核对。
 - 已清除正文中“下一轮检索”“collection priorities”和首页工作稿状态等协作阶段措辞，将其改写为受当前证据图谱边界约束的研究议程与综合判断；ACM 引用条按模板要求恢复显示。
 - 已将同类综述定位从主题覆盖比较改为系统论断追踪：统一记录预测对象、动作接口、系统用途与证据环境，并避免以他文未列出的主题推断其缺失。
