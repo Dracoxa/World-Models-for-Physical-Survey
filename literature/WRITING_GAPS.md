@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 115 条。大部分是将协作表已有文献引入正文；下列 64 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 117 条。大部分是将协作表已有文献引入正文；下列 67 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -41,6 +41,9 @@
 | V-JEPA Policy [论文](https://arxiv.org/abs/2609.37250v1) | Latent 与预测表示；世界模型与 VLA、规划 | 冻结预测视觉表示、future-latent predictor 与 action expert 的直接耦合 | 已核 future-loss 匹配消融、DROID predictor 预训练和两项实体任务；单 seed、额外上游预算和非动作条件预测边界见核验批次 19 |
 | VLA-JEPA [论文](https://arxiv.org/abs/2602.10098v2) | Latent 与预测表示；数据与跨本体；世界模型与 VLA、规划 | 人类视频上的 latent transition 预训练与动作头适配 | 已核 220K 人类视频、76K DROID、三套仿真和实体协议；人类视频增益基准依赖、每任务 10 次且非候选动作条件，见核验批次 20 |
 | JEPA-VLA [论文](https://arxiv.org/abs/2602.11832v1) | Latent 与预测表示；世界模型与 VLA、规划；边界对照 | 冻结 V-JEPA 2 历史 embeddings 作为 VLA 视觉先验 | 已核 basic/OpenVLA-OFT 内部对照、probes 和单任务实体试验；同时增加 encoder/fusion、无下游预测目标且实体分母不完整，见核验批次 21 |
+| Physically Grounded JEPA [论文](https://arxiv.org/abs/2609.03565v2) | Latent 与预测表示；世界模型与 VLA、规划 | 训练期状态对齐与部署期动作条件 latent CEM 规划 | 已核四项仿真任务、三 seed 内部消融和引用自他文的外部基线；IROS 2026 workshop 接收，无实体试验，见核验批次 22 |
+| WoW-World-Eval [论文](https://arxiv.org/abs/2601.04137v1) | 评估、安全与 Benchmark | 多维 embodied 能力评价、人类评分对齐与 IDM 执行性探针 | 已核 609 样本、22 指标与九项实体任务；指标映射使用人工评分开发集调参，见核验批次 23 |
+| RoboWorld [论文](https://arxiv.org/abs/2607.01060v4) | 评估、安全与 Benchmark；视觉与视频世界模型 | 闭环生成 rollout 作为真实 policy 排名代理 | 已核 4,186 rollout、八个 policy 聚合相关性与计算成本；适用范围限于所测 benchmark，见核验批次 23 |
 | Latent Reasoning VLA [ICML 2026](https://proceedings.mlr.press/v306/bai26h.html) | 世界模型与 VLA、规划；边界对照 | 当前观测与指令预测 future latent，再由逆动力学监督和动作头生成动作 | 已核全文、仿真消融及四类实体任务分母；无候选动作条件的前向接口，保留为边界对照 |
 | DynBridge [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Wang_DynBridge_Bridging_Imagination_and_Control_through_Interaction_Dynamics_for_Robot_CVPR_2026_paper.html) | 世界模型与 VLA、规划；边界对照 | 未来轨迹重建与动作模仿共同学习交互 latent | 已核全文、三种仿真协议和五项实体任务；10 次实体试验、无候选动作查询，见核验批次 11 |
 | MM-ACT [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Liang_MM-ACT_Learn_from_Multimodal_Parallel_Generation_to_Act_CVPR_2026_paper.html) | 世界模型与 VLA、规划；边界对照 | 文本、未来图像和动作共享上下文联合监督 | 已核全文、仿真消融和三项实体任务；实体主比较未隔离预测目标，见核验批次 11 |
@@ -110,6 +113,8 @@ R32 以 V-JEPA Policy 为锚点核验两个直接最近邻。VLA-JEPA 已在首�
 R33 从首轮外部候选的高优先级记录中全文核验 JEPA-VLA，补充记录增至 64 项。该工作补入冻结 predictive embedding 直接条件动作策略的证据，但下游没有 future target 或 transition predictor；内部对照同时增加 encoder 与 fusion，实体仅一个任务，Table 5 分条件百分数与“每模型 10 次”说明不完全对应。正文因此把它作为 predictive-pretraining representation transfer，而非新的在线世界模型。
 
 ## 接下来优先补哪些
+
+R34--R35 补入 Physically Grounded JEPA、WoW-World-Eval 与 RoboWorld，目录外补充记录由 64 项增至 67 项。三篇分别补充仿真 latent 规划、embodied 能力 benchmark 和真实 policy 排名代理；冻结的 929 条目录与外部候选计数不变。
 
 “缺”表示当前稿件的证据尚不充分，不表示这个领域没有论文。检索词是下一轮入口，不是已完成的检索。
 
