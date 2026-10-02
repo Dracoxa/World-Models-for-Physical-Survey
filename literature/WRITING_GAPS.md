@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 82 条。大部分是将协作表已有文献引入正文；下列 33 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 86 条。大部分是将协作表已有文献引入正文；下列 37 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -41,6 +41,10 @@
 | Latent Reasoning VLA [ICML 2026](https://proceedings.mlr.press/v306/bai26h.html) | 世界模型与 VLA、规划；边界对照 | 当前观测与指令预测 future latent，再由逆动力学监督和动作头生成动作 | 已核全文、仿真消融及四类实体任务分母；无候选动作条件的前向接口，保留为边界对照 |
 | DynBridge [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Wang_DynBridge_Bridging_Imagination_and_Control_through_Interaction_Dynamics_for_Robot_CVPR_2026_paper.html) | 世界模型与 VLA、规划；边界对照 | 未来轨迹重建与动作模仿共同学习交互 latent | 已核全文、三种仿真协议和五项实体任务；10 次实体试验、无候选动作查询，见核验批次 11 |
 | MM-ACT [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Liang_MM-ACT_Learn_from_Multimodal_Parallel_Generation_to_Act_CVPR_2026_paper.html) | 世界模型与 VLA、规划；边界对照 | 文本、未来图像和动作共享上下文联合监督 | 已核全文、仿真消融和三项实体任务；实体主比较未隔离预测目标，见核验批次 11 |
+| Dexterous World Models [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Kim_Dexterous_World_Models_CVPR_2026_paper.html) | 视觉与视频世界模型；规划接口 | 手部轨迹条件的视觉后果与候选排序 | 已核 144 样本 benchmark 和定性动作排序；无执行试验，见核验批次 12 |
+| Physical Object Understanding with a Physically Controllable World Model [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Venkatesh_Physical_Object_Understanding_with_a_Physically_Controllable_World_Model_CVPR_2026_paper.html) | 结构化物理与多模态；边界对照 | 视觉代理干预、对象与支撑关系发现 | 已核训练规模和结构理解结果；光流 poke 不是机器人动作，见核验批次 12 |
+| PhysInOne [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_PhysInOne_Visual_Physics_Learning_and_Reasoning_in_One_Suite_CVPR_2026_paper.html) | 数据、模拟与跨本体 | 大规模合成物理视频、密集标签与资产隔离划分 | 已核数据协议和混合微调结果；无机器人动作或真实验证，见核验批次 12 |
+| GeoWorld [CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_GeoWorld_Geometric_World_Models_CVPR_2026_paper.html) | Latent 与预测表示；规划边界 | 双曲 latent 与教学视频程序步骤规划 | 已核 CrossTask/COIN 匹配比较；不等于机器人动作执行，见核验批次 12 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -60,7 +64,7 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 
 ICML 2026 PMLR 卷的定向检查新增 VLAW、Task-Sufficient World Models 与 Latent Reasoning VLA 三项，补充记录增至 31 项。三项均已完成原文级核验并进入正文：前两项分别提供实体模型--策略共进化和仿真主动探索--结构化表示证据；Latent Reasoning VLA 的 future latent 不接收候选动作，作为预测辅助策略的边界对照，不计为核心世界模型。
 
-CVPR 2026 定向检查从 11 个官方页面候选中深查 Motus、DynBridge 与 MM-ACT。Motus 已在原目录中，不另计；后两项将目录外补充记录增至 33 项。三者共同说明联合生成、预测辅助监督和可查询前向模型应分开讨论，其实体结果分别受部分成功率、10 次试验和未复现实体现实消融的限制。
+CVPR 2026 定向检查从 11 个官方页面候选中全文核验 8 篇。Motus 已在原目录中，不另计；DynBridge、MM-ACT、DWM、PhyWM、PhysInOne 与 GeoWorld 进入正文或补充清单，使目录外补充记录增至 37 项。ModularAgent 也完成核验，但因仅覆盖 DMC 仿真且未承担当前正文的独立论断，只保留在证据批次 12。该轮把联合生成、视觉代理干预、合成数据、程序步骤规划和可执行机器人控制分开记录。
 
 ## 接下来优先补哪些
 

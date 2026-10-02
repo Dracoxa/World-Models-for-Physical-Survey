@@ -33,7 +33,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、2 图、8 表、82 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、2 图、8 表、86 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -64,7 +64,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ## 七类文献导航
 
-按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[检索、筛选与证据协议](literature/SEARCH_PROTOCOL.md) · [检索与发现日志](literature/SEARCH_LOG.md) · [主张溯源索引](literature/CLAIM_TRACE.md) · [暂定论文族与清洗决策](literature/PUBLICATION_FAMILIES.md) · [论文族 CSV](literature/publication_families.csv) · [完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · [实体在线学习与虚拟纠正核验](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) · [失败后恢复与任务续接核验](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) · [CVPR 2026 策略融合核验](literature/EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md) · 快照日期：2026-10-01。
+按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[检索、筛选与证据协议](literature/SEARCH_PROTOCOL.md) · [检索与发现日志](literature/SEARCH_LOG.md) · [主张溯源索引](literature/CLAIM_TRACE.md) · [暂定论文族与清洗决策](literature/PUBLICATION_FAMILIES.md) · [论文族 CSV](literature/publication_families.csv) · [完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · [实体在线学习与虚拟纠正核验](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) · [失败后恢复与任务续接核验](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) · [CVPR 2026 策略融合核验](literature/EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md) · [CVPR 2026 物理表示核验](literature/EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md) · 快照日期：2026-10-01。
 
 | 分类 | 检索方向 | 分类记录 |
 |:---|:---|---:|
@@ -84,6 +84,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 | 日期 | 更新 |
 |:---|:---|
+| 2026-10-02 | 完成 CVPR 2026 R19 候选的第二批全文核验，补入 DWM、PhyWM、PhysInOne 与 GeoWorld，并将 ModularAgent 保留为仿真边界案例。 |
 | 2026-10-02 | 汇总 R00--R13 检索与语料操作日志；保留已记录精确查询，对未保存的查询与结果数明确标注 NR。 |
 | 2026-10-02 | 建立可复算 publication-family 层：929 条源记录中排除 15 条非论文占位项，将 914 条论文候选解析为 758 个暂定论文族，并记录错链修正与人工合并。 |
 | 2026-10-02 | 固化检索、去重、纳入排除和证据追踪协议，明确当前保证为 bounded claims 而非完整系统综述。 |
