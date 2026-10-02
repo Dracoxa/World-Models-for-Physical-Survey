@@ -4,6 +4,8 @@
 
 当前收录 **929 条分类记录**。跨主题记录保留，因此该数字不是全局唯一论文数，也不是已核验论文数。这里同步标题、作者、年份、来源和链接；实验结论继续在内部协作表中核查。
 
+清洗层另行排除 15 条非论文占位项，将剩余 914 条论文候选解析为 **758 个暂定 publication family**；完整计数、错链修正、人工合并和明确不合并的判断见[暂定论文族报告](PUBLICATION_FAMILIES.md)与[论文族 CSV](publication_families.csv)。该数字仍不是穷尽检索后的最终唯一论文数。
+
 | 主题 | 分类记录数 |
 |---|---:|
 | [世界模型基础&控制](categories/01-foundations-control.md) | 96 |
@@ -17,6 +19,7 @@
 ## 检索和维护
 
 - 检索范围、语料冻结、去重、纳入排除与证据提取规则见[检索、筛选与证据追踪协议](SEARCH_PROTOCOL.md)。当前保证为 adequate for bounded claims，不声称完整系统综述召回率。
+- 复算论文族：`python build_publication_families.py`；检查生成文件是否最新：`python build_publication_families.py --check`。
 - 在分类页按标题或作者查找；下载 [catalog.csv](catalog.csv) 可按年份、类别、来源筛选。
 - `publication_status` 为原表填写，不代表本目录确认接受或发表状态。
 - 原始论文核验后确认的 7 条元数据修正由 `export_catalog.py` 中的 `VERIFIED_OVERRIDES` 保留，重新导出不会退回旧值。

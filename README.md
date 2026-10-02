@@ -13,6 +13,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
   <a href="paper/main.tex"><img src="https://img.shields.io/badge/Target-ACM_CSUR-555555" alt="Target venue: ACM CSUR"></a>
   <a href="#literature"><img src="https://img.shields.io/badge/Topics-7-477B45" alt="7 literature topics"></a>
   <a href="literature/catalog.csv"><img src="https://img.shields.io/badge/Category_records-929-9B5C32" alt="929 category records, not unique papers"></a>
+  <a href="literature/PUBLICATION_FAMILIES.md"><img src="https://img.shields.io/badge/Provisional_families-758-6B7280" alt="758 provisional publication families, not a final systematic-review count"></a>
 </p>
 
 <p>
@@ -20,6 +21,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
   <a href="#literature"><b>文献导航</b></a> ·
   <a href="RELATED_SURVEYS.md"><b>同类调研</b></a> ·
   <a href="literature/SEARCH_PROTOCOL.md"><b>检索协议</b></a> ·
+  <a href="literature/PUBLICATION_FAMILIES.md"><b>论文族清洗</b></a> ·
   <a href="paper/references.bib"><b>BibTeX</b></a> ·
   <a href="literature/WRITING_GAPS.md"><b>待补方向</b></a> ·
   <a href="#contributing"><b>参与整理</b></a>
@@ -29,7 +31,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、8 表、76 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**，保留跨主题重复，不代表唯一论文数或已核验论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、8 表、76 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -60,7 +62,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ## 七类文献导航
 
-按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[检索、筛选与证据协议](literature/SEARCH_PROTOCOL.md) · [完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · [实体在线学习与虚拟纠正核验](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) · [失败后恢复与任务续接核验](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) · 快照日期：2026-10-01。
+按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[检索、筛选与证据协议](literature/SEARCH_PROTOCOL.md) · [暂定论文族与清洗决策](literature/PUBLICATION_FAMILIES.md) · [论文族 CSV](literature/publication_families.csv) · [完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · [风险校准与干预代价核验](literature/EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md) · [实体在线学习与虚拟纠正核验](literature/EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) · [失败后恢复与任务续接核验](literature/EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) · 快照日期：2026-10-01。
 
 | 分类 | 检索方向 | 分类记录 |
 |:---|:---|---:|
@@ -80,6 +82,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 | 日期 | 更新 |
 |:---|:---|
+| 2026-10-02 | 建立可复算 publication-family 层：929 条源记录中排除 15 条非论文占位项，将 914 条论文候选解析为 758 个暂定论文族，并记录错链修正与人工合并。 |
 | 2026-10-02 | 固化检索、去重、纳入排除和证据追踪协议，明确当前保证为 bounded claims 而非完整系统综述。 |
 | 2026-10-02 | 核验 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord，区分世界模型恢复数据、人工恢复示范、诊断回滚和实体任务续接。 |
 | 2026-10-02 | 核验 WorldSample、Hi-WM、WorldSync 与 FoMo-FD，区分真实在线 RL、模型内人工纠正、动作跟随和离线失败检测。 |

@@ -1,0 +1,151 @@
+{
+  "snapshot_date": "2026-10-02",
+  "canonical_arxiv_titles": {
+    "1612.00222": "Interaction Networks for Learning about Objects, Relations and Physics",
+    "1706.01433": "Visual Interaction Networks",
+    "1811.04551": "Learning Latent Dynamics for Planning from Pixels",
+    "1903.00374": "Model-Based Reinforcement Learning for Atari",
+    "1912.01603": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "2010.02193": "Mastering Atari with Discrete World Models",
+    "2010.03409": "Learning Mesh-Based Simulation with Graph Networks",
+    "2108.03298": "What Matters in Learning from Offline Human Demonstrations for Robot Manipulation",
+    "2108.10470": "Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning",
+    "2111.00210": "Mastering Atari Games with Limited Data",
+    "2203.04955": "Temporal Difference Learning for Model Predictive Control",
+    "2301.04104": "Mastering Diverse Domains through World Models",
+    "2302.00111": "Learning Universal Policies via Text-Guided Video Generation",
+    "2304.13705": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+    "2310.06114": "Learning Interactive Real-World Simulators",
+    "2312.13139": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation",
+    "2404.08471": "Revisiting Feature Prediction for Learning Visual Representations from Video",
+    "2405.12399": "Diffusion for World Modeling: Visual Details Matter in Atari",
+    "2408.14837": "Diffusion Models Are Real-Time Game Engines",
+    "2409.03403": "RoVi-Aug: Robot and Viewpoint Augmentation for Cross-Embodiment Robot Learning",
+    "2410.06158": "GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation",
+    "2410.24164": "$\\pi_0$: A Vision-Language-Action Flow Model for General Robot Control",
+    "2412.14803": "Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations",
+    "2502.00622": "Inference-Time Enhancement of Generative Robot Policies via Predictive World Modeling",
+    "2503.08622": "Cross-Embodiment Robotic Manipulation Synthesis via Guided Demonstrations through CycleVAE and Human Behavior Transformer",
+    "2505.07096": "X-Sim: Cross-Embodiment Learning via Real-to-Sim-to-Real",
+    "2506.09985": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+    "2508.20294": "Dynamics-Aligned Latent Imagination in Contextual World Models for Zero-Shot Generalization",
+    "2509.26251": "Seeing Space and Motion: Enhancing Latent Actions with Geometric and Dynamic Awareness for Vision-Language-Action Models",
+    "2512.13100": "OXE-AugE: A Large-Scale Robot Augmentation of OXE for Scaling Cross-Embodiment Policy Learning",
+    "2602.16710": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+    "2602.18025": "Cross-Embodiment Offline Reinforcement Learning for Heterogeneous Robot Datasets",
+    "2603.07904": "DyQ-VLA: Temporal-Dynamic-Aware Quantization for Embodied Vision-Language-Action Models",
+    "2603.10158": "Cross-Hand Latent Representation for Vision-Language-Action Models",
+    "2604.03208": "Hierarchical Planning with Latent World Models",
+    "2606.13053": "EV-WM: Event-Verified World Models for Long-Horizon Robotic Manipulation",
+    "2607.13154": "Worlds in One Demo: A Synthetic Data Engine for Learning Open-World Mobile Manipulation",
+    "2608.08023": "4D-WAM: Infusing Spatiotemporal Awareness into World Action Models through Trajectory Fields",
+    "2608.26058": "One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation",
+    "2608.26673": "PredVLA: Predictive Sensorimotor Modeling for Sub-Million-Parameter Robot Manipulation"
+  },
+  "overrides": {
+    "S05-0107": {
+      "fields": {
+        "url": "https://arxiv.org/abs/2511.01177"
+      },
+      "reason": "The original 2602.18025 link belongs to Cross-Embodiment Offline Reinforcement Learning; 2511.01177 matches this record's title and authors.",
+      "source_urls": [
+        "https://arxiv.org/abs/2511.01177",
+        "https://arxiv.org/abs/2602.18025"
+      ]
+    },
+    "S05-0159": {
+      "fields": {
+        "url": null,
+        "publication_status": "Pending verification; original link rejected"
+      },
+      "reason": "The original 2505.07096 link belongs to X-Sim, not Cross-Sim-to-Real; no replacement primary source was verified.",
+      "source_urls": [
+        "https://arxiv.org/abs/2505.07096"
+      ]
+    },
+    "S06-0014": {
+      "fields": {
+        "url": "https://arxiv.org/abs/2306.11706"
+      },
+      "reason": "Replace a tracking redirect with the canonical arXiv record for RoboCat.",
+      "source_urls": [
+        "https://arxiv.org/abs/2306.11706"
+      ]
+    },
+    "S06-0065": {
+      "fields": {
+        "title": "Enhancing robotic manipulation via modeling temporal dependencies of historical actions and environmental effect",
+        "authors": "Zhikai Yang; Baoying Gong; Maoyuan Sun; Xianshan Li; Fengda Zhao",
+        "year": "2026",
+        "venue": "Engineering Applications of Artificial Intelligence 182(2):115988",
+        "publication_status": "Formal journal article",
+        "url": "https://doi.org/10.1016/j.engappai.2026.115988"
+      },
+      "reason": "The original 2603.07904 link belongs to DyQ-VLA. Crossref and the publisher identify the formal DynaVLA article under this title and DOI.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.engappai.2026.115988",
+        "https://arxiv.org/abs/2603.07904"
+      ]
+    }
+  },
+  "merges": [
+    {
+      "records": ["S05-0051", "S05-0156"],
+      "reason": "Same CVPR 2026 paper; singular/plural title variation."
+    },
+    {
+      "records": ["S02-0059", "S03-0004"],
+      "reason": "Same I-JEPA paper; acronym omitted in one title."
+    },
+    {
+      "records": ["S02-0019", "S03-0007"],
+      "reason": "Same V-JEPA paper; acronym placement differs."
+    },
+    {
+      "records": ["S05-0026", "S05-0058"],
+      "reason": "Same OpenReview paper and identifier; acronym omitted in one title."
+    },
+    {
+      "records": ["S01-0009", "S02-0060"],
+      "reason": "Preprint and Nature version of MuZero."
+    },
+    {
+      "records": ["S01-0013", "S01-0060"],
+      "reason": "Same Diffuser paper; method name prefixed in one title."
+    },
+    {
+      "records": ["S04-0005", "S04-0021"],
+      "reason": "Same DOI; PDE abbreviation differs."
+    },
+    {
+      "records": ["S06-0014", "S07-0145"],
+      "reason": "Same RoboCat work; title wording differs between paper and project page."
+    },
+    {
+      "records": ["S01-0051", "S02-0021"],
+      "reason": "Preprint and CVPR 2024 version of Drive-WM."
+    },
+    {
+      "records": ["S03-0009", "S03-0046"],
+      "reason": "Preprint and ICML 2025 version of SOLD."
+    },
+    {
+      "records": ["S05-0055", "S05-0110"],
+      "reason": "Same ICLR 2026 paper identifier; one title contains a transcription error."
+    }
+  ],
+  "non_merges": [
+    {
+      "records": ["S01-0079", "S07-0213"],
+      "reason": "Similar titles but distinct arXiv identifiers 1806.01242 and 1806.01261."
+    },
+    {
+      "records": ["S06-0117", "S06-0118"],
+      "reason": "Related tactile world-action models with distinct titles and arXiv identifiers."
+    },
+    {
+      "records": ["S07-0095", "S07-0125"],
+      "reason": "Related BEHAVIOR-1K releases with distinct preprint identifiers; retained separately pending formal version resolution."
+    }
+  ]
+}
