@@ -25,7 +25,7 @@
 
 ## 本轮新增讨论入口
 
-2026-10-01 v0.2 写作补充另见[文献与内容缺口清单](WRITING_GAPS.md)，其中 7 项另列，不计入 929 条原快照。
+2026-10-01 v0.2 写作补充另见[文献与内容缺口清单](WRITING_GAPS.md)；补充来源单列，不计入 929 条原快照。
 
 2026-10-02 已完成第一批 5 篇新增候选的原文核验，详见[接触、4D、模拟器与策略闭环证据表](EVIDENCE_BATCH_01.md)。这些条目仍与 929 条原快照分开统计。
 
@@ -40,6 +40,8 @@
 2026-10-02 已完成第六批闭环导航核验，详见[导航世界模型的闭环、实体部署与重规划证据表](EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md)。DreamerNav 与 NavThinker 已在原目录；NWM 与 NavWAM 作为正文补充来源单列。现有实体证据仍以受控演示和单平台小样本为主。
 
 2026-10-02 已完成第七批记忆与恢复核验，详见[长期记忆、失败检测与恢复证据表](EVIDENCE_BATCH_07_MEMORY_RECOVERY.md)。Mem-World、WorldScape Policy 2.0、ViFailback 与 LIBERO-Recover 已在原目录；Failure-Aware RL 作为正文补充来源单列。恢复证据按失败前预防、失败检测、动作纠正、状态修复和任务恢复区分。
+
+2026-10-02 已完成第八批风险校准与干预代价核验，详见[分布偏移校准、选择性求助与干预代价证据表](EVIDENCE_BATCH_08_CALIBRATION_INTERVENTION.md)。Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger 均作为补充来源单列；只有 Foresight 是直接世界模型证据，其余用于界定求助和人工接管的评估接口。
 
 以下为 2026-10-01 核对的 Astra 相关来源，另列于现有表格快照之外，未计入上述数量：
 

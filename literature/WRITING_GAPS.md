@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 64 条。大部分是将协作表已有文献引入正文；下列 17 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 68 条。大部分是将协作表已有文献引入正文；下列 21 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -25,6 +25,10 @@
 | Navigation World Models [CVPR 2025](https://openaccess.thecvf.com/content/CVPR2025/html/Bar_Navigation_World_Models_CVPR_2025_paper.html) | 世界模型与 VLA、规划 | 显式未来视图、CEM 规划与候选策略重排 | 已核正式版本、离线规划协议和失败边界；见核验批次 06 |
 | NavWAM [论文](https://arxiv.org/abs/2606.13494v1) | 世界模型与 VLA、规划 | 联合未来--价值--动作预测与实体闭环 | 已核 24 个实体 episode、离线预测头消融和失败标签；预印本，见核验批次 06 |
 | Failure-Aware RL [论文](https://arxiv.org/abs/2601.07821v1) | 世界模型与 VLA、规划；评估与安全 | 短视风险预测后切换恢复策略 | 已核三个 Franka 任务、50 episode/任务、仿真 critic 消融和失败指标口径；预印本，见核验批次 07 |
+| Foresight [论文](https://arxiv.org/abs/2606.23085v1) | 评估、安全与 Benchmark | 动作条件世界模型 latent 上的长时失败检测与 conformal 阈值 | 已核实体 ROC-AUC、跨策略迁移、校准假设和时延；预印本，见核验批次 08 |
+| KnowNo [CoRL 2023](https://proceedings.mlr.press/v229/ren23a.html) | 评估、安全与 Benchmark；边界对照 | conformal prediction set 到选择性求助的决策接口 | 已核实体试验、help rate 与规划假设；非世界模型，见核验批次 08 |
+| CoFineLLM [L4DC 2026](https://proceedings.mlr.press/v331/wang26c.html) | 评估、安全与 Benchmark；边界对照 | 同时优化覆盖、预测集大小与求助率 | 已核 PMLR 正式摘要；硬件 OOD 详细协议仍待全文提取，见核验批次 08 |
+| ThriftyDAgger [CoRL 2021](https://proceedings.mlr.press/v164/hoque22a.html) | 评估、安全与 Benchmark；边界对照 | 人工干预频率、持续时间和上下文切换成本 | 已核单任务实体分母及人工动作数；非世界模型，见核验批次 08 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -35,6 +39,8 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 闭环导航批次中，DreamerNav 与 NavThinker 已在现有目录；NWM 与 NavWAM 未检出，因此补充记录由 14 项增至 16 项。实体证据已经不再是完全空白，但仍集中在受控演示或单平台小样本。
 
 记忆与恢复批次中，Mem-World、WorldScape Policy 2.0、ViFailback 与 LIBERO-Recover 均在现有目录；Failure-Aware RL 未检出，因此补充记录增至 17 项。该批次闭合了机制分类，但跨平台实体状态恢复仍是缺口。
+
+风险校准与干预代价批次中的 Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger 均未按完整题名或标识符检出，因此补充记录增至 21 项。该批次补齐了检测、求助和人工负担的评估接口，但尚未出现同一真实机器人协议内从世界模型报警到在线干预、事故后果和恢复完成的完整证据链。
 
 ## 接下来优先补哪些
 
@@ -48,7 +54,7 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 | 结构化物理与多模态 | GNS、TesserAct、OmniVTA、ContactWorld、TouchWorld、DexTouch-WM、ParticleFormer、MVISTA-4D | 长时组合接触、跨触觉硬件迁移、力觉校准与场景无关的形变动力学 | `compositional contact world model`; `cross sensor tactile world model`; `force calibrated predictive control` | 高 |
 | 数据、模拟与跨本体 | DROID、Open X-Embodiment、UniSim | 人类第一视角数据、失败与恢复数据、跨本体动作对齐；训练测试重叠核查 | `egocentric video robot action alignment`; `robot failure recovery dataset`; `cross embodiment dynamics` | 高 |
 | 世界模型与 VLA、规划 | 规划、想象学习、联合模型、Astra 接口；导航/驾驶闭环；Mem-World、WorldScape 2.0 与 FARL | 跨平台实体复现；预设扰动后的状态恢复；预测预训练与推理时预测的统一实体消融 | `physical robot state restoration after failure`; `world model online recovery ablation`; `future prediction physical navigation ablation` | 最高 |
-| 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、条件性证书、运行时护栏、FARL、ViFailback 与 LIBERO-Recover | **仍缺可泛化实体证据**：跨操作者/平台复现、分布外校准、事故严重度、误报漏报、干预成本和动态接触风险 | `world model uncertainty calibration robot safety 2026`; `robot safety intervention cost physical evaluation`; `cross-platform failure recovery` | 最高 |
+| 评估、安全与 Benchmark | WorldArena 系列、SafeDreamer、FARL、Foresight、KnowNo、CoFineLLM、ThriftyDAgger、ViFailback 与 LIBERO-Recover | **仍缺完整实体证据链**：校准报警触发在线动作、跨操作者/平台外推、事故严重度、检测提前量、干预持续时间和最终恢复结果 | `world model online intervention real robot`; `failure alarm detection lead time incident severity`; `cross-platform calibrated robot recovery` | 最高 |
 
 下一轮优先补每个薄弱方向 2–3 篇能够真正进入比较表的代表工作。满足“不同机制、明确预测量、明确动作接口、可定位实验”的需要后再扩量，不以凑篇数代替覆盖。
 
@@ -85,6 +91,6 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 | 预测与动作可以联合建模 | DreamZero、Cosmos Policy 支持方法级描述；不据此断言因果物理理解 |
 | 视觉质量与功能评估应分别记录 | WorldArena 系列提供相关评估设计；我们的比较框架是综述组织选择 |
 | 成本约束、恢复与形式保证是不同安全机制 | SafeDreamer、CPO、Recovery RL、CBF 提供各自背景；不混写为统一安全保证 |
-| 触觉、导航、驾驶和分布外安全已被充分覆盖 | **不成立**；已有小规模实体闭环、预测式避险和外部纠正，但跨平台状态恢复、长时组合接触和分布外安全仍是缺口 |
+| 触觉、导航、驾驶和分布外安全已被充分覆盖 | **不成立**；已有小规模实体闭环、校准式失败检测、预测式避险和外部纠正，但检测到在线干预的因果链、跨平台状态恢复、长时组合接触和真实分布偏移仍是缺口 |
 
 自查结论：定位方面不声称“首个”或“最全面”；写作方面四部分已连通；实验支撑仅到方法概述和已有来源；评估覆盖仍有明确空缺；机制区分保留预测、策略、控制和防护的边界。下一轮再压缩重复论述、增加具体技术细节，并将正文里的写作阶段说明移到协作记录。
