@@ -28,7 +28,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、8 表、59 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**，保留跨主题重复，不代表唯一论文数或已核验论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、8 表、64 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**，保留跨主题重复，不代表唯一论文数或已核验论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -59,7 +59,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ## 七类文献导航
 
-按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · 快照日期：2026-10-01。
+按研究主题进入分类页，或下载 [CSV 总表](literature/catalog.csv) 按年份、作者与来源筛选。[完整目录与统计口径](literature/README.md) · [外部调研库去重候选](literature/EXTERNAL_CANDIDATES.md) · [首批原文核验](literature/EVIDENCE_BATCH_01.md) · [接触与结构化物理核验](literature/EVIDENCE_BATCH_04_CONTACT_STRUCTURED.md) · [导航与驾驶核验](literature/EVIDENCE_BATCH_05_NAVIGATION_DRIVING.md) · [闭环导航核验](literature/EVIDENCE_BATCH_06_NAVIGATION_CLOSED_LOOP.md) · [记忆与恢复核验](literature/EVIDENCE_BATCH_07_MEMORY_RECOVERY.md) · 快照日期：2026-10-01。
 
 | 分类 | 检索方向 | 分类记录 |
 |:---|:---|---:|
@@ -79,6 +79,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 | 日期 | 更新 |
 |:---|:---|
+| 2026-10-02 | 区分长期记忆、失败前风险预测、失败后纠正与状态恢复，核验 Mem-World、WorldScape Policy 2.0、FARL、ViFailback 和 LIBERO-Recover。 |
 | 2026-10-02 | 核验 NWM、DreamerNav、NavThinker 与 NavWAM，补入闭环层级、实体分母和预测是否直接参与动作选择的边界。 |
 | 2026-10-02 | 核验 5 篇导航与驾驶工作，区分推理时 rollout、联合场景--轨迹预测和训练时预测监督，并修正两项目录元数据。 |
 | 2026-10-02 | 核验 5 篇接触、触觉与结构化三维工作，补入多材料 MPC、多视角动作反演、条件性触觉增益和人类触觉数据迁移。 |
@@ -92,7 +93,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 下一轮优先补充下列内容，具体文献、检索词和核对状态见[边写边补清单](literature/WRITING_GAPS.md)：
 
 - [ ] 长时组合接触、跨触觉硬件迁移与力觉校准的模型级原始论文。
-- [ ] 导航与驾驶的跨平台实体复现、预设扰动后恢复，以及预测预训练与推理时预测的统一实体消融。
+- [ ] 导航与驾驶的跨平台实体复现、预设扰动后状态恢复，以及预测预训练与推理时预测的统一实体消融。
 - [ ] 真实机器人分布外风险、校准、干预成本和安全机制。
 - [ ] 人类视频、失败与恢复数据、跨本体动作对齐。
 - [ ] 正式出版版本、检索筛选记录与全文证据位置的统一核查。
