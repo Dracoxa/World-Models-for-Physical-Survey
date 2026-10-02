@@ -25,6 +25,7 @@
 - 已更新[同类开源调研与差异化定位](RELATED_SURVEYS.md)，新增 4 个可持续发现源；它们尚未并入冻结候选计数，避免重叠清单未经去重直接累加。
 - 已完成第二轮 GitHub 增量扫描，补入 RCL-Robotics、NUS WAM survey 与 NJU3DV 模拟器综述库；仍只作为发现源，不用仓库条目数替代论文去重或原文证据。
 - 已将上述三个新增发现源冻结到 commit 并与目录、首轮候选、写作缺口和正文参考文献去重：633 个唯一 arXiv ID 中留下 359 条待筛发现线索，14 条由至少两个来源共同收录；见[第二轮增量候选](literature/EXTERNAL_CANDIDATES_DELTA_2026-10-02.md)。
+- 已在 arXiv 主页面完成 14 条跨源候选的身份与摘要筛选，形成 6 篇优先全文核验、5 篇第二队列和 3 篇支撑/边界来源；见[第二轮候选筛选表](literature/EXTERNAL_CANDIDATE_SCREENING_2026-10-02.md)。
 - 已全文核验 ICML 2026 Latent Reasoning VLA：其 future latent 不以候选动作作为输入，正文按预测辅助 VLA 的边界案例讨论，不计为可查询前向世界模型。
 - 已完成 14 条正式版本解析：R14 升级 10 条预印本记录并补全 1 条 ICRA 记录，R15 将 Cosmos Policy 和 TesserAct 分别升级为 ICLR 2026 与 ICCV 2025，R16 将 uncertainty-aware reachability certificate 升级为 IEEE T-ASE 2024 正式版本；其余条目仍按 V01 继续核对。
 - 已清除正文中“下一轮检索”“collection priorities”和首页工作稿状态等协作阶段措辞，将其改写为受当前证据图谱边界约束的研究议程与综合判断；ACM 引用条按模板要求恢复显示。

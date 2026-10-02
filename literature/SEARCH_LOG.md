@@ -41,6 +41,7 @@ The review profile remains a **structured narrative review with a critical evide
 | R19 | 2026-10-02 | Targeted CVPR 2026 scan; official CVF pages and primary full text | CQ1--CQ4, CQ6 | 11 unique title candidates; 7 absent from catalog | 8 full-text evidence records | [Batch 11](EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md), [Batch 12](EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md) |
 | R20 | 2026-10-02 | GitHub survey delta scan; repository and survey pages | CQ1--CQ6 | 7 candidate repositories inspected | 3 retained as discovery sources; no paper-level evidence added | [Related surveys](../RELATED_SURVEYS.md) |
 | R21 | 2026-10-02 | Frozen bibliography comparison for R20 sources | CQ1--CQ6 | 633 unique arXiv IDs; 359 absent from catalog and tracked supplements | 14 multi-source candidates prioritized; no paper-level evidence added | [Delta candidates](EXTERNAL_CANDIDATES_DELTA_2026-10-02.md) |
+| R22 | 2026-10-02 | Primary arXiv identity and abstract screening | CQ1--CQ6 | 14 multi-source candidates screened | 6 prioritized for full-text review; 5 deferred; 3 retained only as support/boundaries | [Screening table](EXTERNAL_CANDIDATE_SCREENING_2026-10-02.md) |
 
 The twelve paper-level evidence batches contain 55 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
@@ -151,6 +152,10 @@ Four exact web queries were used: `site:github.com world models physical AI surv
 ### R21: Frozen Comparison of R20 Sources
 
 The three retained sources were frozen at RCL-Robotics/Awesome-World-Action-Models `7985fa2`, world-action-models/awesome-world-action-models `9be4441`, and NJU3DV-LoongGroup/Embodied-World-Models-Survey `185871d`. Their Markdown bibliographies yielded 633 unique arXiv IDs. Matching by arXiv ID, normalized title, and near-title against the 929-row catalog, the previous external-candidate CSV, the writing-gap tracker, and the manuscript bibliography left 359 raw discovery candidates; one unresolved title per source was excluded from that count. Fourteen candidates occurred in at least two sources and form the first screening queue. These are source-specific discovery counts, not a claim that 359 papers satisfy the review's inclusion criteria or have verified metadata, methods, or results.
+
+### R22: Multi-Source Candidate Screening
+
+The current arXiv identity, version, and abstract were checked for all 14 candidates occurring in at least two R21 sources. Six direct world-model papers were assigned to the first full-text queue: DriveDreamer-Policy, VTAM, JOPAT, VAMPO, Audio-WM, and DexWM. Five direct but less urgent driving, inference-scheduling, or system-design papers were deferred to a second queue. Cosmos-Transfer1, FAST, and DexGraspNet were retained only as data, component, or boundary sources. Abstract screening establishes neither experimental validity nor publication status beyond the arXiv record.
 
 ## Screening and Evidence Handling
 
