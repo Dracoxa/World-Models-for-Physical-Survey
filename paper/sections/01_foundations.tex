@@ -53,27 +53,25 @@ where $y$ may represent images, latent features, geometry, or other task-relevan
 \subsection{Relation to Recent Surveys and Review Scope}
 Recent surveys already cover substantial parts of this landscape. Kirchner et al.~\cite{kirchner2026physicalai} provide a control-centric review of world models for Physical AI, with explicit attention to uncertainty, structural priors, and closed-loop reliability. Hou et al.~\cite{hou2026survey} organize robot world models around policy coupling, learned simulation, and visual predictive modeling. Lu et al.~\cite{lu2026survey} emphasize world-action architectures and control applications. Jena et al.~\cite{jena2026evaluation} focus on evaluation benchmarks and the comparison between prediction and executed behavior. Table~\ref{tab:survey-position} summarizes their stated emphases without interpreting an omitted entry as proof that a topic is absent from a paper.
 
-Our working emphasis is the traceable connection between a predicted quantity, the interface that uses it, and the evidence for physical interaction. This perspective accommodates world models, their training resources, and complementary policy or safety components without treating them as identical objects. The seven collection categories supply literature to four narrative parts: foundations establish interfaces; data and representations determine what can be predicted; integration explains how predictions affect behavior; evaluation examines whether that use is reliable.
+Topic inclusion is therefore not the differentiator. This review uses the system claim as its comparison unit: what is predicted, how actions condition or consume the prediction, where the model enters learning or execution, and which evaluation setting supports the claim. This cross-layer trace separates direct world-model evidence from supporting resources and boundary comparators, and distinguishes offline prediction, simulated closed loop, and physical closed loop without treating them as a universal quality ranking. The seven collection categories supply literature to four narrative parts: foundations establish interfaces; data and representations determine what can be predicted; integration explains how predictions affect behavior; evaluation examines whether that use is reliable.
 
 \begin{table}[t]
-\caption{Positioning against selected 2026 surveys. Stated scope is compared, not completeness.}
+\caption{Positioning against selected 2026 surveys. The comparison concerns organizing emphasis, not topic absence or completeness.}
 \label{tab:survey-position}
 \small
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.20\linewidth}YY@{}}
 \toprule
-Survey & Main organizing emphasis & Connection to this review \\
+Survey & Primary organizing emphasis & Analytical connection in this review \\
 \midrule
-Kirchner et al.~\cite{kirchner2026physicalai} & Physical AI: uncertainty, structure, decision coupling, and closed-loop control & Closest scope; establishes that control, uncertainty, and safety alone are not differentiating claims. \\
+Kirchner et al.~\cite{kirchner2026physicalai} & Physical AI: uncertainty, structure, decision coupling, and closed-loop control & Re-index design choices by prediction target and action interface, then trace them to the supporting evaluation setting. \\
 \addlinespace
-Hou et al.~\cite{hou2026survey} & Robot learning: policy coupling, simulation, and predictive models & Broad method map for tracing primary papers. \\
+Hou et al.~\cite{hou2026survey} & Robot learning: policy coupling, simulation, and predictive models & Separate where prediction enters learning or execution and whether downstream evidence isolates its contribution. \\
 \addlinespace
-Lu et al.~\cite{lu2026survey} & World-action modeling, architecture, and control applications & Predictive and executable interfaces. \\
+Lu et al.~\cite{lu2026survey} & World-action modeling, architecture, and control applications & Compare joint and cascaded interfaces with explicit rollout planning and reasoner-assisted action revision. \\
 \addlinespace
-Jena et al.~\cite{jena2026evaluation} & Benchmark protocols and predictive embodied evaluation & Prediction tests versus decision tests. \\
-\addlinespace
-This review & Prediction target, action interface, operational use, and reliability & Connects design choices to evidence for physical use. \\
+Jena et al.~\cite{jena2026evaluation} & Benchmark protocols and predictive embodied evaluation & Attach protocol, denominator, and execution setting to concrete method claims across the four narrative parts. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The present manuscript therefore makes bounded synthesis claims rather than completeness claims. Its companion protocol records the frozen catalog, provisional publication-family layer, external-library commits, deduplication order, inclusion boundaries, focused search batches, and corpus amendments. Primary sources support method descriptions; surveys guide discovery and positioning. The remaining methodological work is to resolve formal versions and complete database, exclusion, and citation-search accounting before submission.
+The present manuscript therefore makes bounded synthesis claims rather than completeness claims. Its companion protocol records the frozen catalog, provisional publication-family layer, external-library commits, deduplication order, inclusion boundaries, focused search batches, and corpus amendments. The review's claims are bounded by that logged corpus and source-level evidence: primary sources support method descriptions, while surveys guide discovery and positioning.
