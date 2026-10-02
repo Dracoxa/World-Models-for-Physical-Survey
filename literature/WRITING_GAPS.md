@@ -4,7 +4,7 @@
 
 ## 本轮补了什么
 
-正文从 8 条参考文献扩到 78 条。大部分是将协作表已有文献引入正文；下列 31 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
+正文从 8 条参考文献扩到 79 条。大部分是将协作表已有文献引入正文；下列 31 项在当前 929 条目录中按标题或标识符检索未找到，作为补充记录另列。目录快照仍按 929 条分类记录统计。
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
@@ -38,7 +38,7 @@
 | AgentChord [论文](https://arxiv.org/abs/2605.11951v1) | 世界模型与 VLA、规划；边界对照 | 预编译恢复分支、状态修复后重新接入原任务 | 已核六个实体任务、20 次/任务和预设故障边界；非世界模型，见核验批次 10 |
 | VLAW [ICML 2026](https://proceedings.mlr.press/v306/guo26i.html) | 世界模型与 VLA、规划；数据与跨本体 | 实体失败 rollout 校准世界模型，再以筛选后的合成 rollout 更新 VLA | 已核五类实体任务、两轮更新和等实体 rollout 对照；见核验批次 09 |
 | Task-Sufficient World Models [ICML 2026](https://proceedings.mlr.press/v306/feng26aa.html) | 世界模型基础与控制；Latent 与预测表示 | 主动探测与结构化表示共同学习任务充分 latent | 已核四套仿真基准、5-seed 结果、表示探测和组件消融；无实体机器人验证，见核验批次 09 |
-| Latent Reasoning VLA [ICML 2026](https://proceedings.mlr.press/v306/bai26h.html) | 世界模型与 VLA、规划；边界对照 | 连续 latent 推理与预测用于动作生成 | 已核正式摘要；尚需确认是否包含可独立评估的前向动力学模型，不先归为世界模型 |
+| Latent Reasoning VLA [ICML 2026](https://proceedings.mlr.press/v306/bai26h.html) | 世界模型与 VLA、规划；边界对照 | 当前观测与指令预测 future latent，再由逆动力学监督和动作头生成动作 | 已核全文、仿真消融及四类实体任务分母；无候选动作条件的前向接口，保留为边界对照 |
 
 DreamZero 并不是库中缺失：原目录 `S06-0115` 使用正式标题 **World Action Models are Zero-shot Policies** [论文](https://arxiv.org/abs/2602.15922)。本轮只补正文引用，不另计一篇。两篇综述 `2605.00080`、`2609.16074` 也已在原目录中。
 
@@ -56,7 +56,7 @@ ContactWorld 也不是新增条目：原目录 `S06-0119` 已收录，本轮只�
 
 失败后恢复批次中的 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord 均未检出，因此补充记录增至 28 项。Dream2Fix 补入世界模型合成失败数据到实体纠正的闭环，REBOOT 给出有效续接状态与真实恢复示范，VLA-FixBench 和 AgentChord 提供非世界模型的诊断回滚与任务续接边界。核心缺口收窄为：跨平台、跨操作者、开放故障且同时报告校准报警、事故后果和最终任务完成的世界模型恢复证据。
 
-ICML 2026 PMLR 卷的定向检查新增 VLAW、Task-Sufficient World Models 与 Latent Reasoning VLA 三项，补充记录增至 31 项。VLAW 与 Task-Sufficient World Models 已完成原文级核验并进入正文，分别提供实体模型--策略共进化和仿真主动探索--结构化表示证据；Latent Reasoning VLA 暂列边界对照，避免把所有 latent reasoning 策略自动归为世界模型。
+ICML 2026 PMLR 卷的定向检查新增 VLAW、Task-Sufficient World Models 与 Latent Reasoning VLA 三项，补充记录增至 31 项。三项均已完成原文级核验并进入正文：前两项分别提供实体模型--策略共进化和仿真主动探索--结构化表示证据；Latent Reasoning VLA 的 future latent 不接收候选动作，作为预测辅助策略的边界对照，不计为核心世界模型。
 
 ## 接下来优先补哪些
 

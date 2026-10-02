@@ -33,7 +33,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、2 图、8 表、78 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、2 图、8 表、79 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**；剔除 15 条非论文占位项并进行可复算去重后得到 758 个暂定论文族，仍不是完整系统综述的最终唯一论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -88,7 +88,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 | 2026-10-02 | 建立可复算 publication-family 层：929 条源记录中排除 15 条非论文占位项，将 914 条论文候选解析为 758 个暂定论文族，并记录错链修正与人工合并。 |
 | 2026-10-02 | 固化检索、去重、纳入排除和证据追踪协议，明确当前保证为 bounded claims 而非完整系统综述。 |
 | 2026-10-02 | 核验 Dream2Fix、REBOOT、VLA-FixBench 与 AgentChord，区分世界模型恢复数据、人工恢复示范、诊断回滚和实体任务续接。 |
-| 2026-10-02 | 定向检查 ICML 2026 正式论文，补入 VLAW 与 Task-Sufficient World Models，并将 Latent Reasoning VLA 保留为边界候选。 |
+| 2026-10-02 | 定向检查 ICML 2026 正式论文，补入 VLAW 与 Task-Sufficient World Models，并将 Latent Reasoning VLA 核定为预测辅助策略的边界对照。 |
 | 2026-10-02 | 更新 GitHub 同类调研扫描，新增 4 个发现源并保持冻结候选计数不变，等待下一轮统一去重。 |
 | 2026-10-02 | 核验 WorldSample、VLAW、Hi-WM、WorldSync 与 FoMo-FD，区分真实在线 RL、模型--策略共进化、模型内人工纠正、动作跟随和离线失败检测。 |
 | 2026-10-02 | 核验 Foresight、KnowNo、CoFineLLM 与 ThriftyDAgger，区分失败检测、校准求助、在线干预及其人工代价。 |

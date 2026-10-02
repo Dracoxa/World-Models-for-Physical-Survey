@@ -5,7 +5,7 @@
 - 已建立 ACM `acmart` / `CSUR` 项目和四部分正文文件。
 - 四部分已有连贯第一轮内容，保留摘要、引言、概念边界与 Astra 专题。
 - 扩写数据、模型、规划、想象学习、联合动作生成、评估和安全；仍需更多技术细节与领域实例。
-- 新增 7 张 LaTeX 比较表，连同 Astra 表共 8 表；正文参考文献从 8 条增至 78 条。
+- 新增 7 张 LaTeX 比较表，连同 Astra 表共 8 表；正文参考文献从 8 条增至 79 条。
 - 新增[同类开源调研与差异化定位](RELATED_SURVEYS.md)，并将 2026 年已发表、与 Physical AI 控制视角高度重合的综述纳入正文定位比较。
 - 已将 NTUMARS、Li-Zn-H、OpenMOSS 三个高相关开源库与 929 条目录按 arXiv ID 和题名去重，新增候选及优先级见[外部调研库去重结果](literature/EXTERNAL_CANDIDATES.md)。
 - 已对最高优先级中的 OmniVTA、Interactive World Simulator、World-VLA-Loop、TesserAct 和 WAV 完成原文级快速核验，并将证据、可支撑判断和局限写入[核验批次 01](literature/EVIDENCE_BATCH_01.md)。
@@ -21,6 +21,7 @@
 - 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、47 篇原文核验记录及当前 adequate for bounded claims 保证边界。
 - 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R18 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
 - 已更新[同类开源调研与差异化定位](RELATED_SURVEYS.md)，新增 4 个可持续发现源；它们尚未并入冻结候选计数，避免重叠清单未经去重直接累加。
+- 已全文核验 ICML 2026 Latent Reasoning VLA：其 future latent 不以候选动作作为输入，正文按预测辅助 VLA 的边界案例讨论，不计为可查询前向世界模型。
 - 已完成 14 条正式版本解析：R14 升级 10 条预印本记录并补全 1 条 ICRA 记录，R15 将 Cosmos Policy 和 TesserAct 分别升级为 ICLR 2026 与 ICCV 2025，R16 将 uncertainty-aware reachability certificate 升级为 IEEE T-ASE 2024 正式版本；其余条目仍按 V01 继续核对。
 - 已清除正文中“下一轮检索”“collection priorities”和首页工作稿状态等协作阶段措辞，将其改写为受当前证据图谱边界约束的研究议程与综合判断；ACM 引用条按模板要求恢复显示。
 - 已将同类综述定位从主题覆盖比较改为系统论断追踪：统一记录预测对象、动作接口、系统用途与证据环境，并避免以他文未列出的主题推断其缺失。
