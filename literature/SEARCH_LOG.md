@@ -34,6 +34,7 @@ The review profile remains a **structured narrative review with a critical evide
 | R12 | 2026-10-02 | Targeted recovery/resumption search; arXiv, PMLR | CQ2--CQ5 | Search-result count NR | 4 | [Batch 10](EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) |
 | R13 | 2026-10-02 | Identity normalization and publication-family resolution | Corpus integrity | 929 source rows | 15 placeholders excluded; 914 candidates resolved to 758 provisional families | [Family audit](PUBLICATION_FAMILIES.md) |
 | R14 | 2026-10-02 | Formal-version resolution; PMLR, ICLR Proceedings, RSS, IEEE/DOI records | Publication status | 11 cited records checked | 10 preprint citations upgraded; 1 conference record completed with its DOI | [Bibliography](../paper/references.bib) |
+| R15 | 2026-10-02 | Formal-version resolution; ICLR and CVF proceedings, arXiv | Publication status | 4 cited records checked | 2 preprints upgraded; 2 retained as preprints after no official proceedings page was found in this check | [Bibliography](../paper/references.bib) |
 
 The ten paper-level evidence batches contain 45 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
@@ -117,6 +118,10 @@ Seeds: Mem-World, WorldScape Policy 2.0, ViFailback, and LIBERO-Recover. Recorde
 
 Eleven cited records with unambiguous official publication entries were resolved: PlaNet (ICML 2019), Dreamer (ICLR 2020), Recovery RL (RA-L 2021), CALVIN (RA-L 2022), UniSim and TD-MPC2 (ICLR 2024), DROID (RSS 2024), Open X-Embodiment and Model-Based Runtime Monitoring (ICRA 2024), OpenVLA (CoRL proceedings published in PMLR 2025), and Control Barrier Functions (ECC 2019). Ten preprint entries were upgraded; the existing ICRA runtime-monitoring entry received its formal DOI and publisher. Citation keys were retained so that manuscript anchors did not change. This run did not infer missing DOIs and does not close version checking for the remaining bibliography.
 
+### R15: Formal Publication Versions II
+
+Four cited records were checked against official proceedings pages and arXiv. Cosmos Policy was upgraded to its ICLR 2026 proceedings entry, and TesserAct was upgraded to its ICCV 2025 entry under the formal title *Learning 4D Embodied World Models*. V-JEPA 2 and *World Action Models are Zero-shot Policies* were retained as preprints because this check did not find official proceedings pages for them. Citation keys were retained, no DOI was inferred, and publication status was not used to strengthen experimental claims.
+
 ## Screening and Evidence Handling
 
 - Candidate discovery and evidence inclusion are separate decisions. Repository lists, project pages, and surveys locate papers but do not validate experimental claims.
@@ -135,7 +140,7 @@ The following required runs have not been executed and therefore have no fabrica
 | D02 | Venue census for major robotics, ML, vision, and control venues | Possible venue-specific omissions |
 | C01 | Backward citation decisions for foundational and closest survey seeds | Historical lineage may remain incomplete |
 | C02 | Forward citation decisions for foundational and recent anchor papers | Recent follow-on work may remain incomplete |
-| V01 | Formal publication-version resolution for remaining preprints; 11 cited records resolved in R14 | Partially complete; some canonical citations may still change |
+| V01 | Formal publication-version resolution for remaining preprints; 13 cited records resolved in R14--R15 | Partially complete; some canonical citations may still change |
 | S01 | Title/abstract and full-text exclusion log with reasons | No final PRISMA flow count |
 | P01 | Independent PRESS-style review of the search strategy | Search design has only internal review |
 

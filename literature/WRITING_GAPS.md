@@ -8,7 +8,7 @@
 
 | 补充论文与公开入口 | 主分类 | 本轮用途 | 核对深度 / 下一步 |
 |---|---|---|---|
-| Cosmos Policy [论文](https://arxiv.org/abs/2601.16163v1) | 世界模型与 VLA、规划 | 动作、未来状态和价值的联合建模；直接策略与规划模式 | 已读方法相关正文；正式发表版本元数据待统一 |
+| Cosmos Policy [ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/748becc400a57c0e31cfe6a2e7951467-Abstract-Conference.html) | 世界模型与 VLA、规划 | 动作、未来状态和价值的联合建模；直接策略与规划模式 | 已读方法相关正文；正式发表版本元数据已核定 |
 | WorldArena [论文](https://arxiv.org/abs/2602.08971) | 评估、安全与 Benchmark | 区分视觉质量和功能用途 | 已核原始论文摘要与评估范围；逐项协议待提取 |
 | WorldArena 2.0 [论文](https://arxiv.org/abs/2605.17912v1) | 评估、安全与 Benchmark | 多模态、交互用途和平台扩展 | 已访问正文；各平台实验范围下一轮逐项核对 |
 | SafeDreamer [ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/ece182f93af26c64187ba3f7dfd4309a-Abstract-Conference.html) | 评估、安全与 Benchmark | 世界模型中的成本约束与安全规划 | 已核成本定义、主实验、消融和作者局限；见核验批次 02 |
