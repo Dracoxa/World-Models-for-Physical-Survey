@@ -52,8 +52,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R30 | 2026-10-02 | Formal-version resolution; arXiv, ECCV accepted-paper list, institutional publication record | Publication status | 4 cited records checked | 2 acceptance statuses resolved; 2 records retained as preprints; no entry upgraded to proceedings | [Formal-version audit](FORMAL_VERSION_AUDIT_2026-10-02.md) |
 | R31 | 2026-10-02 | Latest-paper follow-up from V-JEPA formal-version check; arXiv primary full text | CQ1--CQ4, CQ6 | 1 post-freeze candidate found, deduplicated, and retained | 1 full-text evidence record and 1 manuscript addition | [Batch 19](EVIDENCE_BATCH_19_VJEPA_POLICY.md) |
 | R32 | 2026-10-02 | Closest-work check around V-JEPA Policy; frozen catalog, external candidates, and arXiv primary full text | CQ1--CQ4, CQ6 | 2 direct JEPA-policy neighbors deduplicated and retained | 2 full-text evidence records and 2 manuscript additions | [Batch 20](EVIDENCE_BATCH_20_JEPA_POLICY_NEIGHBORS.md) |
+| R33 | 2026-10-02 | High-priority external-candidate follow-up; frozen catalog and arXiv primary full text | CQ1--CQ4, CQ6 | 1 predictive-representation candidate deduplicated and retained | 1 full-text evidence record and 1 manuscript addition | [Batch 21](EVIDENCE_BATCH_21_JEPA_VLA_REPRESENTATION.md) |
 
-The twenty paper-level evidence batches contain 82 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The twenty-one paper-level evidence batches contain 83 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -206,6 +207,10 @@ The V-JEPA 2 formal-version check surfaced the new arXiv record *V-JEPA Policy: 
 ### R32: JEPA Policy Closest-Work Check
 
 VLA-JEPA and JEPA-WAM were selected as direct methodological neighbors of V-JEPA Policy rather than as a broad new-paper sweep. Exact title and arXiv-ID checks found VLA-JEPA in the first external-candidate set but not the 929-row catalog; JEPA-WAM was already represented by three catalog rows and one publication family. Primary arXiv full text was inspected for both. VLA-JEPA was retained because its human-video ablation is positive on LIBERO-Plus but small or negative on other benchmarks, providing an adversarial check against a universal pretraining claim. JEPA-WAM was retained for matched representation, target, and interface ablations and for a five-task physical protocol with rollout-level records. Batch 20 records that JEPA-WAM removes transition prediction at deployment, both studies use one physical platform with ten rollouts per task and setting, and neither provides candidate-action-conditioned online rollout. This focused neighbor check does not establish coverage of all 2026 JEPA--VLA work.
+
+### R33: JEPA-VLA Predictive-Representation Check
+
+The first external-candidate list's high-priority record *JEPA-VLA: Video Predictive Embedding is Needed for VLA Models* was checked against the catalog, delta candidates, supplement tracker, and manuscript by exact title and arXiv ID. It was absent from the 929-row catalog and tracked supplements, so it was retained as one additional post-freeze amendment. Primary arXiv full text was inspected. The paper contributes matched within-implementation comparisons for adding frozen V-JEPA 2 history embeddings to basic and OpenVLA-OFT policies, but the intervention also adds encoder capacity and fusion modules. Batch 21 records that no downstream future target or transition model is trained, the physical study is one task with an ambiguous per-condition denominator, Table 7 duplicates a DINOv2 label, and no multi-seed or systems-cost results are reported. It is used as a predictive-pretraining representation boundary, not as online world-model evidence.
 
 ## Screening and Evidence Handling
 
