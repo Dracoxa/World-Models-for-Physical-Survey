@@ -33,6 +33,7 @@ The review profile remains a **structured narrative review with a critical evide
 | R11 | 2026-10-02 | Targeted interactive-improvement search; project pages, arXiv | CQ2--CQ6 | Search-result count NR | 4 | [Batch 09](EVIDENCE_BATCH_09_INTERACTIVE_IMPROVEMENT.md) |
 | R12 | 2026-10-02 | Targeted recovery/resumption search; arXiv, PMLR | CQ2--CQ5 | Search-result count NR | 4 | [Batch 10](EVIDENCE_BATCH_10_RECOVERY_RESUMPTION.md) |
 | R13 | 2026-10-02 | Identity normalization and publication-family resolution | Corpus integrity | 929 source rows | 15 placeholders excluded; 914 candidates resolved to 758 provisional families | [Family audit](PUBLICATION_FAMILIES.md) |
+| R14 | 2026-10-02 | Formal-version resolution; PMLR, ICLR Proceedings, RSS, IEEE/DOI records | Publication status | 7 cited records checked | 7 preprint citations upgraded to formal proceedings records | [Bibliography](../paper/references.bib) |
 
 The ten paper-level evidence batches contain 45 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
@@ -112,6 +113,10 @@ Seeds: Mem-World, WorldScape Policy 2.0, ViFailback, and LIBERO-Recover. Recorde
 3. `world model failure correction closed-loop real robot`
 4. `VLA rollback correction real-world failure benchmark`
 
+### R14: Formal Publication Versions
+
+Seven cited records with unambiguous official proceedings entries were resolved: PlaNet (ICML 2019), Dreamer (ICLR 2020), UniSim and TD-MPC2 (ICLR 2024), DROID (RSS 2024), Open X-Embodiment (ICRA 2024), and OpenVLA (CoRL proceedings published in PMLR 2025). Citation keys were retained so that manuscript anchors did not change. This run did not infer missing DOIs and does not close version checking for the remaining bibliography.
+
 ## Screening and Evidence Handling
 
 - Candidate discovery and evidence inclusion are separate decisions. Repository lists, project pages, and surveys locate papers but do not validate experimental claims.
@@ -130,7 +135,7 @@ The following required runs have not been executed and therefore have no fabrica
 | D02 | Venue census for major robotics, ML, vision, and control venues | Possible venue-specific omissions |
 | C01 | Backward citation decisions for foundational and closest survey seeds | Historical lineage may remain incomplete |
 | C02 | Forward citation decisions for foundational and recent anchor papers | Recent follow-on work may remain incomplete |
-| V01 | Formal publication-version resolution for remaining preprints | Some canonical citations may change |
+| V01 | Formal publication-version resolution for remaining preprints; 7 cited records resolved in R14 | Partially complete; some canonical citations may still change |
 | S01 | Title/abstract and full-text exclusion log with reasons | No final PRISMA flow count |
 | P01 | Independent PRESS-style review of the search strategy | Search design has only internal review |
 
