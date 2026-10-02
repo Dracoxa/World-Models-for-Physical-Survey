@@ -43,8 +43,9 @@ The review profile remains a **structured narrative review with a critical evide
 | R21 | 2026-10-02 | Frozen bibliography comparison for R20 sources | CQ1--CQ6 | 633 unique arXiv IDs; 359 absent from catalog and tracked supplements | 14 multi-source candidates prioritized; no paper-level evidence added | [Delta candidates](EXTERNAL_CANDIDATES_DELTA_2026-10-02.md) |
 | R22 | 2026-10-02 | Primary arXiv identity and abstract screening | CQ1--CQ6 | 14 multi-source candidates screened | 6 prioritized for full-text review; 5 deferred; 3 retained only as support/boundaries | [Screening table](EXTERNAL_CANDIDATE_SCREENING_2026-10-02.md) |
 | R23 | 2026-10-02 | Primary full text for top geometry/tactile candidates | CQ1--CQ4, CQ6 | 2 papers | 2 full-text evidence records and 2 manuscript additions | [Batch 13](EVIDENCE_BATCH_13_GEOMETRY_TACTILE_WAM.md) |
+| R24 | 2026-10-02 | Primary full text for remaining R22 priority candidates | CQ1--CQ4, CQ6 | 4 papers | 4 full-text evidence records and 4 manuscript additions | [Batch 14](EVIDENCE_BATCH_14_PREDICTIVE_INTERFACES.md) |
 
-The thirteen paper-level evidence batches contain 57 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
+The fourteen paper-level evidence batches contain 61 records in total. They are focused samples selected to answer manuscript questions, not a random or exhaustive sample of the 758 provisional families.
 
 ## Recorded Queries and Seeds
 
@@ -161,6 +162,10 @@ The current arXiv identity, version, and abstract were checked for all 14 candid
 ### R23: Geometry and Tactile World--Action Full-Text Check
 
 DriveDreamer-Policy and VTAM were checked in full text. DriveDreamer-Policy contributes matched NAVSIM ablations for joint depth/video/action supervision, but its evaluation is predictive-driver-model based and its depth target is DA3 pseudo-depth. VTAM contributes 80 physical trials per model across contact-rich tasks, plus a ten-trial chip-task ablation, but reports only qualitative future-prediction assessment. Both entered the manuscript with these limits preserved; neither supports a general causal claim that lower prediction error produces physical closed-loop gains.
+
+### R24: Predictive-Interface Full-Text Check
+
+The remaining four R22 priority papers were checked in full text. JOPAT contributes matched pixel/track/action ablations and ten physical rollouts per task; VAMPO separates predictor-only post-training from subsequent action-module adaptation on CALVIN but omits physical evaluation denominators; Audio-WM contributes a 30-trial closed-loop audio-anticipation case without a matched physical no-lookahead ablation; DexWM contributes simulation and 12-trial physical transfer evidence while relying on four hours of simulated robot adaptation. Batch 14 records these distinctions. All four entered the manuscript as interface-specific examples, not as evidence for a cross-paper performance ranking or a general causal relationship between prediction accuracy and physical control.
 
 ## Screening and Evidence Handling
 
