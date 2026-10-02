@@ -18,6 +18,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 <p>
   <a href="paper/preview/main.pdf"><b>论文 PDF</b></a> ·
   <a href="#literature"><b>文献导航</b></a> ·
+  <a href="RELATED_SURVEYS.md"><b>同类调研</b></a> ·
   <a href="paper/references.bib"><b>BibTeX</b></a> ·
   <a href="literature/WRITING_GAPS.md"><b>待补方向</b></a> ·
   <a href="#contributing"><b>参与整理</b></a>
@@ -27,7 +28,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 
 ---
 
-> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、7 表、31 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**，保留跨主题重复，不代表唯一论文数或已核验论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
+> **当前版本：v0.2 第一轮内容稿。** 四部分正文、1 图、7 表、32 条参考文献，尚非投稿定稿。文献目录的 **929 条为分类记录**，保留跨主题重复，不代表唯一论文数或已核验论文数。详见[写作进度与证据说明](WRITING_STATUS.md)。
 
 <a id="overview"></a>
 
@@ -79,6 +80,7 @@ ACM Computing Surveys 综述工作仓库 · 论文草稿与七类文献索引
 | 日期 | 更新 |
 |:---|:---|
 | 2026-10-02 | 重整仓库首页，提供图示、四部分正文入口与七类文献导航。 |
+| 2026-10-02 | 新增[同类开源调研与差异化定位](RELATED_SURVEYS.md)，并补入高度重合的 Physical AI 已发表综述。 |
 | 2026-10-01 | v0.2 第一轮内容稿：四部分正文、1 图、7 表、31 条参考文献；同步 929 条分类记录。 |
 
 下一轮优先补充下列内容，具体文献、检索词和核对状态见[边写边补清单](literature/WRITING_GAPS.md)：

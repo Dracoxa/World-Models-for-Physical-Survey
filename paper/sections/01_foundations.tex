@@ -44,18 +44,20 @@ With observation--action history $h_t$, goal $g$, and candidate action sequence 
 where $y$ may represent images, latent features, geometry, or other task-relevant variables. A policy instead produces $\pi_\phi(a_{t:t+H-1}\mid h_t,g)$. These expressions describe interfaces rather than a required architecture. A joint model may implement both, while a model trained on passive video may omit the action argument. The practical question is which interface is trained, queried, and tested.
 
 \subsection{Relation to Recent Surveys and Review Scope}
-Recent surveys already cover substantial parts of this landscape. Hou et al.~\cite{hou2026survey} organize robot world models around policy coupling, learned simulation, and visual predictive modeling. Lu et al.~\cite{lu2026survey} emphasize world-action architectures and control applications. Jena et al.~\cite{jena2026evaluation} focus on evaluation benchmarks and the comparison between prediction and executed behavior. Table~\ref{tab:survey-position} summarizes their stated emphases without interpreting an omitted entry as proof that a topic is absent from a paper.
+Recent surveys already cover substantial parts of this landscape. Kirchner et al.~\cite{kirchner2026physicalai} provide a control-centric review of world models for Physical AI, with explicit attention to uncertainty, structural priors, and closed-loop reliability. Hou et al.~\cite{hou2026survey} organize robot world models around policy coupling, learned simulation, and visual predictive modeling. Lu et al.~\cite{lu2026survey} emphasize world-action architectures and control applications. Jena et al.~\cite{jena2026evaluation} focus on evaluation benchmarks and the comparison between prediction and executed behavior. Table~\ref{tab:survey-position} summarizes their stated emphases without interpreting an omitted entry as proof that a topic is absent from a paper.
 
 Our working emphasis is the traceable connection between a predicted quantity, the interface that uses it, and the evidence for physical interaction. This perspective accommodates world models, their training resources, and complementary policy or safety components without treating them as identical objects. The seven collection categories supply literature to four narrative parts: foundations establish interfaces; data and representations determine what can be predicted; integration explains how predictions affect behavior; evaluation examines whether that use is reliable.
 
 \begin{table}[t]
-\caption{Positioning against selected 2026 surveys. Stated scope is compared, not completeness. All three are cited through accessible preprints.}
+\caption{Positioning against selected 2026 surveys. Stated scope is compared, not completeness.}
 \label{tab:survey-position}
 \small
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.20\linewidth}YY@{}}
 \toprule
 Survey & Main organizing emphasis & Connection to this review \\
 \midrule
+Kirchner et al.~\cite{kirchner2026physicalai} & Physical AI: uncertainty, structure, decision coupling, and closed-loop control & Closest scope; establishes that control, uncertainty, and safety alone are not differentiating claims. \\
+\addlinespace
 Hou et al.~\cite{hou2026survey} & Robot learning: policy coupling, simulation, and predictive models & Broad method map for tracing primary papers. \\
 \addlinespace
 Lu et al.~\cite{lu2026survey} & World-action modeling, architecture, and control applications & Predictive and executable interfaces. \\
