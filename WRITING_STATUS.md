@@ -21,8 +21,9 @@
 - 已核验 CVPR 2026 的 Motus、DynBridge 与 MM-ACT，区分联合视频--动作生成、预测 latent 辅助和训练时未来图像监督；见[核验批次 11](literature/EVIDENCE_BATCH_11_CVPR2026_POLICY_INTEGRATION.md)。
 - 已核验 CVPR 2026 的 DWM、PhyWM、PhysInOne、GeoWorld 与 ModularAgent，区分视觉后果查询、视觉代理干预、合成物理数据、程序步骤规划和仿真语义--动力学耦合；见[核验批次 12](literature/EVIDENCE_BATCH_12_CVPR2026_PHYSICAL_REPRESENTATIONS.md)。
 - 已建立[检索、筛选与证据追踪协议](literature/SEARCH_PROTOCOL.md)，固定语料层次、去重顺序、纳入排除规则、55 篇原文核验记录及当前 adequate for bounded claims 保证边界。
-- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R19 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
+- 已汇总[检索与发现日志](literature/SEARCH_LOG.md)，记录 R00--R20 的日期、渠道、覆盖问题、已保存查询、核验产出及未执行检索；未保存的结果数与早期查询显式标为 `NR`。
 - 已更新[同类开源调研与差异化定位](RELATED_SURVEYS.md)，新增 4 个可持续发现源；它们尚未并入冻结候选计数，避免重叠清单未经去重直接累加。
+- 已完成第二轮 GitHub 增量扫描，补入 RCL-Robotics、NUS WAM survey 与 NJU3DV 模拟器综述库；仍只作为发现源，不用仓库条目数替代论文去重或原文证据。
 - 已全文核验 ICML 2026 Latent Reasoning VLA：其 future latent 不以候选动作作为输入，正文按预测辅助 VLA 的边界案例讨论，不计为可查询前向世界模型。
 - 已完成 14 条正式版本解析：R14 升级 10 条预印本记录并补全 1 条 ICRA 记录，R15 将 Cosmos Policy 和 TesserAct 分别升级为 ICLR 2026 与 ICCV 2025，R16 将 uncertainty-aware reachability certificate 升级为 IEEE T-ASE 2024 正式版本；其余条目仍按 V01 继续核对。
 - 已清除正文中“下一轮检索”“collection priorities”和首页工作稿状态等协作阶段措辞，将其改写为受当前证据图谱边界约束的研究议程与综合判断；ACM 引用条按模板要求恢复显示。
