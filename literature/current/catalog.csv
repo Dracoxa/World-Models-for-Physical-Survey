@@ -1,0 +1,782 @@
+﻿family_id,title,year,categories,url,review_state,link_status
+PF-S06-0138,τ0-VLA: A Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.16885,candidate_pending_review,unverified_public_url
+PF-S01-0037,τ0-WM: A Unified Video-Action World Model for Robotic Manipulation,2026,世界模型&VLA&规划 | 世界模型基础&控制,https://arxiv.org/abs/2606.01027,candidate_pending_review,unverified_public_url
+PF-S06-0141,1X World Model,2026,世界模型&VLA&规划,,identity_conflict,held_identity_conflict
+PF-S07-0122,1X World Model Challenge: Learning a World Model from Real-World Humanoid Robot Data,2025,评估&安全&Benchmark,https://github.com/1x-technologies/1x-world-model-challenge,candidate_pending_review,unverified_public_url
+PF-S04-0013,3D-MoRe: Unified modal-contextual reasoning for embodied question answering,2025,结构化物理&多模态,https://ieeexplore.ieee.org/document/11247159,candidate_pending_review,unverified_public_url
+PF-S07-0050,3DSRBench: A Comprehensive 3D Spatial Reasoning Benchmark,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Ma_3DSRBench_A_Comprehensive_3D_Spatial_Reasoning_Benchmark_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0157,4D-WAM: Infusing Spatiotemporal Awareness into World Action Models through Trajectory Fields,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.08023,candidate_pending_review,unverified_public_url
+PF-S07-0033,4DWorldBench: A Comprehensive Evaluation Framework for 3D/4D World Generation Models,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Lu_4DWorldBench_A_Comprehensive_Evaluation_Framework_for_3D4D_World_Generation_Models_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0024,A_0: An affordance-aware hierarchical model for general robotic manipulation,2025,世界模型&VLA&规划,https://openaccess.thecvf.com/content/ICCV2025/html/Xu_A0_An_Affordance-Aware_Hierarchical_Model_for_General_Robotic_Manipulation_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0033,A_1: Adaptive truncated vision–language–action model from affordance to action,2026,世界模型&VLA&规划,https://openaccess.thecvf.com/content/CVPR2026F/html/Zhang_A1_Adaptive_Truncated_Vision-Language-Action_Model_from_Affordance_to_Action_CVPRF_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S04-0017,A Compositional Object-Based Approach to Learning Physical Dynamics,2017,结构化物理&多模态,https://arxiv.org/abs/1612.00341,candidate_pending_review,unverified_public_url
+PF-S07-0002,A Comprehensive Survey on Safe Reinforcement Learning,2015,评估&安全&Benchmark,https://www.jmlr.org/papers/volume16/garcia15a.html,candidate_pending_review,unverified_public_url
+PF-S01-0018,A comprehensive survey on world models for embodied AI,2025,世界模型基础&控制,https://arxiv.org/abs/2510.16732,candidate_pending_review,unverified_public_url
+PF-S07-0164,A Cross-Embodiment Gripper Benchmark for Rigid-Object Manipulation in Aerial and Industrial Robotics,2025,评估&安全&Benchmark,https://arxiv.org/abs/2512.01598,candidate_pending_review,unverified_public_url
+PF-S06-0003,A generalist agent,2022,世界模型&VLA&规划,https://arxiv.org/abs/2205.06175,candidate_pending_review,unverified_public_url
+PF-S07-0225,A Lyapunov-based Approach to Safe Reinforcement Learning,2018,评估&安全&Benchmark,https://arxiv.org/abs/1705.07708,candidate_pending_review,unverified_public_url
+PF-S05-0165,A mixed reality-assisted human-to-robot skill transfer approach for contact-rich assembly via visuomotor primitives,2025,数据&模拟&跨本体,,candidate_pending_review,held_url_review
+PF-S05-0145,A Novel Framework for Collaborative Knowledge Sharing and Learning for Disaster Response Robots,2024,数据&模拟&跨本体,,candidate_pending_review,held_url_review
+PF-S01-0012,A path towards autonomous machine intelligence,2022,世界模型基础&控制,,candidate_pending_review,missing
+PF-S03-0049,A Probabilistic Model behind Self-Supervised Learning (SimVAE),2024,Latent&预测表示,https://arxiv.org/abs/2402.01399,candidate_pending_review,unverified_public_url
+PF-S06-0148,A Step Toward World Models: A Survey on Robotic Manipulation,2025,世界模型&VLA&规划,https://arxiv.org/abs/2511.02097,candidate_pending_review,unverified_public_url
+PF-S05-0121,A4A: Cross‑Embodiment Transfer of Action‑Oriented 4D Affordances from Human Demonstrations,2026,数据&模拟&跨本体,https://arxiv.org/abs/2609.05892,candidate_pending_review,unverified_public_url
+PF-S01-0057,Accelerating Reinforcement Learning with Learned Skill Priors,2021,世界模型基础&控制,https://arxiv.org/abs/2010.11944,candidate_pending_review,unverified_public_url
+PF-S02-0044,Accurate and Efficient World Modeling with Masked Latent Transformers (EMERALD),2025,视觉&视频世界模型,https://arxiv.org/abs/2507.04075,candidate_pending_review,unverified_public_url
+PF-S07-0182,ACT-Bench: Towards Action Controllable World Models for Autonomous Driving,2024,评估&安全&Benchmark,https://arxiv.org/abs/2412.05337,candidate_pending_review,unverified_public_url
+PF-S06-0128,Act2Goal: From World Model To General Goal-conditioned Policy,2025（v1: 2025-12-29）,世界模型&VLA&规划,https://arxiv.org/abs/2512.23541,candidate_pending_review,unverified_public_url
+PF-S01-0023,Action-Conditional Video Prediction using Deep Networks in Atari Games,2015,世界模型基础&控制,https://arxiv.org/abs/1507.08750,candidate_pending_review,unverified_public_url
+PF-S04-0035,Action Conditioned Tactile Prediction: case study on slip prediction,2022,结构化物理&多模态,https://doi.org/10.15607/RSS.2022.XVIII.070,candidate_pending_review,unverified_public_url
+PF-S06-0090,Action Images: End-to-End Policy Learning via Multiview Video Generation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2604.06168,candidate_pending_review,unverified_public_url
+PF-S07-0130,ActionReasoningBench: Reasoning about Actions,2024,评估&安全&Benchmark,https://arxiv.org/abs/2406.04046,candidate_pending_review,unverified_public_url
+PF-S05-0011,Affordances from human videos as a versatile representation for robotics,2023,数据&模拟&跨本体,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10204422&origin_source=search&origin_method=searchbar,candidate_pending_review,unverified_public_url
+PF-S06-0155,AffordanceWAM: Affordance-Aware Joint World–Action Modeling for Robot Manipulation,2026,世界模型&VLA&规划,https://openreview.net/pdf?id=dIwv4m3CFO,candidate_pending_review,unverified_public_url
+PF-S03-0034,AgiBot World Colosseo (GO-1),2025,Latent&预测表示,https://arxiv.org/abs/2503.06669,candidate_pending_review,unverified_public_url
+PF-S07-0209,AGQA: A Benchmark for Compositional Spatio-Temporal Reasoning in Videos,2020,评估&安全&Benchmark,https://cs.stanford.edu/people/ranjaykrishna/agqa/,candidate_pending_review,unverified_public_url
+PF-S05-0003,AI2-THOR: An interactive 3D environment for visual AI,2017,数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/1712.05474,candidate_pending_review,unverified_public_url
+PF-S05-0028,AIRoA MoMa Dataset,2025,数据&模拟&跨本体,https://arxiv.org/abs/2509.25032,candidate_pending_review,unverified_public_url
+PF-S07-0196,ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks,2019,评估&安全&Benchmark,https://arxiv.org/abs/1912.01734,candidate_pending_review,unverified_public_url
+PF-S05-0055,Align-then-Steer: Adapting the Vision-Language-Action Models through Unified Late-Stage Alignment,2026,数据&模拟&跨本体,https://proceedings.iclr.cc/paper_files/paper/2026/file/1862ea85f21ca819eed2b75af39bba60-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0188,AM‑Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning,2026,数据&模拟&跨本体,https://arxiv.org/abs/2609.00641,candidate_pending_review,unverified_public_url
+PF-S06-0025,An anatomy of vision-language-action models: From modules to milestones and challenges,2025,世界模型&VLA&规划,https://arxiv.org/abs/2512.11362,candidate_pending_review,unverified_public_url
+PF-S05-0154,AnchorDream: Repurposing Video Diffusion for Embodiment‑Aware Robot Data Synthesis,2025,数据&模拟&跨本体,https://arxiv.org/abs/2512.11797,candidate_pending_review,unverified_public_url
+PF-S05-0167,AnyBody: A Benchmark Suite for Cross-Embodiment Manipulation,2025,数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2505.14986,candidate_pending_review,unverified_public_url
+PF-S05-0102,AnyGrasp: Robust and Efficient Grasp Perception in Spatial and Temporal Domains,2022,数据&模拟&跨本体,https://arxiv.org/abs/2212.08333,candidate_pending_review,unverified_public_url
+PF-S05-0059,AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.29242,candidate_pending_review,unverified_public_url
+PF-S07-0039,Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026F/html/Guo_Are_Video_Models_Ready_as_Zero-Shot_Reasoners_An_Empirical_Study_CVPRF_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0235,Argoverse 2: Next Generation Datasets for Self-Driving Perception and Forecasting,2021,评估&安全&Benchmark,https://arxiv.org/abs/2301.00493,candidate_pending_review,unverified_public_url
+PF-S07-0206,Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities,2022,评估&安全&Benchmark,https://assembly-101.github.io/,candidate_pending_review,unverified_public_url
+PF-S02-0037,Auto-JEPA: A Latent World Model of Continuous Intent for End-to-End Autonomous Driving,2026,视觉&视频世界模型,https://arxiv.org/abs/2607.29031,candidate_pending_review,unverified_public_url
+PF-S05-0147,AutoTrialGen: Automated Data Generation From Few Human Demonstrations via Trajectory Annotation and Simulation Trials,2026,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/11457587,candidate_pending_review,unverified_public_url
+PF-S07-0187,Avoid Everything: Model-Free Collision Avoidance with Expert-Guided Fine-Tuning,2024,评估&安全&Benchmark,https://openreview.net/forum?id=ccxDydaAs1,candidate_pending_review,unverified_public_url
+PF-S07-0156,BAKU: An Efficient Transformer for Multi-Task Policy Learning,2024,评估&安全&Benchmark,https://arxiv.org/abs/2406.07539,candidate_pending_review,unverified_public_url
+PF-S07-0137,BC-Z: Zero-Shot Task Generalization with Robotic Imitation Learning,2022,评估&安全&Benchmark,https://arxiv.org/abs/2202.02005,candidate_pending_review,unverified_public_url
+PF-S07-0237,BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning,2020,评估&安全&Benchmark,https://arxiv.org/abs/1805.04687,candidate_pending_review,unverified_public_url
+PF-S07-0095,"BEHAVIOR-1K: A Benchmark for Embodied AI with 1,000 Everyday Activities",2022,评估&安全&Benchmark,https://arxiv.org/abs/2206.11251,candidate_pending_review,unverified_public_url
+PF-S07-0125,"BEHAVIOR-1K: A Benchmark for Embodied AI with 1,000 Everyday Activities and Realistic Simulation",2024,评估&安全&Benchmark,https://arxiv.org/abs/2403.09227,candidate_pending_review,unverified_public_url
+PF-S02-0023,Behavior Generation with Latent Actions (VQ-BeT),2024,视觉&视频世界模型,https://arxiv.org/abs/2403.03181,candidate_pending_review,unverified_public_url
+PF-S05-0024,Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization,2026,数据&模拟&跨本体,https://arxiv.org/abs/2601.12993,candidate_pending_review,unverified_public_url
+PF-S06-0171,Being-H0.7: A Latent World-Action Model from Egocentric Videos,2026,世界模型&VLA&规划,https://arxiv.org/abs/2605.00078,candidate_pending_review,unverified_public_url
+PF-S07-0244,Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop Autonomous Driving,2024,评估&安全&Benchmark,https://arxiv.org/abs/2406.03877,candidate_pending_review,unverified_public_url
+PF-S07-0005,Benchmarking neural network robustness to common corruptions and perturbations,2019,评估&安全&Benchmark,,candidate_pending_review,missing
+PF-S07-0084,Benchmarking Safe Exploration in Deep Reinforcement Learning,2019,评估&安全&Benchmark,https://arxiv.org/abs/1910.01708,candidate_pending_review,unverified_public_url
+PF-S07-0072,Benchmarking Single-Factor Physical Video-to-Audio Generation,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Li_Benchmarking_Single-Factor_Physical_Video-to-Audio_Generation_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0098,Beyond Instance Slots: Semantically Rich World Models for Physical Interaction Planning,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.22294,candidate_pending_review,unverified_public_url
+PF-S07-0008,Beyond the nav-graph: Vision-and-language navigation in continuous environments,2020,评估&安全&Benchmark,,candidate_pending_review,missing
+PF-S07-0071,Black Swan: Abductive and Defeasible Video Reasoning in Unpredictable Events,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Chinchure_Black_Swan_Abductive_and_Defeasible_Video_Reasoning_in_Unpredictable_Events_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0007,Brax: A differentiable physics engine for large scale rigid body simulation,2021,数据&模拟&跨本体,https://arxiv.org/abs/2106.13281,candidate_pending_review,unverified_public_url
+PF-S05-0008,Bridge data: Boosting generalization of robotic skills with cross-domain datasets,2021,数据&模拟&跨本体,https://arxiv.org/abs/2109.13396,candidate_pending_review,unverified_public_url
+PF-S06-0163,Bridge-WA: Predicting Where and How the World Changes for Robotic Action,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.02195,candidate_pending_review,unverified_public_url
+PF-S05-0012,BridgeData V2: A dataset for robot learning at scale,2023,数据&模拟&跨本体 | 评估&安全&Benchmark,https://proceedings.mlr.press/v229/walke23a/walke23a.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0120,Bridging the Embodiment Gap: Disentangled Cross‑Embodiment Video Editing,2026,数据&模拟&跨本体,https://arxiv.org/abs/2605.03637,candidate_pending_review,unverified_public_url
+PF-S07-0013,CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks,2022,评估&安全&Benchmark,https://doi.org/10.1109/LRA.2022.3180108,candidate_pending_review,unverified_public_url
+PF-S07-0006,Can you trust your model’s uncertainty? Evaluating predictive uncertainty under dataset shift,2019,评估&安全&Benchmark,,candidate_pending_review,missing
+PF-S07-0229,CARLA: An Open Urban Driving Simulator,2017,评估&安全&Benchmark,https://arxiv.org/abs/1711.03938,candidate_pending_review,unverified_public_url
+PF-S07-0086,CATER: A Diagnostic Dataset for Compositional Actions and Temporal Reasoning,2020,评估&安全&Benchmark,https://arxiv.org/abs/1910.04744,candidate_pending_review,unverified_public_url
+PF-S04-0030,CausalWorld: A Robotic Manipulation Benchmark for Causal Structure and Transfer Learning,pending_review,结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/2010.04296,candidate_pending_review,unverified_public_url
+PF-S05-0106,CEI: A Unified Interface for Cross‑Embodiment Visuomotor Policy Learning in 3D Space,2026,数据&模拟&跨本体,https://ieeexplore.ieee.org/document/11361084,candidate_pending_review,unverified_public_url
+PF-S07-0068,Chain of World: World Model Thinking in Latent Motion,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Chain_of_World_World_Model_Thinking_in_Latent_Motion_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0088,ChronoDreamer: Action-Conditioned World Model as an Online Simulator for Robotic Planning,2026,世界模型&VLA&规划,https://arxiv.org/abs/2512.18619,candidate_pending_review,unverified_public_url
+PF-S03-0029,CLAM: Continuous Latent Action Models for Robot Learning from Unlabeled Demonstrations,2025,Latent&预测表示,https://arxiv.org/abs/2505.04999,candidate_pending_review,unverified_public_url
+PF-S05-0060,CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2608.27406,candidate_pending_review,unverified_public_url
+PF-S04-0029,CLEVRER: CoLlision Events for Video REpresentation and Reasoning,2020,结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/1910.01442,candidate_pending_review,unverified_public_url
+PF-S06-0004,CLIPort: What and where pathways for robotic manipulation,2022,世界模型&VLA&规划,https://proceedings.mlr.press/v164/shridhar22a/shridhar22a.pdf,candidate_pending_review,unverified_public_url
+PF-S06-0007,Code as policies: Language model programs for embodied control,2023,世界模型&VLA&规划,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10160591&origin_source=search&origin_method=searchbar,candidate_pending_review,unverified_public_url
+PF-S03-0019,CoLA-World: Co-Evolving Latent Action World Models,2025,Latent&预测表示,https://arxiv.org/abs/2510.26433,candidate_pending_review,unverified_public_url
+PF-S01-0046,COMBO: Conservative Offline Model-Based Policy Optimization,2021,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2102.08363,candidate_pending_review,unverified_public_url
+PF-S07-0003,Concrete problems in AI safety,2016,评估&安全&Benchmark,,candidate_pending_review,missing
+PF-S04-0024,Conditional Object-Centric Learning from Video,2022,结构化物理&多模态,https://arxiv.org/abs/2111.12594,candidate_pending_review,unverified_public_url
+PF-S07-0016,Conformal prediction: A gentle introduction,2023,评估&安全&Benchmark,,candidate_pending_review,missing
+PF-S03-0016,Connecting Joint-Embedding Predictive Architecture with Contrastive Self-supervised Learning (C-JEPA),2024,Latent&预测表示,https://papers.nips.cc/paper_files/paper/2024/hash/04a80267ad46fc730011f8760f265054-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S07-0075,Constrained Policy Optimization,2017,评估&安全&Benchmark,https://proceedings.mlr.press/v70/achiam17a.html,candidate_pending_review,unverified_public_url
+PF-S06-0026,Constraint-aware zero-shot vision-language navigation in continuous environments,2025,世界模型&VLA&规划,https://ieeexplore.ieee.org/document/11106272,candidate_pending_review,unverified_public_url
+PF-S06-0119,ContactWorld: What Representations Matter for Vision-Tactile Latent World Models in Contact-Rich Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.13877v3,candidate_pending_review,unverified_public_url
+PF-S03-0002,Contrastive learning of structured world models,2020,Latent&预测表示 | 结构化物理&多模态,https://arxiv.org/abs/1911.12247,candidate_pending_review,unverified_public_url
+PF-S03-0068,Contrastive Representation Regularization for Vision-Language-Action Models,2026,Latent&预测表示,https://arxiv.org/abs/2510.01711,candidate_pending_review,unverified_public_url
+PF-S02-0051,Contrastive Representations for Temporal Reasoning (CRTR),2025,视觉&视频世界模型,https://proceedings.neurips.cc/paper_files/paper/2025/hash/9d75de47462ffe77addaa7b985fc6d8e-Abstract-Conference.html,candidate_pending_review,unverified_public_url
+PF-S05-0095,Cosmos-Predict2.5: World Simulation with Video Foundation Models,2025,数据&模拟&跨本体,https://arxiv.org/abs/2511.00062,candidate_pending_review,unverified_public_url
+PF-S01-0097,Cosmos World Foundation Model Platform for Physical AI,2025,世界模型基础&控制 | 数据&模拟&跨本体 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/2501.03575,candidate_pending_review,unverified_public_url
+PF-S05-0153,CRAFT: Video Diffusion for Bimanual Robot Data Generation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2604.03552,candidate_pending_review,unverified_public_url
+PF-S05-0111,Cross‑Embodiment Imitation: Learning a Unified Latent Space for Multirobot Control,2026,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/11397669,candidate_pending_review,unverified_public_url
+PF-S05-0109,Cross-Embodiment Offline Reinforcement Learning for Heterogeneous Robot Datasets,2026,数据&模拟&跨本体,https://arxiv.org/abs/2602.18025,candidate_pending_review,unverified_public_url
+PF-S05-0112,Cross‑Embodiment Robot Foundation World Models with Latent Actions (LAC‑WM),2026,数据&模拟&跨本体,https://openreview.net/pdf?id=S30Y1sBz34,candidate_pending_review,unverified_public_url
+PF-S03-0065,Cross-Embodiment Robot Manipulation Skill Transfer using Latent Space Alignment,2024,Latent&预测表示,https://arxiv.org/abs/2406.01968,candidate_pending_review,unverified_public_url
+PF-S05-0053,Cross-Embodiment Robot Manipulation via a Unified Hand Action Space (UHAS),2026,数据&模拟&跨本体,https://arxiv.org/abs/2607.03570,candidate_pending_review,unverified_public_url
+PF-S05-0127,Cross-Embodiment Robotic Manipulation Synthesis via Guided Demonstrations through CycleVAE and Human Behavior Transformer,2025,数据&模拟&跨本体,https://arxiv.org/abs/2503.08622,candidate_pending_review,unverified_public_url
+PF-S05-0123,Cross-Hand Latent Representation for Vision-Language-Action Models,2026,数据&模拟&跨本体,https://arxiv.org/abs/2603.10158,candidate_pending_review,unverified_public_url
+PF-S05-0159,Cross‑Sim‑to‑Real: Mitigating Embodiment Shift via Adaptive Domain Randomization Calibration,2025,数据&模拟&跨本体,,identity_conflict,held_identity_conflict
+PF-S03-0044,Ctrl-World: A Controllable Generative World Model for Robot Manipulation,pending_review,Latent&预测表示 | 世界模型&VLA&规划,https://arxiv.org/abs/2510.10125,candidate_pending_review,unverified_public_url
+PF-S07-0100,D4RL: Datasets for Deep Data-Driven Reinforcement Learning,2020,评估&安全&Benchmark,https://arxiv.org/abs/2004.07219,candidate_pending_review,unverified_public_url
+PF-S05-0140,Data Scaling Laws in Imitation Learning for Robotic Manipulation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2410.18647,candidate_pending_review,unverified_public_url
+PF-S01-0015,DayDreamer: World Models for Physical Robot Learning,2022,世界模型&VLA&规划 | 世界模型基础&控制 | 数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2206.14176,candidate_pending_review,unverified_public_url
+PF-S02-0040,DDP-WM: Disentangled Dynamics Prediction for Efficient World Models,2026,视觉&视频世界模型,https://arxiv.org/abs/2602.01780,candidate_pending_review,unverified_public_url
+PF-S01-0090,Decision Transformer: Reinforcement Learning via Sequence Modeling,2021,世界模型基础&控制,https://arxiv.org/abs/2106.01345,candidate_pending_review,unverified_public_url
+PF-S01-0085,Deep Lagrangian Networks: Using Physics as Model Prior for Deep Learning,2019,世界模型基础&控制 | 结构化物理&多模态,https://arxiv.org/abs/1907.04490,candidate_pending_review,unverified_public_url
+PF-S01-0081,Deep Learning for Universal Linear Embeddings of Nonlinear Dynamics,2018,世界模型基础&控制,https://arxiv.org/abs/1712.09707,candidate_pending_review,unverified_public_url
+PF-S07-0219,Deep Predictive Coding Networks for Video Prediction,2016,评估&安全&Benchmark,https://arxiv.org/abs/1605.08104,candidate_pending_review,unverified_public_url
+PF-S01-0003,Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models,2018,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/1805.12114,candidate_pending_review,unverified_public_url
+PF-S01-0039,Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data,2017,世界模型基础&控制,https://arxiv.org/abs/1605.06432,candidate_pending_review,unverified_public_url
+PF-S01-0040,DeepMDP: Learning Continuous Latent Space Models for Representation Learning,2019,世界模型基础&控制,https://proceedings.mlr.press/v97/gelada19a.html,candidate_pending_review,unverified_public_url
+PF-S07-0194,DeepMind Control Suite,2018,评估&安全&Benchmark,https://arxiv.org/abs/1801.00690,candidate_pending_review,unverified_public_url
+PF-S07-0240,DeepMind Lab: A 3D Environment for Agent-Based AI Research,2016,评估&安全&Benchmark,https://arxiv.org/abs/1612.03801,candidate_pending_review,unverified_public_url
+PF-S07-0174,"DEMO3: Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy, and World Model Learning",2025,评估&安全&Benchmark,https://openreview.net/forum?id=Bv7LUUYOiq,candidate_pending_review,unverified_public_url
+PF-S02-0055,Denoising with a Joint-Embedding Predictive Architecture (D-JEPA),2024,视觉&视频世界模型,https://arxiv.org/abs/2410.03755,candidate_pending_review,unverified_public_url
+PF-S03-0023,Desegregation of neuronal predictive processing,2024,Latent&预测表示,https://www.biorxiv.org/content/10.1101/2024.08.05.606684v1,candidate_pending_review,unverified_public_url
+PF-S05-0149,DexFlyWheel: A Scalable and Self‑improving Data Generation Framework for Dexterous Manipulation,2025,数据&模拟&跨本体,,candidate_pending_review,held_url_review
+PF-S05-0044,DexImit: Learning Bimanual Dexterous Manipulation from Monocular Human Videos,2026,数据&模拟&跨本体,https://arxiv.org/abs/2602.10105,candidate_pending_review,unverified_public_url
+PF-S05-0103,DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via IL,2024,数据&模拟&跨本体,https://arxiv.org/abs/2410.24185,candidate_pending_review,unverified_public_url
+PF-S05-0101,DexMV: Imitation Learning for Dexterous Manipulation from Human Videos,2021,数据&模拟&跨本体,https://arxiv.org/abs/2108.05877,candidate_pending_review,unverified_public_url
+PF-S06-0051,DIAL: Decoupling Intent and Action via Latent World Modeling for End-to-End VLA,2026,世界模型&VLA&规划,https://arxiv.org/abs/2603.29844,candidate_pending_review,unverified_public_url
+PF-S01-0078,Differentiable MPC for End-to-end Planning and Control,2018,世界模型基础&控制,https://arxiv.org/abs/1810.13400,candidate_pending_review,unverified_public_url
+PF-S01-0087,DiffTaichi: Differentiable Programming for Physical Simulation,pending_review,世界模型基础&控制 | 数据&模拟&跨本体,https://arxiv.org/abs/1910.00935,candidate_pending_review,unverified_public_url
+PF-S01-0013,Diffuser: Planning with Diffusion for Flexible Behavior Synthesis,2022,世界模型基础&控制,https://arxiv.org/abs/2205.09991,candidate_pending_review,unverified_public_url
+PF-S01-0093,Diffusion for World Modeling: Visual Details Matter in Atari,2024,世界模型基础&控制 | 视觉&视频世界模型,https://arxiv.org/abs/2405.12399,candidate_pending_review,unverified_public_url
+PF-S01-0092,Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion,2024,世界模型基础&控制,https://arxiv.org/abs/2407.01392,candidate_pending_review,unverified_public_url
+PF-S02-0014,Diffusion Models Are Real-Time Game Engines,2024,视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/2408.14837,candidate_pending_review,unverified_public_url
+PF-S01-0055,Diffusion Policy: Visuomotor Policy Learning via Action Diffusion,2023,世界模型&VLA&规划 | 世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2303.04137,candidate_pending_review,unverified_public_url
+PF-S05-0077,DiffXPBD: Differentiable Position-Based Simulation,2023,数据&模拟&跨本体,https://arxiv.org/abs/2301.01396,candidate_pending_review,unverified_public_url
+PF-S04-0006,DIGIT: A novel design for a low-cost compact high-resolution tactile sensor with application to in-hand manipulation,2020,结构化物理&多模态,https://doi.org/10.1109/LRA.2020.2977257,candidate_pending_review,unverified_public_url
+PF-S02-0056,DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning,pending_review,Latent&预测表示 | 视觉&视频世界模型,https://proceedings.mlr.press/v267/zhou25t.html,candidate_pending_review,unverified_public_url
+PF-S03-0006,DINOv2: Learning robust visual features without supervision,2024,Latent&预测表示,,candidate_pending_review,missing
+PF-S02-0052,Disentangled World Models: Learning to Transfer Semantic Knowledge from Distracting Videos for RL (DisWM),2025,视觉&视频世界模型,https://arxiv.org/abs/2503.08751,candidate_pending_review,unverified_public_url
+PF-S03-0050,Disentanglement with Factor Quantized Variational Autoencoders (FactorQVAE),2024,Latent&预测表示,https://arxiv.org/abs/2409.14851,candidate_pending_review,unverified_public_url
+PF-S06-0078,DiWA: Diffusion Policy Adaptation with World Models,2025,世界模型&VLA&规划,https://arxiv.org/abs/2508.03645,candidate_pending_review,unverified_public_url
+PF-S06-0081,DMWM: Dual-Mind World Model with Long-Term Imagination,2025,世界模型&VLA&规划,https://proceedings.neurips.cc/paper_files/paper/2025/file/078bc5d384e8d3894f7bce6a34756212-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S06-0005,"Do as i can, not as i say: Grounding language in robotic affordances",2022,世界模型&VLA&规划,https://arxiv.org/abs/2204.01691,candidate_pending_review,unverified_public_url
+PF-S07-0034,Do Generative Video Models Understand Physical Principles?,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/WACV2026/html/Motamed_Do_Generative_Video_Models_Understand_Physical_Principles_WACV_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0072,Dojo: A Differentiable Physics Engine for Robotics,2022,数据&模拟&跨本体,https://arxiv.org/abs/2203.00806,candidate_pending_review,unverified_public_url
+PF-S06-0101,Dream-MPC: Gradient-Based Model Predictive Control with Latent Imagination,2026,世界模型&VLA&规划,https://arxiv.org/abs/2605.04568,candidate_pending_review,unverified_public_url
+PF-S06-0116,Dream-Tac: A Unified Tactile World Action Model for Contact-Rich Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.08737,candidate_pending_review,unverified_public_url
+PF-S01-0008,Dream to Control: Learning Behaviors by Latent Imagination,2020,Latent&预测表示 | 世界模型基础&控制 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/1912.01603,candidate_pending_review,unverified_public_url
+PF-S05-0061,DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos,2026,视觉&视频世界模型 | 数据&模拟&跨本体 | 世界模型&VLA&规划,https://proceedings.mlr.press/v306/gao26q.html,selected_units_extracted_ai,unverified_public_url
+PF-S02-0002,Dreamer 4: Scalable World Models,2025,视觉&视频世界模型,https://arxiv.org/abs/2509.24527,candidate_pending_review,unverified_public_url
+PF-S02-0039,Dreamer-CDP: Improving Reconstruction-free World Models Via Continuous Deterministic Representation Prediction,2026,视觉&视频世界模型,https://arxiv.org/abs/2603.07083,candidate_pending_review,unverified_public_url
+PF-S06-0135,DreamerNav: Learning-based Autonomous Navigation in Dynamic Indoor Environments using World Models,2025,世界模型&VLA&规划,https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1655171/full,candidate_pending_review,unverified_public_url
+PF-S05-0097,DreamGen: Unlocking Generalization in Robot Learning through Video World Models,2025,视觉&视频世界模型 | 数据&模拟&跨本体 | 世界模型&VLA&规划,https://proceedings.mlr.press/v305/jang25a.html,selected_units_extracted_ai,unverified_public_url
+PF-S02-0057,Dreaming of Many Worlds: Learning Contextual World Models Aids Zero-Shot Generalization (cRSSM),2024,视觉&视频世界模型,https://arxiv.org/abs/2403.10967,candidate_pending_review,unverified_public_url
+PF-S05-0086,Dreamitate: Real-World Visuomotor Policy Learning via Video Generation,2024,数据&模拟&跨本体,https://arxiv.org/abs/2406.16862,candidate_pending_review,unverified_public_url
+PF-S06-0054,DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive World Knowledge,2026,世界模型&VLA&规划,https://proceedings.neurips.cc/paper_files/paper/2025/file/22d4f952efa13970f0b1ffb22170d416-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S02-0020,DriveDreamer-2: Bridging Vision-Language Models and Driving Video Generation,2024,视觉&视频世界模型,https://arxiv.org/abs/2403.06845,candidate_pending_review,unverified_public_url
+PF-S01-0034,DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving,2023,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2309.09777,candidate_pending_review,unverified_public_url
+PF-S03-0035,DriveFuture: Future-Aware Latent World Models for Autonomous Driving,2026,Latent&预测表示,https://arxiv.org/abs/2605.09701,candidate_pending_review,unverified_public_url
+PF-S06-0136,DriveVLA-W0: World Models Amplify Data Scaling Law in Autonomous Driving,2026,世界模型&VLA&规划,https://proceedings.iclr.cc/paper_files/paper/2026/file/0d70423f59c5fdd24f0dd3fa52e34623-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S07-0120,Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving,2025,评估&安全&Benchmark,https://ojs.aaai.org/index.php/AAAI/article/view/33010,candidate_pending_review,unverified_public_url
+PF-S01-0051,Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving,pending_review,世界模型基础&控制 | 视觉&视频世界模型,https://openaccess.thecvf.com/content/CVPR2024/html/Wang_Driving_into_the_Future_Multiview_Visual_Forecasting_and_Planning_with_CVPR_2024_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0149,DrivingGen: A Comprehensive Benchmark for Generative Video World Models in Autonomous Driving,2026,评估&安全&Benchmark,https://arxiv.org/abs/2601.01528,candidate_pending_review,unverified_public_url
+PF-S07-0148,DrivingWorld: Constructing World Model for Autonomous Driving via Video GPT,2024,评估&安全&Benchmark,https://arxiv.org/abs/2412.19505,candidate_pending_review,unverified_public_url
+PF-S05-0014,DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset,2024,数据&模拟&跨本体 | 评估&安全&Benchmark,https://www.roboticsproceedings.org/rss20/p120.html,candidate_pending_review,unverified_public_url
+PF-S07-0065,DrVideo: Document Retrieval Based Long Video Understanding,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0044,DSWAM: A Dual-System World Action Foundation Model for Fine-Grained Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.04927,candidate_pending_review,unverified_public_url
+PF-S06-0095,DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.10506,candidate_pending_review,unverified_public_url
+PF-S06-0063,DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.32028,candidate_pending_review,unverified_public_url
+PF-S07-0252,dWorldEval: Scalable Robotic Policy Evaluation via Discrete Diffusion World Model,2026,评估&安全&Benchmark,https://arxiv.org/abs/2604.22152,candidate_pending_review,unverified_public_url
+PF-S01-0002,"Dyna, an integrated architecture for learning, planning, and reacting",1991,世界模型基础&控制,https://doi.org/10.1145/122344.122377,candidate_pending_review,unverified_public_url
+PF-S03-0021,Dynamic predictive coding: A model of hierarchical sequence learning and prediction in the neocortex,2024,Latent&预测表示,https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011801,candidate_pending_review,unverified_public_url
+PF-S02-0046,Dynamics-Aligned Latent Imagination in Contextual World Models for Zero-Shot Generalization,2025,Latent&预测表示 | 视觉&视频世界模型,https://arxiv.org/abs/2508.20294,candidate_pending_review,unverified_public_url
+PF-S05-0148,DynaMimicGen: A Data Generation Framework for Robot Learning of Dynamic Tasks,2025,数据&模拟&跨本体,https://arxiv.org/abs/2511.16223,candidate_pending_review,unverified_public_url
+PF-S05-0036,DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2608.06374,candidate_pending_review,unverified_public_url
+PF-S06-0178,DyQ-VLA: Temporal-Dynamic-Aware Quantization for Embodied Vision-Language-Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2603.07904,candidate_pending_review,unverified_public_url
+PF-S04-0020,E(n) Equivariant Graph Neural Networks,2021,结构化物理&多模态,https://arxiv.org/abs/2102.09844,candidate_pending_review,unverified_public_url
+PF-S05-0038,EaDex: A Cross-Embodiment Dexterous Manipulation Framework from Low-Cost Demonstrations,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.03268,candidate_pending_review,unverified_public_url
+PF-S06-0192,Earth System World Model for What-If Simulations,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.08855,candidate_pending_review,unverified_public_url
+PF-S05-0134,EBT‑Policy: Energy Unlocks Emergent Physical Reasoning Capabilities,2025,数据&模拟&跨本体,https://arxiv.org/abs/2510.27545,candidate_pending_review,unverified_public_url
+PF-S07-0060,ECBench: Can Multi-modal Foundation Models Understand the Egocentric World?,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Dang_ECBench_Can_Multi-modal_Foundation_Models_Understand_the_Egocentric_World_A_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S02-0048,Efficient Image-Goal Navigation with Representative Latent World Model (ReL-NWM),2025,视觉&视频世界模型,https://arxiv.org/abs/2511.11011,candidate_pending_review,unverified_public_url
+PF-S05-0040,Ego-Exo4D: A Benchmark for Egocentric Video Understanding,2026,数据&模拟&跨本体,https://openaccess.thecvf.com/content/CVPR2024/papers/Grauman_Ego-Exo4D_Understanding_Skilled_Human_Activity_from_First-_and_Third-Person_Perspectives_CVPR_2024_paper.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0015,Ego-Exo4D: Understanding skilled human activity from first- and third-person perspectives,pending_review,数据&模拟&跨本体 | 评估&安全&Benchmark,https://ego-exo4d-data.org/,candidate_pending_review,unverified_public_url
+PF-S03-0056,Ego-Foresight: Self-supervised Learning of Agent-Aware Representations for Improved RL,2024,Latent&预测表示,https://arxiv.org/abs/2407.01570,candidate_pending_review,unverified_public_url
+PF-S05-0142,Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.02580,candidate_pending_review,unverified_public_url
+PF-S05-0010,"Ego4D: Around the world in 3,000 hours of egocentric video",2022,数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2110.07058,candidate_pending_review,unverified_public_url
+PF-S05-0023,EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2602.16710,candidate_pending_review,unverified_public_url
+PF-S01-0069,Embed to Control: A Locally Linear Latent Dynamics Model for Control from Raw Images,2015,世界模型基础&控制,https://arxiv.org/abs/1506.07365,candidate_pending_review,unverified_public_url
+PF-S07-0210,Embodied Question Answering,2018,评估&安全&Benchmark,https://arxiv.org/abs/1712.03383,candidate_pending_review,unverified_public_url
+PF-S06-0096,Embodied Tree of Thoughts: Deliberate Manipulation Planning With Embodied World Model,2026,世界模型&VLA&规划,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11617299&origin_source=search&origin_method=searchbar,candidate_pending_review,unverified_public_url
+PF-S06-0089,EnerVerse-AC: Envisioning Embodied Environments with Action Condition,2026,世界模型&VLA&规划,https://arxiv.org/abs/2505.09723,candidate_pending_review,unverified_public_url
+PF-S06-0065,Enhancing robotic manipulation via modeling temporal dependencies of historical actions and environmental effect,2026,世界模型&VLA&规划,https://doi.org/10.1016/j.engappai.2026.115988,candidate_pending_review,unverified_public_url
+PF-S05-0098,Eureka: Human-Level Reward Design via Coding Large Language Models,2023,数据&模拟&跨本体,https://arxiv.org/abs/2310.12931,candidate_pending_review,unverified_public_url
+PF-S06-0104,EV-WM: Event-Verified World Models for Long-Horizon Robotic Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.13053,candidate_pending_review,unverified_public_url
+PF-S07-0169,Evaluating Gemini Robotics Policies in a Veo World Simulator,2025,评估&安全&Benchmark,https://arxiv.org/abs/2512.10675,candidate_pending_review,unverified_public_url
+PF-S07-0168,Evaluating Robot Policies in a World Model,2025,评估&安全&Benchmark,https://arxiv.org/abs/2506.00613,candidate_pending_review,unverified_public_url
+PF-S06-0034,EvolveNav: Empowering LLM-based vision-language navigation via self-improving embodied reasoning,2026,世界模型&VLA&规划,https://ieeexplore.ieee.org/document/11478375,candidate_pending_review,unverified_public_url
+PF-S07-0027,"EWMBench: Evaluating Scene, Motion, and Semantic Quality in Embodied World Models",2025,评估&安全&Benchmark,https://arxiv.org/abs/2505.09694,candidate_pending_review,unverified_public_url
+PF-S05-0187,FADA: Few‑Shot Domain Adaptation via Dynamics Alignment for Humanoid Control,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.28476,candidate_pending_review,unverified_public_url
+PF-S05-0030,FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models,2025,数据&模拟&跨本体,https://arxiv.org/abs/2510.01642,candidate_pending_review,unverified_public_url
+PF-S05-0071,Fast and Feature-Complete Differentiable Physics for Articulated Rigid Bodies (Nimble),2021,数据&模拟&跨本体,https://arxiv.org/abs/2103.16021,candidate_pending_review,unverified_public_url
+PF-S05-0074,Fast-Grasp'D: Dexterous Multi-finger Grasp Generation Through Differentiable Simulation,2023,数据&模拟&跨本体,https://arxiv.org/abs/2306.08132,candidate_pending_review,unverified_public_url
+PF-S06-0161,Fast-WAM / Faster-WAM: Do World Action Models Need Deep Action Modules?,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.02365,candidate_pending_review,unverified_public_url
+PF-S06-0162,Faster-WAM: Efficient Inference-Time Future Conditioning for Robust World Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.04404,candidate_pending_review,unverified_public_url
+PF-S06-0112,FAWAM: Force-Aware World Action Models for Closed-Loop Contact-Rich Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.08555,candidate_pending_review,unverified_public_url
+PF-S05-0146,Federated Physics‑Informed Graph Framework Guided by Multianchors for Heterogeneous Wheeled Robots Collaborative Fault Diagnosis,2026,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/11346031,candidate_pending_review,unverified_public_url
+PF-S05-0143,Federated Residual Reinforcement Learning for Collaborative Robot Skill Learning in Industry,2025,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/11336679,candidate_pending_review,unverified_public_url
+PF-S04-0039,FeelWorld: Visuo-Tactile World Model for Hierarchical Contact Prediction and Planning,2026,结构化物理&多模态,https://arxiv.org/abs/2607.24267,candidate_pending_review,unverified_public_url
+PF-S06-0047,FLARE: Robot Learning with Implicit World Modeling,2026,世界模型&VLA&规划,https://arxiv.org/abs/2505.15659,candidate_pending_review,unverified_public_url
+PF-S06-0165,FLEX-π: A Multi-Stream World-Action Model with Compute Flexibility,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.10860,candidate_pending_review,unverified_public_url
+PF-S06-0070,FlowVLA: Visual Chain of Thought-based Motion Reasoning for Vision-Language-Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2508.18269,candidate_pending_review,unverified_public_url
+PF-S07-0147,FMB: A Functional Manipulation Benchmark for Generalizable Robotic Learning,2024,评估&安全&Benchmark,https://arxiv.org/abs/2401.08553,candidate_pending_review,unverified_public_url
+PF-S03-0047,FOCUS: Object-Centric World Models for Robotic Manipulation,2025,Latent&预测表示,https://biblio.ugent.be/publication/01JVKRSDJA9TGBAAAV5NSH52V5,candidate_pending_review,unverified_public_url
+PF-S06-0181,ForeDiffusion: Foresight-Conditioned Diffusion Policy via Future View Construction,2026,世界模型&VLA&规划,https://ojs.aaai.org/index.php/AAAI/article/view/38934,candidate_pending_review,unverified_public_url
+PF-S06-0175,ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Belt Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.20735,candidate_pending_review,unverified_public_url
+PF-S06-0083,FOSP: Fine-Tuning Offline Safe Policy Through World Models,2025,世界模型&VLA&规划,https://proceedings.iclr.cc/paper_files/paper/2025/file/61f425da6e0a201b8fe1454601abfba5-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S03-0066,Foundation Policies with Hilbert Representations,2024,Latent&预测表示,https://arxiv.org/abs/2402.15567,candidate_pending_review,unverified_public_url
+PF-S04-0009,Fourier neural operator for parametric partial differential equations,2021,结构化物理&多模态,https://arxiv.org/abs/2010.08895,candidate_pending_review,unverified_public_url
+PF-S06-0156,FRAPPE: Infusing World Modeling into Generalist Policies via Multiple Future Representation Alignment,2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.17259,candidate_pending_review,unverified_public_url
+PF-S05-0042,From Human Videos to Robot Manipulation: A Survey on Scalable Vision-Language-Action Learning with Human-Centric Data,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.00054,candidate_pending_review,unverified_public_url
+PF-S07-0042,From Indoor to Open World: Revealing the Spatial Reasoning Gap in MLLMs,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Wu_From_Indoor_to_Open_World_Revealing_the_Spatial_Reasoning_Gap_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0066,From Trial to Triumph: Advancing Long Video Understanding via Visual Context Sample Scaling and Self-Reward Alignment,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Suo_From_Trial_to_Triumph_Advancing_Long_Video_Understanding_via_Visual_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0054,FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.13102,candidate_pending_review,unverified_public_url
+PF-S07-0159,FurnitureBench: The Benchmark for Long-Horizon Complex Furniture Assembly,2023,评估&安全&Benchmark,https://arxiv.org/abs/2305.12821,candidate_pending_review,unverified_public_url
+PF-S06-0183,FUTURE-VLA: Forecasting Unified Trajectories Under Real-time Execution,2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.15882,candidate_pending_review,unverified_public_url
+PF-S07-0220,FutureGAN: Video Prediction via Improved Conditional GANs,2018,评估&安全&Benchmark,https://arxiv.org/abs/1810.01325,candidate_pending_review,unverified_public_url
+PF-S06-0194,FutureNav: Unified World-Action Modeling for Vision-and-Language Navigation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.30367,candidate_pending_review,unverified_public_url
+PF-S05-0133,G0.5: One Autoregressive Stream for Robot Reasoning and Action,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2608.11739,candidate_pending_review,unverified_public_url
+PF-S02-0010,GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation,2025,视觉&视频世界模型,https://arxiv.org/abs/2506.14135,candidate_pending_review,unverified_public_url
+PF-S01-0033,GAIA-1: A Generative World Model for Autonomous Driving,2023,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2309.17080,candidate_pending_review,unverified_public_url
+PF-S02-0008,GAIA-2: A Controllable Multi-View Generative World Model for Autonomous Driving,2025,视觉&视频世界模型,https://wayve.ai/wp-content/uploads/2025/03/GAIA_2_Technical_Report.pdf,candidate_pending_review,unverified_public_url
+PF-S04-0044,Galileo: Perceiving Physical Object Properties by Integrating a Physics Engine with Deep Learning,2015,结构化物理&多模态,https://papers.neurips.cc/paper_files/paper/2015/file/d09bf41544a3365a46c9077ebb5e35c3-Paper.pdf,candidate_pending_review,unverified_public_url
+PF-S02-0016,GameGen-X: Interactive Open-world Game Video Generation,2024,视觉&视频世界模型,https://arxiv.org/abs/2411.00769,candidate_pending_review,unverified_public_url
+PF-S06-0168,GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.05588,candidate_pending_review,unverified_public_url
+PF-S04-0003,GelSight: High-resolution robot tactile sensors for estimating geometry and force,2017,结构化物理&多模态,https://www.mdpi.com/1424-8220/17/12/2762,candidate_pending_review,unverified_public_url
+PF-S06-0061,GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2605.22882,candidate_pending_review,unverified_public_url
+PF-S06-0027,Gemini robotics: Bringing AI into the physical world,2025,世界模型&VLA&规划,https://arxiv.org/abs/2503.20020,candidate_pending_review,unverified_public_url
+PF-S06-0058,Gen2Act: Human Video Generation in Novel Scenarios Enables Generalizable Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2409.16283,candidate_pending_review,unverified_public_url
+PF-S05-0100,Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models,2023,数据&模拟&跨本体,https://arxiv.org/abs/2310.18308,candidate_pending_review,unverified_public_url
+PF-S05-0078,Genesis: A Generative and Universal Physics Engine for Robotics and Beyond,2024,数据&模拟&跨本体,https://genesis-embodied-ai.github.io/,candidate_pending_review,unverified_public_url
+PF-S04-0049,GENESIS: Generative Scene Inference and Sampling with Object-Centric Latent Representations,2020,结构化物理&多模态,https://arxiv.org/abs/1907.13052,candidate_pending_review,unverified_public_url
+PF-S02-0017,GenEx: Generating an Explorable World,2024,视觉&视频世界模型,https://arxiv.org/abs/2412.09624,candidate_pending_review,unverified_public_url
+PF-S02-0013,Genie 2: A Large-Scale Foundation World Model,2024,视觉&视频世界模型,https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/,candidate_pending_review,unverified_public_url
+PF-S02-0003,Genie 3: A New Frontier for World Models,2025,视觉&视频世界模型,https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/,candidate_pending_review,unverified_public_url
+PF-S01-0052,Genie: Generative Interactive Environments,2024,Latent&预测表示 | 世界模型基础&控制 | 数据&模拟&跨本体 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/2402.15391,candidate_pending_review,unverified_public_url
+PF-S06-0068,GeoPredict: Leveraging Predictive Kinematics and 3D Gaussian Geometry for Precise VLA Manipulation,2026,世界模型&VLA&规划,https://openaccess.thecvf.com/content/CVPR2026/papers/Qian_GeoPredict_Leveraging_Predictive_Kinematics_and_3D_Gaussian_Geometry_for_Precise_CVPR_2026_paper.pdf,candidate_pending_review,unverified_public_url
+PF-S07-0176,GG-LLM: Geometrically Grounding Large Language Models for Zero-shot Human Activity Forecasting in Human-Aware Task Planning,2024,评估&安全&Benchmark,https://openreview.net/forum?id=WLzysJoVOe,candidate_pending_review,unverified_public_url
+PF-S06-0160,GlanceWAM: Sparse Test-Time Imagination for World-Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.23927,candidate_pending_review,unverified_public_url
+PF-S01-0095,GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation,2024,世界模型基础&控制 | 数据&模拟&跨本体 | 视觉&视频世界模型,https://arxiv.org/abs/2410.06158,candidate_pending_review,unverified_public_url
+PF-S06-0028,GR00T N1: An open foundation model for generalist humanoid robots,2025,世界模型&VLA&规划,https://arxiv.org/abs/2503.14734,candidate_pending_review,unverified_public_url
+PF-S03-0051,Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models,2024,Latent&预测表示,https://papers.nips.cc/paper_files/paper/2024/hash/bac4d92b3f6decfe47eab9a5893dd1f6-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S01-0079,Graph Networks as Learnable Physics Engines for Inference and Control,2018,世界模型基础&控制,https://arxiv.org/abs/1806.01242,candidate_pending_review,unverified_public_url
+PF-S07-0213,Graph Networks as Learnable Physics Engines for Inference and Simulation,2020,评估&安全&Benchmark,https://arxiv.org/abs/1806.01261,candidate_pending_review,unverified_public_url
+PF-S05-0158,GraphMimic: Graph‑to‑Graphs Generative Modeling from Videos for Policy Learning,2025,数据&模拟&跨本体,,candidate_pending_review,held_url_review
+PF-S06-0102,Grounded World Model for Semantically Generalizable Planning,2026,世界模型&VLA&规划,https://arxiv.org/abs/2604.11751,candidate_pending_review,unverified_public_url
+PF-S05-0186,Grounding Sim‑to‑Real Generalization in Robotic Manipulation: An Empirical Study with Vision‑Language‑Action Models,2026,数据&模拟&跨本体,https://arxiv.org/abs/2603.22876,candidate_pending_review,unverified_public_url
+PF-S07-0171,GUARD: A Safe Reinforcement Learning Benchmark,2022,评估&安全&Benchmark,https://openreview.net/forum?id=ZCeDLB3yLb,candidate_pending_review,unverified_public_url
+PF-S01-0025,Guided Policy Search,2013,世界模型基础&控制,https://proceedings.mlr.press/v28/levine13.html,candidate_pending_review,unverified_public_url
+PF-S02-0009,GWM: Towards Scalable Gaussian World Models for Robotic Manipulation,2025,世界模型&VLA&规划 | 视觉&视频世界模型,https://arxiv.org/abs/2508.17600,candidate_pending_review,unverified_public_url
+PF-S06-0103,H-WM: Robotic Task and Motion Planning Guided by Hierarchical World Model,2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.11291,candidate_pending_review,unverified_public_url
+PF-S05-0067,H2O: Human-to-Humanoid Real-Time Whole-Body Teleoperation,2024,数据&模拟&跨本体,https://arxiv.org/abs/2403.04436,candidate_pending_review,unverified_public_url
+PF-S05-0046,H2R-BM: Can leveraging human videos enhance performance and generalizability in robotic bimanual manipulation?,2026,数据&模拟&跨本体,https://www.sciencedirect.com/science/article/pii/S0031320326006023,candidate_pending_review,unverified_public_url
+PF-S07-0010,Habitat 2.0: Training Home Assistants to Rearrange their Habitat,2021,评估&安全&Benchmark,https://arxiv.org/abs/2106.14405,candidate_pending_review,unverified_public_url
+PF-S07-0201,Habitat 3.0: A Co-located Simulation Platform for Studying the Collaboration between Humans and Robots,2023,评估&安全&Benchmark,https://aihabitat.org/habitat3/,candidate_pending_review,unverified_public_url
+PF-S07-0007,Habitat: A Platform for Embodied AI Research,2019,评估&安全&Benchmark,https://arxiv.org/abs/1904.01201,candidate_pending_review,unverified_public_url
+PF-S01-0084,Hamiltonian Neural Networks,2019,世界模型基础&控制 | 结构化物理&多模态,https://arxiv.org/abs/1906.01563,candidate_pending_review,unverified_public_url
+PF-S06-0113,HarmoWAM: Harmonizing Generalizable and Precise Manipulation via Adaptive World Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2605.10942,candidate_pending_review,unverified_public_url
+PF-S05-0125,HERMES: Human‑to‑Robot Embodied Learning From Multi‑Source Motion Data for Mobile Dexterous Manipulation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2508.20085,candidate_pending_review,unverified_public_url
+PF-S05-0170,Hierarchical human-to-robot imitation learning for long-horizon tasks via cross-domain skill alignment,2024,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/10610084/,candidate_pending_review,unverified_public_url
+PF-S02-0035,Hierarchical Planning with Latent World Models,2026,世界模型&VLA&规划 | 视觉&视频世界模型,https://arxiv.org/abs/2604.03208,candidate_pending_review,unverified_public_url
+PF-S05-0183,High‑Fidelity Simulated Data Generation for Real‑World Zero‑Shot Robotic Manipulation Learning with Gaussian Splatting,2025,数据&模拟&跨本体,https://arxiv.org/abs/2510.10637,candidate_pending_review,unverified_public_url
+PF-S05-0094,HMA: Heterogeneous Masked Autoregression,2025,数据&模拟&跨本体,https://arxiv.org/abs/2502.04296,candidate_pending_review,unverified_public_url
+PF-S05-0138,How Should Vision‑Language‑Action Models Use Proprioceptive State?,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.03052,candidate_pending_review,unverified_public_url
+PF-S05-0190,Human‑as‑Humanoid: Enabling Zero‑Shot Humanoid Learning from Ego‑Exo Human Videos with Human‑Aligned Embodiments,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.32009,candidate_pending_review,unverified_public_url
+PF-S07-0189,Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration,2023,评估&安全&Benchmark,https://arxiv.org/abs/2310.06208,candidate_pending_review,unverified_public_url
+PF-S05-0171,Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.03476,candidate_pending_review,unverified_public_url
+PF-S05-0104,HumanPlus: Humanoid Shadowing and Imitation from Humans,2024,数据&模拟&跨本体,https://arxiv.org/abs/2406.10454,candidate_pending_review,unverified_public_url
+PF-S05-0039,HumanScale: Egocentric Human Video Can Outperform Real-Robot Data for Embodied Pretraining,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.20521,candidate_pending_review,unverified_public_url
+PF-S07-0102,iGibson 2.0: Object-Centric Simulation for Robot Learning of Everyday Household Tasks,2021,评估&安全&Benchmark,https://arxiv.org/abs/2108.03272,candidate_pending_review,unverified_public_url
+PF-S01-0027,Imagination-Augmented Agents,2017,世界模型基础&控制,https://arxiv.org/abs/1707.06203,candidate_pending_review,unverified_public_url
+PF-S06-0079,Imagine-2-Drive: Leveraging High-Fidelity World Models via Multi-Modal Diffusion Policies,2024（v1: 2024-11-15；v2: 2025-03-09）,世界模型&VLA&规划,https://arxiv.org/abs/2411.10171,candidate_pending_review,unverified_public_url
+PF-S04-0033,Imagine2touch: Predictive Tactile Sensing for Robotic Manipulation using Efficient Low-Dimensional Signals,2024,结构化物理&多模态,https://arxiv.org/abs/2405.01192,candidate_pending_review,unverified_public_url
+PF-S05-0174,ImMimic: Cross‑Domain Imitation from Human Videos via Mapping and Interpolation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2509.10952,candidate_pending_review,unverified_public_url
+PF-S06-0075,Inference-Time Enhancement of Generative Robot Policies via Predictive World Modeling,pending_review,世界模型&VLA&规划,https://arxiv.org/abs/2502.00622,candidate_pending_review,unverified_public_url
+PF-S06-0009,Inner monologue: Embodied reasoning through planning with language models,2023,世界模型&VLA&规划,https://arxiv.org/abs/2207.05608,candidate_pending_review,unverified_public_url
+PF-S07-0236,"INTERACTION Dataset: An International, Adversarial and Cooperative Motion Dataset in Interactive Driving Scenarios",2019,评估&安全&Benchmark,https://arxiv.org/abs/1910.03088,candidate_pending_review,unverified_public_url
+PF-S01-0072,"Interaction Networks for Learning about Objects, Relations and Physics",2016,世界模型基础&控制 | 结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/1612.00222,candidate_pending_review,unverified_public_url
+PF-S02-0025,Interactive Video Generative Pretraining for Robot Manipulation (iVideoGPT),2024,视觉&视频世界模型,https://arxiv.org/abs/2405.15223,candidate_pending_review,unverified_public_url
+PF-S06-0176,Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation (AHEAD),2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.02486,candidate_pending_review,unverified_public_url
+PF-S07-0226,Interior-point Policy Optimization under Constraints,2020,评估&安全&Benchmark,https://arxiv.org/abs/1910.09615,candidate_pending_review,unverified_public_url
+PF-S05-0051,InternData-A1: Pioneering High-Fidelity Synthetic Data for Pre-training Generalist Policies,pending_review,数据&模拟&跨本体,https://openaccess.thecvf.com/content/CVPR2026/papers/Tian_InternData-A1_Pioneering_High-Fidelity_Synthetic_Data_for_Pre-training_Generalist_Policy_CVPR_2026_paper.pdf,candidate_pending_review,unverified_public_url
+PF-S07-0079,IntPhys: A Benchmark for Visual Intuitive Physics Reasoning,2018,评估&安全&Benchmark,https://arxiv.org/abs/1803.07616,candidate_pending_review,unverified_public_url
+PF-S07-0221,Introducing SafeLife: Safety Benchmarks for Reinforcement Learning based on the Game of Life,2020,评估&安全&Benchmark,https://github.com/awjuliani/safelife,candidate_pending_review,unverified_public_url
+PF-S03-0024,Introduction to Predictive Coding Networks for Machine Learning,2025,Latent&预测表示,https://arxiv.org/abs/2506.06332,candidate_pending_review,unverified_public_url
+PF-S03-0043,IRASim: A Fine-Grained World Model for Robot Manipulation,pending_review,Latent&预测表示 | 数据&模拟&跨本体 | 评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Zhu_IRASim_A_Fine-Grained_World_Model_for_Robot_Manipulation_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0150,IS-Bench: Evaluating Interactive Safety of VLM-Driven Embodied Agents in Daily Household Tasks,2025,评估&安全&Benchmark,https://arxiv.org/abs/2506.16402,candidate_pending_review,unverified_public_url
+PF-S05-0139,Is Diversity All You Need for Scalable Robotic Manipulation?,2025,数据&模拟&跨本体,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11488937,candidate_pending_review,unverified_public_url
+PF-S07-0044,Is Your World Simulator a Good Story Presenter? A Consecutive Events-Based Benchmark for Future Long Video Generation,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Wang_Is_Your_World_Simulator_a_Good_Story_Presenter_A_Consecutive_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0009,Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning,2021,数据&模拟&跨本体,https://arxiv.org/abs/2108.10470,candidate_pending_review,unverified_public_url
+PF-S06-0097,"IVE: Imagine, Verify, Execute: Memory-Guided Agentic Exploration with Vision-Language Models",2026,世界模型&VLA&规划,https://arxiv.org/abs/2505.07815,candidate_pending_review,unverified_public_url
+PF-S03-0041,iVideoGPT: Interactive VideoGPTs are Scalable World Models,2024,Latent&预测表示,https://proceedings.neurips.cc/paper_files/paper/2024/hash/7dbb5bfab324e3b86af9bd0df15498dd-Abstract-Conference.html,candidate_pending_review,unverified_public_url
+PF-S05-0073,Jade: A Differentiable Physics Engine for Articulated Rigid Bodies,2023,数据&模拟&跨本体,https://arxiv.org/abs/2309.04710,candidate_pending_review,unverified_public_url
+PF-S06-0159,JailWAM: Jailbreaking World Action Models in Robot Control,2026,世界模型&VLA&规划,https://arxiv.org/abs/2604.05498,candidate_pending_review,unverified_public_url
+PF-S01-0067,JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling,2026,世界模型&VLA&规划 | 世界模型基础&控制 | 视觉&视频世界模型,https://arxiv.org/abs/2608.09381,candidate_pending_review,unverified_public_url
+PF-S05-0131,JoyAI‑RA 0.5: Scaling Robot Manipulation Learning via Dual Action Alignment,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.05674,candidate_pending_review,unverified_public_url
+PF-S06-0140,Kairos: A Native World Model Stack for Physical AI,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.16533,candidate_pending_review,unverified_public_url
+PF-S07-0250,Kernel-Based Safe Exploration in Deep Reinforcement Learning,2026,评估&安全&Benchmark,https://proceedings.mlr.press/v331/majumdar26a.html,candidate_pending_review,unverified_public_url
+PF-S03-0071,Kinaema: Recurrent Sequence Model for Memory and Pose in Motion,2025,Latent&预测表示,https://proceedings.neurips.cc/paper_files/paper/2025/hash/703f727ec10190b2fddcf8e24f52df48-Abstract-Conference.html,candidate_pending_review,unverified_public_url
+PF-S05-0037,KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.22113,candidate_pending_review,unverified_public_url
+PF-S05-0026,LAC-WM (Latent Action Robot Foundation World Models for Cross-Embodiment Adaptation),2026,数据&模拟&跨本体,https://openreview.net/pdf?id=vEZgPr1deb,candidate_pending_review,unverified_public_url
+PF-S03-0038,LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation,pending_review,Latent&预测表示 | 世界模型&VLA&规划,https://arxiv.org/abs/2505.11528,candidate_pending_review,unverified_public_url
+PF-S04-0007,Lagrangian neural networks,2020,结构化物理&多模态,https://arxiv.org/abs/2003.04630,candidate_pending_review,unverified_public_url
+PF-S03-0061,LaM-SLidE: Latent Space Modeling of Spatial Dynamical Systems via Linked Entities,2025,Latent&预测表示,https://arxiv.org/abs/2502.12128,candidate_pending_review,unverified_public_url
+PF-S03-0027,LAPA: Latent Action Pretraining from Videos,2024,Latent&预测表示,https://arxiv.org/abs/2410.11758,candidate_pending_review,unverified_public_url
+PF-S03-0028,LAPO: Learning to Act without Actions,2023,Latent&预测表示,https://arxiv.org/abs/2312.10812,candidate_pending_review,unverified_public_url
+PF-S02-0047,Latent Action World Models for Control with Unlabeled Trajectories,pending_review,世界模型&VLA&规划 | 视觉&视频世界模型,https://arxiv.org/abs/2512.10016,candidate_pending_review,unverified_public_url
+PF-S05-0108,Latent Policy Steering: An Efficient and Flexible Framework for Cross‑Embodiment Transfer,2026,数据&模拟&跨本体,https://arxiv.org/abs/2609.22521,candidate_pending_review,unverified_public_url
+PF-S03-0045,LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies,2026,Latent&预测表示 | 世界模型&VLA&规划,https://arxiv.org/abs/2606.15768,candidate_pending_review,unverified_public_url
+PF-S05-0062,LAWM-3D: Learning 3D-Aware Latent Actions from Human Videos for Generalizable Robot World Models,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.05706,candidate_pending_review,unverified_public_url
+PF-S03-0030,LAWM: Latent Action Pretraining Through World Modeling,2025,Latent&预测表示,https://arxiv.org/abs/2509.18428,candidate_pending_review,unverified_public_url
+PF-S05-0191,LD4WAM: Learning Latent Dynamics from Human Videos for World Action Models,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2608.22403,candidate_pending_review,unverified_public_url
+PF-S06-0139,LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion,2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.12215,candidate_pending_review,unverified_public_url
+PF-S06-0149,Learning by Watching: A Review of Video-Based Learning Approaches for Robot Manipulation,2024（v1: 2024-02-11）,世界模型&VLA&规划,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11215739,candidate_pending_review,unverified_public_url
+PF-S01-0026,Learning Continuous Control Policies by Stochastic Value Gradients,2015,世界模型基础&控制,https://arxiv.org/abs/1510.09142,candidate_pending_review,unverified_public_url
+PF-S01-0070,Learning Deep Dynamical Models from Image Pixels,2015,世界模型基础&控制,https://arxiv.org/abs/1410.7550,candidate_pending_review,unverified_public_url
+PF-S06-0010,Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware,2023,世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2304.13705,candidate_pending_review,unverified_public_url
+PF-S03-0018,Learning from Reward-Free Offline Data: Planning with Latent Dynamics Models,2025,Latent&预测表示,https://proceedings.neurips.cc/paper_files/paper/2025/hash/3e7cf447f21cd11c846463affefce665-Abstract-Conference.html,candidate_pending_review,unverified_public_url
+PF-S03-0073,Learning Hybrid Dynamics Models with Simulator-Informed Latent States,2023,Latent&预测表示,https://arxiv.org/abs/2309.02873,candidate_pending_review,unverified_public_url
+PF-S05-0084,Learning Interactive Real-World Simulators,2023,数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2310.06114,candidate_pending_review,unverified_public_url
+PF-S03-0010,Learning Invariant Representations for Reinforcement Learning without Reconstruction,2021（arXiv 2020）,Latent&预测表示,https://arxiv.org/abs/2006.10742,candidate_pending_review,unverified_public_url
+PF-S05-0064,Learning Latent Action World Models In The Wild,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://openreview.net/pdf?id=HDf5semiaB,candidate_pending_review,unverified_public_url
+PF-S01-0006,Learning Latent Dynamics for Planning from Pixels,2019,世界模型基础&控制 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/1811.04551,candidate_pending_review,unverified_public_url
+PF-S01-0058,Learning Latent Plans from Play,2020,世界模型基础&控制,https://arxiv.org/abs/2003.06421,candidate_pending_review,unverified_public_url
+PF-S04-0010,Learning Mesh-Based Simulation with Graph Networks,2021,结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/2010.03409,candidate_pending_review,unverified_public_url
+PF-S07-0183,Learning Multiple Probabilistic Decisions from Latent World Model in Autonomous Driving,2025,评估&安全&Benchmark,https://ieeexplore.ieee.org/document/11127996/,candidate_pending_review,unverified_public_url
+PF-S01-0083,"Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids",2019,世界模型基础&控制,https://arxiv.org/abs/1810.01566,candidate_pending_review,unverified_public_url
+PF-S04-0046,Learning Physical Intuition of Block Towers by Example,2016,结构化物理&多模态,https://proceedings.mlr.press/v48/lerer16.html,candidate_pending_review,unverified_public_url
+PF-S05-0081,Learning Quadruped Locomotion Using Differentiable Simulation,2024,数据&模拟&跨本体,https://arxiv.org/abs/2403.14864,candidate_pending_review,unverified_public_url
+PF-S03-0025,Learning Speech Representations with Variational Predictive Coding,2026,Latent&预测表示,https://arxiv.org/abs/2601.00100,candidate_pending_review,unverified_public_url
+PF-S03-0062,Learning the intrinsic dynamics of spatio-temporal processes through Latent Dynamics Networks,2024,Latent&预测表示,https://www.nature.com/articles/s41467-024-45323-x,candidate_pending_review,unverified_public_url
+PF-S01-0088,Learning to Control PDEs with Differentiable Physics,2020,世界模型基础&控制,https://arxiv.org/abs/2001.07457,candidate_pending_review,unverified_public_url
+PF-S04-0043,Learning to See Physics via Visual De-animation,2017,结构化物理&多模态,https://papers.neurips.cc/paper/2017/file/4c56ff4ce4aaf9573aa5dff913df997a-Abstract.html,candidate_pending_review,unverified_public_url
+PF-S01-0061,Learning to Simulate Complex Physics with Graph Networks,2020,世界模型基础&控制 | 结构化物理&多模态 | 评估&安全&Benchmark,https://proceedings.mlr.press/v119/sanchez-gonzalez20a/sanchez-gonzalez20a.pdf,candidate_pending_review,unverified_public_url
+PF-S06-0191,Learning Transferable Dynamics Priors from Action to World Modeling,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.29501,candidate_pending_review,unverified_public_url
+PF-S02-0030,Learning Universal Policies via Text-Guided Video Generation,2023,数据&模拟&跨本体 | 视觉&视频世界模型,https://arxiv.org/abs/2302.00111,candidate_pending_review,unverified_public_url
+PF-S01-0071,Learning Visual Predictive Models of Physics for Playing Billiards,pending_review,世界模型基础&控制 | 结构化物理&多模态,https://arxiv.org/abs/1511.07404,candidate_pending_review,unverified_public_url
+PF-S03-0012,LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics,2025,Latent&预测表示,https://arxiv.org/abs/2511.08544,candidate_pending_review,unverified_public_url
+PF-S07-0193,Leveraging Procedural Generation to Benchmark Reinforcement Learning,2020,评估&安全&Benchmark,https://proceedings.mlr.press/v119/cobbe20a.html,candidate_pending_review,unverified_public_url
+PF-S07-0014,LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning,2023,评估&安全&Benchmark,https://arxiv.org/abs/2306.03310,candidate_pending_review,unverified_public_url
+PF-S05-0032,LIBERO-Recover Benchmark,2026,数据&模拟&跨本体,https://arxiv.org/abs/2609.05178,candidate_pending_review,unverified_public_url
+PF-S06-0177,Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.06564,candidate_pending_review,unverified_public_url
+PF-S06-0099,Lifting Embodied World Models for Planning and Control,2026,世界模型&VLA&规划,https://arxiv.org/abs/2604.26182,candidate_pending_review,unverified_public_url
+PF-S06-0154,Light-WAM: Efficient World Action Models with State-Fusion Action Decoding,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.08242,candidate_pending_review,unverified_public_url
+PF-S06-0169,LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.03701,candidate_pending_review,unverified_public_url
+PF-S06-0011,"LM-Nav: Robotic navigation with large pre-trained models of language, vision, and action",2023,世界模型&VLA&规划,https://proceedings.mlr.press/v205/shah23b/shah23b.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0129,LocoFormer: Generalist Locomotion via Long‑context Adaptation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2509.23745,candidate_pending_review,unverified_public_url
+PF-S05-0050,Lucid-XR: An Extended-Reality Data Engine for Robotic Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2605.00244,candidate_pending_review,unverified_public_url
+PF-S06-0172,"Lumo-2: Towards Predictive, Aligned, and Scalable Robot Learning",2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.11270,candidate_pending_review,unverified_public_url
+PF-S03-0037,LUMOS: Language-Conditioned Imitation Learning with World Models,2025,Latent&预测表示,https://arxiv.org/abs/2503.10370,candidate_pending_review,unverified_public_url
+PF-S03-0059,LUT: Learning with Unmasked Tokens Drives Stronger Vision Learners,2023,Latent&预测表示,https://arxiv.org/abs/2310.13593,candidate_pending_review,unverified_public_url
+PF-S07-0054,LVBench: An Extreme Long Video Understanding Benchmark,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Wang_LVBench_An_Extreme_Long_Video_Understanding_Benchmark_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S03-0072,MABL: Bi-Level Latent-Variable World Model for Sample-Efficient Multi-Agent RL,2024,Latent&预测表示,https://arxiv.org/abs/2304.06011,candidate_pending_review,unverified_public_url
+PF-S05-0166,Maniflow: A general robot manipulation policy via consistency flow training,2025,数据&模拟&跨本体,https://arxiv.org/abs/2509.01819,candidate_pending_review,unverified_public_url
+PF-S01-0066,ManipDreamer: Boosting Robotic Manipulation World Model with Action Tree and Visual Guidance,pending_review,世界模型&VLA&规划 | 世界模型基础&控制,https://arxiv.org/abs/2504.16464,candidate_pending_review,unverified_public_url
+PF-S07-0203,ManiSkill: Generalizable Manipulation Skill Benchmark with Simulation and Real World,2021,评估&安全&Benchmark,https://github.com/haosulab/ManiSkill,candidate_pending_review,unverified_public_url
+PF-S07-0017,ManiSkill2: A Unified Benchmark for Generalizable Manipulation Skills,2023,评估&安全&Benchmark,https://arxiv.org/abs/2302.04659,candidate_pending_review,unverified_public_url
+PF-S05-0076,ManiSkill3: GPU Parallelized Robot Simulation and Rendering,2024,数据&模拟&跨本体,https://arxiv.org/abs/2410.00425,candidate_pending_review,unverified_public_url
+PF-S06-0180,Mask World Model (MWM): Predicting What Matters — Robust Generalist Robot Policy Learning via Future Semantic Mask,2026,世界模型&VLA&规划,https://openreview.net/pdf?id=CWerqtOXif,candidate_pending_review,unverified_public_url
+PF-S06-0125,Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.04546,candidate_pending_review,unverified_public_url
+PF-S07-0110,Masked World Models for Visual Control,2023,评估&安全&Benchmark,https://proceedings.mlr.press/v205/seo23a.html,candidate_pending_review,unverified_public_url
+PF-S01-0028,Mastering Atari Games with Limited Data,2021,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2111.00210,candidate_pending_review,unverified_public_url
+PF-S01-0009,"Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model (MuZero)",2020,世界模型基础&控制 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://doi.org/10.1038/s41586-020-03051-4,candidate_pending_review,unverified_public_url
+PF-S01-0011,Mastering Atari with Discrete World Models,2021,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2010.02193,candidate_pending_review,unverified_public_url
+PF-S01-0016,Mastering Diverse Domains through World Models,2023,世界模型基础&控制 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/2301.04104,candidate_pending_review,unverified_public_url
+PF-S03-0060,MATPAC: Masked Latent Prediction and Classification for Self-Supervised Audio Representation Learning,2025,Latent&预测表示,https://arxiv.org/abs/2502.12031,candidate_pending_review,unverified_public_url
+PF-S03-0011,MC-JEPA: A Joint-Embedding Predictive Architecture for Self-Supervised Learning of Motion and Content Features,2023,Latent&预测表示,https://arxiv.org/abs/2307.12698,candidate_pending_review,unverified_public_url
+PF-S06-0187,Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.18960,candidate_pending_review,unverified_public_url
+PF-S07-0099,Meta-World: A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning,2020,评估&安全&Benchmark,https://arxiv.org/abs/1910.10897,candidate_pending_review,unverified_public_url
+PF-S07-0061,MetaVQA: Embodied Scene Understanding for Vision-Language Models via MetaVQA,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Wang_Embodied_Scene_Understanding_for_Vision-Language_Models_via_MetaVQA_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0124,MimicGen: A Data Generation System for Scalable Robot Learning Using Human Demonstrations,2023,评估&安全&Benchmark,https://arxiv.org/abs/2310.17596,candidate_pending_review,unverified_public_url
+PF-S01-0091,MimicPlay: Long-Horizon Imitation Learning by Watching Human Play,2023,世界模型基础&控制 | 数据&模拟&跨本体,https://arxiv.org/abs/2302.12422,candidate_pending_review,unverified_public_url
+PF-S07-0248,"Mind the Model, Not the Agent: The Primacy Bias in Model-based RL",2023,评估&安全&Benchmark,https://arxiv.org/abs/2310.15017,candidate_pending_review,unverified_public_url
+PF-S06-0110,MIND-V: Hierarchical World Model for Long-Horizon Robotic Manipulation with RL-based Physical Alignment,2026,世界模型&VLA&规划,https://arxiv.org/abs/2512.06628,candidate_pending_review,unverified_public_url
+PF-S07-0106,MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge,2022,评估&安全&Benchmark,https://arxiv.org/abs/2206.08853,candidate_pending_review,unverified_public_url
+PF-S07-0051,Minerva-Ego: Spatiotemporal Hints for Egocentric Video Understanding,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Nagrani_Minerva-Ego_Spatiotemporal_Hints_for_Egocentric_Video_Understanding_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0199,MiniGrid & MiniWorld: Modular & Customizable Reinforcement Learning Environments,2018,评估&安全&Benchmark,https://github.com/Farama-Foundation/Minigrid,candidate_pending_review,unverified_public_url
+PF-S07-0198,MiniHack the Planet: A Sandbox for Open-Ended Reinforcement Learning Research,2021,评估&安全&Benchmark,https://arxiv.org/abs/2109.12830,candidate_pending_review,unverified_public_url
+PF-S07-0251,MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models,2026,评估&安全&Benchmark,https://arxiv.org/abs/2605.29360,candidate_pending_review,unverified_public_url
+PF-S07-0055,MLVU: Benchmarking Multi-task Long Video Understanding,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_MLVU_Benchmarking_Multi-task_Long_Video_Understanding_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0057,MMVU: Measuring Expert-Level Multi-Discipline Video Understanding,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Zhao_MMVU_Measuring_Expert-Level_Multi-Discipline_Video_Understanding_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0146,Mobile ALOHA: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation,2024,评估&安全&Benchmark,https://arxiv.org/abs/2401.02117,candidate_pending_review,unverified_public_url
+PF-S01-0049,Model-Based Imitation Learning for Urban Driving,2022,世界模型基础&控制,https://arxiv.org/abs/2210.07729,candidate_pending_review,unverified_public_url
+PF-S07-0082,Model-Based Policy Optimization,2019,评估&安全&Benchmark,https://arxiv.org/abs/1906.0823,candidate_pending_review,unverified_public_url
+PF-S01-0010,Model-Based Reinforcement Learning for Atari,2019,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/1903.00374,candidate_pending_review,unverified_public_url
+PF-S01-0043,Model-Based Reinforcement Learning via Meta-Policy Optimization,2018,世界模型基础&控制,https://proceedings.mlr.press/v87/clavera18a.html,candidate_pending_review,unverified_public_url
+PF-S07-0158,Model-Based Runtime Monitoring with Interactive Imitation Learning,2024,评估&安全&Benchmark,https://arxiv.org/abs/2310.17552,candidate_pending_review,unverified_public_url
+PF-S01-0029,Model-Based Value Estimation for Efficient Model-Free Reinforcement Learning,2018,世界模型基础&控制,https://arxiv.org/abs/1803.00101,candidate_pending_review,unverified_public_url
+PF-S01-0042,Model-ensemble Trust-region Policy Optimization,2018,世界模型基础&控制,https://arxiv.org/abs/1802.10592,candidate_pending_review,unverified_public_url
+PF-S03-0064,Modeling Unknown Stochastic Dynamical System via Autoencoder,2024,Latent&预测表示,https://arxiv.org/abs/2312.10001,candidate_pending_review,unverified_public_url
+PF-S03-0040,MoDem-V2: Visuo-Motor World Models for Real-World Robot Manipulation,2023,Latent&预测表示,https://arxiv.org/abs/2309.14236,candidate_pending_review,unverified_public_url
+PF-S07-0249,Modular Safety Guardrails Are Necessary for Foundation-Model-Enabled Robots in the Real World,2026,评估&安全&Benchmark,https://arxiv.org/abs/2602.04056,candidate_pending_review,unverified_public_url
+PF-S04-0047,MONet: Unsupervised Scene Decomposition and Representation,2019,结构化物理&多模态,https://arxiv.org/abs/1901.11390,candidate_pending_review,unverified_public_url
+PF-S01-0044,MOPO: Model-based Offline Policy Optimization,2020,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2005.13239,candidate_pending_review,unverified_public_url
+PF-S01-0045,MOReL: Model-Based Offline Reinforcement Learning,2020,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2005.05951,candidate_pending_review,unverified_public_url
+PF-S07-0047,MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models,2025,评估&安全&Benchmark,https://arxiv.org/abs/2501.02955,candidate_pending_review,unverified_public_url
+PF-S06-0043,Motubrain: An Advanced World Action Model for Robot Control,2026,世界模型&VLA&规划,https://arxiv.org/abs/2604.27792,candidate_pending_review,unverified_public_url
+PF-S05-0063,Motus: A Unified Latent Action World Model,2026,世界模型&VLA&规划 | 数据&模拟&跨本体 | 评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Bi_Motus_A_Unified_Latent_Action_World_Model_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0002,MuJoCo: A physics engine for model-based control,2012,数据&模拟&跨本体 | 评估&安全&Benchmark,https://mujoco.org/,candidate_pending_review,unverified_public_url
+PF-S05-0075,MuJoCo Playground,2025,数据&模拟&跨本体,https://arxiv.org/abs/2502.08844,candidate_pending_review,unverified_public_url
+PF-S04-0037,Multi-modal world model for physical robot interactions: Simultaneous visual and tactile predictions for enhanced accuracy,2026,结构化物理&多模态,https://doi.org/10.1016/j.robot.2026.105512,candidate_pending_review,unverified_public_url
+PF-S04-0048,Multi-Object Representation Learning with Iterative Variational Inference,2019,结构化物理&多模态,https://proceedings.mlr.press/v97/greff19a.html,candidate_pending_review,unverified_public_url
+PF-S03-0017,Multi-step Predictive Coding Leads To Simplicity Bias,2025,Latent&预测表示,https://arxiv.org/abs/2511.09290,candidate_pending_review,unverified_public_url
+PF-S01-0031,Multi-View Masked World Models for Visual Robotic Manipulation,2023,世界模型基础&控制,https://arxiv.org/abs/2302.02408,candidate_pending_review,unverified_public_url
+PF-S04-0015,Multimodal fusion and vision-language models: A survey for robot vision,2026,结构化物理&多模态,https://doi.org/10.1016/j.inffus.2025.103652,candidate_pending_review,unverified_public_url
+PF-S05-0124,MV‑UMI: A Scalable Multi‑View Interface for Cross‑Embodiment Learning,2025,数据&模拟&跨本体,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11594803,candidate_pending_review,unverified_public_url
+PF-S06-0118,N₀-TWAM: Scaling Tactile-Native World-Action Model for Contact-Rich Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.23783,candidate_pending_review,unverified_public_url
+PF-S06-0109,NavForesee: A Unified Vision-Language World Model for Hierarchical Planning and Dual-Horizon Navigation Prediction,2026,世界模型&VLA&规划,https://arxiv.org/abs/2512.01550v2,candidate_pending_review,unverified_public_url
+PF-S03-0057,NavFormer: Transformer Architecture for Robot Target-Driven Navigation,2024,Latent&预测表示,https://arxiv.org/abs/2402.06838,candidate_pending_review,unverified_public_url
+PF-S06-0018,NaVid: Video-based VLM plans the next step for vision-and-language navigation,2024,世界模型&VLA&规划,https://arxiv.org/abs/2402.15852,candidate_pending_review,unverified_public_url
+PF-S06-0036,NaVIDA: Vision-language navigation with inverse dynamics augmentation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2601.18188,candidate_pending_review,unverified_public_url
+PF-S06-0186,NavThinker: Action-Conditioned World Models for Coupled Prediction and Planning in Social Navigation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2603.15359,candidate_pending_review,unverified_public_url
+PF-S01-0004,Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning,2018,世界模型基础&控制,https://arxiv.org/abs/1708.02596,candidate_pending_review,unverified_public_url
+PF-S01-0080,Neural Relational Inference for Interacting Systems,2018,世界模型基础&控制 | 结构化物理&多模态,https://proceedings.mlr.press/v80/kipf18a.html,candidate_pending_review,unverified_public_url
+PF-S04-0026,NewtonianVAE: Proportional Control and Goal Identification from Pixels via Physical Latent Spaces,2021,结构化物理&多模态,https://doi.org/10.1109/CVPR46437.2021.00443,candidate_pending_review,unverified_public_url
+PF-S02-0041,Next-Embedding Prediction Makes Strong Vision Learners (NEPA),2025,视觉&视频世界模型,https://arxiv.org/abs/2512.16922,candidate_pending_review,unverified_public_url
+PF-S07-0208,NExT-QA: Next Phase of Question-Answering to Explain the World in Videos,2021,评估&安全&Benchmark,https://arxiv.org/abs/2104.08232,candidate_pending_review,unverified_public_url
+PF-S06-0072,NORA-1.5: VLA Trained using World Model- and Action-based Preference Rewards,2026,世界模型&VLA&规划,https://arxiv.org/abs/2511.14659,candidate_pending_review,unverified_public_url
+PF-S07-0232,nuPlan: A Closed-Loop ML-Based Planning Benchmark for Autonomous Vehicles,2021,评估&安全&Benchmark,https://nuplan.org/,candidate_pending_review,unverified_public_url
+PF-S07-0233,nuScenes: A Multimodal Dataset for Autonomous Driving,2020,评估&安全&Benchmark,https://arxiv.org/abs/1903.11027,candidate_pending_review,unverified_public_url
+PF-S04-0040,OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation,2026,世界模型&VLA&规划 | 结构化物理&多模态,https://arxiv.org/abs/2605.06481,candidate_pending_review,unverified_public_url
+PF-S02-0015,Oasis: A Universe in a Transformer,2024,视觉&视频世界模型,https://oasis-model.github.io/,candidate_pending_review,unverified_public_url
+PF-S04-0023,Object-Centric Learning with Slot Attention,2020,结构化物理&多模态,https://papers.nips.cc/paper/2020/hash/8511df98c02ab60aea1b2356c013bc0f-Abstract.html,candidate_pending_review,unverified_public_url
+PF-S01-0050,OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving,pending_review,世界模型基础&控制 | 评估&安全&Benchmark,https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/2024_ECCV_2024_paper.php,candidate_pending_review,unverified_public_url
+PF-S01-0063,Octo: An Open-Source Generalist Robot Policy,2024,世界模型&VLA&规划 | 世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2405.12213,candidate_pending_review,unverified_public_url
+PF-S06-0086,Offline Robotic World Model: Learning Robotic Policies without a Physics Simulator,2026,世界模型&VLA&规划,https://arxiv.org/abs/2504.16680,candidate_pending_review,unverified_public_url
+PF-S05-0172,OmniHumanoid: Streaming Cross-Embodiment Video Generation with Paired-Free Adaptation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2605.12038,candidate_pending_review,unverified_public_url
+PF-S07-0223,OmniSafe: An Open-Source Generalized Infrastructure for Safe Reinforcement Learning,2023,评估&安全&Benchmark,https://arxiv.org/abs/2305.09393,candidate_pending_review,unverified_public_url
+PF-S05-0132,"One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation",2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2608.26058,candidate_pending_review,unverified_public_url
+PF-S01-0065,Open X-Embodiment: Robotic Learning Datasets and RT-X Models,pending_review,世界模型基础&控制 | 数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2310.08864,candidate_pending_review,unverified_public_url
+PF-S07-0192,OpenAI Gym,2016,评估&安全&Benchmark,https://arxiv.org/abs/1606.01540,candidate_pending_review,unverified_public_url
+PF-S07-0241,OpenAI Retro: A Platform for Reinforcement Learning Research on Video Games,2018,评估&安全&Benchmark,https://github.com/openai/retro,candidate_pending_review,unverified_public_url
+PF-S06-0020,OpenVLA: An Open-Source Vision-Language-Action Model,2024,世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2406.09246,candidate_pending_review,unverified_public_url
+PF-S05-0056,OpenWAM: Open Research Stack for World-Action Modeling,2026,数据&模拟&跨本体,https://arxiv.org/abs/2609.07398,candidate_pending_review,unverified_public_url
+PF-S05-0013,Orbit: A unified simulation framework for interactive robot learning environments,2023,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/10107764,candidate_pending_review,unverified_public_url
+PF-S06-0091,ORV: 4D Occupancy-centric Robot Video Generation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2506.03079,candidate_pending_review,unverified_public_url
+PF-S05-0189,OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics,2026,视觉&视频世界模型 | 结构化物理&多模态 | 数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2606.04463v2,selected_units_extracted_ai,unverified_public_url
+PF-S07-0058,OVO-Bench: How Far is Your Video-LLMs from Real-World Online Video Understanding?,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Niu_OVO-Bench_How_Far_is_Your_Video-LLMs_from_Real-World_Online_Video_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0035,OXE-AugE: A Large-Scale Robot Augmentation of OXE for Scaling Cross-Embodiment Policy Learning,pending_review,数据&模拟&跨本体,https://arxiv.org/abs/2512.13100,candidate_pending_review,unverified_public_url
+PF-S07-0035,PAI-Bench: A Comprehensive Benchmark For Physical AI,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_PAI-Bench_A_Comprehensive_Benchmark_For_Physical_AI_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0130,PAIWorld: A 3D-Consistent World Foundation Model for Robotic Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.18375,candidate_pending_review,unverified_public_url
+PF-S01-0064,PaLM-E: An Embodied Multimodal Language Model,2023,世界模型&VLA&规划 | 世界模型基础&控制,https://arxiv.org/abs/2303.03378,candidate_pending_review,unverified_public_url
+PF-S06-0073,PAVE: Predictive Alignment and Value-Guided Evolution for World-Action Policies,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.30378,candidate_pending_review,unverified_public_url
+PF-S06-0190,PAVXploreRL: Physical-Action-Visual World Model Reinforcement Learning with Action Exploration,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.16602,candidate_pending_review,unverified_public_url
+PF-S07-0138,PerAct: Perceiver-Actor: A General Transformer for Robotic Manipulation,2022,评估&安全&Benchmark,https://arxiv.org/abs/2209.05451,candidate_pending_review,unverified_public_url
+PF-S07-0019,PhyBlock: A progressive benchmark for physical understanding and planning via 3D block assembly,2025,评估&安全&Benchmark,https://proceedings.neurips.cc/paper_files/paper/2025/hash/9e97206b14d09c0da5c7fea47a67c6ac-Abstract-Datasets_and_Benchmarks_Track.html,candidate_pending_review,unverified_public_url
+PF-S04-0028,PHYRE: A New Benchmark for Physical Reasoning,2019,结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/1908.05656,candidate_pending_review,unverified_public_url
+PF-S05-0115,PhysBrain: Human Egocentric Data as a Bridge from Vision Language Models to Physical Intelligence,2025,数据&模拟&跨本体,https://arxiv.org/abs/2512.16793,candidate_pending_review,unverified_public_url
+PF-S05-0177,"Physical AI: The Convergence of Foundation Models, Sim-to-Real Transfer, and Embodied Intelligence",2025,数据&模拟&跨本体,https://www.jmis.org/archive/view_article?pid=jmis-13-2-53,candidate_pending_review,unverified_public_url
+PF-S01-0086,Physics-as-Inverse-Graphics: Unsupervised Physical Parameter Estimation from Video,2020,世界模型基础&控制,https://arxiv.org/abs/1905.11169,candidate_pending_review,unverified_public_url
+PF-S04-0005,Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,2019,结构化物理&多模态,https://doi.org/10.1016/j.jcp.2018.10.045,candidate_pending_review,unverified_public_url
+PF-S04-0027,Physion: Evaluating Physical Prediction from Vision in Humans and Machines,2021,结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/2106.08261,candidate_pending_review,unverified_public_url
+PF-S06-0023,\pi_0.5: A vision-language-action model with open-world generalization,2025,世界模型&VLA&规划,https://arxiv.org/abs/2504.16054,candidate_pending_review,unverified_public_url
+PF-S01-0096,$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control,pending_review,世界模型&VLA&规划 | 世界模型基础&控制 | 视觉&视频世界模型,https://arxiv.org/abs/2410.24164,candidate_pending_review,unverified_public_url
+PF-S06-0084,PIGDreamer: Privileged Information Guided World Models for Safe Partially Observable RL,2026,世界模型&VLA&规划,https://arxiv.org/abs/2508.02159,candidate_pending_review,unverified_public_url
+PF-S01-0024,PILCO: A Model-Based and Data-Efficient Approach to Policy Search,2011,世界模型基础&控制,https://proceedings.mlr.press/v20/deisenroth11.html,candidate_pending_review,unverified_public_url
+PF-S07-0160,PlayFusion: Skill Acquisition via Diffusion from Language-Annotated Play,2023,评估&安全&Benchmark,https://arxiv.org/abs/2303.01497,candidate_pending_review,unverified_public_url
+PF-S07-0175,Point Cloud Models Improve Visual Robustness in Robotic Learners,2024,评估&安全&Benchmark,https://openreview.net/forum?id=7yyowBgOny,candidate_pending_review,unverified_public_url
+PF-S05-0027,PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2601.03782,candidate_pending_review,unverified_public_url
+PF-S03-0042,PolyGRAD: World Models via Policy-Guided Trajectory Diffusion,2023,Latent&预测表示,https://arxiv.org/abs/2312.08533,candidate_pending_review,unverified_public_url
+PF-S06-0094,Pre-Trained Video Generative Models as World Simulators,2026,世界模型&VLA&规划,https://ojs.aaai.org/index.php/AAAI/article/view/42465,candidate_pending_review,unverified_public_url
+PF-S03-0020,Predictive Coding beyond Correlations,2024,Latent&预测表示,https://arxiv.org/abs/2306.15479,candidate_pending_review,unverified_public_url
+PF-S06-0069,PredVLA: Predictive Sensorimotor Modeling for Sub-Million-Parameter Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.26673,candidate_pending_review,unverified_public_url
+PF-S02-0058,Premier-TACO: Pretraining Multitask Representation via Temporal Action-Driven Contrastive Loss,2024,视觉&视频世界模型,https://arxiv.org/abs/2402.06187,candidate_pending_review,unverified_public_url
+PF-S03-0039,PrivilegedDreamer: Explicit Imagination of Privileged Information for Rapid Adaptation,2025,Latent&预测表示,https://arxiv.org/abs/2502.11377,candidate_pending_review,unverified_public_url
+PF-S07-0108,ProcTHOR: Large-Scale Embodied AI Using Procedural Generation,2022,评估&安全&Benchmark,https://arxiv.org/abs/2206.06994,candidate_pending_review,unverified_public_url
+PF-S06-0013,ProgPrompt: Generating situated robot task plans using large language models,2023,世界模型&VLA&规划,https://arxiv.org/abs/2209.11302,candidate_pending_review,unverified_public_url
+PF-S01-0082,Propagation Networks for Model-Based Control Under Partial Observation,2019,世界模型基础&控制,https://arxiv.org/abs/1809.11169,candidate_pending_review,unverified_public_url
+PF-S06-0184,PSR: Predictive Sensorimotor Representation Learning for Contact-Rich Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.21753,candidate_pending_review,unverified_public_url
+PF-S07-0059,Q-Bench-Video: Benchmark the Video Quality Understanding of LMMs,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Q-Bench-Video_Benchmark_the_Video_Quality_Understanding_of_LMMs_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0143,Q-Transformer: Scalable Offline Reinforcement Learning via Autoregressive Q-Functions,2023,评估&安全&Benchmark,https://arxiv.org/abs/2309.10150,candidate_pending_review,unverified_public_url
+PF-S07-0242,Quantifying Generalization in Reinforcement Learning,2019,评估&安全&Benchmark,https://arxiv.org/abs/1810.12282,candidate_pending_review,unverified_public_url
+PF-S07-0036,QUANTIPHY: A Quantitative Benchmark Evaluating Physical Reasoning Abilities of Vision-Language Models,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Puyin_QUANTIPHY_A_Quantitative_Benchmark_Evaluating_Physical_Reasoning_Abilities_of_Vision-Language_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0152,Quantitative Video World Model Evaluation for Geometric-Consistency,2026,评估&安全&Benchmark,https://arxiv.org/abs/2605.15185,candidate_pending_review,unverified_public_url
+PF-S03-0003,R3M: A universal visual representation for robot manipulation,2022,Latent&预测表示,,candidate_pending_review,missing
+PF-S05-0163,R³Sim: Generating high‑fidelity simulation data via 3d‑photorealistic real‑to‑sim for robotic manipulation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2502.08645,candidate_pending_review,unverified_public_url
+PF-S07-0170,RBench: Robotics Benchmark for Video World Models,2026,评估&安全&Benchmark,https://openreview.net/pdf?id=LH2Fixs2so,candidate_pending_review,unverified_public_url
+PF-S06-0021,RDT-1B: A diffusion foundation model for bimanual manipulation,2024,世界模型&VLA&规划,https://proceedings.iclr.cc/paper_files/paper/2025/file/49f80e4d2471ad4f2edf4f5f1ab62339-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0178,Re-Mix: Optimizing Data Mixtures for Large Scale Imitation Learning,2024,数据&模拟&跨本体,https://arxiv.org/abs/2408.14037,candidate_pending_review,unverified_public_url
+PF-S05-0161,ReBot: Scaling Robot Learning with Real‑to‑Sim‑to‑Real Robotic Video Synthesis,2025,数据&模拟&跨本体,https://arxiv.org/abs/2503.14526,candidate_pending_review,unverified_public_url
+PF-S07-0212,Recurrent World Models Facilitate Policy Evolution,2018,评估&安全&Benchmark,https://arxiv.org/abs/1809.01999,candidate_pending_review,unverified_public_url
+PF-S03-0069,ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning,2025,Latent&预测表示,https://arxiv.org/abs/2505.07395,candidate_pending_review,unverified_public_url
+PF-S06-0022,ReKep: Spatio-temporal reasoning of relational keypoint constraints for robotic manipulation,2024,世界模型&VLA&规划,https://arxiv.org/abs/2409.01652,candidate_pending_review,unverified_public_url
+PF-S02-0061,Representation Learning with Contrastive Predictive Coding (CPC),2018,视觉&视频世界模型,https://arxiv.org/abs/1807.03748,candidate_pending_review,unverified_public_url
+PF-S06-0152,RepWAM: World Action Modeling with Representation Visual-Action Tokenizers,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.13674,candidate_pending_review,unverified_public_url
+PF-S07-0165,ResponsibleRobotBench: Benchmarking Responsible Robot Manipulation using Multi-modal Large Language Models,2025,评估&安全&Benchmark,https://arxiv.org/abs/2512.04308,candidate_pending_review,unverified_public_url
+PF-S07-0211,REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments,2019,评估&安全&Benchmark,https://arxiv.org/abs/1903.00552,candidate_pending_review,unverified_public_url
+PF-S02-0019,Revisiting Feature Prediction for Learning Visual Representations from Video,2024,Latent&预测表示 | 数据&模拟&跨本体 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/2404.08471,candidate_pending_review,unverified_public_url
+PF-S01-0038,Riemann-1.0: An Embodied World Action Model for Physical AI,2026,世界模型&VLA&规划 | 世界模型基础&控制,https://arxiv.org/abs/2608.27033,candidate_pending_review,unverified_public_url
+PF-S06-0080,RISE: Self-Improving Robot Policy with Compositional World Model,2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.11075,candidate_pending_review,unverified_public_url
+PF-S07-0009,RLBench: The robot learning benchmark and learning environment,2020,评估&安全&Benchmark,https://doi.org/10.1109/LRA.2020.2974707,candidate_pending_review,unverified_public_url
+PF-S07-0178,Robo-Instruct: Simulator-Augmented Instruction Alignment for Finetuning CodeLLMs,2024,评估&安全&Benchmark,https://openreview.net/forum?id=LnJ2EGKTXh,candidate_pending_review,unverified_public_url
+PF-S05-0066,RoboAgent: Generalization and Efficiency in Robot Manipulation via Semantic Augmentations and Action Chunking,2023,数据&模拟&跨本体,https://arxiv.org/abs/2309.01918,candidate_pending_review,unverified_public_url
+PF-S07-0018,RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots,2024,评估&安全&Benchmark,https://arxiv.org/abs/2406.02523,candidate_pending_review,unverified_public_url
+PF-S07-0134,RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots,2026,评估&安全&Benchmark,https://arxiv.org/abs/2603.04356,candidate_pending_review,unverified_public_url
+PF-S06-0014,RoboCat: A self-improving foundation agent for robotic manipulation,2023,世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2306.11706,candidate_pending_review,unverified_public_url
+PF-S05-0041,RoboCLIP: One Demonstration is Enough to Learn Robot Policies,2026,数据&模拟&跨本体,https://proceedings.neurips.cc/paper_files/paper/2023/file/ae54ce310476218f26dd48c1626d5187-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0184,RoboCousin: Build Your Own Simulation Playground for Robust Bimanual Robotic Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2609.08339,candidate_pending_review,unverified_public_url
+PF-S07-0166,RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies,2026,评估&安全&Benchmark,https://arxiv.org/abs/2607.04434,candidate_pending_review,unverified_public_url
+PF-S05-0034,RoboDream: Compositional World Models for Scalable Robot Data Synthesis,2026,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2606.02577,candidate_pending_review,unverified_public_url
+PF-S01-0094,RoboDreamer: Learning Compositional World Models for Robot Imagination,2024,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2404.12377,candidate_pending_review,unverified_public_url
+PF-S05-0181,RoboEngine: Plug‑and‑Play Robot Data Augmentation with Semantic Robot Segmentation and Background Generation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2503.18738,candidate_pending_review,unverified_public_url
+PF-S05-0029,RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction,2025,数据&模拟&跨本体,https://arxiv.org/abs/2505.12224,candidate_pending_review,unverified_public_url
+PF-S07-0144,RoboFlamingo: Vision-Language Foundation Models as Effective Robot Policies,2023,评估&安全&Benchmark,https://arxiv.org/abs/2311.01378,candidate_pending_review,unverified_public_url
+PF-S05-0099,RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation,2023,数据&模拟&跨本体,https://arxiv.org/abs/2311.01455,candidate_pending_review,unverified_public_url
+PF-S07-0163,RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation,2024,评估&安全&Benchmark,https://arxiv.org/abs/2412.13877,candidate_pending_review,unverified_public_url
+PF-S01-0089,RoboNet: Large-Scale Multi-Robot Learning,pending_review,世界模型基础&控制 | 数据&模拟&跨本体 | 结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/1910.11215,candidate_pending_review,unverified_public_url
+PF-S06-0082,RoboScape-R: Unified Reward-Observation World Models for Generalizable Robotics Training via RL,2026,世界模型&VLA&规划,https://openaccess.thecvf.com/content/CVPR2026F/papers/Tang_RoboScape-R_Unified_Reward-Observation_World_Models_for_Generalizable_Robotics_Training_via_CVPRF_2026_paper.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0164,RoboSnap: One‑Shot Real‑to‑Sim Scene Generation for Generalizable Robot Learning and Evaluation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2607.06699,candidate_pending_review,unverified_public_url
+PF-S07-0101,robosuite: A Modular Simulation Framework and Benchmark for Robot Learning,2020,评估&安全&Benchmark,https://arxiv.org/abs/2009.12293,candidate_pending_review,unverified_public_url
+PF-S05-0126,RoboSwap: A GAN‑driven Video Diffusion Framework For Unsupervised Robot Arm Swapping,2025,数据&模拟&跨本体,https://arxiv.org/abs/2506.08632,candidate_pending_review,unverified_public_url
+PF-S05-0047,Robot Learning from Human Videos: A Survey,2026,数据&模拟&跨本体,https://arxiv.org/abs/2604.27621,candidate_pending_review,unverified_public_url
+PF-S07-0200,RoboTHOR: An Open Simulation-to-Real Benchmark for Visual Navigation,2020,评估&安全&Benchmark,https://github.com/allenai/robothor,candidate_pending_review,unverified_public_url
+PF-S06-0134,Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics,2025（v1: 2025-01-17）,世界模型&VLA&规划,https://arxiv.org/abs/2501.10100,candidate_pending_review,unverified_public_url
+PF-S06-0151,RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.01600,candidate_pending_review,unverified_public_url
+PF-S07-0186,RobotValues: Evaluating Household Robots When Human Values Conflict,2026,评估&安全&Benchmark,https://openreview.net/pdf/a236f2599da9675424043e1827712898d95bab99.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0150,RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2506.18088,candidate_pending_review,unverified_public_url
+PF-S07-0184,"RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning",2025,评估&安全&Benchmark,https://arxiv.org/abs/2504.18904,candidate_pending_review,unverified_public_url
+PF-S06-0150,RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation,2026,世界模型&VLA&规划 | 评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026W/GigaBrainChallenge/html/Jiang_RoboWM-Bench_A_Benchmark_for_Evaluating_World_Models_in_Robotic_Manipulation_CVPRW_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0029,RoBridge: A hierarchical architecture bridging cognition and execution for general robotic manipulation,2025,世界模型&VLA&规划,https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_RoBridge_A_Hierarchical_Architecture_Bridging_Cognition_and_Execution_for_General_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0170,Robust-WAM: Bridging Generative Pretraining and Semantic Foresight in World-Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.05903,candidate_pending_review,unverified_public_url
+PF-S07-0227,Robustness Gym: Unifying the NLP Evaluation Landscape with a Robustness Benchmark,2021,评估&安全&Benchmark,https://arxiv.org/abs/2101.04840,candidate_pending_review,unverified_public_url
+PF-S05-0160,RoVi-Aug: Robot and Viewpoint Augmentation for Cross-Embodiment Robot Learning,2024,数据&模拟&跨本体,https://arxiv.org/abs/2409.03403,candidate_pending_review,unverified_public_url
+PF-S03-0053,RPM: Robots Pre-train Robots - Manipulation-Centric Representation,2024,Latent&预测表示,https://openreview.net/forum?id=yTEwmr1TJb,candidate_pending_review,unverified_public_url
+PF-S01-0062,RT-1: Robotics Transformer for Real-World Control at Scale,2022,世界模型&VLA&规划 | 世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2212.06817,candidate_pending_review,unverified_public_url
+PF-S01-0068,RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control,2023,世界模型&VLA&规划 | 世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2307.15818,candidate_pending_review,unverified_public_url
+PF-S07-0142,RVT: Robotic View Transformer for 3D Object Manipulation,2023,评估&安全&Benchmark,https://arxiv.org/abs/2306.14891,candidate_pending_review,unverified_public_url
+PF-S06-0092,RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.06558,candidate_pending_review,unverified_public_url
+PF-S07-0179,"Safe Embodied AI: A Survey of Risks, Attacks, and Defenses",2026,评估&安全&Benchmark,https://openreview.net/pdf/9f3d2074ac630373e7f381c3038b93e03fbc9692.pdf,candidate_pending_review,unverified_public_url
+PF-S07-0224,Safe Exploration in Continuous Action Spaces,2018,评估&安全&Benchmark,https://arxiv.org/abs/1801.08757,candidate_pending_review,unverified_public_url
+PF-S07-0015,Safe learning in robotics: From learning-based control to safe reinforcement learning,2022,评估&安全&Benchmark,,candidate_pending_review,missing
+PF-S07-0074,Safe Model-Based Reinforcement Learning for Systems with Parametric Uncertainties,2020,评估&安全&Benchmark,https://arxiv.org/abs/2007.12666,candidate_pending_review,unverified_public_url
+PF-S07-0073,Safe model-based Reinforcement Learning via Model Predictive Control and Control Barrier Functions,2025,评估&安全&Benchmark,https://arxiv.org/abs/2512.04856,candidate_pending_review,unverified_public_url
+PF-S07-0030,Safe Model-Based Reinforcement Learning with an Uncertainty-Aware Reachability Certificate,2024,评估&安全&Benchmark,https://doi.org/10.1109/TASE.2023.3292388,candidate_pending_review,unverified_public_url
+PF-S07-0029,Safe Model-based Reinforcement Learning with Stability Guarantees,2017,评估&安全&Benchmark,https://proceedings.neurips.cc/paper/2017/hash/766ebcd59621e305170616ba3d3dac32-Abstract.html,candidate_pending_review,unverified_public_url
+PF-S06-0085,Safe Planning and Policy Optimization via World Model Learning,2026,世界模型&VLA&规划,https://arxiv.org/abs/2506.04828,candidate_pending_review,unverified_public_url
+PF-S07-0246,Safe Policy Learning for Continuous Control,2021,评估&安全&Benchmark,https://proceedings.mlr.press/v155/chow21a.html,candidate_pending_review,unverified_public_url
+PF-S07-0245,Safe Reinforcement Learning by Imagining the Near Future,2021,评估&安全&Benchmark,https://proceedings.neurips.cc/paper/2021/hash/73b277c11266681122132d024f53a75b-Abstract.html,candidate_pending_review,unverified_public_url
+PF-S07-0191,Safe Reinforcement Learning using Data-Driven Predictive Control,2022,评估&安全&Benchmark,https://ieeexplore.ieee.org/document/10018994,candidate_pending_review,unverified_public_url
+PF-S07-0155,SafeEmbodAI: A Safety Framework for Mobile Robots in Embodied AI Systems,2024,评估&安全&Benchmark,https://arxiv.org/abs/2409.01630,candidate_pending_review,unverified_public_url
+PF-S07-0185,SafeLab: An Interactive High-Fidelity Benchmark for Embodied Safety in Scientific Robotics,2026,评估&安全&Benchmark,https://openreview.net/pdf?id=ojwpa0wXo9,candidate_pending_review,unverified_public_url
+PF-S07-0222,Safety Gym: Safe Exploration in Reinforcement Learning,2019,评估&安全&Benchmark,https://cdn.openai.com/safety-gym/safety-gym.pdf,candidate_pending_review,unverified_public_url
+PF-S07-0188,Safety-Gymnasium: A Unified Safe Reinforcement Learning Benchmark,2023,评估&安全&Benchmark,https://arxiv.org/abs/2310.12567,candidate_pending_review,unverified_public_url
+PF-S07-0167,Safety of Embodied Navigation: A Survey,2025,评估&安全&Benchmark,https://arxiv.org/abs/2508.05855,candidate_pending_review,unverified_public_url
+PF-S07-0253,"Safety, Security, and Cognitive Risks in World Models",2026,评估&安全&Benchmark,https://arxiv.org/abs/2604.01346,candidate_pending_review,unverified_public_url
+PF-S05-0157,SAGE: Scalable Automated Generation of Environments for Robotics,2025,数据&模拟&跨本体,https://discovery.ucl.ac.uk/id/eprint/10223929/1/C75.pdf,candidate_pending_review,unverified_public_url
+PF-S06-0188,SAGE: Subgoal-Conditioned Action Generation for Latent World Model Planning,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.17973,candidate_pending_review,unverified_public_url
+PF-S05-0006,SAPIEN: A SimulAted part-based interactive ENvironment,2020,数据&模拟&跨本体,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9156706,candidate_pending_review,unverified_public_url
+PF-S06-0060,"Say, Dream, and Act: Learning Video World Models for Instruction-Driven Robot Manipulation",2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.10717,candidate_pending_review,unverified_public_url
+PF-S06-0002,Scalable deep reinforcement learning for vision-based robotic manipulation,2018,世界模型&VLA&规划,https://proceedings.mlr.press/v87/kalashnikov18a,candidate_pending_review,unverified_public_url
+PF-S05-0052,Scalable Multi-Task Data Generation via Reinforcement Learning for Language-Conditioned Bimanual Dexterous Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.22471,candidate_pending_review,unverified_public_url
+PF-S05-0025,Scaling Cross-Embodiment World Models for Dexterous Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2511.01177,candidate_pending_review,unverified_public_url
+PF-S05-0004,Scaling egocentric vision: The EPIC-KITCHENS dataset,2018,数据&模拟&跨本体,https://arxiv.org/abs/1804.02748,candidate_pending_review,unverified_public_url
+PF-S06-0123,Scaling Vision–Language–Action Policy Adaptation via Action-Conditioned World Models,2026,世界模型&VLA&规划,https://ieeexplore.ieee.org/document/11533985,candidate_pending_review,unverified_public_url
+PF-S04-0050,SCALOR: Generative World Models with Scalable Object Representations,2020,结构化物理&多模态,https://arxiv.org/abs/1910.02384,candidate_pending_review,unverified_public_url
+PF-S07-0157,ScenarioNet: Open-Source Platform for Large-Scale Traffic Scenario Modeling and Simulation,2023,评估&安全&Benchmark,https://arxiv.org/abs/2306.12241,candidate_pending_review,unverified_public_url
+PF-S07-0053,SceneBench: Revealing Forgetting in Video Understanding Models with a Scene-Aware Long-Video Benchmark,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Seeing_the_Scene_Matters_Revealing_Forgetting_in_Video_Understanding_Models_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0070,SCP: Spatial Causal Prediction in Video,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026F/html/Zhao_SCP_Spatial_Causal_Prediction_in_Video_CVPRF_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S04-0019,SE(3)-Transformers: 3D Roto-Translation Equivariant Attention Networks,2020,结构化物理&多模态,https://arxiv.org/abs/2006.10503,candidate_pending_review,unverified_public_url
+PF-S01-0073,SE3-Nets: Learning Rigid Body Motion using Deep Neural Networks,2017,世界模型基础&控制,https://arxiv.org/abs/1606.02378,candidate_pending_review,unverified_public_url
+PF-S07-0133,"Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation",2026,评估&安全&Benchmark,https://arxiv.org/abs/2607.28226,candidate_pending_review,unverified_public_url
+PF-S06-0066,Seeing Space and Motion: Enhancing Latent Actions with Geometric and Dynamic Awareness for Vision-Language-Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2509.26251,candidate_pending_review,unverified_public_url
+PF-S02-0049,Self-Predictive Dynamics for Generalization of Vision-based Reinforcement Learning (SPD),2025,视觉&视频世界模型,https://arxiv.org/abs/2506.05418,candidate_pending_review,unverified_public_url
+PF-S02-0050,Self-supervised Contrastive Learning Performs Non-linear System Identification,2025,视觉&视频世界模型,https://arxiv.org/abs/2410.14673,candidate_pending_review,unverified_public_url
+PF-S02-0059,Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture (I-JEPA),2023,Latent&预测表示 | 视觉&视频世界模型,https://arxiv.org/abs/2301.08243,candidate_pending_review,unverified_public_url
+PF-S03-0076,Self-supervised visual learning in the low-data regime: a comparative evaluation,2024,Latent&预测表示,https://arxiv.org/abs/2404.17202,candidate_pending_review,unverified_public_url
+PF-S06-0114,SelfWAM: A Self-Grounded Unified World Action Model for Fast Robot Control,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.00725,candidate_pending_review,unverified_public_url
+PF-S02-0053,SENSEI: Semantic Exploration Guided by Foundation Models to Learn Versatile World Models,2025,视觉&视频世界模型,https://arxiv.org/abs/2503.01584,candidate_pending_review,unverified_public_url
+PF-S04-0051,"Sequential Attend, Infer, Repeat: Generative Modelling of Moving Objects",2018,结构化物理&多模态,https://arxiv.org/abs/1806.01794,candidate_pending_review,unverified_public_url
+PF-S07-0161,Sequential Dexterity: Chaining Dexterous Policies for Long-Horizon Manipulation,2023,评估&安全&Benchmark,https://arxiv.org/abs/2309.00987,candidate_pending_review,unverified_public_url
+PF-S03-0022,Sequential predictive learning is a unifying theory for hippocampal representation and replay,2024,Latent&预测表示,https://www.biorxiv.org/content/10.1101/2024.04.28.591528v2,candidate_pending_review,unverified_public_url
+PF-S06-0164,SG-WAM: Text-Grounded and Spatial-aware Semantic Guidance for World-Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.08839,candidate_pending_review,unverified_public_url
+PF-S03-0067,Sigma-Agent: Contrastive Imitation Learning for Language-guided Multi-Task Manipulation,2024,Latent&预测表示,https://arxiv.org/abs/2406.09738,candidate_pending_review,unverified_public_url
+PF-S07-0190,Signal Temporal Logic Neural Predictive Control,2023,评估&安全&Benchmark,https://ieeexplore.ieee.org/document/10251585,candidate_pending_review,unverified_public_url
+PF-S05-0185,Sim‑and‑Human Co‑training for Data‑Efficient and Generalizable Robotic Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2601.19406,candidate_pending_review,unverified_public_url
+PF-S02-0045,"Simple, Good, Fast: Self-Supervised World Models Free of Baggage (SGF)",2025,视觉&视频世界模型,https://arxiv.org/abs/2506.02612,candidate_pending_review,unverified_public_url
+PF-S05-0079,SimplerEnv: Evaluating Real-World Robot Manipulation Policies in Simulation,2024,数据&模拟&跨本体,https://arxiv.org/abs/2405.05941,candidate_pending_review,unverified_public_url
+PF-S06-0124,Simulation Distillation: Pretraining World Models in Simulation for Rapid Real-World Adaptation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2603.15759,candidate_pending_review,unverified_public_url
+PF-S06-0167,Skel-WAM: A Hand-Skeleton-Conditioned World Action Model for Human-to-Robot Manipulation Transfer,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.21514,candidate_pending_review,unverified_public_url
+PF-S03-0031,SLAC: Safe and Efficient Real-Robot RL via Unsupervised Simulation Pre-Training,2025,Latent&预测表示,https://arxiv.org/abs/2506.04147,candidate_pending_review,unverified_public_url
+PF-S05-0144,"SlideSLAM: Sparse, Lightweight, Decentralized Metric‑Semantic SLAM for Multirobot Navigation",2025,数据&模拟&跨本体,https://arxiv.org/abs/2406.17249,candidate_pending_review,unverified_public_url
+PF-S04-0025,SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models,2023,结构化物理&多模态,https://arxiv.org/abs/2210.05861,candidate_pending_review,unverified_public_url
+PF-S07-0230,SMARTS: Scalable Multi-Agent RL Training School for Autonomous Driving,2020,评估&安全&Benchmark,https://arxiv.org/abs/2010.09776,candidate_pending_review,unverified_public_url
+PF-S06-0030,SmolVLA: A vision-language-action model for affordable and efficient robotics,2025,世界模型&VLA&规划,https://arxiv.org/abs/2506.01844,candidate_pending_review,unverified_public_url
+PF-S03-0054,SOFT: Recasting Generic Pretrained Vision Transformers As Object-Centric Scene Encoders,2024,Latent&预测表示,https://arxiv.org/abs/2405.15916,candidate_pending_review,unverified_public_url
+PF-S03-0009,SOLD: Slot Object-Centric Latent Dynamics Models for Relational Manipulation Learning from Pixels,2025,Latent&预测表示,https://arxiv.org/abs/2410.08822,candidate_pending_review,unverified_public_url
+PF-S07-0207,Something-Something V2: A Large Fine-Grained Video Dataset for Human Action Recognition,2017,评估&安全&Benchmark,https://developer.qualcomm.com/software/ai-hub,candidate_pending_review,unverified_public_url
+PF-S04-0052,SPACE: Unsupervised Object-Oriented Scene Representation via Spatial Attention and Decomposition,2020,结构化物理&多模态,https://arxiv.org/abs/2001.02407,candidate_pending_review,unverified_public_url
+PF-S04-0012,Sparsh: Self-supervised touch representations for vision-based tactile sensing,2024,结构化物理&多模态,https://arxiv.org/abs/2410.24090,candidate_pending_review,unverified_public_url
+PF-S05-0137,Spatial RoboGrasp: Generalized Robotic Grasping Control Policy,2025,数据&模拟&跨本体,https://arxiv.org/abs/2505.20814,candidate_pending_review,unverified_public_url
+PF-S07-0049,Spatial457: A Diagnostic Benchmark for 6D Spatial Reasoning of Large Multimodal Models,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Wang_Spatial457_A_Diagnostic_Benchmark_for_6D_Spatial_Reasoning_of_Large_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0048,SpatialCLIP: Learning 3D-aware Image Representations from Spatially Discriminative Language,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Wang_SpatialCLIP_Learning_3D-aware_Image_Representations_from_Spatially_Discriminative_Language_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0132,Spatially Aware World Action Model via Geometric Latent Diffusion,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.02531,candidate_pending_review,unverified_public_url
+PF-S07-0041,SpatiaLQA: A Benchmark for Evaluating Spatial Logical Reasoning in Vision-Language Models,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Xie_SpatiaLQA_A_Benchmark_for_Evaluating_Spatial_Logical_Reasoning_in_Vision-Language_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0130,SPEAR‑1: Scaling Beyond Robot Demonstrations via 3D Understanding,2025,数据&模拟&跨本体,,candidate_pending_review,held_url_review
+PF-S03-0070,Spectral State Space Models,2023,Latent&预测表示,https://arxiv.org/abs/2312.06837,candidate_pending_review,unverified_public_url
+PF-S05-0162,Splatting physical scenes: End‑to‑end real‑to‑sim from imperfect robot data,2025,数据&模拟&跨本体,https://arxiv.org/abs/2506.04120,candidate_pending_review,unverified_public_url
+PF-S01-0048,Stochastic Latent Actor-Critic: Deep Reinforcement Learning with a Latent Variable Model,2020,世界模型基础&控制,https://arxiv.org/abs/1907.00953,candidate_pending_review,unverified_public_url
+PF-S07-0218,Stochastic Video Generation with a Learned Prior,2018,评估&安全&Benchmark,https://arxiv.org/abs/1802.07687,candidate_pending_review,unverified_public_url
+PF-S03-0055,STP: Spatiotemporal Predictive Pre-training for Robotic Motor Control,2024,Latent&预测表示,https://arxiv.org/abs/2403.05304,candidate_pending_review,unverified_public_url
+PF-S04-0055,Structured Object-Aware Physics Prediction for Video Modeling and Planning,2020,结构化物理&多模态,https://arxiv.org/abs/1910.02425,candidate_pending_review,unverified_public_url
+PF-S03-0058,SupMAE: Supervised Masked Autoencoders Are Efficient Vision Learners,2022,Latent&预测表示,https://arxiv.org/abs/2205.14540,candidate_pending_review,unverified_public_url
+PF-S06-0031,Survey of vision-language-action models for embodied manipulation,2025,世界模型&VLA&规划,https://arxiv.org/abs/2508.15201,candidate_pending_review,unverified_public_url
+PF-S07-0043,SVBench: Evaluation of Video Generation Models on Social Reasoning,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Peng_SVBench_Evaluation_of_Video_Generation_Models_on_Social_Reasoning_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0179,SwiftVLA: Unlocking Spatiotemporal Dynamics for Lightweight VLA Models at Minimal Overhead,2026,世界模型&VLA&规划,https://openaccess.thecvf.com/content/CVPR2026/papers/Ni_SwiftVLA_Unlocking_Spatiotemporal_Dynamics_for_Lightweight_VLA_Models_at_Minimal_CVPR_2026_paper.pdf,candidate_pending_review,unverified_public_url
+PF-S06-0153,SwiftWA / GigaWorld-Policy: An Efficient Action-Centered World-Action Model,2026,世界模型&VLA&规划,https://arxiv.org/abs/2603.17240,candidate_pending_review,unverified_public_url
+PF-S05-0168,Synthetic data generation in smart manufacturing applications: A systematic review,2025,数据&模拟&跨本体,https://ssrn.com/abstract=5726804,candidate_pending_review,unverified_public_url
+PF-S05-0049,SynthICL: Scalable In-context Imitation Learning with Synthetic Data,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.08154,candidate_pending_review,unverified_public_url
+PF-S07-0046,T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation,2025,评估&安全&Benchmark,https://t2v-compbench.github.io/,candidate_pending_review,unverified_public_url
+PF-S07-0037,T2VWorldBench: A Benchmark for Evaluating World Knowledge in Text-to-Video Generation,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/WACV2026/html/Chen_T2VWorldBench_A_Benchmark_for_Evaluating_World_Knowledge_in_Text-to-Video_Generation_WACV_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0120,TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.11184,candidate_pending_review,unverified_public_url
+PF-S04-0014,Tactile robotics: An outlook,2025,结构化物理&多模态,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11162616,candidate_pending_review,unverified_public_url
+PF-S04-0011,"TACTO: A fast, flexible, and open-source simulator for high-resolution vision-based tactile sensors",2022,结构化物理&多模态,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9697425,candidate_pending_review,unverified_public_url
+PF-S04-0016,TacVLA: Contact-aware tactile fusion for robust vision-language-action manipulation,2026,结构化物理&多模态,https://arxiv.org/abs/2603.12665,candidate_pending_review,unverified_public_url
+PF-S02-0043,TD-JEPA: Latent-predictive Representations for Zero-Shot Reinforcement Learning,2025,视觉&视频世界模型,https://arxiv.org/abs/2510.00739,candidate_pending_review,unverified_public_url
+PF-S01-0017,"TD-MPC2: Scalable, Robust World Models for Continuous Control",pending_review,世界模型基础&控制 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/2310.16828,candidate_pending_review,unverified_public_url
+PF-S07-0104,TEACh: Task-driven Embodied Agents that Chat,2022,评估&安全&Benchmark,https://arxiv.org/abs/2110.00534,candidate_pending_review,unverified_public_url
+PF-S05-0179,Teleoperation‑Driven and Keyframe‑Based Generalizable Imitation Learning for Construction Robots,2025,数据&模拟&跨本体,https://par.nsf.gov/servlets/purl/10533650,candidate_pending_review,unverified_public_url
+PF-S05-0022,"Teleoperation, Simulation, or Human Video? Data Utilization Law for Robot Manipulation",2026,数据&模拟&跨本体,https://openreview.net/pdf?id=m6mRGNO7Yj,candidate_pending_review,unverified_public_url
+PF-S01-0014,Temporal Difference Learning for Model Predictive Control,2022,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2203.04955,candidate_pending_review,unverified_public_url
+PF-S05-0122,Tenma: Robust Cross‑Embodiment Robot Manipulation with Diffusion Transformer,2025,数据&模拟&跨本体,https://arxiv.org/abs/2509.11865,candidate_pending_review,unverified_public_url
+PF-S07-0239,The Arcade Learning Environment,2013,评估&安全&Benchmark,https://arxiv.org/abs/1207.4708,candidate_pending_review,unverified_public_url
+PF-S05-0141,The Curse of Precision: A Data Scaling Law for High‑Precision Robotic Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2607.23108,candidate_pending_review,unverified_public_url
+PF-S05-0033,The Embodiment Gap in Robot Foundation Models,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.18433,candidate_pending_review,unverified_public_url
+PF-S07-0197,The NetHack Learning Environment,2020,评估&安全&Benchmark,https://arxiv.org/abs/2006.13760,candidate_pending_review,unverified_public_url
+PF-S01-0076,The Predictron: End-To-End Learning and Planning,2017,世界模型基础&控制,https://arxiv.org/abs/1612.08810,candidate_pending_review,unverified_public_url
+PF-S07-0011,The PRISMA 2020 statement: An updated guideline for reporting systematic reviews,2021,评估&安全&Benchmark,,candidate_pending_review,missing
+PF-S07-0172,"The Retrospective on the Robot Air Hockey Challenge: Benchmarking Robust, Reliable, and Safe Learning Techniques for Real-world Robotics",2024,评估&安全&Benchmark,https://openreview.net/forum?id=gPLE4siNjO,candidate_pending_review,unverified_public_url
+PF-S07-0154,The Role of World Models in Shaping Autonomous Driving: A Comprehensive Survey,2025,评估&安全&Benchmark,https://arxiv.org/abs/2502.10498,candidate_pending_review,unverified_public_url
+PF-S07-0132,The Safety Challenge of World Models for Embodied AI Agents: A Review,2025,评估&安全&Benchmark,https://arxiv.org/abs/2510.05865,candidate_pending_review,unverified_public_url
+PF-S03-0052,Theia: Distilling Diverse Vision Foundation Models for Robot Learning,2024,Latent&预测表示,https://arxiv.org/abs/2407.20179,candidate_pending_review,unverified_public_url
+PF-S07-0038,TiViBench: Benchmarking Think-in-Video Reasoning for Video Generation,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026/html/Chen_TiViBench_Benchmarking_Think-in-Video_Reasoning_for_Video_Generation_CVPR_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S05-0105,ToddlerBot: Open-Source ML-Compatible Humanoid Platform for Loco-Manipulation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2502.00893,candidate_pending_review,unverified_public_url
+PF-S04-0034,Touch and Go: Learning from Human-Collected Vision and Touch,2022,结构化物理&多模态,https://proceedings.neurips.cc/paper_files/paper/2022/hash/354892587fe39b17c2b727af02abff4a-Abstract-Datasets_and_Benchmarks.html,candidate_pending_review,unverified_public_url
+PF-S06-0146,"Toward Unified Robot Learning: Bridging Representation, Vision-Language-Action, and World Models",2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.03927,candidate_pending_review,unverified_public_url
+PF-S07-0177,Towards Diverse Behaviors: A Benchmark for Imitation Learning with Human Demonstrations,2024,评估&安全&Benchmark,https://openreview.net/forum?id=dzVf1mYhoV,candidate_pending_review,unverified_public_url
+PF-S06-0144,Towards Generalist Embodied AI: A Survey on World Models for VLA Agents,2026,世界模型&VLA&规划,https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.176948355.54623875/v1,candidate_pending_review,unverified_public_url
+PF-S07-0129,Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation,2024,评估&安全&Benchmark,https://arxiv.org/abs/2410.05363,candidate_pending_review,unverified_public_url
+PF-S05-0057,TraceGen: World Modeling in 3D Trace Space Enables Learning from Cross-Embodiment Videos,2026,数据&模拟&跨本体,https://openaccess.thecvf.com/content/CVPR2026/papers/Lee_TraceGen_World_Modeling_in_3D_Trace_Space_Enables_Learning_from_CVPR_2026_paper.pdf,candidate_pending_review,unverified_public_url
+PF-S06-0059,Track2Act: Predicting Point Tracks from Internet Videos Enables Generalizable Robot Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2405.01527,candidate_pending_review,unverified_public_url
+PF-S05-0068,TrajBooster: Boosting Humanoid Whole-Body Manipulation via Trajectory-Centric Learning,2025,数据&模拟&跨本体,https://arxiv.org/abs/2509.11839,candidate_pending_review,unverified_public_url
+PF-S05-0116,Trajectory Conditioned Cross‑embodiment Skill Transfer (TrajSkill),2025,数据&模拟&跨本体,https://arxiv.org/abs/2510.07773,candidate_pending_review,unverified_public_url
+PF-S01-0059,Trajectory Transformer,2021,世界模型基础&控制,https://arxiv.org/abs/2106.02039,candidate_pending_review,unverified_public_url
+PF-S01-0047,Transformers are Sample-Efficient World Models,2022,世界模型基础&控制,https://arxiv.org/abs/2209.00588,candidate_pending_review,unverified_public_url
+PF-S04-0032,Transporter Networks: Rearranging the Visual World for Robotic Manipulation,2020,结构化物理&多模态,https://arxiv.org/abs/2010.14406,candidate_pending_review,unverified_public_url
+PF-S05-0182,TwinAligner: Visual‑Dynamic Alignment Empowers Physics‑aware Real2Sim2Real for Robotic Manipulation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2512.19390,candidate_pending_review,unverified_public_url
+PF-S05-0128,Two‑Stage Video‑Based Policy Learning for Robot Manipulation,2026,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/11540706,candidate_pending_review,unverified_public_url
+PF-S07-0247,Uncertainty-aware Model-based Policy Optimization,2019,评估&安全&Benchmark,https://arxiv.org/abs/1906.10717,candidate_pending_review,unverified_public_url
+PF-S03-0015,Understanding neural circuit principles for representation learning through joint-embedding predictive architectures,2025,Latent&预测表示,https://elifesciences.org/reviewed-preprints/110895,candidate_pending_review,unverified_public_url
+PF-S03-0074,Understanding World or Predicting Future? A Comprehensive Survey of World Models,pending_review,Latent&预测表示 | 世界模型&VLA&规划,https://dl.acm.org/doi/pdf/10.1145/3746449,candidate_pending_review,unverified_public_url
+PF-S05-0043,UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos,2026,数据&模拟&跨本体,https://arxiv.org/abs/2603.22264,candidate_pending_review,unverified_public_url
+PF-S05-0093,Unified World Models (UWM): Coupling Video and Action Diffusion,2025,数据&模拟&跨本体,https://arxiv.org/abs/2504.02792,candidate_pending_review,unverified_public_url
+PF-S02-0033,UniJEPA: A Unified Joint-Embedding Predictive Architecture for Task-Agnostic Visual World Modeling,2026,视觉&视频世界模型,https://arxiv.org/abs/2608.07409,candidate_pending_review,unverified_public_url
+PF-S06-0193,UniNav: A Unified World-Action Diffusion Model for Visual Navigation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.03244,candidate_pending_review,unverified_public_url
+PF-S01-0032,UniSim: A Neural Closed-Loop Sensor Simulator,2023,世界模型基础&控制,https://arxiv.org/abs/2308.01898,candidate_pending_review,unverified_public_url
+PF-S05-0118,UniSkill: Imitating Human Videos via Cross‑Embodiment Skill Representations,2025,数据&模拟&跨本体,https://arxiv.org/abs/2505.08787,candidate_pending_review,unverified_public_url
+PF-S05-0113,UniT: Toward a Unified Physical Language for Human‑to‑Humanoid Policy Learning and World Modeling,2026,数据&模拟&跨本体,https://arxiv.org/abs/2604.19734,candidate_pending_review,unverified_public_url
+PF-S05-0017,Universal manipulation interface: In-the-wild robot teaching without in-the-wild robots,2024,数据&模拟&跨本体,https://arxiv.org/abs/2402.10329,candidate_pending_review,unverified_public_url
+PF-S01-0077,Universal Planning Networks: Learning Generalizable Representations for Visuomotor Control,2018,世界模型基础&控制,https://arxiv.org/abs/1804.00645,candidate_pending_review,unverified_public_url
+PF-S03-0026,UniVLA: Learning to Act Anywhere with Task-centric Latent Actions,2025,Latent&预测表示,https://www.roboticsproceedings.org/rss21/p014.pdf,candidate_pending_review,unverified_public_url
+PF-S01-0054,Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation,2023,Latent&预测表示 | 世界模型基础&控制,https://arxiv.org/abs/2312.13139,candidate_pending_review,unverified_public_url
+PF-S03-0063,Unsupervised Learning of Hybrid Latent Dynamics: A Learn-to-Identify Framework (Meta-HyLaD),2024,Latent&预测表示,https://arxiv.org/abs/2403.08194,candidate_pending_review,unverified_public_url
+PF-S03-0075,Unsupervised Representation Learning in Deep Reinforcement Learning: A Review,2022,Latent&预测表示,https://arxiv.org/abs/2208.14226,candidate_pending_review,unverified_public_url
+PF-S01-0053,"V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",2025,Latent&预测表示 | 世界模型&VLA&规划 | 世界模型基础&控制 | 数据&模拟&跨本体 | 视觉&视频世界模型,https://arxiv.org/abs/2506.09985,candidate_pending_review,unverified_public_url
+PF-S07-0040,V-STaR: Benchmarking Video-LLMs on Video Spatio-Temporal Reasoning,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026F/html/Cheng_V-STaR_Benchmarking_Video-LLMs_on_Video_Spatio-Temporal_Reasoning_CVPRF_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0074,V-VLAPS: Value-Guided Planning for Vision-Language-Action Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2601.00969,candidate_pending_review,unverified_public_url
+PF-S03-0048,VAE Approximation Error: ELBO and Exponential Families,2022,Latent&预测表示,https://arxiv.org/abs/2102.09310,candidate_pending_review,unverified_public_url
+PF-S05-0155,VAG: Dual‑Stream Video‑Action Generation for Embodied Data Synthesis,2026,数据&模拟&跨本体,https://arxiv.org/abs/2604.09330,candidate_pending_review,unverified_public_url
+PF-S01-0074,Value Iteration Networks,2016,世界模型基础&控制,https://arxiv.org/abs/1602.02867,candidate_pending_review,unverified_public_url
+PF-S01-0041,Value Prediction Network,2017,世界模型基础&控制,https://arxiv.org/abs/1707.03497,candidate_pending_review,unverified_public_url
+PF-S03-0005,VC-1: A universal visual representation for robot learning,2023,Latent&预测表示,,candidate_pending_review,missing
+PF-S06-0064,Vid2World: Crafting Video Diffusion Models to Interactive World Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2505.14357,candidate_pending_review,unverified_public_url
+PF-S07-0045,Video-Bench: Human-Aligned Video Generation Benchmark,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Han_Video-Bench_Human-Aligned_Video_Generation_Benchmark_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S02-0018,Video Generation Models as World Simulators (Sora),2024,视觉&视频世界模型,https://openai.com/research/video-generation-models-as-world-simulators,candidate_pending_review,unverified_public_url
+PF-S05-0089,Video Language Planning (VLP),2023,数据&模拟&跨本体,https://arxiv.org/abs/2310.10625,candidate_pending_review,unverified_public_url
+PF-S07-0056,Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2025/html/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S02-0004,Video Models Are Zero-Shot Learners and Reasoners,2025,视觉&视频世界模型,https://arxiv.org/abs/2509.20328,candidate_pending_review,unverified_public_url
+PF-S02-0027,Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations,pending_review,世界模型&VLA&规划 | 视觉&视频世界模型,https://arxiv.org/abs/2412.14803,candidate_pending_review,unverified_public_url
+PF-S02-0054,Video Representation Learning with Joint-Embedding Predictive Architectures (VJ-VCR),2024,视觉&视频世界模型,https://arxiv.org/abs/2412.10925,candidate_pending_review,unverified_public_url
+PF-S06-0057,Video2Act: A Dual-System Video Diffusion Policy with Robotic Spatio-Motional Modeling,2026,世界模型&VLA&规划,https://arxiv.org/abs/2512.03044,candidate_pending_review,unverified_public_url
+PF-S05-0045,Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.08828,candidate_pending_review,unverified_public_url
+PF-S07-0217,VideoGPT: Video Generation using VQ-VAE and Transformers,2021,评估&安全&Benchmark,https://arxiv.org/abs/2104.10157,candidate_pending_review,unverified_public_url
+PF-S07-0064,VideoLLaMB: Long Streaming Video Understanding with Recurrent Memory Bridges,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Wang_VideoLLaMB_Long_Streaming_Video_Understanding_with_Recurrent_Memory_Bridges_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0131,VideoWorld: Exploring Knowledge Learning from Unlabeled Videos,2025,评估&安全&Benchmark,https://arxiv.org/abs/2501.09781,candidate_pending_review,unverified_public_url
+PF-S05-0031,"ViFailback: Diagnose, Correct, and Learn from Manipulation Failures via Visual Symbols",2026,数据&模拟&跨本体,https://openaccess.thecvf.com/content/CVPR2026/papers/Zeng_Diagnose_Correct_and_Learn_from_Manipulation_Failures_via_Visual_Symbols_CVPR_2026_paper.pdf,candidate_pending_review,unverified_public_url
+PF-S07-0136,VIMA: General Robot Manipulation with Multimodal Prompts,2022,评估&安全&Benchmark,https://arxiv.org/abs/2210.03094,candidate_pending_review,unverified_public_url
+PF-S06-0055,ViPRA: Video Prediction for Robot Actions,2026,世界模型&VLA&规划,https://proceedings.iclr.cc/paper_files/paper/2026/file/707e34efcabd2b9375f7a64019600aa8-Paper-Conference.pdf,candidate_pending_review,unverified_public_url
+PF-S05-0065,ViPSim: Collaborating Visual and Parameter Spaces for Consistent Long-Horizon Embodied World Models,2026,数据&模拟&跨本体,https://arxiv.org/abs/2606.28804,candidate_pending_review,unverified_public_url
+PF-S07-0004,Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation Instructions in Real Environments,2018,评估&安全&Benchmark,https://arxiv.org/abs/1711.07280,candidate_pending_review,unverified_public_url
+PF-S07-0052,VISTA: A Benchmark for Spatio-Temporal Interaction Understanding in Videos,2026,评估&安全&Benchmark,https://openaccess.thecvf.com/content/CVPR2026W/PVUW/html/Aparcedo_VISTA_A_Benchmark_for_Spatio-Temporal_Interaction_Understanding_in_Videos_CVPRW_2026_paper.html,candidate_pending_review,unverified_public_url
+PF-S01-0035,Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability,2024,世界模型基础&控制,https://arxiv.org/abs/2405.17398,candidate_pending_review,unverified_public_url
+PF-S01-0030,Visual Foresight: Model-Based Deep Reinforcement Learning for Vision-Based Robotic Control,2018,世界模型基础&控制,https://arxiv.org/abs/1812.00568,candidate_pending_review,unverified_public_url
+PF-S01-0075,Visual Interaction Networks,2017,世界模型基础&控制 | 结构化物理&多模态 | 评估&安全&Benchmark,https://arxiv.org/abs/1706.01433,candidate_pending_review,unverified_public_url
+PF-S04-0036,Visuo-Tactile Transformers for Manipulation,2023,结构化物理&多模态,https://proceedings.mlr.press/v205/chen23d.html,candidate_pending_review,unverified_public_url
+PF-S04-0038,Visuo-Tactile World Models,2026,结构化物理&多模态,https://arxiv.org/abs/2602.06001,candidate_pending_review,unverified_public_url
+PF-S05-0169,ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation,2025,数据&模拟&跨本体,https://arxiv.org/abs/2506.15953,candidate_pending_review,unverified_public_url
+PF-S04-0041,ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation,2026,结构化物理&多模态,https://arxiv.org/abs/2607.22530,candidate_pending_review,unverified_public_url
+PF-S02-0034,VJEPA: Variational Joint Embedding Predictive Architectures as Probabilistic World Models,2026,视觉&视频世界模型,https://arxiv.org/abs/2601.14354,candidate_pending_review,unverified_public_url
+PF-S07-0063,VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_VLABench_A_Large-Scale_Benchmark_for_Language-Conditioned_Robotics_Manipulation_with_Long-Horizon_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0016,VoxPoser: Composable 3D value maps for robotic manipulation with language models,2023,世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2307.05973,candidate_pending_review,unverified_public_url
+PF-S07-0062,VRBench: A Benchmark for Multi-Step Reasoning in Long Narrative Videos,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Yu_VRBench_A_Benchmark_for_Multi-Step_Reasoning_in_Long_Narrative_Videos_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S06-0117,VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.02503,candidate_pending_review,unverified_public_url
+PF-S02-0038,WA-JEPA: Rethinking the Video JEPA Paradigm for World-Action Modeling in Autonomous Driving,2026,视觉&视频世界模型,https://arxiv.org/abs/2608.20974,candidate_pending_review,unverified_public_url
+PF-S06-0107,WALL-SS: Scaling Long-horizon World Models via Next-Scale Autoregression,2026,世界模型&VLA&规划,https://arxiv.org/abs/2608.26239,candidate_pending_review,unverified_public_url
+PF-S06-0158,WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.06988,candidate_pending_review,unverified_public_url
+PF-S02-0006,Wan: Open and Advanced Large-Scale Video Generative Models,2025,视觉&视频世界模型,https://arxiv.org/abs/2503.20314,candidate_pending_review,unverified_public_url
+PF-S07-0231,"Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research",2023,评估&安全&Benchmark,https://arxiv.org/abs/2310.08710,candidate_pending_review,unverified_public_url
+PF-S07-0234,Waymo Open Dataset: An Autonomous Driving Dataset,2020,评估&安全&Benchmark,https://arxiv.org/abs/1912.04838,candidate_pending_review,unverified_public_url
+PF-S06-0106,"WEAVER: Better, Faster, Longer — An Effective World Model for Robotic Manipulation",2026,世界模型&VLA&规划,https://arxiv.org/abs/2606.13672,candidate_pending_review,unverified_public_url
+PF-S01-0056,What Matters in Learning from Offline Human Demonstrations for Robot Manipulation,2021,世界模型基础&控制 | 评估&安全&Benchmark,https://arxiv.org/abs/2108.03298,candidate_pending_review,unverified_public_url
+PF-S01-0007,When to Trust Your Model: Model-Based Policy Optimization,2019,世界模型基础&控制,https://arxiv.org/abs/1906.08253,candidate_pending_review,unverified_public_url
+PF-S06-0166,WholeBodyWAM: Generalizing Pre-trained World-Action Priors to Humanoid Loco-Manipulation via WBC-Grounded Coordination,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.16644,candidate_pending_review,unverified_public_url
+PF-S07-0228,WILDS: A Benchmark of in-the-Wild Distribution Shifts,2021,评估&安全&Benchmark,https://arxiv.org/abs/2012.07421,candidate_pending_review,unverified_public_url
+PF-S06-0126,WM-Craftnet: World Synesthesia Model for Generalizable and Robust Dexterous In-Hand Manipulation,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.07002,candidate_pending_review,unverified_public_url
+PF-S06-0115,World Action Models are Zero-shot Policies,2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.15922v1,candidate_pending_review,unverified_public_url
+PF-S06-0174,World-Action Models for Robot Learning and Control: A Survey,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.16074v1,candidate_pending_review,unverified_public_url
+PF-S01-0036,World Action Models: The Next Frontier in Embodied AI,2026,世界模型&VLA&规划 | 世界模型基础&控制,https://arxiv.org/abs/2605.12090,candidate_pending_review,unverified_public_url
+PF-S06-0087,World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.27599,candidate_pending_review,unverified_public_url
+PF-S01-0019,World Model for Robot Learning: A Comprehensive Survey,2026,世界模型基础&控制 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2605.00080v1,candidate_pending_review,unverified_public_url
+PF-S07-0173,World Model for Testing Autonomous Systems Using Petri Nets,2016,评估&安全&Benchmark,https://ieeexplore.ieee.org/document/7423135,candidate_pending_review,unverified_public_url
+PF-S06-0127,World Model Implanting for Test-time Adaptation of Embodied Agents,2025,世界模型&VLA&规划,https://arxiv.org/abs/2509.03956,candidate_pending_review,unverified_public_url
+PF-S02-0026,World Model on Million-Length Video And Action With RingAttention (LWM),2024,视觉&视频世界模型,https://arxiv.org/abs/2402.08268,candidate_pending_review,unverified_public_url
+PF-S01-0005,World Models,2018,世界模型基础&控制 | 视觉&视频世界模型 | 评估&安全&Benchmark,https://arxiv.org/abs/1803.10122,candidate_pending_review,unverified_public_url
+PF-S07-0162,World Models for Autonomous Driving: An Initial Survey,2024,评估&安全&Benchmark,https://arxiv.org/abs/2403.02622,candidate_pending_review,unverified_public_url
+PF-S06-0147,World Models for Embodied Intelligence: From Plausible to Controllable to Actionable,2026,世界模型&VLA&规划,https://www.preprints.org/frontend/manuscript/86832e3796357c0d9215c00c0a3d1a45/download_pub,candidate_pending_review,unverified_public_url
+PF-S06-0189,World Models for Policy Refinement in StarCraft II,2026,世界模型&VLA&规划,https://arxiv.org/abs/2602.14857,candidate_pending_review,unverified_public_url
+PF-S06-0052,World2Act: Latent Action Post-Training from World Model Dynamics,2026,世界模型&VLA&规划,https://arxiv.org/abs/2603.10422,candidate_pending_review,unverified_public_url
+PF-S06-0077,World4RL: Diffusion World Models for Policy Refinement with Reinforcement Learning for Robotic Manipulation,2025（v1: 2025-09-23；v2: 2026-03-19）,世界模型&VLA&规划,https://arxiv.org/abs/2509.19080,candidate_pending_review,unverified_public_url
+PF-S07-0031,WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models,2026,评估&安全&Benchmark,https://arxiv.org/abs/2601.21282,candidate_pending_review,unverified_public_url
+PF-S07-0028,WorldEval: World Model as Real-World Robot Policies Evaluator,2025,评估&安全&Benchmark,https://arxiv.org/abs/2505.19017,candidate_pending_review,unverified_public_url
+PF-S07-0151,WorldMark: A Unified Benchmark Suite for Interactive Video World Models,2026,评估&安全&Benchmark,https://arxiv.org/abs/2604.21686,candidate_pending_review,unverified_public_url
+PF-S07-0026,WorldModelBench: Judging Video Generation Models As World Models,2025,评估&安全&Benchmark,https://openreview.net/pdf?id=a3hafrDzuA,candidate_pending_review,unverified_public_url
+PF-S07-0181,WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning,2025,评估&安全&Benchmark,https://arxiv.org/abs/2506.04363,candidate_pending_review,unverified_public_url
+PF-S05-0048,Worlds in One Demo: A Synthetic Data Engine for Learning Open-World Mobile Manipulation,2026,数据&模拟&跨本体,https://arxiv.org/abs/2607.13154,candidate_pending_review,unverified_public_url
+PF-S06-0121,WorldSample: Closed-loop Real-robot RL with World Modelling,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.02431,candidate_pending_review,unverified_public_url
+PF-S06-0108,WorldScape Policy 2.0: Empowering Steerable World Action Modeling with Reasoning-Augmented Memory,2026,世界模型&VLA&规划,https://arxiv.org/abs/2607.18840,candidate_pending_review,unverified_public_url
+PF-S07-0025,WorldScore: A Unified Evaluation Benchmark for World Generation,2025,评估&安全&Benchmark,https://openaccess.thecvf.com/content/ICCV2025/html/Duan_WorldScore_A_Unified_Evaluation_Benchmark_for_World_Generation_ICCV_2025_paper.html,candidate_pending_review,unverified_public_url
+PF-S07-0020,WorldSimProbe: Diagnosing simulator faithfulness in action-conditioned world models for embodied manipulation,2026,评估&安全&Benchmark,https://arxiv.org/abs/2608.09298,candidate_pending_review,unverified_public_url
+PF-S06-0032,WorldVLA: Towards autoregressive action world model,2025,世界模型&VLA&规划,https://arxiv.org/abs/2506.21539,candidate_pending_review,unverified_public_url
+PF-S05-0087,WoW: Towards a World Omniscient World Model Through Embodied Interaction,2025,世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2509.22642,candidate_pending_review,unverified_public_url
+PF-S05-0117,X-Diffusion: Training Diffusion Policies on Cross‑Embodiment Human Demonstrations,2025,数据&模拟&跨本体,https://arxiv.org/abs/2511.04671,candidate_pending_review,unverified_public_url
+PF-S05-0119,X-Sim: Cross-Embodiment Learning via Real-to-Sim-to-Real,2025,数据&模拟&跨本体,https://arxiv.org/abs/2505.07096,candidate_pending_review,unverified_public_url
+PF-S05-0136,XEWorld: Can Action‑Conditioned World Models Generalize to Unseen Robot Embodiments?,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.05799,candidate_pending_review,unverified_public_url
+PF-S05-0114,XMoP: Whole‑Body Control Policy for Zero‑shot Cross‑Embodiment Neural Motion Planning,2025,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/11127979/,candidate_pending_review,unverified_public_url
+PF-S05-0151,XNav‑Pipe: Cross‑Platform Robot Navigation Data Generation Pipeline,2026,数据&模拟&跨本体,https://ieeexplore.ieee.org/abstract/document/11626805,candidate_pending_review,unverified_public_url
+PF-S05-0135,XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment,2026,数据&模拟&跨本体,https://arxiv.org/abs/2608.09892,candidate_pending_review,unverified_public_url
+PF-S05-0176,Xskill: Cross embodiment skill discovery,2023,数据&模拟&跨本体,https://proceedings.mlr.press/v229/xu23a/xu23a.pdf,candidate_pending_review,unverified_public_url
+SUP-2601.04686,Nightmare Dreamer: Dreaming About Unsafe States And Planning Ahead,2026,世界模型基础&控制 | Latent&预测表示 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2601.04686v1,selected_units_extracted_ai,unverified_public_url
+SUP-2606.20698,SafeDojo: Safe Reinforcement Learning for VLA via Interactive World Model,2026,视觉&视频世界模型 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2606.20698v1,selected_units_extracted_ai,unverified_public_url
+SUP-2609.24170,An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond,2026,世界模型&VLA&规划,https://arxiv.org/abs/2609.24170v1,candidate_pending_review,unverified_public_url
+SUP-2605.17912,"WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",2026,评估&安全&Benchmark,https://arxiv.org/abs/2605.17912v1,candidate_pending_review,unverified_public_url
+SUP-2601.04137,"Wow, wo, val! A Comprehensive Embodied World Model Evaluation Turing Test",2026,评估&安全&Benchmark,https://arxiv.org/abs/2601.04137v1,candidate_pending_review,unverified_public_url
+SUP-2609.37250,V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents,2026,Latent&预测表示 | 世界模型&VLA&规划,https://arxiv.org/abs/2609.37250v1,identity_checked_metadata_only,unverified_public_url
+SUP-2602.10098,VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model,2026,Latent&预测表示 | 世界模型&VLA&规划 | 数据&模拟&跨本体,https://arxiv.org/abs/2602.10098v2,identity_checked_metadata_only,unverified_public_url
+SUP-2609.03565,Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning,2026,Latent&预测表示 | 世界模型&VLA&规划 | 结构化物理&多模态,https://physical-world-models.github.io/IROS2026/,identity_checked_metadata_only,unverified_public_url
+SUP-2607.07287,TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation,2026,结构化物理&多模态 | 世界模型&VLA&规划,https://arxiv.org/abs/2607.07287v2,identity_checked_metadata_only,unverified_public_url
+SUP-2609.20649,DexTouch-WM: Learning Action-Conditioned Tactile World Models from Human Touch for Dexterous Robot Manipulation,2026,结构化物理&多模态 | 数据&模拟&跨本体 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://worldmodelworkshop.github.io/,identity_checked_metadata_only,unverified_public_url
+SUP-2606.13494,NavWAM: A Navigation World Action Model for Goal-Conditioned Visual Navigation,2026,视觉&视频世界模型 | 世界模型&VLA&规划,https://arxiv.org/abs/2606.13494v1,identity_checked_metadata_only,unverified_public_url
+SUP-2606.23085,Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents,2026,Latent&预测表示 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2606.23085v1,identity_checked_metadata_only,unverified_public_url
+SUP-2607.27511,Failure Detection for Surgical Robot Imitation Policies via Flow-Matching World Modeling,2026,视觉&视频世界模型 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2607.27511v1,identity_checked_metadata_only,unverified_public_url
+SUP-2604.21741,Hi-WM: Human-in-the-World-Model for Scalable Robot Post-Training,2026,数据&模拟&跨本体 | 世界模型&VLA&规划,https://arxiv.org/abs/2604.21741v2,identity_checked_metadata_only,unverified_public_url
+SUP-2603.13528,Learning Actionable Manipulation Recovery via Counterfactual Failure Synthesis,2026,数据&模拟&跨本体 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2603.13528v1,identity_checked_metadata_only,unverified_public_url
+SUP-2609.22591,REBOOT: From Failure to Recovery - A Dataset and Benchmark for Precision Assembly,2026,数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2609.22591v1,identity_checked_metadata_only,unverified_public_url
+SUP-2607.01060,RoboWorld: Fast and Reliable Neural Simulators for Generalist Robot Policy Evaluation,2026,视觉&视频世界模型 | 数据&模拟&跨本体 | 评估&安全&Benchmark,https://arxiv.org/abs/2607.01060v4,identity_checked_metadata_only,unverified_public_url
+SUP-DOI-10.23919-ecc.2019.8796030,Control Barrier Functions: Theory and Applications,2019,世界模型基础&控制 | 评估&安全&Benchmark,https://doi.org/10.23919/ECC.2019.8796030,selected_units_primary_asserted_human_pending,unverified_public_url
+SUP-PMLR-305-huang25c,"ParticleFormer: A 3D Point Cloud World Model for Multi-Object, Multi-Material Robotic Manipulation",2025,结构化物理&多模态 | 世界模型&VLA&规划,https://proceedings.mlr.press/v305/huang25c.html,selected_units_primary_asserted_human_pending,unverified_public_url
+SUP-PMLR-306-feng26aa,Learning Task-Sufficient World Models by Synergizing Agentic Exploration and Structured Modeling,2026,世界模型基础&控制 | Latent&预测表示,https://proceedings.mlr.press/v306/feng26aa.html,selected_units_primary_asserted_human_pending,unverified_public_url
+SUP-PMLR-331-wang26c,CoFineLLM: Conformal Finetuning of LLMs for Language-Instructed Robot Planning,2026,评估&安全&Benchmark,https://proceedings.mlr.press/v331/wang26c.html,selected_units_primary_asserted_human_pending,unverified_public_url
+SUP-2511.09515,WMPO: World Model-based Policy Optimization for Vision-Language-Action Models,2026,视觉&视频世界模型 | 数据&模拟&跨本体 | 世界模型&VLA&规划,https://proceedings.iclr.cc/paper_files/paper/2026/hash/6605c7d1c1ae1521b328d036df5be1ae-Abstract-Conference.html,selected_method_protocol_limit_units_primary_asserted_human_pending,unverified_public_url
+SUP-2605.06222,When to Trust Imagination: Adaptive Action Execution for World Action Models,2026,Latent&预测表示 | 世界模型&VLA&规划 | 评估&安全&Benchmark,https://arxiv.org/abs/2605.06222,selected_method_protocol_limit_units_primary_asserted_human_pending,unverified_public_url
