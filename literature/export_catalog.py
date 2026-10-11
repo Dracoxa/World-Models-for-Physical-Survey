@@ -1,4 +1,4 @@
-"""Export the seven literature categories as GitHub tables and a searchable CSV."""
+"""Export the seven literature categories as reading lists and a searchable CSV."""
 
 import argparse
 import csv
@@ -99,15 +99,61 @@ def public_url(value):
 
 
 def markdown(value):
-    return html.escape(text(value), quote=False).replace("|", "&#124;").replace("[", "&#91;").replace("]", "&#93;")
+    value = html.escape(text(value), quote=False)
+    for character in "|[]*_`\\":
+        value = value.replace(character, f"&#{ord(character)};")
+    return value
+
+
+def render_record(row):
+    title = markdown(row["title"])
+    year = markdown(row["year"]) or "年份未填"
+    link = f"[Paper](<{row['url']}>)" if row["url"] else "公开链接待补"
+    return [
+        f'- <a id="{row["record_id"].lower()}"></a> **[{year}] {title}**<br>',
+        f"  {link} · `{row['record_id']}`<br>",
+        f"  作者/团队：{markdown(row['authors']) or '未填'}<br>",
+        f"  来源（原表）：{markdown(row['venue']) or '未填'}；出版状态（原表）：{markdown(row['publication_status']) or '未填'}",
+        "",
+    ]
+
+
+def render_category(name, rows):
+    lines = [
+        f"# {name}", "",
+        "[仓库首页](../../README.md) · [全部分类](../README.md) · [CSV 下载](../catalog.csv)", "",
+        f"共 {len(rows)} 条冻结分类记录。跨主题重复保留；此数量不是唯一论文数或已核验论文数。", "",
+        "> 年份、作者、来源和出版状态沿用协作表快照，尚未逐条复核；占位项也保留以便溯源，不算作论文。记录编号对应原 Sheet 与行号。引用前请核对原始版本。", "",
+        "---", "",
+    ]
+    for row in rows:
+        lines.extend(render_record(row))
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("workbook", type=Path)
+    parser.add_argument("workbook", type=Path, nargs="?")
+    parser.add_argument("--format-only", action="store_true",
+                        help="Refresh category lists from catalog.csv without changing data or notes.")
     args = parser.parse_args()
     output = Path(__file__).resolve().parent
     pages = output / "categories"
+    if args.format_only:
+        if args.workbook:
+            parser.error("--format-only does not accept a workbook")
+        with (output / "catalog.csv").open(encoding="utf-8-sig", newline="") as file:
+            records = list(csv.DictReader(file))
+        if {row["category"] for row in records} - {name for name, _ in CATEGORIES}:
+            parser.error("catalog.csv contains an unknown category")
+        pages.mkdir(exist_ok=True)
+        for name, slug in CATEGORIES:
+            rows = [row for row in records if row["category"] == name]
+            (pages / f"{slug}.md").write_text(render_category(name, rows), encoding="utf-8")
+        print(f"Formatted {len(records)} frozen records; catalog.csv and README.md unchanged.")
+        return
+    if not args.workbook:
+        parser.error("provide a workbook or use --format-only")
     pages.mkdir(exist_ok=True)
     workbook = openpyxl.load_workbook(args.workbook, data_only=True)
     records, navigation = [], []
@@ -130,13 +176,7 @@ def main():
             rows.append(record)
         records.extend(rows)
         navigation.append(f"| [{name}](categories/{slug}.md) | {len(rows)} |")
-        lines = [f"# {name}", "", "[返回总目录](../README.md)", "", f"共 {len(rows)} 条分类记录。出版状态沿用协作表，尚未逐条复核。编号对应本次导出快照的 Sheet 与行号。", "", "| 编号 | 年份 | 论文 | 作者/团队 | 来源 | 出版状态 |", "|---|---|---|---|---|---|"]
-        for row in rows:
-            title = markdown(row["title"])
-            if row["url"]:
-                title = f"[{title}](<{row['url']}>)"
-            lines.append("| " + " | ".join([row["record_id"], markdown(row["year"]), title, markdown(row["authors"]), markdown(row["venue"]), markdown(row["publication_status"])]) + " |")
-        (pages / f"{slug}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        (pages / f"{slug}.md").write_text(render_category(name, rows), encoding="utf-8")
 
     with (output / "catalog.csv").open("w", encoding="utf-8-sig", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=FIELDS)
@@ -185,7 +225,10 @@ SHA-256：`{digest}`。
 
 本目录提供文献索引，不分发论文 PDF、实验截图或模型权重。
 """
-    (output / "README.md").write_text(readme, encoding="utf-8")
+    # Keep the manually maintained verification history when refreshing exports.
+    readme_path = output / "README.md"
+    if not readme_path.exists():
+        readme_path.write_text(readme, encoding="utf-8")
     assert len({row["record_id"] for row in records}) == len(records)
     with (output / "catalog.csv").open(encoding="utf-8-sig", newline="") as file:
         assert sum(1 for _ in csv.DictReader(file)) == len(records)
