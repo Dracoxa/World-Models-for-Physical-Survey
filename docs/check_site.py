@@ -7,6 +7,8 @@ class Site(HTMLParser):
         attrs = dict(attrs)
         if 'id' in attrs: self.ids.add(attrs['id'])
         if 'src' in attrs: self.urls.append(attrs['src'])
+        if tag == 'source' and 'srcset' in attrs:
+            self.urls.extend(item.strip().split()[0] for item in attrs['srcset'].split(','))
         if tag in ('a','link') and 'href' in attrs: self.urls.append(attrs['href'])
         self.images += tag == 'img'
 root = Path(__file__).resolve().parent

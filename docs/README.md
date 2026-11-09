@@ -2,7 +2,7 @@
 
 Static companion website based on the supplied anonymous manuscript and seven original figure PDFs. `assets/survey.pdf` is the manuscript associated with this website; the older `paper/` source and preview are preserved separately.
 
-- Edit `index.html` and `assets/style.css`.
+- Edit `index.html` and `assets/style.css`. When replacing a figure, update its PNG, PDF, and lossless WebP preview together.
 - Validate with `python3 docs/check_site.py` from the repository root.
 - GitHub Pages uses the `Deploy survey to GitHub Pages` Actions workflow.
 - Initial setup: repository Settings → Pages → Source → GitHub Actions.
