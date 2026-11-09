@@ -4,6 +4,8 @@
 
 ### Learning to Predict, Plan, and Act in the Real World
 
+[![Website](https://img.shields.io/badge/Website-GitHub_Pages-4f46e5)](https://dracoxa.github.io/World-Models-for-Physical-Survey/)
+[![Website manuscript](https://img.shields.io/badge/Paper-Website_Manuscript-0d9488)](docs/assets/survey.pdf)
 [![Draft PDF](https://img.shields.io/badge/Paper-Working_Draft-2563eb)](paper/preview/main.pdf)
 [![LaTeX](https://img.shields.io/badge/LaTeX-Source-008080)](paper/main.tex)
 [![Literature](https://img.shields.io/badge/Literature-Seven_Themes-6b7280)](#paper-list)
@@ -22,7 +24,9 @@
 
 **文献收集（2026-10-10 快照）**：累计 **781 条暂定去重候选记录**，其中 **763 条附公开检索链接**、18 条链接待补或待查。进入 [最新文献目录](literature/current/README.md)，或下载 [候选主表 CSV](literature/current/catalog.csv)。收录不等于全文核验或最终纳入。
 
-本次更新独立的候选索引；上方 PDF、LaTeX 与 BibTeX 仍是此前公开的工作稿，不与本次目录同版。
+本次更新独立的候选索引；Draft PDF、LaTeX 与 BibTeX 保留此前公开的工作稿，不与本次目录同版。
+
+**网站版本（2026-11-09）**：[综述网站](https://dracoxa.github.io/World-Models-for-Physical-Survey/) 使用本次提供的匿名稿与七张原始图，内容围绕该稿 §1.6 的贡献及 §4.4 的诊断议程组织。[网站配套稿件](docs/assets/survey.pdf) 与 `paper/preview/main.pdf` 是不同版本；原有 LaTeX、文献目录和写作记录均保持不变。
 
 <a id="contents"></a>
 
