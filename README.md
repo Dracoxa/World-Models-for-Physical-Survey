@@ -26,11 +26,11 @@
 
 本次更新独立的候选索引；Draft PDF、LaTeX 与 BibTeX 保留此前公开的工作稿，不与本次目录同版。
 
-**网站版本（2026-11-09）**：[综述网站](https://dracoxa.github.io/World-Models-for-Physical-Survey/) 使用本次提供的匿名稿与七张原始图，内容围绕该稿 §1.6 的贡献及 §4.4 的诊断议程组织。[网站配套稿件](docs/assets/survey.pdf) 与 `paper/preview/main.pdf` 是不同版本；原有 LaTeX、文献目录和写作记录均保持不变。
+**综述网站**提供按预测用途浏览的原文对照，以及 RoboTwin 2.0 和 RoboDojo 榜单入口。网站的下载稿、配图与 BibTeX 对应 [2026-11-09 公开匿名稿](docs/assets/survey.pdf)。
 
 ## 快速入口
 
-- [浏览综述网站](https://dracoxa.github.io/World-Models-for-Physical-Survey/)：阅读概览、图示和证据讨论。
+- [浏览综述网站](https://dracoxa.github.io/World-Models-for-Physical-Survey/)：筛选五类用途下的原论文对照，查看图示与榜单。
 - [网站配套匿名稿 PDF](docs/assets/survey.pdf)：与网站内容配套。
 - [仓库工作稿 PDF](paper/preview/main.pdf) · [LaTeX 源码](paper/main.tex)：独立保留的工作稿，与网站稿件不是同一版本。
 - [文献候选目录](literature/current/README.md) · [CSV 主表](literature/current/catalog.csv)：2026-10-10 检索快照，纳入与证据状态仍需核验。
@@ -64,7 +64,7 @@
 | [三、机器人策略融合](paper/sections/03_policy_integration.tex) | 模型式规划、想象中的策略学习、VLA、联合世界与动作模型，以及推理与策略接口 |
 | [四、评估、可靠性与前沿](paper/sections/04_evaluation.tex) | 预测质量与决策效用、闭环评估、不确定性、安全约束与运行时护栏 |
 
-网站提供[预测与动作接口图](https://dracoxa.github.io/World-Models-for-Physical-Survey/#mechanisms)和[证据与评估图](https://dracoxa.github.io/World-Models-for-Physical-Survey/#evidence)；图示与网站配套稿件对应。
+网站提供[预测用途与实验对照](https://dracoxa.github.io/World-Models-for-Physical-Survey/#evidence)、[预测与动作接口图](https://dracoxa.github.io/World-Models-for-Physical-Survey/#mechanisms)和[基准评估入口](https://dracoxa.github.io/World-Models-for-Physical-Survey/#benchmarks)；图示与网站配套稿件对应。
 
 ---
 
