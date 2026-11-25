@@ -10,7 +10,7 @@
 
 [![Project website](https://img.shields.io/badge/Website-GitHub_Pages-1d4ed8?style=flat-square)](https://dracoxa.github.io/World-Models-for-Physical-Survey/) [![Survey PDF](https://img.shields.io/badge/PDF-Survey-0f766e?style=flat-square)](docs/assets/survey.pdf) [![Line-numbered PDF](https://img.shields.io/badge/PDF-Line_Numbered-334155?style=flat-square)](docs/assets/survey-review.pdf) [![Evidence Companion](https://img.shields.io/badge/Data-Evidence_Companion-b45309?style=flat-square)](docs/assets/Evidence-companion.zip) [![Literature Catalogue](https://img.shields.io/badge/Index-Literature_Catalogue-64748b?style=flat-square)](literature/current/README.md)
 
-**English** · [简体中文](#chinese) · [Evidence Explorer](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html)
+**English** · [简体中文](#user-content-chinese) · [Evidence Explorer](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html)
 
 </div>
 
@@ -64,7 +64,7 @@ The evidence map describes the studies selected by the survey. The benchmark vie
 
 ## 简体中文
 
-[English](#english) · **简体中文** · [Evidence Explorer](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html)
+[返回 English](https://github.com/Dracoxa/World-Models-for-Physical-Survey?tab=readme-ov-file#user-content-english) · **简体中文** · [Evidence Explorer](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html)
 
 **面向物理智能的世界模型：接口、实验证据与下游效用**
 
@@ -89,3 +89,5 @@ The evidence map describes the studies selected by the survey. The benchmark vie
 证据图谱描述本综述选取的研究。两项基准使用 2026 年 11 月 10 日的快照，按各自的评价单位统计。
 
 [论文 PDF](docs/assets/survey.pdf) · [带行号 PDF](docs/assets/survey-review.pdf) · [证据包](docs/assets/Evidence-companion.zip) · [七张论文插图](https://dracoxa.github.io/World-Models-for-Physical-Survey/#findings) · [拟议验证实验](https://dracoxa.github.io/World-Models-for-Physical-Survey/#tests) · [在官网复制 BibTeX](https://dracoxa.github.io/World-Models-for-Physical-Survey/#cite)
+
+[返回 English](https://github.com/Dracoxa/World-Models-for-Physical-Survey?tab=readme-ov-file#user-content-english)
