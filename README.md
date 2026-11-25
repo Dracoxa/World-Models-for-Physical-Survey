@@ -4,9 +4,15 @@
 
 **Interfaces, Experimental Evidence, and Downstream Utility**
 
-[Project website](https://dracoxa.github.io/World-Models-for-Physical-Survey/) · [Read the survey](docs/assets/survey.pdf) · [Evidence explorer](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html) · [Download evidence](docs/assets/Evidence-companion.zip)
-
 面向物理智能的世界模型综述与实验证据浏览器
+
+[![Project website](https://img.shields.io/badge/Website-GitHub_Pages-1d4ed8?style=flat-square)](https://dracoxa.github.io/World-Models-for-Physical-Survey/)
+[![Survey PDF](https://img.shields.io/badge/PDF-Survey-0f766e?style=flat-square)](docs/assets/survey.pdf)
+[![Line-numbered PDF](https://img.shields.io/badge/PDF-Line_Numbered-334155?style=flat-square)](docs/assets/survey-review.pdf)
+[![Evidence Companion](https://img.shields.io/badge/Data-Evidence_Companion-b45309?style=flat-square)](docs/assets/Evidence-companion.zip)
+[![Literature Catalogue](https://img.shields.io/badge/Index-Literature_Catalogue-64748b?style=flat-square)](literature/current/README.md)
+
+**English** · [简体中文](README.zh-CN.md) · [Evidence Explorer / 证据浏览器](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html)
 
 </div>
 
