@@ -35,7 +35,8 @@ Across **93 source-linked comparisons** drawn from **75 purposively selected Phy
 
 | Artifact | Description | Link |
 | :--- | :--- | :--- |
-| **Interactive Companion Website** | Search all 93 source-linked comparisons, toggle the `29 → 26` sensitivity check, explore RoboTwin/RoboDojo task profiles, and inspect all 7 survey figures | [dracoxa.github.io/World-Models-for-Physical-Survey](https://dracoxa.github.io/World-Models-for-Physical-Survey/) |
+| **Editorial Overview Website** | Concise 4-section manuscript overview, single-frame 7-figure switcher, Table 9 sensitivity toggle, and Table 10 tests | [dracoxa.github.io/World-Models-for-Physical-Survey](https://dracoxa.github.io/World-Models-for-Physical-Survey/) |
+| **Interactive Evidence & Benchmark Explorer** | Filter all 93 source-linked comparisons across 75 studies and inspect RoboTwin 2.0 (33) / RoboDojo (66) task profiles | [explorer.html](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html) |
 | **ACM Journal Preview PDF** | Formatted `acmsmall` preview (33 pages, anonymous, 110 references) | [`docs/assets/survey.pdf`](docs/assets/survey.pdf) |
 | **Review Draft PDF** | Line-numbered `manuscript,review` submission draft (31 pages, anonymous) | [`docs/assets/survey-review.pdf`](docs/assets/survey-review.pdf) |
 | **Evidence Companion Archive** | `papers.csv`, `comparisons.csv`, `coding_decisions.csv`, `summarize.py`, `benchmark_tasks.zip`, and 18-sheet `Quantitative_Analysis.xlsx` | [`docs/assets/Evidence-companion.zip`](docs/assets/Evidence-companion.zip) |

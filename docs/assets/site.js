@@ -23,10 +23,11 @@
       const pct = max > 0 ? Math.min(100, Math.max(0, (window.scrollY / max) * 100)) : 0;
       progBar.style.width = `${pct.toFixed(1)}%`;
     }
+    if (!sections.length) return;
     const y = window.scrollY + 120;
     let current = sections[0]?.id || '';
     for (const sec of sections) {
-      if (sec.offsetTop <= y) current = sec.id;
+      if (!sec.hidden && sec.offsetTop <= y) current = sec.id;
     }
     for (const a of navLinks) {
       a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
@@ -35,7 +36,15 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // 2. Lightbox modal for all 7 survey figures
+  // 2. Single-frame Figure Switcher & Lightbox (index.html)
+  const figTabs = [...document.querySelectorAll('[data-fig-tab]')];
+  const activeImg = document.querySelector('#active-fig-img');
+  const activeWebp = document.querySelector('#active-fig-webp');
+  const activeLink = document.querySelector('#active-fig-link');
+  const activeCap = document.querySelector('#active-fig-cap');
+  const activePdf = document.querySelector('#active-fig-pdf');
+  const activeZoom = document.querySelector('#active-fig-zoom');
+
   const lightbox = document.querySelector('#fig-lightbox');
   const lbImg = document.querySelector('#lb-img');
   const lbTitle = document.querySelector('#lb-title');
@@ -45,22 +54,45 @@
   const lbPrev = document.querySelector('#lb-prev');
   const lbNext = document.querySelector('#lb-next');
 
-  const figCards = [...document.querySelectorAll('[data-fig-num]')];
   let activeFigIndex = 0;
 
+  function setActiveFigure(index) {
+    if (!figTabs.length || !activeImg) return;
+    activeFigIndex = (index + figTabs.length) % figTabs.length;
+    const tab = figTabs[activeFigIndex];
+    figTabs.forEach((t) => t.classList.toggle('active', t === tab));
+
+    const { figNum, figSrc, figWebp, figPdf, figCap, figW, figH } = tab.dataset;
+    activeImg.src = figSrc;
+    activeImg.alt = figCap;
+    if (figW && figH) {
+      activeImg.width = Number(figW);
+      activeImg.height = Number(figH);
+    }
+    if (activeWebp && figWebp) activeWebp.srcset = figWebp;
+    if (activeLink) {
+      activeLink.href = figSrc;
+      activeLink.setAttribute('aria-label', `Inspect Figure ${figNum}`);
+    }
+    if (activePdf) activePdf.href = figPdf;
+    if (activeCap) {
+      const m = figCap.match(/^(Figure\s+\d+\s*\([^)]+\)\.)\s*(.*)$/);
+      activeCap.innerHTML = m
+        ? `<strong>${esc(m[1])}</strong> ${esc(m[2])}`
+        : esc(figCap);
+    }
+  }
+
   function openLightbox(index) {
-    if (!figCards.length || !lightbox) return;
-    activeFigIndex = (index + figCards.length) % figCards.length;
-    const card = figCards[activeFigIndex];
-    const src = card.dataset.figSrc;
-    const pdf = card.dataset.figPdf;
-    const num = card.dataset.figNum;
-    const cap = card.dataset.figCap;
-    lbImg.src = src;
-    lbImg.alt = cap;
-    lbTitle.textContent = `Figure ${num} of ${figCards.length}`;
-    lbCap.textContent = cap;
-    lbPdf.href = pdf;
+    if (!figTabs.length || !lightbox) return;
+    const targetIdx = typeof index === 'number' ? index : activeFigIndex;
+    setActiveFigure(targetIdx);
+    const tab = figTabs[activeFigIndex];
+    lbImg.src = tab.dataset.figSrc;
+    lbImg.alt = tab.dataset.figCap;
+    lbTitle.textContent = `Figure ${tab.dataset.figNum} of ${figTabs.length}`;
+    lbCap.textContent = tab.dataset.figCap;
+    lbPdf.href = tab.dataset.figPdf;
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
   }
@@ -71,16 +103,14 @@
     document.body.style.overflow = '';
   }
 
-  figCards.forEach((card, idx) => {
-    const triggers = card.querySelectorAll('[data-zoom-trigger]');
-    triggers.forEach((el) => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        openLightbox(idx);
-      });
-    });
+  figTabs.forEach((tab, idx) => {
+    tab.addEventListener('click', () => setActiveFigure(idx));
   });
-
+  activeLink?.addEventListener('click', (e) => {
+    e.preventDefault();
+    openLightbox(activeFigIndex);
+  });
+  activeZoom?.addEventListener('click', () => openLightbox(activeFigIndex));
   lbClose?.addEventListener('click', closeLightbox);
   lbPrev?.addEventListener('click', () => openLightbox(activeFigIndex - 1));
   lbNext?.addEventListener('click', () => openLightbox(activeFigIndex + 1));
@@ -116,22 +146,54 @@
     });
   }
 
-  // 4. Load Evidence + Benchmarks JSON
+  // 4. Portal tabs on explorer.html (#evidence vs #benchmarks)
+  const portalTabs = [...document.querySelectorAll('[data-portal-tab]')];
+  const portalPanels = [...document.querySelectorAll('[data-portal-panel]')];
+  function setPortalTab(name) {
+    if (!portalTabs.length) return;
+    portalTabs.forEach((t) => t.classList.toggle('active', t.dataset.portalTab === name));
+    portalPanels.forEach((p) => {
+      p.hidden = p.dataset.portalPanel !== name;
+    });
+    navLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === `#${name}`));
+  }
+  portalTabs.forEach((t) => {
+    t.addEventListener('click', () => {
+      const target = t.dataset.portalTab;
+      setPortalTab(target);
+      history.replaceState(null, '', `#${target}`);
+    });
+  });
+  navLinks.forEach((a) => {
+    if (portalTabs.length && (a.getAttribute('href') === '#evidence' || a.getAttribute('href') === '#benchmarks')) {
+      a.addEventListener('click', () => setPortalTab(a.getAttribute('href').slice(1)));
+    }
+  });
+  if (portalTabs.length && window.location.hash === '#benchmarks') {
+    setPortalTab('benchmarks');
+  }
+
+  // 5. Load JSON datasets
   async function initData() {
+    const hasCoverage = Boolean(document.querySelector('#cov-rows'));
+    const hasExplorer = Boolean(document.querySelector('#comp-list'));
+    const hasBenchmarks = Boolean(document.querySelector('#rt-list'));
+    if (!hasCoverage && !hasExplorer && !hasBenchmarks) return;
+
     try {
-      const [evRes, bmRes] = await Promise.all([
-        fetch('assets/data/evidence.json'),
-        fetch('assets/data/benchmarks.json'),
-      ]);
-      if (!evRes.ok || !bmRes.ok) throw new Error('Failed to load dataset JSON');
-      const evidence = await evRes.json();
-      const benchmarks = await bmRes.json();
-      initCoverageAndExplorer(evidence);
-      initBenchmarks(benchmarks);
+      const requests = [];
+      if (hasCoverage || hasExplorer) requests.push(fetch('assets/data/evidence.json').then((r) => r.json()));
+      else requests.push(Promise.resolve(null));
+      if (hasBenchmarks) requests.push(fetch('assets/data/benchmarks.json').then((r) => r.json()));
+      else requests.push(Promise.resolve(null));
+
+      const [evidence, benchmarks] = await Promise.all(requests);
+      if (evidence) initCoverageAndExplorer(evidence);
+      if (benchmarks) initBenchmarks(benchmarks);
     } catch (err) {
-      const list = document.querySelector('#comp-list');
-      if (list) {
-        list.innerHTML = `<div style="padding:24px;color:var(--crimson);">Failed to load interactive datasets (${esc(err.message)}). Serve via HTTP (e.g. <code>python3 -m http.server --directory docs</code>).</div>`;
+      const el = document.querySelector('#comp-list') || document.querySelector('#cov-rows');
+      if (el) {
+        el.innerHTML = `<div style="padding:20px;color:var(--crimson);">Failed to load data (${esc(err.message)}).</div>`;
       }
     }
   }
@@ -139,6 +201,7 @@
   function initCoverageAndExplorer(evidence) {
     const covRowsEl = document.querySelector('#cov-rows');
     const covTotalEl = document.querySelector('#cov-total-note');
+    const isHomeMode = Boolean(document.querySelector('[data-cov-mode-root="home"]'));
     const modeBtns = [...document.querySelectorAll('[data-cov-mode]')];
     let strictMode = false;
 
@@ -153,16 +216,26 @@
     const toggleAllBtn = document.querySelector('#exp-toggle-all');
     const resetBtn = document.querySelector('#exp-reset');
 
+    const params = new URLSearchParams(window.location.search);
+    const validUses = new Set(['all', 'train', 'generate', 'plan', 'representation', 'assess', 'execute']);
+    const initialUse = validUses.has(params.get('use')) ? params.get('use') : 'all';
+    const initialStrict = params.get('strict') === '1';
+
     const state = {
-      use: 'all',
+      use: initialUse,
       query: '',
       direction: 'all',
       execOnly: false,
-      compOnly: false,
-      strictOnly: false,
+      compOnly: initialStrict,
+      strictOnly: initialStrict,
       showAll: false,
       expandedId: null,
     };
+
+    if (initialStrict) {
+      if (compOnlyEl) compOnlyEl.checked = true;
+      if (strictOnlyEl) strictOnlyEl.checked = true;
+    }
 
     function renderCoverage() {
       if (!covRowsEl) return;
@@ -179,12 +252,12 @@
               ? ` <span style="color:var(--terra)">(−${bundledDiff})</span>`
               : '';
           return `
-            <div class="cov-row" data-jump-use="${esc(row.use_key)}" title="Click to filter 93 comparisons by ${esc(row.label)}">
+            <div class="cov-row" data-jump-use="${esc(row.use_key)}" title="Click to inspect ${esc(row.label)} studies">
               <div>
                 <div class="cov-name">${esc(row.label)}</div>
                 <div class="cov-dim">${esc(row.illus_dim)} · e.g., ${esc(row.illus_study)}</div>
               </div>
-              <div class="cov-bar-track" aria-label="${row.core_papers} core, ${row.execution_papers} execution, ${compCount} component tests">
+              <div class="cov-bar-track">
                 <div style="position:absolute;left:0;top:0;bottom:0;width:${corePct}%;background:rgba(20,24,31,0.08);"></div>
                 <div class="cov-bar-exec" style="width:${execPct}%"></div>
                 <div class="cov-bar-comp" style="width:${compPct}%"></div>
@@ -199,15 +272,24 @@
 
       if (covTotalEl) {
         covTotalEl.innerHTML = strictMode
-          ? `Sensitivity check: <b>26</b> papers with component tests (removed 4 bundled branch/scoring records across 3 studies: NavForesee ×2, NavThinker ×1, DreamAvoid ×1). Action generation shrinks 4 → 2; Execution shrinks 2 → 1.`
-          : `Full extracted set: <b>75</b> distinct core papers · <b>56</b> with execution outcomes · <b>29</b> with ≥1 qualifying component test (30 comparison records: 21 improve, 8 mixed, 1 worsens).`;
+          ? `Sensitivity check: <b>26</b> papers with component tests (removed 4 bundled records: NavForesee ×2, NavThinker ×1, DreamAvoid ×1). Action generation 4 → 2; Execution 2 → 1.`
+          : `Full set: <b>75</b> core papers · <b>56</b> execution outcomes · <b>29</b> component tests (30 records: 21 improve, 8 mixed, 1 worsens).`;
       }
 
       covRowsEl.querySelectorAll('[data-jump-use]').forEach((el) => {
         el.addEventListener('click', () => {
-          state.use = el.dataset.jumpUse;
+          const u = el.dataset.jumpUse;
+          if (isHomeMode) {
+            const q = new URLSearchParams({ use: u });
+            if (strictMode) q.set('strict', '1');
+            window.location.href = `explorer.html?${q.toString()}`;
+            return;
+          }
+          state.use = u;
           if (strictMode) {
+            state.compOnly = true;
             state.strictOnly = true;
+            if (compOnlyEl) compOnlyEl.checked = true;
             if (strictOnlyEl) strictOnlyEl.checked = true;
           }
           syncUseTabs();
@@ -230,6 +312,7 @@
     }
 
     function renderExplorer() {
+      if (!listEl) return;
       const q = state.query.trim().toLowerCase();
       const filtered = evidence.comparisons.filter((c) => {
         if (state.use !== 'all' && c.use !== state.use) return false;
@@ -246,21 +329,22 @@
 
       const uniquePapers = new Set(filtered.map((c) => c.key)).size;
       if (countEl) {
-        countEl.innerHTML = `Showing <strong>${filtered.length}</strong> comparison${filtered.length === 1 ? '' : 's'} across <strong>${uniquePapers}</strong> unique paper${uniquePapers === 1 ? '' : 's'} (total corpus: 93 / 75)`;
+        countEl.innerHTML = `Showing <strong>${filtered.length}</strong> comparison${filtered.length === 1 ? '' : 's'} across <strong>${uniquePapers}</strong> unique paper${uniquePapers === 1 ? '' : 's'} (corpus: 93 / 75)`;
       }
 
-      const limit = state.showAll ? filtered.length : 15;
+      const PAGE_DEFAULT = 12;
+      const limit = state.showAll ? filtered.length : PAGE_DEFAULT;
       const visible = filtered.slice(0, limit);
 
       if (!visible.length) {
-        listEl.innerHTML = `<div style="padding:28px;text-align:center;color:var(--ink-mute);">No comparisons match the active filters. Try clearing the search or toggles.</div>`;
+        listEl.innerHTML = `<div style="padding:28px;text-align:center;color:var(--ink-mute);">No comparisons match the active filters.</div>`;
       } else {
         listEl.innerHTML = visible
           .map((c) => {
             const isOpen = state.expandedId === c.id;
             const dirClass = `badge-${c.direction}`;
             const compBadge = c.bundled_omitted
-              ? `<span class="badge badge-bundled" title="Bundled intervention omitted in 26-paper sensitivity check">Bundled (omitted in 26)</span>`
+              ? `<span class="badge badge-bundled">Bundled (omitted in 26)</span>`
               : c.specific
                 ? `<span class="badge badge-comp">Component test</span>`
                 : c.downstream
@@ -273,9 +357,7 @@
                     <strong>${esc(c.authors || c.key)} (${esc(c.year || '—')})</strong>
                     <span>${c.alias ? `${esc(c.alias)} · ` : ''}${esc(c.key)} · #${c.id}</span>
                   </div>
-                  <div>
-                    <span class="badge badge-use">${esc(c.use_label)}</span>
-                  </div>
+                  <div><span class="badge badge-use">${esc(c.use_label)}</span></div>
                   <div class="comp-contrast-col">
                     ${esc(c.comparison)}
                     <span class="sub-title">${esc(c.title)}</span>
@@ -288,22 +370,10 @@
                 </button>
                 <div class="comp-detail" ${isOpen ? '' : 'hidden'}>
                   <div class="comp-detail-grid">
-                    <div class="detail-field">
-                      <b>Reported Result</b>
-                      <p>${esc(c.result)}</p>
-                    </div>
-                    <div class="detail-field">
-                      <b>Endpoint & Execution Status</b>
-                      <p>${esc(c.endpoint)} (${c.downstream ? 'Execution outcome' : 'Non-execution / proxy endpoint'})</p>
-                    </div>
-                    <div class="detail-field">
-                      <b>Co-varying Factors (other_changes)</b>
-                      <p>${esc(c.other_changes)}</p>
-                    </div>
-                    <div class="detail-field">
-                      <b>Granularity & Coding Note</b>
-                      <p>${esc(c.granularity || (c.specific ? 'Qualifying component comparison' : 'Complete-system / coupled / proxy'))}${c.rationale ? ` — ${esc(c.rationale)}` : ''}</p>
-                    </div>
+                    <div class="detail-field"><b>Reported Result</b><p>${esc(c.result)}</p></div>
+                    <div class="detail-field"><b>Endpoint &amp; Status</b><p>${esc(c.endpoint)} (${c.downstream ? 'Execution outcome' : 'Non-execution / proxy'})</p></div>
+                    <div class="detail-field"><b>Co-varying Factors</b><p>${esc(c.other_changes)}</p></div>
+                    <div class="detail-field"><b>Coding Note</b><p>${esc(c.granularity || (c.specific ? 'Qualifying component test' : 'Coupled / proxy'))}${c.rationale ? ` — ${esc(c.rationale)}` : ''}</p></div>
                   </div>
                   <div class="detail-footer">
                     <span class="mono" style="color:var(--ink-mute);">Source locator: ${esc(c.locator)}</span>
@@ -325,12 +395,12 @@
       }
 
       if (toggleAllBtn) {
-        if (filtered.length <= 15) {
+        if (filtered.length <= PAGE_DEFAULT) {
           toggleAllBtn.hidden = true;
         } else {
           toggleAllBtn.hidden = false;
           toggleAllBtn.textContent = state.showAll
-            ? `Collapse to first 15`
+            ? `Collapse to first ${PAGE_DEFAULT}`
             : `Show all ${filtered.length} matching comparisons`;
         }
       }
@@ -396,6 +466,7 @@
     });
 
     renderCoverage();
+    syncUseTabs();
     renderExplorer();
   }
 
@@ -412,10 +483,12 @@
       });
     });
 
-    // RoboTwin controls & list
+    // RoboTwin controls & list (12 default + Show all 33)
     const rtFilterEl = document.querySelector('#rt-filter');
     const rtSortEl = document.querySelector('#rt-sort');
     const rtListEl = document.querySelector('#rt-list');
+    const rtToggleBtn = document.querySelector('#rt-toggle-all');
+    let rtShowAll = false;
 
     function renderRoboTwin() {
       if (!rtListEl) return;
@@ -432,7 +505,10 @@
         return b.mean_gap_pp - a.mean_gap_pp;
       });
 
-      rtListEl.innerHTML = rows
+      const RT_DEFAULT = 12;
+      const visible = rtShowAll ? rows : rows.slice(0, RT_DEFAULT);
+
+      rtListEl.innerHTML = visible
         .map((r) => {
           const decW = (r.decline_tasks / 50) * 100;
           const tieW = (r.tie_tasks / 50) * 100;
@@ -444,7 +520,7 @@
             <div class="rt-row">
               <div class="rt-model">${esc(r.model)} <small>(${tag})</small></div>
               <div class="rt-gap ${gapClass}">${gapSign} pp</div>
-              <div class="rt-stack" title="${r.decline_tasks} decline / ${r.tie_tasks} tie / ${r.increase_tasks} improve out of 50 tasks">
+              <div class="rt-stack" title="${r.decline_tasks} decline / ${r.tie_tasks} tie / ${r.increase_tasks} improve">
                 <div class="rt-seg-dec" style="width:${decW}%"></div>
                 <div class="rt-seg-tie" style="width:${tieW}%"></div>
                 <div class="rt-seg-inc" style="width:${incW}%"></div>
@@ -454,12 +530,28 @@
           `;
         })
         .join('');
+
+      if (rtToggleBtn) {
+        if (rows.length <= RT_DEFAULT) {
+          rtToggleBtn.hidden = true;
+        } else {
+          rtToggleBtn.hidden = false;
+          rtToggleBtn.textContent = rtShowAll ? `Show top ${RT_DEFAULT}` : `Show all ${rows.length} configurations`;
+        }
+      }
     }
-    rtFilterEl?.addEventListener('change', renderRoboTwin);
+    rtFilterEl?.addEventListener('change', () => {
+      rtShowAll = false;
+      renderRoboTwin();
+    });
     rtSortEl?.addEventListener('change', renderRoboTwin);
+    rtToggleBtn?.addEventListener('click', () => {
+      rtShowAll = !rtShowAll;
+      renderRoboTwin();
+    });
     renderRoboTwin();
 
-    // RoboDojo Capability Breakdown (VPP2 vs WALL-OSS-1.0-lite)
+    // RoboDojo capability bars
     const capEl = document.querySelector('#rd-capability-bars');
     if (capEl) {
       const wall = bm.robodojo.capability_comparison.find((x) => x.method.startsWith('WALL-OSS'));
@@ -497,14 +589,15 @@
         .join('');
     }
 
-    // RoboDojo 66 policies grid
+    // RoboDojo 66 configs (15 default + Show all 66)
     const rdGridEl = document.querySelector('#rd-policy-grid');
     const rdToggleBtn = document.querySelector('#rd-toggle-all');
     let rdShowAll = false;
     function renderRdGrid() {
       if (!rdGridEl) return;
+      const RD_DEFAULT = 15;
       const maxCells = Math.max(...bm.robodojo.profiles.map((p) => p.pos_score_zero_sr), 26);
-      const list = rdShowAll ? bm.robodojo.profiles : bm.robodojo.profiles.slice(0, 18);
+      const list = rdShowAll ? bm.robodojo.profiles : bm.robodojo.profiles.slice(0, RD_DEFAULT);
       rdGridEl.innerHTML = list
         .map((p) => {
           const pct = ((p.pos_score_zero_sr / maxCells) * 100).toFixed(1);
@@ -521,7 +614,7 @@
         .join('');
       if (rdToggleBtn) {
         rdToggleBtn.textContent = rdShowAll
-          ? 'Show top 18 configurations'
+          ? `Show top ${RD_DEFAULT} configurations`
           : `Show all ${bm.robodojo.profiles.length} configurations`;
       }
     }

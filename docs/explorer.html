@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence &amp; Benchmark Explorer — World Models for Physical AI</title>
+  <meta name="description" content="Interactive audit portal for all 93 within-study comparisons across 75 Physical AI studies and frozen RoboTwin 2.0 (33 configs) / RoboDojo (66 configs) benchmark snapshots.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to explorer</a>
+
+  <header class="nav">
+    <div class="nav-prog" aria-hidden="true"></div>
+    <div class="nav-in">
+      <a class="nav-brand" href="index.html">← Survey Overview</a>
+      <nav class="nav-links" aria-label="Explorer sections">
+        <a href="#evidence">93 Comparisons</a>
+        <a href="#benchmarks">Benchmark Forensics</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-pill" href="assets/Evidence-companion.zip">Companion .zip</a>
+        <a class="nav-pill" href="assets/survey.pdf" target="_blank" rel="noopener">PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-compact">
+      <div class="wrap">
+        <p class="hero-kicker">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Reproducible Evidence Portal · Evidence Snapshot 22 Nov 2026 · Benchmarks 10 Nov 2026</span>
+        </p>
+        <h1>Interactive Evidence &amp; <em>Benchmark Explorer</em></h1>
+        <p class="hero-lead" style="margin-bottom:20px;">
+          Audit every within-study comparison, co-varying factor, coding decision, and task-level benchmark profile behind <em>World Models for Physical AI</em>.
+        </p>
+
+        <div class="portal-tabs" role="tablist" aria-label="Explorer workspace">
+          <button type="button" class="portal-tab active" data-portal-tab="evidence">93 Comparisons (75 Studies)</button>
+          <button type="button" class="portal-tab" data-portal-tab="benchmarks">RoboTwin &amp; RoboDojo Forensics (99 Configs)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PORTAL TAB 1: EVIDENCE MAP ==================== -->
+    <section class="band band-surface" id="evidence" data-portal-panel="evidence">
+      <div class="wrap">
+        <div class="coverage-panel">
+          <div class="coverage-top">
+            <div>
+              <h3>Table 9 — Evidence Coverage by Predictive Use</h3>
+              <span style="font-size:0.84rem; color:var(--ink-mute);">Click any row to filter the 93 comparisons below.</span>
+            </div>
+            <div class="seg-toggle" role="group" aria-label="Sensitivity check toggle">
+              <button type="button" class="seg-btn active" data-cov-mode="full">Full component set (29 papers)</button>
+              <button type="button" class="seg-btn" data-cov-mode="strict">Sensitivity check (−4 bundled → 26)</button>
+            </div>
+          </div>
+
+          <div class="cov-legend">
+            <span><span class="cov-dot" style="background:rgba(20,24,31,0.12);"></span>Core screened papers</span>
+            <span><span class="cov-dot" style="background:rgba(29,78,216,0.28);"></span>Execution outcome reported</span>
+            <span><span class="cov-dot" style="background:var(--cobalt);"></span>Qualifying component test</span>
+          </div>
+
+          <div class="cov-rows" id="cov-rows">
+            <div style="padding:18px; color:var(--ink-mute);">Loading Table 9 summary…</div>
+          </div>
+
+          <div class="cov-footnote">
+            <span id="cov-total-note">Loading totals…</span>
+            <span class="mono">Source: analysis/summary.csv &amp; coding_decisions.csv</span>
+          </div>
+        </div>
+
+        <div class="explorer-box" id="explorer">
+          <div class="explorer-controls">
+            <div class="explorer-row-1">
+              <input type="search" id="exp-search" class="search-input" placeholder="Search by study, system alias (e.g. GeoBoN, Fast-WAM), intervention, or table…" aria-label="Search 93 comparisons">
+              <select id="exp-direction" class="select-control" aria-label="Filter by outcome direction">
+                <option value="all">All directions (93)</option>
+                <option value="improves">Improves</option>
+                <option value="mixed">Mixed</option>
+                <option value="worsens">Worsens</option>
+                <option value="unclear">Unclear</option>
+              </select>
+              <label class="check-pill"><input type="checkbox" id="exp-exec-only"> Execution outcomes (56 papers)</label>
+              <label class="check-pill"><input type="checkbox" id="exp-comp-only"> Component tests only (29)</label>
+              <label class="check-pill"><input type="checkbox" id="exp-strict-only"> Strict 26-paper set</label>
+            </div>
+
+            <div class="use-tabs" id="use-tabs" role="tablist" aria-label="Filter by predictive use">
+              <button type="button" class="use-tab active" data-use="all">All uses (93)</button>
+              <button type="button" class="use-tab" data-use="train">Policy training (27)</button>
+              <button type="button" class="use-tab" data-use="generate">Action generation (25)</button>
+              <button type="button" class="use-tab" data-use="plan">Planning &amp; selection (17)</button>
+              <button type="button" class="use-tab" data-use="representation">Representation (10)</button>
+              <button type="button" class="use-tab" data-use="assess">Assessment (7)</button>
+              <button type="button" class="use-tab" data-use="execute">Execution &amp; intervention (7)</button>
+            </div>
+          </div>
+
+          <div class="explorer-meta">
+            <span id="exp-count">Loading comparisons…</span>
+            <button type="button" id="exp-reset" style="border:none;background:none;color:var(--cobalt);cursor:pointer;font-size:0.82rem;font-weight:550;">Reset filters</button>
+          </div>
+
+          <div class="comp-list" id="comp-list">
+            <div style="padding:28px; text-align:center; color:var(--ink-mute);">Loading 93 source-linked comparisons…</div>
+          </div>
+
+          <div class="explorer-footer">
+            <button type="button" class="btn" id="exp-toggle-all" hidden>Show all matching comparisons</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PORTAL TAB 2: BENCHMARKS ==================== -->
+    <section class="band" id="benchmarks" data-portal-panel="benchmarks" hidden>
+      <div class="wrap">
+        <div class="bench-tabs" role="tablist" aria-label="Benchmark snapshot selector">
+          <button type="button" class="bench-tab active" data-bench-tab="robotwin">RoboTwin 2.0 (33 configs · 1,650 pairs)</button>
+          <button type="button" class="bench-tab" data-bench-tab="robodojo">RoboDojo (66 configs · 3,536 cells)</button>
+        </div>
+
+        <!-- RoboTwin Panel -->
+        <div class="bench-panel" data-bench-panel="robotwin">
+          <div class="bench-kpis">
+            <div class="kpi-card">
+              <div class="kpi-num">32 / 33</div>
+              <div class="kpi-txt">Configurations with lower randomized mean (<b>27 / 28</b> co-trained)</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">12 / 33</div>
+              <div class="kpi-txt">Decline on <b>all 50 tasks</b> (<b>11 / 28</b> co-trained)</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">18 tasks ↓</div>
+              <div class="kpi-txt">Even <b>GigaBrain-0.7</b> (+1.12 pp) drops on 18 of 50 tasks</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">75.8 pp</div>
+              <div class="kpi-txt">Fast-WAM clean-only mean drop (median 84.5 pp)</div>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <div class="bench-toolbar">
+              <div>
+                <strong>Per-Configuration Clean vs. Randomized Task Breakdown (50 tasks each)</strong>
+                <div style="font-size:0.8rem; color:var(--ink-mute);">
+                  <span style="color:#d97706;">■</span> Randomized lower &nbsp;
+                  <span style="color:#64748b;">■</span> Tied &nbsp;
+                  <span style="color:var(--teal);">■</span> Randomized higher
+                </div>
+              </div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                <select id="rt-filter" class="select-control" aria-label="Filter RoboTwin training setting">
+                  <option value="all">All 33 configurations</option>
+                  <option value="cotrain">Co-trained (28)</option>
+                  <option value="single">Single-task (5)</option>
+                </select>
+                <select id="rt-sort" class="select-control" aria-label="Sort RoboTwin profiles">
+                  <option value="gap_desc">Sort: Largest mean drop</option>
+                  <option value="declines_desc">Sort: Most declining tasks</option>
+                  <option value="gap_asc">Sort: Best retention</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="rt-list" id="rt-list">
+              <div style="padding:18px; color:var(--ink-mute);">Loading RoboTwin 2.0 profiles…</div>
+            </div>
+            <div style="margin-top:16px; text-align:center;">
+              <button type="button" class="btn" id="rt-toggle-all" hidden>Show all 33 configurations</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RoboDojo Panel -->
+        <div class="bench-panel" data-bench-panel="robodojo" hidden>
+          <div class="bench-kpis">
+            <div class="kpi-card">
+              <div class="kpi-num">858 / 3,536</div>
+              <div class="kpi-txt">Visible cells (<b>24.3%</b>) with partial Score at <b>0% completion</b></div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">66 / 66</div>
+              <div class="kpi-txt">Every config affected (median <b>13</b>, range <b>3–26</b>)</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">63.17 vs 7.33%</div>
+              <div class="kpi-txt">VPP2 on <code>organize_table</code>: Score vs. SR</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">56.0% ≈ 55.6%</div>
+              <div class="kpi-txt">WALL-OSS-1.0-lite matches VPP2 on Memory SR</div>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-bottom:22px;">
+            <div class="chart-card" style="margin-bottom:0;">
+              <strong style="display:block; margin-bottom:14px;">Capability Profile Contrast: VPP2 vs. WALL-OSS-1.0-lite (Table 8)</strong>
+              <div class="cap-grid" id="rd-capability-bars">
+                <div style="color:var(--ink-mute);">Loading capability bars…</div>
+              </div>
+            </div>
+
+            <div class="chart-card" style="margin-bottom:0;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
+                <strong>Zero-SR / Positive-Score Cells Across All 66 Configs</strong>
+                <button type="button" class="nav-pill" id="rd-toggle-all" style="cursor:pointer;">Show all 66 configurations</button>
+              </div>
+              <div class="rd-policy-grid" id="rd-policy-grid">
+                <div style="color:var(--ink-mute);">Loading 66 configurations…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-in">
+      <div><a href="index.html">← Back to Survey Overview</a> · Evidence freeze: 22 Nov 2026 · Benchmarks: 10 Nov 2026</div>
+      <div class="mono" style="font-size:0.78rem;">Data loaded from <code>assets/data/evidence.json</code> &amp; <code>benchmarks.json</code></div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

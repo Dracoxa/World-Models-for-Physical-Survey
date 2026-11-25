@@ -1,4 +1,4 @@
-"""Validate static site links, asset integrity, figure counts, and JSON evidence consistency."""
+"""Validate static site pages, anchors, local assets, 7 figures, and JSON counts."""
 
 from __future__ import annotations
 
@@ -12,39 +12,55 @@ class SiteParser(HTMLParser):
         super().__init__()
         self.ids: set[str] = set()
         self.urls: list[str] = []
-        self.images: int = 0
+        self.data_figs: set[str] = set()
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attr_map = dict(attrs)
         if "id" in attr_map and attr_map["id"]:
             self.ids.add(attr_map["id"])
-        if "src" in attr_map and attr_map["src"]:
-            self.urls.append(attr_map["src"])
+        for key in ("src", "href", "data-fig-src", "data-fig-webp", "data-fig-pdf"):
+            if key in attr_map and attr_map[key]:
+                val = attr_map[key]
+                self.urls.append(val)
+                if key.startswith("data-fig-"):
+                    self.data_figs.add(val)
         if tag == "source" and "srcset" in attr_map and attr_map["srcset"]:
             self.urls.extend(item.strip().split()[0] for item in attr_map["srcset"].split(","))
-        if tag in ("a", "link") and "href" in attr_map and attr_map["href"]:
-            self.urls.append(attr_map["href"])
-        if tag == "img":
-            self.images += 1
+
+
+def check_html(root: Path, page_name: str, all_pages: dict[str, SiteParser]) -> None:
+    parser = all_pages[page_name]
+    for url in parser.urls:
+        if url.startswith("#"):
+            assert url[1:] in parser.ids, f"{page_name}: missing anchor target {url}"
+        elif url.startswith("assets/"):
+            target = root / url.split("#")[0]
+            assert target.is_file(), f"{page_name}: missing local asset {target}"
+        elif url.startswith(("index.html", "explorer.html")):
+            target_page, _, rest = url.partition("#")
+            target_page = target_page.split("?")[0]
+            assert (root / target_page).is_file(), f"{page_name}: missing target page {target_page}"
+            if rest:
+                assert rest in all_pages[target_page].ids, f"{page_name}: missing cross-page anchor {url}"
 
 
 def main() -> None:
     root = Path(__file__).resolve().parent
-    parser = SiteParser()
-    parser.feed((root / "index.html").read_text(encoding="utf-8"))
+    pages = {}
+    for page_name in ("index.html", "explorer.html"):
+        p = SiteParser()
+        p.feed((root / page_name).read_text(encoding="utf-8"))
+        pages[page_name] = p
 
-    for url in parser.urls:
-        if url.startswith("#"):
-            assert url[1:] in parser.ids, f"Missing anchor target: {url}"
-        elif url.startswith("assets/"):
-            target = root / url.split("#")[0]
-            assert target.is_file(), f"Missing local asset: {target}"
+    for page_name in pages:
+        check_html(root, page_name, pages)
 
-    assert parser.images >= 7, f"Expected >= 7 <img> elements, got {parser.images}"
+    index_figs = pages["index.html"].data_figs
     for i in range(1, 8):
         for ext in ("pdf", "png", "webp"):
-            fpath = root / "assets" / f"figure-0{i}.{ext}"
-            assert fpath.is_file(), f"Missing figure asset: {fpath}"
+            rel = f"assets/figure-0{i}.{ext}"
+            assert rel in index_figs, f"index.html: missing figure switcher reference {rel}"
+            assert (root / rel).is_file(), f"Missing figure asset on disk: {rel}"
 
     for doc in ("survey.pdf", "survey-review.pdf", "Evidence-companion.zip"):
         assert (root / "assets" / doc).is_file(), f"Missing deliverable asset: {doc}"
@@ -64,7 +80,7 @@ def main() -> None:
     assert not (root / ".openai").exists()
 
     print(
-        "Passed: 7 figures (PDF/PNG/WebP), local assets, anchors, "
+        "Passed: index.html + explorer.html anchors/links, 7 figures (PDF/PNG/WebP), "
         "75/93 evidence JSON, and 33/66 benchmark JSON verified."
     )
 

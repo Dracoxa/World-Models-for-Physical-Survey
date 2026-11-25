@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>World Models for Physical AI: Interfaces, Experimental Evidence, and Downstream Utility</title>
-  <meta name="description" content="Companion site and reproducible evidence explorer for the ACM Computing Surveys anonymous review manuscript: 93 comparisons across 75 Physical AI studies, RoboTwin 2.0 (1,650 pairs), and RoboDojo (3,536 cells).">
+  <meta name="description" content="An ACM Computing Surveys review manuscript auditing 93 comparisons across 75 Physical AI studies, RoboTwin 2.0 (1,650 task pairs), and RoboDojo (3,536 cells).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -16,21 +16,16 @@
   <header class="nav">
     <div class="nav-prog" aria-hidden="true"></div>
     <div class="nav-in">
-      <a class="nav-brand" href="#top">
-        <span>World Models for Physical AI</span>
-        <span class="brand-tag">CSUR Preprint</span>
-      </a>
+      <a class="nav-brand" href="#top">World Models for Physical AI</a>
       <nav class="nav-links" aria-label="Primary sections">
-        <a href="#overview">Overview</a>
-        <a href="#evidence">Evidence Map</a>
-        <a href="#benchmarks">Benchmarks</a>
-        <a href="#figures">Figures</a>
+        <a href="#findings">Findings</a>
+        <a href="#evidence">Evidence</a>
         <a href="#tests">Open Tests</a>
         <a href="#cite">Cite</a>
       </nav>
       <div class="nav-actions">
-        <a class="nav-pill" href="assets/survey.pdf" target="_blank" rel="noopener">Preview PDF</a>
-        <a class="nav-pill" href="https://github.com/Dracoxa/World-Models-for-Physical-Survey" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="nav-pill" href="explorer.html">Explorer →</a>
+        <a class="nav-pill" href="assets/survey.pdf" target="_blank" rel="noopener">PDF</a>
       </div>
     </div>
   </header>
@@ -41,141 +36,185 @@
       <div class="wrap">
         <p class="hero-kicker">
           <span class="dot" aria-hidden="true"></span>
-          <span>ACM Computing Surveys (Under Review) · Anonymous Preprint · Snapshot Nov 2026</span>
+          <span>ACM Computing Surveys · Under Review · Anonymous Preprint (Nov 2026)</span>
         </p>
         <h1>World Models for Physical AI: <em>Interfaces, Experimental Evidence, and Downstream Utility</em></h1>
         <p class="hero-lead">
-          Learned world models predict how physical environments evolve, yet higher forecast fidelity does not automatically improve physical behavior. Forecasts enter Physical AI systems through distinct interfaces—training supervision, candidate-plan scoring, action-generation context, offline evaluation, or runtime correction—and each role requires its own experimental control.
+          Learned world models predict how physical environments evolve, yet higher forecast fidelity does not automatically improve physical behavior. Forecasts enter Physical AI systems through distinct interfaces—training supervision, candidate scoring, action generation, evaluation, or runtime correction—and each role requires its own experimental control.
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-primary" href="assets/survey.pdf" target="_blank" rel="noopener">Read Preview PDF (33p)</a>
-          <a class="btn" href="assets/survey-review.pdf" target="_blank" rel="noopener">Review Draft (31p)</a>
-          <a class="btn btn-accent" href="#evidence">Explore 93 Comparisons ↓</a>
-          <a class="btn" href="assets/Evidence-companion.zip">Evidence Companion (.zip)</a>
-          <a class="btn" href="https://github.com/Dracoxa/World-Models-for-Physical-Survey" target="_blank" rel="noopener">Repository ↗</a>
+          <a class="btn btn-primary" href="assets/survey.pdf" target="_blank" rel="noopener">Read Manuscript (33p PDF)</a>
+          <a class="btn btn-accent" href="explorer.html">Open Evidence Explorer →</a>
+          <a class="btn" href="https://github.com/Dracoxa/World-Models-for-Physical-Survey" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
+        <p class="hero-sublinks">
+          Also available: <a href="assets/survey-review.pdf" target="_blank" rel="noopener">Line-numbered review draft (31p PDF)</a> · <a href="assets/Evidence-companion.zip">Reproducible Evidence Companion (.zip)</a>
+        </p>
 
-        <div class="stat-strip" role="region" aria-label="Key corpus statistics">
-          <div class="stat-cell">
-            <div class="stat-val">75</div>
-            <div class="stat-label">Core Physical AI Studies</div>
-            <div class="stat-note">Manipulation anchor with driving &amp; navigation contrasts (110 total references)</div>
+        <div class="metric-ruler" role="region" aria-label="Corpus scale">
+          <div class="metric-item">
+            <span class="metric-num">75</span>
+            <span class="metric-txt">core Physical AI studies (110 total references)</span>
           </div>
-          <div class="stat-cell">
-            <div class="stat-val">93</div>
-            <div class="stat-label">Source-Linked Comparisons</div>
-            <div class="stat-note">56 execution-outcome studies; 19 non-execution diagnostic/evaluator studies</div>
+          <div class="metric-item">
+            <span class="metric-num">93</span>
+            <span class="metric-txt">source-linked comparisons (56 execution studies)</span>
           </div>
-          <div class="stat-cell">
-            <div class="stat-val">29 <span class="stat-sub">(26)</span></div>
-            <div class="stat-label">Component-Test Studies</div>
-            <div class="stat-note">26 retained after omitting 4 bundled branch/scoring records (21↑ / 8 mixed / 1↓)</div>
+          <div class="metric-item">
+            <span class="metric-num">29 <small>(26)</small></span>
+            <span class="metric-txt">component tests after sensitivity check</span>
           </div>
-          <div class="stat-cell">
-            <div class="stat-val">5,186</div>
-            <div class="stat-label">Task-Level Benchmark Units</div>
-            <div class="stat-note">1,650 RoboTwin clean/rand pairs + 3,536 visible RoboDojo cells (10 Nov 2026)</div>
+          <div class="metric-item">
+            <span class="metric-num">5,186</span>
+            <span class="metric-txt">task units (1,650 RoboTwin + 3,536 RoboDojo)</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 01 OVERVIEW & FRAMEWORK ==================== -->
-    <section class="band" id="overview">
+    <!-- ==================== 01 CORE FINDINGS & FIGURE SWITCHER ==================== -->
+    <section class="band" id="findings">
       <div class="wrap">
         <div class="sec-head">
-          <p class="sec-num">01 · Core Findings &amp; Analytical Framework</p>
+          <p class="sec-num">01 · Core Findings &amp; Visual Roadmap</p>
           <h2>Prediction quality, decision utility, and execution reliability separate along specific links</h2>
-          <p>Rather than grading architectures in the abstract, this survey audits what primary experiments actually vary and control across learning, planning, action generation, evaluation, and runtime intervention.</p>
         </div>
 
-        <div class="grid-3">
-          <article class="ed-card">
-            <div class="ed-card-kicker">Finding 01 · Learning vs. Inference</div>
-            <h3>Training-time future supervision aids policies even without deployment generation</h3>
-            <p>Across objective ablations, removing future supervision hurts policy performance even when the deployed network reads only current observations. Deployment-time future reading, by contrast, has few isolated execution controls.</p>
-            <div class="card-stat">Fast-WAM Base: 91.8% vs. 83.8% (RoboTwin); DyPES-VLA &amp; Cosmos Policy consistent</div>
+        <div class="finding-cols">
+          <article class="finding-col">
+            <span class="finding-idx">01 · Training vs. Inference</span>
+            <h3>Future supervision aids learning even without deployment generation</h3>
+            <p>Across reviewed objective ablations, removing future supervision lowers policy success even when the deployed policy reads only current observations. By contrast, isolated execution tests of deployment-time future reading remain sparse.</p>
+            <div class="finding-stat">Fast-WAM Base: 91.8% vs. 83.8% · DyPES-VLA &amp; Cosmos Policy</div>
           </article>
 
-          <article class="ed-card">
-            <div class="ed-card-kicker">Finding 02 · Selection &amp; Evaluation Reversals</div>
+          <article class="finding-col">
+            <span class="finding-idx">02 · Selection &amp; Evaluation Reversals</span>
             <h3>Higher offline fit or evaluator correlation can reverse downstream</h3>
-            <p>Test-time scoring gains depend first on mixed-outcome candidate headroom and second on closed-loop alignment. In evaluation, simulators ranking existing policies better can still train weaker new learners.</p>
-            <div class="card-stat">GeoBoN: 77.4% → 82.5% online reversal; DexTouch-WM: r=0.844 vs. lower X-VLA/π₀.₅</div>
+            <p>Test-time selection gains require mixed-outcome candidate headroom first and closed-loop alignment second. Likewise, a simulator correlating better with existing policies can train weaker new learners.</p>
+            <div class="finding-stat">GeoBoN: 77.4% → 82.5% reversal · DexTouch-WM: r = 0.844 vs. lower X-VLA</div>
           </article>
 
-          <article class="ed-card">
-            <div class="ed-card-kicker">Finding 03 · Windows &amp; Partial Progress</div>
-            <h3>Runtime fixes and aggregate averages mask real-execution failures</h3>
-            <p>For suffix-editable controllers, revisions must beat execution commitment without hurting net completion. Meanwhile, RoboTwin and RoboDojo averages conceal scene-randomization collapses and zero-completion progress credit.</p>
-            <div class="card-stat">RoboTwin: 32/33 mean drop; RoboDojo: 858/3,536 (24.3%) zero-SR partial credit</div>
+          <article class="finding-col">
+            <span class="finding-idx">03 · Windows &amp; Benchmark Forensics</span>
+            <h3>Runtime fixes and aggregate averages hide task-level failures</h3>
+            <p>For suffix-editable controllers, revisions must beat commitment without lowering net completion. Meanwhile, frozen RoboTwin and RoboDojo snapshots expose severe randomization drops and zero-completion progress credit.</p>
+            <div class="finding-stat">RoboTwin: 32/33 mean drop · RoboDojo: 858/3,536 zero-SR progress</div>
           </article>
         </div>
 
-        <div class="framework-panel">
-          <div class="framework-title-row">
-            <h3>Three-Axis Classification &amp; L1–L6 Evidence Ladder (§1.2)</h3>
-            <span class="eq-pill">p<sub>θ</sub>(y<sub>t+1:t+H</sub> | h<sub>t</sub>, a<sub>t:t+H−1</sub>) vs. goal-conditioned / joint / policy</span>
+        <!-- Single-Frame Interactive Figure Switcher -->
+        <div class="fig-switcher" id="fig-switcher">
+          <div class="fig-switcher-head">
+            <div>
+              <strong>Manuscript Figures (1–7)</strong>
+              <span class="fig-switcher-hint">Switch panels or open high-resolution view</span>
+            </div>
+            <div class="fig-tabs" role="tablist" aria-label="Manuscript figures">
+              <button type="button" class="fig-tab active" data-fig-tab="1"
+                data-fig-num="1"
+                data-fig-src="assets/figure-01.png"
+                data-fig-webp="assets/figure-01.webp"
+                data-fig-pdf="assets/figure-01.pdf"
+                data-fig-w="2882" data-fig-h="1748"
+                data-fig-cap="Figure 1 (§1.2). Organization of the four-part survey. Scenes and curves are conceptual illustrations, not reported experiments; prediction quality, decision utility, and execution reliability require distinct evaluation.">Fig. 1 · Roadmap</button>
+              <button type="button" class="fig-tab" data-fig-tab="2"
+                data-fig-num="2"
+                data-fig-src="assets/figure-02.png"
+                data-fig-webp="assets/figure-02.webp"
+                data-fig-pdf="assets/figure-02.pdf"
+                data-fig-w="2934" data-fig-h="1537"
+                data-fig-cap="Figure 2 (§1.2). Thematic landscape pairing predictive models alongside direct action-policy comparators, datasets, and simulation benchmarks.">Fig. 2 · Landscape</button>
+              <button type="button" class="fig-tab" data-fig-tab="3"
+                data-fig-num="3"
+                data-fig-src="assets/figure-03.png"
+                data-fig-webp="assets/figure-03.webp"
+                data-fig-pdf="assets/figure-03.pdf"
+                data-fig-w="3627" data-fig-h="1974"
+                data-fig-cap="Figure 3 (§2). Overview of data sources, predictive representations, downstream uses, and generalization across scenes, objects, tasks, and embodiments.">Fig. 3 · Data &amp; Use</button>
+              <button type="button" class="fig-tab" data-fig-tab="4"
+                data-fig-num="4"
+                data-fig-src="assets/figure-04.png"
+                data-fig-webp="assets/figure-04.webp"
+                data-fig-pdf="assets/figure-04.pdf"
+                data-fig-w="2934" data-fig-h="1650"
+                data-fig-cap="Figure 4 (§3.3). Training and deployment information paths in Fast-WAM Base (supervision only), V-JEPA Policy (predictor-context readout), and Fast-WAM Joint (joint video–action generation).">Fig. 4 · Action Paths</button>
+              <button type="button" class="fig-tab" data-fig-tab="5"
+                data-fig-num="5"
+                data-fig-src="assets/figure-05.png"
+                data-fig-webp="assets/figure-05.webp"
+                data-fig-pdf="assets/figure-05.pdf"
+                data-fig-w="2891" data-fig-h="1339"
+                data-fig-cap="Figure 5 (§3.4). DexTouch-WM evaluator correlation (Table III) vs. recomputed policy-training scores (Table IV): higher evaluator agreement (WM-Mix, 0.844) coexists with lower training scores for π₀.₅ and X-VLA.">Fig. 5 · Eval vs. Train</button>
+              <button type="button" class="fig-tab" data-fig-tab="6"
+                data-fig-num="6"
+                data-fig-src="assets/figure-06.png"
+                data-fig-webp="assets/figure-06.webp"
+                data-fig-pdf="assets/figure-06.pdf"
+                data-fig-w="2934" data-fig-h="1391"
+                data-fig-cap="Figure 6 (§3.5). FutureRTC anticipates execution-time context; TacPAC combines fresh tactile feedback with cached predictive context to correct an unexecuted action suffix.">Fig. 6 · Runtime Windows</button>
+              <button type="button" class="fig-tab" data-fig-tab="7"
+                data-fig-num="7"
+                data-fig-src="assets/figure-07.png"
+                data-fig-webp="assets/figure-07.webp"
+                data-fig-pdf="assets/figure-07.pdf"
+                data-fig-w="8800" data-fig-h="4218"
+                data-fig-cap="Figure 7 (§4.4). Three claim-matched evidence contrasts: recursive fidelity vs. planning (GNS/ContactWorld), evaluator agreement vs. training gain (DexTouch-WM), and anticipation vs. correction (FutureRTC/TacPAC).">Fig. 7 · Synthesis</button>
+            </div>
           </div>
 
-          <div class="axis-row">
-            <div class="axis-box">
-              <strong>1. Prediction Target (y)</strong>
-              <span>Future RGB/video frames, compact latent trajectories, 3D point clouds/occupancy, or contact/tactile physical states.</span>
+          <div class="fig-stage">
+            <a class="fig-stage-img" id="active-fig-link" href="assets/figure-01.png" aria-label="Inspect Figure 1">
+              <picture>
+                <source id="active-fig-webp" srcset="assets/figure-01.webp" type="image/webp">
+                <img id="active-fig-img" src="assets/figure-01.png" width="2882" height="1748" alt="Figure 1 from the manuscript">
+              </picture>
+            </a>
+            <div class="fig-stage-bar">
+              <p id="active-fig-cap"><strong>Figure 1 (§1.2).</strong> Organization of the four-part survey. Scenes and curves are conceptual illustrations, not reported experiments; prediction quality, decision utility, and execution reliability require distinct evaluation.</p>
+              <div class="fig-links">
+                <button type="button" id="active-fig-zoom">Inspect large view</button>
+                <a id="active-fig-pdf" href="assets/figure-01.pdf" target="_blank" rel="noopener">Vector PDF ↗</a>
+              </div>
             </div>
-            <div class="axis-box">
-              <strong>2. Action Interface</strong>
-              <span>Action-conditioned consequence query, goal-conditioned future generation, joint world–action denoising, or passive dynamics.</span>
-            </div>
-            <div class="axis-box">
-              <strong>3. Downstream Consumer &amp; Timing</strong>
-              <span>Training loss only, offline rollout replay, test-time candidate scoring, deployment action conditioning, evaluator, or runtime suffix revision.</span>
-            </div>
-          </div>
-
-          <div class="ladder" aria-label="Six evidence dimensions L1 to L6">
-            <div class="ladder-step"><b>L1 · Perceptual</b>Visual realism &amp; pixel/video fidelity</div>
-            <div class="ladder-step"><b>L2 · Physical State</b>Object geometry &amp; recursive state error</div>
-            <div class="ladder-step"><b>L3 · Realization</b>Reproducing the commanded robot motion</div>
-            <div class="ladder-step"><b>L4 · Interaction</b>Contact &amp; object response grounding</div>
-            <div class="ladder-step"><b>L5 · Policy Utility</b>Closed-loop task completion (SR / return)</div>
-            <div class="ladder-step"><b>L6 · Reliability</b>Deadline compliance &amp; net recovery rate</div>
-          </div>
-
-          <div style="margin-top:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; font-size:0.84rem; color:var(--ink-soft);">
-            <span>See <strong>Figure 1</strong> &amp; <strong>Figure 7</strong> in the Visual Guide for the four-part roadmap and claim-matched evidence contrasts.</span>
-            <a class="mono" href="#figures">Jump to Visual Guide ↓</a>
           </div>
         </div>
+
+        <p class="framework-note">
+          <strong>Analytical axes (§1.2):</strong>
+          <code>Target y</code> (video, latent, geometry, contact) ×
+          <code>Action Query</code> (p<sub>θ</sub>(y<sub>t+1:t+H</sub>|h<sub>t</sub>,a<sub>t:t+H−1</sub>), goal-conditioned, joint) ×
+          <code>Consumer</code> (training, selection, generation, evaluation, runtime) — verified across <strong>L1</strong> Perceptual → <strong>L2</strong> Physical state → <strong>L3</strong> Action realization → <strong>L4</strong> Interaction → <strong>L5</strong> Policy utility → <strong>L6</strong> Reliability.
+        </p>
       </div>
     </section>
 
-    <!-- ==================== 02 EVIDENCE COVERAGE & 93 COMPARISONS ==================== -->
+    <!-- ==================== 02 EVIDENCE & BENCHMARK SNAPSHOT ==================== -->
     <section class="band band-surface" id="evidence">
       <div class="wrap">
         <div class="sec-head">
-          <p class="sec-num">02 · Quantitative Evidence Audit (Table 9 &amp; Companion)</p>
-          <h2>What 93 within-study comparisons actually establish across 75 studies</h2>
-          <p>Component-test coverage is uneven across predictive roles. Toggle the sensitivity check below to exclude the four bundled branch/scoring records, or filter and inspect all 93 extracted comparisons directly.</p>
+          <p class="sec-num">02 · Evidence &amp; Benchmark Snapshot</p>
+          <h2>Where published controls concentrate—and where leaderboard scores break</h2>
+          <p>Toggle the sensitivity check on Table 9 or open the interactive explorer to filter all 93 within-study comparisons and 99 benchmark configurations.</p>
         </div>
 
-        <div class="coverage-panel">
+        <div class="coverage-panel" data-cov-mode-root="home">
           <div class="coverage-top">
             <div>
-              <h3>Table 9 — Evidence Coverage by Predictive Use</h3>
-              <span style="font-size:0.84rem; color:var(--ink-mute);">Click any use row to filter the 93-comparison explorer below.</span>
+              <h3>Table 9 — Evidence Coverage Across Predictive Uses</h3>
+              <span style="font-size:0.84rem; color:var(--ink-mute);">Click any row to inspect matching studies in the Explorer.</span>
             </div>
             <div class="seg-toggle" role="group" aria-label="Sensitivity check toggle">
-              <button type="button" class="seg-btn active" data-cov-mode="full">Full component set (29 papers)</button>
+              <button type="button" class="seg-btn active" data-cov-mode="full">Full component set (29)</button>
               <button type="button" class="seg-btn" data-cov-mode="strict">Sensitivity check (−4 bundled → 26)</button>
             </div>
           </div>
 
           <div class="cov-legend">
-            <span><span class="cov-dot" style="background:rgba(20,24,31,0.12);"></span>Core screened papers</span>
-            <span><span class="cov-dot" style="background:rgba(29,78,216,0.28);"></span>Execution outcome reported</span>
-            <span><span class="cov-dot" style="background:var(--cobalt);"></span>Qualifying component test</span>
+            <span><span class="cov-dot" style="background:rgba(20,24,31,0.12);"></span>Core papers (75)</span>
+            <span><span class="cov-dot" style="background:rgba(29,78,216,0.28);"></span>Execution outcome (56)</span>
+            <span><span class="cov-dot" style="background:var(--cobalt);"></span>Component test (29 → 26)</span>
           </div>
 
           <div class="cov-rows" id="cov-rows">
@@ -188,352 +227,82 @@
           </div>
         </div>
 
-        <div class="explorer-box" id="explorer">
-          <div class="explorer-controls">
-            <div class="explorer-row-1">
-              <input type="search" id="exp-search" class="search-input" placeholder="Search by study, citation key, intervention, outcome, or section/table…" aria-label="Search 93 comparisons">
-              <select id="exp-direction" class="select-control" aria-label="Filter by outcome direction">
-                <option value="all">All directions (93)</option>
-                <option value="improves">Improves</option>
-                <option value="mixed">Mixed</option>
-                <option value="worsens">Worsens</option>
-                <option value="unclear">Unclear</option>
-              </select>
-              <label class="check-pill"><input type="checkbox" id="exp-exec-only"> Execution outcomes (56 papers)</label>
-              <label class="check-pill"><input type="checkbox" id="exp-comp-only"> Component tests only (29)</label>
-              <label class="check-pill"><input type="checkbox" id="exp-strict-only"> Strict 26-paper set</label>
-            </div>
-
-            <div class="use-tabs" id="use-tabs" role="tablist" aria-label="Filter by predictive use">
-              <button type="button" class="use-tab active" data-use="all">All uses (93)</button>
-              <button type="button" class="use-tab" data-use="train">Policy training (27)</button>
-              <button type="button" class="use-tab" data-use="generate">Action generation (25)</button>
-              <button type="button" class="use-tab" data-use="plan">Planning &amp; selection (17)</button>
-              <button type="button" class="use-tab" data-use="representation">Representation (10)</button>
-              <button type="button" class="use-tab" data-use="assess">Assessment (7)</button>
-              <button type="button" class="use-tab" data-use="execute">Execution &amp; intervention (7)</button>
-            </div>
-          </div>
-
-          <div class="explorer-meta">
-            <span id="exp-count">Loading comparisons…</span>
-            <button type="button" id="exp-reset" style="border:none;background:none;color:var(--cobalt);cursor:pointer;font-size:0.82rem;font-weight:550;">Reset filters</button>
-          </div>
-
-          <div class="comp-list" id="comp-list">
-            <div style="padding:28px; text-align:center; color:var(--ink-mute);">Loading 93 source-linked comparisons…</div>
-          </div>
-
-          <div class="explorer-footer">
-            <button type="button" class="btn" id="exp-toggle-all" hidden>Show all matching comparisons</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== 03 TASK-LEVEL BENCHMARK FORENSICS ==================== -->
-    <section class="band" id="benchmarks">
-      <div class="wrap">
-        <div class="sec-head">
-          <p class="sec-num">03 · Independent Benchmark Forensics (10 Nov 2026 Snapshots)</p>
-          <h2>Look behind leaderboard averages at task pairs and completion rates</h2>
-          <p>Aggregate scores obscure instability across scenes and unfinished trajectories. Inspect every configuration in our reproducible task-level re-analyses of RoboTwin 2.0 and RoboDojo.</p>
-        </div>
-
-        <div class="bench-tabs" role="tablist" aria-label="Benchmark snapshot selector">
-          <button type="button" class="bench-tab active" data-bench-tab="robotwin">RoboTwin 2.0 (33 configs · 1,650 pairs)</button>
-          <button type="button" class="bench-tab" data-bench-tab="robodojo">RoboDojo (66 configs · 3,536 cells)</button>
-        </div>
-
-        <!-- RoboTwin Panel -->
-        <div class="bench-panel" data-bench-panel="robotwin">
-          <div class="bench-kpis">
-            <div class="kpi-card">
-              <div class="kpi-num">32 / 33</div>
-              <div class="kpi-txt">Configurations with lower randomized mean (<b>27 / 28</b> co-trained)</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-num">12 / 33</div>
-              <div class="kpi-txt">Decline on <b>all 50 tasks</b> (<b>11 / 28</b> co-trained, incl. Fast-WAM, AHA-WAM, 4D-WAM)</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-num">18 tasks ↓</div>
-              <div class="kpi-txt">Even <b>GigaBrain-0.7</b> (+1.12 pp sole positive mean) drops on 18 of 50 tasks</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-num">75.8 pp</div>
-              <div class="kpi-txt">Fast-WAM clean-only mean drop (median 84.5 pp; mixed-data adds 25k rand demos)</div>
-            </div>
-          </div>
-
-          <div class="chart-card">
-            <div class="bench-toolbar">
+        <div class="mini-bench-grid">
+          <article class="mini-bench-card">
+            <div class="mini-bench-head">
               <div>
-                <strong>Per-Configuration Clean vs. Randomized Task Breakdown (50 tasks each)</strong>
-                <div style="font-size:0.8rem; color:var(--ink-mute);">
-                  <span style="color:#d97706;">■</span> Randomized lower &nbsp;
-                  <span style="color:#64748b;">■</span> Tied &nbsp;
-                  <span style="color:var(--teal);">■</span> Randomized higher · Gap = Clean − Randomized mean (negative pp means drop)
+                <span class="ed-card-kicker">RoboTwin 2.0 · 33 Configs · 1,650 Task Pairs</span>
+                <h3>Scene randomization drops mean success in 32 / 33 configs</h3>
+              </div>
+              <a class="mono" href="explorer.html#benchmarks">All 33 configs →</a>
+            </div>
+            <p><strong>27 / 28</strong> co-trained entries fall at the mean; <strong>11 / 28</strong> decline on <em>all 50 tasks</em> (incl. Fast-WAM, AHA-WAM, 4D-WAM). Even <strong>GigaBrain-0.7</strong> (+1.12 pp sole positive mean) declines on 18 tasks.</p>
+            <div class="mini-bars">
+              <div class="mini-bar-row">
+                <span class="mono">GigaBrain-0.7 (+1.1 pp)</span>
+                <div class="rt-stack" title="18 decline / 6 tie / 26 improve">
+                  <div class="rt-seg-dec" style="width:36%"></div>
+                  <div class="rt-seg-tie" style="width:12%"></div>
+                  <div class="rt-seg-inc" style="width:52%"></div>
                 </div>
+                <span class="mono tnum">18↓ · 6= · 26↑</span>
               </div>
-              <div style="display:flex; gap:8px; flex-wrap:wrap;">
-                <select id="rt-filter" class="select-control" aria-label="Filter RoboTwin training setting">
-                  <option value="all">All 33 configurations</option>
-                  <option value="cotrain">Co-trained (28)</option>
-                  <option value="single">Single-task (5)</option>
-                </select>
-                <select id="rt-sort" class="select-control" aria-label="Sort RoboTwin profiles">
-                  <option value="gap_desc">Sort: Largest mean drop</option>
-                  <option value="declines_desc">Sort: Most declining tasks</option>
-                  <option value="gap_asc">Sort: Best retention</option>
-                </select>
+              <div class="mini-bar-row">
+                <span class="mono">Fast-WAM (−75.8 pp)</span>
+                <div class="rt-stack" title="50 decline / 0 tie / 0 improve">
+                  <div class="rt-seg-dec" style="width:100%"></div>
+                </div>
+                <span class="mono tnum">50↓ · 0= · 0↑</span>
               </div>
             </div>
+          </article>
 
-            <div class="rt-list" id="rt-list">
-              <div style="padding:18px; color:var(--ink-mute);">Loading RoboTwin 2.0 profiles…</div>
+          <article class="mini-bench-card">
+            <div class="mini-bench-head">
+              <div>
+                <span class="ed-card-kicker">RoboDojo · 66 Configs · 3,536 Visible Cells</span>
+                <h3>24.3% of cells credit progress despite zero completion</h3>
+              </div>
+              <a class="mono" href="explorer.html#benchmarks">All 66 configs →</a>
             </div>
-          </div>
+            <p><strong>858 / 3,536</strong> cells show positive Score with 0% SR (every config affected; median <strong>13</strong>, range <strong>3–26</strong>). On <code>organize_table</code>, VPP2 scores <strong>63.17</strong> at <strong>7.33%</strong> SR; WALL-OSS matches VPP2 on Memory.</p>
+            <div class="mini-bars">
+              <div class="mini-bar-row">
+                <span class="mono">Memory SR</span>
+                <div class="mini-dual">
+                  <div class="cap-fill-vpp" style="width:55.6%" title="VPP2 55.56%"></div>
+                  <div class="cap-fill-wall" style="width:56.0%" title="WALL-OSS 56.00%"></div>
+                </div>
+                <span class="mono tnum">55.6% / 56.0%</span>
+              </div>
+              <div class="mini-bar-row">
+                <span class="mono">Overall / Open</span>
+                <div class="mini-dual">
+                  <div class="cap-fill-vpp" style="width:32.3%" title="VPP2 Avg 32.26% (Open 4.08%)"></div>
+                  <div class="cap-fill-wall" style="width:35.0%" title="WALL-OSS Avg 34.97% (Open 19.58%)"></div>
+                </div>
+                <span class="mono tnum">Open: 4.1% vs 19.6%</span>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <!-- RoboDojo Panel -->
-        <div class="bench-panel" data-bench-panel="robodojo" hidden>
-          <div class="bench-kpis">
-            <div class="kpi-card">
-              <div class="kpi-num">858 / 3,536</div>
-              <div class="kpi-txt">Visible cells (<b>24.3%</b>) crediting partial Score despite <b>0% completion</b></div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-num">66 / 66</div>
-              <div class="kpi-txt">Every simulation configuration has ≥3 zero-SR progress cells (median <b>13</b>, range <b>3–26</b>)</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-num">63.17 vs 7.33%</div>
-              <div class="kpi-txt">VPP2 on <code>organize_table</code>: high partial Score vs. low binary completion</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-num">56.0% ≈ 55.6%</div>
-              <div class="kpi-txt">WALL-OSS-1.0-lite matches VPP2 on Memory SR while leading overall (34.97% vs 32.26%)</div>
-            </div>
+        <div class="cta-strip">
+          <div>
+            <strong>Need to inspect individual papers, confounders, or task tables?</strong>
+            <span>Search all 93 source-linked comparisons and 99 benchmark profiles without cluttering the overview.</span>
           </div>
-
-          <div class="grid-2" style="margin-bottom:22px;">
-            <div class="chart-card" style="margin-bottom:0;">
-              <strong style="display:block; margin-bottom:14px;">Capability Profile Contrast: VPP2 vs. WALL-OSS-1.0-lite (Table 8)</strong>
-              <div class="cap-grid" id="rd-capability-bars">
-                <div style="color:var(--ink-mute);">Loading capability bars…</div>
-              </div>
-              <p style="font-size:0.8rem; color:var(--ink-mute); margin:14px 0 0;">
-                VPP2 combines retained observation history and RoboDojo-specific post-training; leaderboard scores alone cannot separate those two changes.
-              </p>
-            </div>
-
-            <div class="chart-card" style="margin-bottom:0;">
-              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
-                <strong>Zero-SR / Positive-Score Cells Across All 66 Configs</strong>
-                <button type="button" class="nav-pill" id="rd-toggle-all" style="cursor:pointer;">Show all 66 configurations</button>
-              </div>
-              <div class="rd-policy-grid" id="rd-policy-grid">
-                <div style="color:var(--ink-mute);">Loading 66 configurations…</div>
-              </div>
-              <p style="font-size:0.8rem; color:var(--ink-mute); margin:12px 0 0;">
-                Snapshot includes 3,536 visible cells and 28 missing entries across 66 × 54 expected cells.
-              </p>
-            </div>
-          </div>
+          <a class="btn btn-primary" href="explorer.html">Launch Evidence &amp; Benchmark Explorer →</a>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 04 VISUAL GUIDE (7 FIGURES) ==================== -->
-    <section class="band band-surface" id="figures">
-      <div class="wrap">
-        <div class="sec-head">
-          <p class="sec-num">04 · Visual Guide (Figures 1–7)</p>
-          <h2>Diagrams, conceptual maps, and empirical contrasts from the manuscript</h2>
-          <p>Click any figure to open a high-resolution lightbox (supports ← / → / Esc) or download the original vector PDF.</p>
-        </div>
-
-        <div class="fig-grid">
-          <figure class="fig-card fig-wide" data-fig-num="1" data-fig-src="assets/figure-01.png" data-fig-pdf="assets/figure-01.pdf" data-fig-cap="Figure 1 (§1.2). Organization of the four-part survey. Scenes and curves are conceptual illustrations, not reported experiments; prediction quality, decision utility, and execution reliability require distinct evaluation.">
-            <a class="fig-card-thumb" href="assets/figure-01.png" data-zoom-trigger aria-label="Zoom Figure 1">
-              <picture>
-                <source srcset="assets/figure-01.webp" type="image/webp">
-                <img src="assets/figure-01.png" width="2882" height="1748" alt="Organization of the four-part survey" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <figcaption class="fig-card-body">
-              <p><strong>Figure 1 (§1.2).</strong> Organization of the four-part survey. Scenes and curves are conceptual illustrations; prediction quality, decision utility, and execution reliability require distinct evaluation.</p>
-              <div class="fig-card-actions">
-                <button type="button" data-zoom-trigger>Inspect large view</button>
-                <a href="assets/figure-01.pdf" target="_blank" rel="noopener">Original PDF ↗</a>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="fig-card" data-fig-num="2" data-fig-src="assets/figure-02.png" data-fig-pdf="assets/figure-02.pdf" data-fig-cap="Figure 2 (§1.2). Selected predictive models, contextual action policies, and evaluation resources. Action-policy comparators do not expose a world-model query; Open X-Embodiment, LIBERO, CALVIN, RLBench, and ManiSkill are data/evaluation resources.">
-            <a class="fig-card-thumb" href="assets/figure-02.png" data-zoom-trigger aria-label="Zoom Figure 2">
-              <picture>
-                <source srcset="assets/figure-02.webp" type="image/webp">
-                <img src="assets/figure-02.png" width="2934" height="1537" alt="Selected predictive models, action policies, and evaluation resources" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <figcaption class="fig-card-body">
-              <p><strong>Figure 2 (§1.2).</strong> Thematic landscape pairing predictive models alongside direct action policies, datasets, and simulation benchmarks.</p>
-              <div class="fig-card-actions">
-                <button type="button" data-zoom-trigger>Inspect large view</button>
-                <a href="assets/figure-02.pdf" target="_blank" rel="noopener">Original PDF ↗</a>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="fig-card" data-fig-num="3" data-fig-src="assets/figure-03.png" data-fig-pdf="assets/figure-03.pdf" data-fig-cap="Figure 3 (§2). Overview of data sources, predictive representations, downstream uses, and generalization across scenes, objects, tasks, and embodiments.">
-            <a class="fig-card-thumb" href="assets/figure-03.png" data-zoom-trigger aria-label="Zoom Figure 3">
-              <picture>
-                <source srcset="assets/figure-03.webp" type="image/webp">
-                <img src="assets/figure-03.png" width="3627" height="1974" alt="Overview of data sources, predictive representations, downstream uses, and generalization" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <figcaption class="fig-card-body">
-              <p><strong>Figure 3 (§2).</strong> How demonstrations, human video, and simulated data feed representations, downstream uses, and transfer.</p>
-              <div class="fig-card-actions">
-                <button type="button" data-zoom-trigger>Inspect large view</button>
-                <a href="assets/figure-03.pdf" target="_blank" rel="noopener">Original PDF ↗</a>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="fig-card" data-fig-num="4" data-fig-src="assets/figure-04.png" data-fig-pdf="assets/figure-04.pdf" data-fig-cap="Figure 4 (§3.3). Training and deployment information paths in Fast-WAM Base (predictive supervision without future readout), V-JEPA Policy (predictor-context readout), and Fast-WAM Joint (joint video–action generation).">
-            <a class="fig-card-thumb" href="assets/figure-04.png" data-zoom-trigger aria-label="Zoom Figure 4">
-              <picture>
-                <source srcset="assets/figure-04.webp" type="image/webp">
-                <img src="assets/figure-04.png" width="2934" height="1650" alt="Training and deployment information paths in Fast-WAM Base, V-JEPA Policy, and Fast-WAM Joint" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <figcaption class="fig-card-body">
-              <p><strong>Figure 4 (§3.3).</strong> Separating training-time predictive supervision (Fast-WAM Base) from predictor-context readout (V-JEPA Policy) and joint denoising (Fast-WAM Joint).</p>
-              <div class="fig-card-actions">
-                <button type="button" data-zoom-trigger>Inspect large view</button>
-                <a href="assets/figure-04.pdf" target="_blank" rel="noopener">Original PDF ↗</a>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="fig-card" data-fig-num="5" data-fig-src="assets/figure-05.png" data-fig-pdf="assets/figure-05.pdf" data-fig-cap="Figure 5 (§3.4). Evaluator agreement (Table III correlations) versus policy-training outcomes (recomputed Table IV normalized scores across 100 real + 100 imagined vs. 200 real trajectories) in DexTouch-WM.">
-            <a class="fig-card-thumb" href="assets/figure-05.png" data-zoom-trigger aria-label="Zoom Figure 5">
-              <picture>
-                <source srcset="assets/figure-05.webp" type="image/webp">
-                <img src="assets/figure-05.png" width="2891" height="1339" alt="Evaluator agreement versus policy-training outcomes in DexTouch-WM" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <figcaption class="fig-card-body">
-              <p><strong>Figure 5 (§3.4).</strong> DexTouch-WM: higher evaluator correlation (WM-Mix, 0.844) coexists with lower training scores for π₀.₅ and X-VLA.</p>
-              <div class="fig-card-actions">
-                <button type="button" data-zoom-trigger>Inspect large view</button>
-                <a href="assets/figure-05.pdf" target="_blank" rel="noopener">Original PDF ↗</a>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="fig-card" data-fig-num="6" data-fig-src="assets/figure-06.png" data-fig-pdf="assets/figure-06.pdf" data-fig-cap="Figure 6 (§3.5). FutureRTC anticipates execution-time context; TacPAC combines fresh tactile feedback with cached predictive context to correct an unexecuted action suffix while keeping the committed prefix unchanged.">
-            <a class="fig-card-thumb" href="assets/figure-06.png" data-zoom-trigger aria-label="Zoom Figure 6">
-              <picture>
-                <source srcset="assets/figure-06.webp" type="image/webp">
-                <img src="assets/figure-06.png" width="2934" height="1391" alt="FutureRTC anticipation and TacPAC unexecuted suffix correction timelines" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <figcaption class="fig-card-body">
-              <p><strong>Figure 6 (§3.5).</strong> Schematic timelines comparing FutureRTC (anticipating execution context) and TacPAC (tactile suffix correction).</p>
-              <div class="fig-card-actions">
-                <button type="button" data-zoom-trigger>Inspect large view</button>
-                <a href="assets/figure-06.pdf" target="_blank" rel="noopener">Original PDF ↗</a>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="fig-card fig-wide" data-fig-num="7" data-fig-src="assets/figure-07.png" data-fig-pdf="assets/figure-07.pdf" data-fig-cap="Figure 7 (§4.4). From world-model design to claim-matched evidence across three independent empirical contrasts: recursive fidelity vs. planning (GNS/ContactWorld), evaluation vs. training (DexTouch-WM), and anticipation vs. correction (FutureRTC/TacPAC).">
-            <a class="fig-card-thumb" href="assets/figure-07.png" data-zoom-trigger aria-label="Zoom Figure 7">
-              <picture>
-                <source srcset="assets/figure-07.webp" type="image/webp">
-                <img src="assets/figure-07.png" width="8800" height="4218" alt="Three empirical contrasts linking world-model design to claim-matched evidence" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <figcaption class="fig-card-body">
-              <p><strong>Figure 7 (§4.4).</strong> Three claim-matched evidence contrasts: recursive accuracy vs. planning utility, evaluator agreement vs. learner gain, and runtime anticipation vs. correction.</p>
-              <div class="fig-card-actions">
-                <button type="button" data-zoom-trigger>Inspect large view</button>
-                <a href="assets/figure-07.pdf" target="_blank" rel="noopener">Original PDF ↗</a>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== 05 RELATED SURVEYS & PRIORITY TESTS ==================== -->
+    <!-- ==================== 03 THREE CONTROLLED FOLLOW-UP TESTS ==================== -->
     <section class="band" id="tests">
       <div class="wrap">
         <div class="sec-head">
-          <p class="sec-num">05 · Positioning &amp; Falsifiable Agenda (Tables 1 &amp; 10)</p>
-          <h2>Related 2026 surveys and three controlled follow-up tests</h2>
-          <p>Prior 2026 reviews map architectures or specify desired controls; this survey audits which experiments actually isolate predictive variables and translates the remaining gaps into three falsifiable protocols.</p>
-        </div>
-
-        <div class="table-wrap">
-          <table class="ed-table">
-            <thead>
-              <tr>
-                <th>Survey (2026)</th>
-                <th>Scope</th>
-                <th>Primary Unit &amp; Focus</th>
-                <th>Increment in This Survey</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Wang et al.</strong></td>
-                <td>Robotic manipulation</td>
-                <td>Taxonomy by target, action entry, and stage of use (§§3, 5, 7)</td>
-                <td>Experiment-level intervention attribution &amp; task-level benchmark forensics</td>
-              </tr>
-              <tr>
-                <td><strong>Hou et al.</strong></td>
-                <td>Robot learning</td>
-                <td>Policies, simulators, video generation, and evaluation overview</td>
-                <td>Separates named component controls from coupled systems across 93 comparisons</td>
-              </tr>
-              <tr>
-                <td><strong>Kirchner et al.</strong></td>
-                <td>Physical AI</td>
-                <td>World modeling, uncertainty, and closed-loop control</td>
-                <td>Quantifies component-test scarcity alongside benchmark forensics</td>
-              </tr>
-              <tr>
-                <td><strong>Lu et al.; Shen et al.</strong></td>
-                <td>World–action models</td>
-                <td>Architecture, action coupling, and training/deployment taxonomy</td>
-                <td>Separates training supervision from deployment readout via within-study ablations</td>
-              </tr>
-              <tr>
-                <td><strong>Yao et al.</strong></td>
-                <td>Embodied intelligence</td>
-                <td>Plausibility-to-actionability capabilities &amp; controls (§§6, 9.2)</td>
-                <td>Audits which published experiments actually implement those controls (Table 9)</td>
-              </tr>
-              <tr>
-                <td><strong>Jena et al.</strong></td>
-                <td>Predictive embodied AI</td>
-                <td>Benchmark map for closed-loop advantage (§§4–5)</td>
-                <td>Re-analyzes RoboTwin (1,650 pairs) &amp; RoboDojo (3,536 cells); specifies tests</td>
-              </tr>
-              <tr class="row-highlight">
-                <td><strong>This Survey</strong></td>
-                <td>Physical AI (manipulation anchor; driving/nav. contrasts)</td>
-                <td>93 source-linked comparisons (75 studies) &amp; frozen snapshots</td>
-                <td>Links each predictive operation to execution endpoints, sensitivity bounds, and falsifiable tests</td>
-              </tr>
-            </tbody>
-          </table>
+          <p class="sec-num">03 · Falsifiable Follow-Up Agenda (Table 10)</p>
+          <h2>Three controlled tests to close the remaining attribution gaps</h2>
         </div>
 
         <div class="test-card-grid">
@@ -544,11 +313,9 @@
               <dt>Fixed controls</dt>
               <dd>Restored scene, randomized branch order, candidate pool, continuation policy, search budget.</dd>
               <dt>Varied intervention</dt>
-              <dd>Candidate scoring rule only.</dd>
-              <dt>Required outcomes</dt>
-              <dd>All-starts terminal completion difference (primary); mixed-outcome starts (diagnostic); K=1 budget reference; scoring latency.</dd>
-              <dt>Falsification criterion</dt>
-              <dd>Precise gain below prespecified threshold vs. equal-budget uniform selection argues against the scorer.</dd>
+              <dd>Candidate scoring rule only (equal-budget uniform primary; K=1 budget reference).</dd>
+              <dt>Falsifier</dt>
+              <dd>Precise all-starts gain below threshold vs. uniform selection argues against the scorer.</dd>
             </dl>
           </article>
 
@@ -557,13 +324,11 @@
             <h3>Dynamics swap under frozen readout</h3>
             <dl class="test-dl">
               <dt>Fixed controls</dt>
-              <dd>Sensors, frozen encoder, shared latent/physical state space, goal cost, search budget, replanning rule.</dd>
+              <dd>Sensors, frozen encoder, shared latent/physical state space, goal cost, replanning rule.</dd>
               <dt>Varied intervention</dt>
               <dd>Predictive dynamics model only.</dd>
-              <dt>Required outcomes</dt>
-              <dd>Rollout error, observed object response, closed-loop task completion, planning latency.</dd>
-              <dt>Falsification criterion</dt>
-              <dd>Lower rollout error without higher closed-loop completion isolates only a fidelity gain, not planning utility.</dd>
+              <dt>Falsifier</dt>
+              <dd>Lower rollout error without higher closed-loop completion is only a fidelity gain.</dd>
             </dl>
           </article>
 
@@ -572,49 +337,23 @@
             <h3>Runtime access to predicted contact</h3>
             <dl class="test-dl">
               <dt>Fixed controls</dt>
-              <dd>Observations, base chunk &amp; action index, compute budget, editable window, and decision deadline.</dd>
+              <dd>Observations, base chunk &amp; action index, compute budget, editable window, deadline.</dd>
               <dt>Varied intervention</dt>
               <dd>Access to cached predictive reference.</dd>
-              <dt>Required outcomes</dt>
-              <dd>Net completion across all attempts, latency distribution, and missed-deadline rate.</dd>
-              <dt>Falsification criterion</dt>
-              <dd>Net gain below prespecified threshold—from weak revisions or late updates—counts against runtime predictive access.</dd>
+              <dt>Falsifier</dt>
+              <dd>Net gain across all attempts below threshold (including late updates) counts against runtime access.</dd>
             </dl>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 06 DOWNLOADS & CITATION ==================== -->
+    <!-- ==================== 04 CITATION & ARTIFACTS ==================== -->
     <section class="band band-surface" id="cite">
       <div class="wrap">
         <div class="sec-head">
-          <p class="sec-num">06 · Artifacts, Reproducibility &amp; Citation</p>
-          <h2>Downloads and BibTeX</h2>
-          <p>All counts and figures on this site reproduce directly from the audited Evidence Companion and frozen November 2026 benchmark snapshots.</p>
-        </div>
-
-        <div class="download-grid">
-          <a class="dl-card" href="assets/survey.pdf" target="_blank" rel="noopener">
-            <span class="dl-tag">PDF · 33 PAGES</span>
-            <strong>ACM Journal Preview</strong>
-            <span>Formatted <code>acmsmall</code> layout matching final journal column width.</span>
-          </a>
-          <a class="dl-card" href="assets/survey-review.pdf" target="_blank" rel="noopener">
-            <span class="dl-tag">PDF · 31 PAGES</span>
-            <strong>Line-Numbered Review Draft</strong>
-            <span>Anonymous peer-review manuscript with line numbers and 110 references.</span>
-          </a>
-          <a class="dl-card" href="assets/Evidence-companion.zip">
-            <span class="dl-tag">ZIP · REPRODUCIBLE</span>
-            <strong>Evidence Companion</strong>
-            <span><code>papers.csv</code>, <code>comparisons.csv</code>, <code>coding_decisions.csv</code>, <code>summarize.py</code>, and <code>benchmark_tasks.zip</code>.</span>
-          </a>
-          <a class="dl-card" href="https://github.com/Dracoxa/World-Models-for-Physical-Survey" target="_blank" rel="noopener">
-            <span class="dl-tag">GITHUB · SOURCE</span>
-            <strong>Survey Repository</strong>
-            <span>LaTeX source, validation scripts, and broader 781-entry discovery catalog.</span>
-          </a>
+          <p class="sec-num">04 · Citation &amp; Reproducible Artifacts</p>
+          <h2>Cite the manuscript or inspect the companion archive</h2>
         </div>
 
         <div class="bib-card">
@@ -633,18 +372,21 @@
   note    = {Evidence map snapshot: 2026-11-22; RoboTwin 2.0 and RoboDojo snapshot: 2026-11-10}
 }</pre>
         </div>
+
+        <div class="inline-artifacts">
+          <a href="assets/survey.pdf" target="_blank" rel="noopener">Journal Preview (33p PDF) ↗</a>
+          <a href="assets/survey-review.pdf" target="_blank" rel="noopener">Review Draft (31p PDF) ↗</a>
+          <a href="assets/Evidence-companion.zip">Evidence Companion (.zip)</a>
+          <a href="explorer.html">Interactive 93-Comparison &amp; Benchmark Explorer →</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap foot-in">
-      <div>
-        <strong>World Models for Physical AI</strong> · Anonymous CSUR Preprint Companion · Evidence freeze: 22 Nov 2026 · Benchmarks freeze: 10 Nov 2026
-      </div>
-      <div class="mono" style="font-size:0.78rem;">
-        Static zero-build site · Validated via <code>python3 docs/check_site.py</code>
-      </div>
+      <div><strong>World Models for Physical AI</strong> · Anonymous CSUR Preprint · Evidence freeze: 22 Nov 2026 · Benchmarks: 10 Nov 2026</div>
+      <div class="mono" style="font-size:0.78rem;">Validated via <code>python3 docs/check_site.py</code></div>
     </div>
   </footer>
 
@@ -661,7 +403,7 @@
         </div>
       </div>
       <div class="lightbox-body">
-        <img id="lb-img" src="" alt="">
+        <img id="lb-img" src="assets/figure-01.png" alt="Expanded figure view">
       </div>
       <div class="lightbox-cap" id="lb-cap"></div>
     </div>
