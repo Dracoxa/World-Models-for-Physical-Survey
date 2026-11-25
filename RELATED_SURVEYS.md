@@ -6,7 +6,7 @@
 
 | 项目 | 论文或状态 | 主要范围 | 对本项目的直接价值 | 使用时的边界 |
 |---|---|---|---|---|
-| [tsinghua-fib-lab/World-Model](https://github.com/tsinghua-fib-lab/World-Model) | [ACM Computing Surveys 2025](https://doi.org/10.1145/3746449) | 通用世界模型、视频生成、具身与城市智能 | 最接近目标期刊；可参考综述叙事、路线图和持续更新方式 | 范围明显宽于 Physical AI，不宜照搬其应用分类 |
+| [tsinghua-fib-lab/World-Model](https://github.com/tsinghua-fib-lab/World-Model) | [ACM Computing Surveys 2025](https://doi.org/10.1145/3746449) | 通用世界模型、视频生成、具身与城市智能 | 可参考综述叙事、路线图和持续更新方式 | 范围明显宽于 Physical AI，不宜照搬其应用分类 |
 | [NTUMARS/Awesome-World-Model-for-Robotics-Policy](https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy) | [arXiv:2605.00080](https://arxiv.org/abs/2605.00080) | 机器人策略、学习模拟器、评估、数据和视频世界模型 | 与我们的“预测如何进入策略”主线最接近；其 benchmark 和 dataset 分区适合交叉补漏 | 当前为预印本；具体结论仍需回到原始论文核验 |
 | [Li-Zn-H/AwesomeWorldModels](https://github.com/Li-Zn-H/AwesomeWorldModels) | [arXiv:2510.16732v3](https://arxiv.org/abs/2510.16732v3) | 具身世界模型；功能、时间建模和空间表示三轴分类 | 适合核对表示类型、自动驾驶/机器人覆盖和物理一致性评价 | 分类粒度很细，不应让我们的四部分正文退化为长目录 |
 | [JiahuaDong/Awesome-World-Models](https://github.com/JiahuaDong/Awesome-World-Models) | 2026 TechRxiv 综述配套仓库 | 强化学习、观测生成、latent、对象中心模型及机器人/驾驶/科学应用 | 已持续补入 ICML、ECCV 2026 条目，适合做会议级更新检查和 benchmark/指标交叉核对 | 范围远宽于 Physical AI；仓库标签和性能汇总需回原始论文验证 |
