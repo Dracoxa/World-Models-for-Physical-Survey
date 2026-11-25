@@ -1,0 +1,992 @@
+{
+  "snapshot_date": "2026-11-10",
+  "robotwin": {
+    "total_configs": 33,
+    "cotrain_configs": 28,
+    "single_task_configs": 5,
+    "total_mean_drop": 32,
+    "cotrain_mean_drop": 27,
+    "total_all50_drop": 12,
+    "cotrain_all50_drop": 11,
+    "task_pairs": 1650,
+    "profiles": [
+      {
+        "record_id": "cotrain:GigaBrain_0_7",
+        "model": "GigaBrain-0.7",
+        "setting": "cotrain",
+        "mean_gap_pp": -1.12,
+        "median_gap_pp": -2.0,
+        "decline_tasks": 18,
+        "tie_tasks": 6,
+        "increase_tasks": 26
+      },
+      {
+        "record_id": "cotrain:Pi_05",
+        "model": "π0.5",
+        "setting": "cotrain",
+        "mean_gap_pp": 24.66,
+        "median_gap_pp": 24.0,
+        "decline_tasks": 45,
+        "tie_tasks": 1,
+        "increase_tasks": 4
+      },
+      {
+        "record_id": "cotrain:X_WAM",
+        "model": "X-WAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 44.14,
+        "median_gap_pp": 45.0,
+        "decline_tasks": 48,
+        "tie_tasks": 1,
+        "increase_tasks": 1
+      },
+      {
+        "record_id": "cotrain:X_VLA",
+        "model": "X-VLA",
+        "setting": "cotrain",
+        "mean_gap_pp": 47.014,
+        "median_gap_pp": 48.0,
+        "decline_tasks": 47,
+        "tie_tasks": 1,
+        "increase_tasks": 2
+      },
+      {
+        "record_id": "cotrain:Xiaomi_Robotics_0",
+        "model": "Xiaomi Robotics-0",
+        "setting": "cotrain",
+        "mean_gap_pp": 44.64,
+        "median_gap_pp": 43.0,
+        "decline_tasks": 49,
+        "tie_tasks": 0,
+        "increase_tasks": 1
+      },
+      {
+        "record_id": "cotrain:EventVLA",
+        "model": "EventVLA",
+        "setting": "cotrain",
+        "mean_gap_pp": 49.84,
+        "median_gap_pp": 53.5,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:AHA_WAM",
+        "model": "AHA-WAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 61.12,
+        "median_gap_pp": 61.5,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:FastWAM",
+        "model": "FastWAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 75.84,
+        "median_gap_pp": 84.5,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:Spatial_Forcing",
+        "model": "Spatial Forcing",
+        "setting": "cotrain",
+        "mean_gap_pp": 50.44,
+        "median_gap_pp": 54.0,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:starVLA",
+        "model": "starVLA",
+        "setting": "cotrain",
+        "mean_gap_pp": 43.36,
+        "median_gap_pp": 40.0,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:Abot_M0",
+        "model": "Abot-M0",
+        "setting": "cotrain",
+        "mean_gap_pp": 27.04,
+        "median_gap_pp": 26.0,
+        "decline_tasks": 48,
+        "tie_tasks": 0,
+        "increase_tasks": 2
+      },
+      {
+        "record_id": "cotrain:GalaxeaVLA",
+        "model": "GalaxeaVLA",
+        "setting": "cotrain",
+        "mean_gap_pp": 50.0,
+        "median_gap_pp": 51.5,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:4D_WAM",
+        "model": "4D-WAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 39.7,
+        "median_gap_pp": 34.0,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:OLA_Geo",
+        "model": "OLA-Geo",
+        "setting": "cotrain",
+        "mean_gap_pp": 49.32,
+        "median_gap_pp": 50.0,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:UniWAM",
+        "model": "UniWAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 7.56,
+        "median_gap_pp": 6.0,
+        "decline_tasks": 45,
+        "tie_tasks": 1,
+        "increase_tasks": 4
+      },
+      {
+        "record_id": "cotrain:ME_Dex_1_0",
+        "model": "ME-Dex-1.0",
+        "setting": "cotrain",
+        "mean_gap_pp": 21.46,
+        "median_gap_pp": 21.0,
+        "decline_tasks": 45,
+        "tie_tasks": 4,
+        "increase_tasks": 1
+      },
+      {
+        "record_id": "cotrain:WorldScape_Policy_2_0",
+        "model": "WorldScape Policy 2.0",
+        "setting": "cotrain",
+        "mean_gap_pp": 46.42,
+        "median_gap_pp": 45.5,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:PatchWAM",
+        "model": "PatchWAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 24.84,
+        "median_gap_pp": 20.0,
+        "decline_tasks": 49,
+        "tie_tasks": 0,
+        "increase_tasks": 1
+      },
+      {
+        "record_id": "cotrain:Discrete_Forcing",
+        "model": "Discrete Forcing",
+        "setting": "cotrain",
+        "mean_gap_pp": 48.12,
+        "median_gap_pp": 45.0,
+        "decline_tasks": 49,
+        "tie_tasks": 0,
+        "increase_tasks": 1
+      },
+      {
+        "record_id": "cotrain:ViGAR",
+        "model": "ViGAR",
+        "setting": "cotrain",
+        "mean_gap_pp": 14.98,
+        "median_gap_pp": 11.0,
+        "decline_tasks": 40,
+        "tie_tasks": 5,
+        "increase_tasks": 5
+      },
+      {
+        "record_id": "sft:RDT",
+        "model": "RDT",
+        "setting": "sft",
+        "mean_gap_pp": 20.78,
+        "median_gap_pp": 16.5,
+        "decline_tasks": 47,
+        "tie_tasks": 3,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "sft:π0",
+        "model": "π0",
+        "setting": "sft",
+        "mean_gap_pp": 30.08,
+        "median_gap_pp": 30.0,
+        "decline_tasks": 48,
+        "tie_tasks": 0,
+        "increase_tasks": 2
+      },
+      {
+        "record_id": "sft:ACT",
+        "model": "ACT",
+        "setting": "sft",
+        "mean_gap_pp": 28.0,
+        "median_gap_pp": 15.5,
+        "decline_tasks": 43,
+        "tie_tasks": 7,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "sft:DP",
+        "model": "DP",
+        "setting": "sft",
+        "mean_gap_pp": 27.4,
+        "median_gap_pp": 20.0,
+        "decline_tasks": 47,
+        "tie_tasks": 3,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "sft:DP3",
+        "model": "DP3",
+        "setting": "sft",
+        "mean_gap_pp": 50.28,
+        "median_gap_pp": 53.0,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:CloudRobo_WM",
+        "model": "CloudRobo-WM",
+        "setting": "cotrain",
+        "mean_gap_pp": 13.9,
+        "median_gap_pp": 12.0,
+        "decline_tasks": 46,
+        "tie_tasks": 2,
+        "increase_tasks": 2
+      },
+      {
+        "record_id": "cotrain:MWA_Phoenix",
+        "model": "MWA-Phoenix",
+        "setting": "cotrain",
+        "mean_gap_pp": 14.12,
+        "median_gap_pp": 11.0,
+        "decline_tasks": 46,
+        "tie_tasks": 2,
+        "increase_tasks": 2
+      },
+      {
+        "record_id": "cotrain:PrismWAM",
+        "model": "PrismWAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 34.82,
+        "median_gap_pp": 32.5,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:PrismWAM_Star",
+        "model": "PrismWAM*",
+        "setting": "cotrain",
+        "mean_gap_pp": 16.34,
+        "median_gap_pp": 14.5,
+        "decline_tasks": 48,
+        "tie_tasks": 0,
+        "increase_tasks": 2
+      },
+      {
+        "record_id": "cotrain:WorldLA",
+        "model": "WorldLA",
+        "setting": "cotrain",
+        "mean_gap_pp": 35.44,
+        "median_gap_pp": 35.0,
+        "decline_tasks": 50,
+        "tie_tasks": 0,
+        "increase_tasks": 0
+      },
+      {
+        "record_id": "cotrain:GO_3_Nano_preview",
+        "model": "GO-3 Nano Preview",
+        "setting": "cotrain",
+        "mean_gap_pp": 7.06,
+        "median_gap_pp": 6.0,
+        "decline_tasks": 41,
+        "tie_tasks": 4,
+        "increase_tasks": 5
+      },
+      {
+        "record_id": "cotrain:EWAM",
+        "model": "EWAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 10.08,
+        "median_gap_pp": 7.5,
+        "decline_tasks": 42,
+        "tie_tasks": 3,
+        "increase_tasks": 5
+      },
+      {
+        "record_id": "cotrain:PICA_WAM",
+        "model": "PICA-WAM",
+        "setting": "cotrain",
+        "mean_gap_pp": 15.98,
+        "median_gap_pp": 13.0,
+        "decline_tasks": 47,
+        "tie_tasks": 1,
+        "increase_tasks": 2
+      }
+    ]
+  },
+  "robodojo": {
+    "total_configs": 66,
+    "visible_cells": 3536,
+    "missing_cells": 28,
+    "zero_sr_pos_score_cells": 858,
+    "pct": 24.3,
+    "median_per_config": 13,
+    "min_per_config": 3,
+    "max_per_config": 26,
+    "profiles": [
+      {
+        "policy_key": "Dexora_1B",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 26,
+        "zero_score_zero_sr": 27,
+        "pos_sr": 1
+      },
+      {
+        "policy_key": "InternVLA_A1",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 24,
+        "zero_score_zero_sr": 20,
+        "pos_sr": 10
+      },
+      {
+        "policy_key": "GR00T_N17",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 22,
+        "zero_score_zero_sr": 23,
+        "pos_sr": 9
+      },
+      {
+        "policy_key": "Abot_M0",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 21,
+        "zero_score_zero_sr": 22,
+        "pos_sr": 11
+      },
+      {
+        "policy_key": "LDA_1B",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 21,
+        "zero_score_zero_sr": 24,
+        "pos_sr": 9
+      },
+      {
+        "policy_key": "Dexbotic_DM0",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 20,
+        "zero_score_zero_sr": 31,
+        "pos_sr": 3
+      },
+      {
+        "policy_key": "EventVLA",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 20,
+        "zero_score_zero_sr": 20,
+        "pos_sr": 14
+      },
+      {
+        "policy_key": "FastWAM",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 19,
+        "zero_score_zero_sr": 28,
+        "pos_sr": 7
+      },
+      {
+        "policy_key": "GalaxeaVLA",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 19,
+        "zero_score_zero_sr": 18,
+        "pos_sr": 17
+      },
+      {
+        "policy_key": "LingBot_VLA",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 19,
+        "zero_score_zero_sr": 16,
+        "pos_sr": 19
+      },
+      {
+        "policy_key": "MolmoACT2",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 19,
+        "zero_score_zero_sr": 18,
+        "pos_sr": 17
+      },
+      {
+        "policy_key": "Pi_0",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 19,
+        "zero_score_zero_sr": 20,
+        "pos_sr": 15
+      },
+      {
+        "policy_key": "X_WAM",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 19,
+        "zero_score_zero_sr": 10,
+        "pos_sr": 25
+      },
+      {
+        "policy_key": "starVLA",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 19,
+        "zero_score_zero_sr": 18,
+        "pos_sr": 17
+      },
+      {
+        "policy_key": "AHA_WAM",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 18,
+        "zero_score_zero_sr": 20,
+        "pos_sr": 16
+      },
+      {
+        "policy_key": "GO1",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 17,
+        "zero_score_zero_sr": 30,
+        "pos_sr": 7
+      },
+      {
+        "policy_key": "GigaWorldPolicy",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 17,
+        "zero_score_zero_sr": 19,
+        "pos_sr": 18
+      },
+      {
+        "policy_key": "RDT_1B",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 17,
+        "zero_score_zero_sr": 32,
+        "pos_sr": 5
+      },
+      {
+        "policy_key": "SimpleMemVLA",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 17,
+        "zero_score_zero_sr": 11,
+        "pos_sr": 26
+      },
+      {
+        "policy_key": "SmolVLA",
+        "observed": 46,
+        "missing": 8,
+        "pos_score_zero_sr": 17,
+        "zero_score_zero_sr": 19,
+        "pos_sr": 10
+      },
+      {
+        "policy_key": "Xiaomi_Robotics_0",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 17,
+        "zero_score_zero_sr": 16,
+        "pos_sr": 21
+      },
+      {
+        "policy_key": "vlact",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 17,
+        "zero_score_zero_sr": 15,
+        "pos_sr": 22
+      },
+      {
+        "policy_key": "GPT-6-Astra",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 16,
+        "zero_score_zero_sr": 6,
+        "pos_sr": 32
+      },
+      {
+        "policy_key": "starVLA-OFT",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 16,
+        "zero_score_zero_sr": 16,
+        "pos_sr": 22
+      },
+      {
+        "policy_key": "DeepSeek-Flash",
+        "observed": 42,
+        "missing": 12,
+        "pos_score_zero_sr": 15,
+        "zero_score_zero_sr": 23,
+        "pos_sr": 4
+      },
+      {
+        "policy_key": "GPT-5.5",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 15,
+        "zero_score_zero_sr": 36,
+        "pos_sr": 3
+      },
+      {
+        "policy_key": "H_RDT",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 15,
+        "zero_score_zero_sr": 35,
+        "pos_sr": 4
+      },
+      {
+        "policy_key": "starVLA-PI_v3",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 15,
+        "zero_score_zero_sr": 17,
+        "pos_sr": 22
+      },
+      {
+        "policy_key": "ACT",
+        "observed": 46,
+        "missing": 8,
+        "pos_score_zero_sr": 14,
+        "zero_score_zero_sr": 28,
+        "pos_sr": 4
+      },
+      {
+        "policy_key": "HWM-CogWAM",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 14,
+        "zero_score_zero_sr": 15,
+        "pos_sr": 25
+      },
+      {
+        "policy_key": "X_VLA",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 14,
+        "zero_score_zero_sr": 17,
+        "pos_sr": 23
+      },
+      {
+        "policy_key": "starVLA-GR00T",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 14,
+        "zero_score_zero_sr": 16,
+        "pos_sr": 24
+      },
+      {
+        "policy_key": "EmbodiedEvo",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 13,
+        "zero_score_zero_sr": 2,
+        "pos_sr": 39
+      },
+      {
+        "policy_key": "InternVLA_A1_5",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 13,
+        "zero_score_zero_sr": 14,
+        "pos_sr": 27
+      },
+      {
+        "policy_key": "A1",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 12,
+        "zero_score_zero_sr": 41,
+        "pos_sr": 1
+      },
+      {
+        "policy_key": "KAI",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 12,
+        "zero_score_zero_sr": 8,
+        "pos_sr": 34
+      },
+      {
+        "policy_key": "KinRT",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 12,
+        "zero_score_zero_sr": 13,
+        "pos_sr": 29
+      },
+      {
+        "policy_key": "MachEmbodied-U0",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 12,
+        "zero_score_zero_sr": 13,
+        "pos_sr": 29
+      },
+      {
+        "policy_key": "Meituan_Robotics_0",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 12,
+        "zero_score_zero_sr": 14,
+        "pos_sr": 28
+      },
+      {
+        "policy_key": "Pi_05",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 12,
+        "zero_score_zero_sr": 13,
+        "pos_sr": 29
+      },
+      {
+        "policy_key": "hy_vla",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 12,
+        "zero_score_zero_sr": 14,
+        "pos_sr": 28
+      },
+      {
+        "policy_key": "OpenDM05",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 10,
+        "zero_score_zero_sr": 9,
+        "pos_sr": 35
+      },
+      {
+        "policy_key": "OpenWAM-α",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 10,
+        "zero_score_zero_sr": 11,
+        "pos_sr": 33
+      },
+      {
+        "policy_key": "Pi_05_SF",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 10,
+        "zero_score_zero_sr": 13,
+        "pos_sr": 31
+      },
+      {
+        "policy_key": "TinyVLA",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 10,
+        "zero_score_zero_sr": 42,
+        "pos_sr": 2
+      },
+      {
+        "policy_key": "EWAM",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 9,
+        "zero_score_zero_sr": 12,
+        "pos_sr": 33
+      },
+      {
+        "policy_key": "G05",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 9,
+        "zero_score_zero_sr": 12,
+        "pos_sr": 33
+      },
+      {
+        "policy_key": "GO-3 Nano Preview",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 9,
+        "zero_score_zero_sr": 3,
+        "pos_sr": 42
+      },
+      {
+        "policy_key": "InternW0_delta",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 9,
+        "zero_score_zero_sr": 6,
+        "pos_sr": 39
+      },
+      {
+        "policy_key": "ME_Brain_1",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 9,
+        "zero_score_zero_sr": 11,
+        "pos_sr": 34
+      },
+      {
+        "policy_key": "OpenVLA_OFT",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 9,
+        "zero_score_zero_sr": 44,
+        "pos_sr": 1
+      },
+      {
+        "policy_key": "Spirit_v15",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 9,
+        "zero_score_zero_sr": 43,
+        "pos_sr": 2
+      },
+      {
+        "policy_key": "HexaShell-preview",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 8,
+        "zero_score_zero_sr": 3,
+        "pos_sr": 43
+      },
+      {
+        "policy_key": "VPP2-Preview",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 8,
+        "zero_score_zero_sr": 8,
+        "pos_sr": 38
+      },
+      {
+        "policy_key": "WorldScape-R²SI",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 7,
+        "zero_score_zero_sr": 6,
+        "pos_sr": 41
+      },
+      {
+        "policy_key": "Xiaomi_Robotics_1",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 7,
+        "zero_score_zero_sr": 11,
+        "pos_sr": 36
+      },
+      {
+        "policy_key": "HWM_0_preview",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 6,
+        "zero_score_zero_sr": 8,
+        "pos_sr": 40
+      },
+      {
+        "policy_key": "Rex_M1_preview",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 6,
+        "zero_score_zero_sr": 6,
+        "pos_sr": 42
+      },
+      {
+        "policy_key": "AMO-0.5",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 5,
+        "zero_score_zero_sr": 5,
+        "pos_sr": 44
+      },
+      {
+        "policy_key": "VPP2",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 5,
+        "zero_score_zero_sr": 7,
+        "pos_sr": 42
+      },
+      {
+        "policy_key": "Liber_agent_wam",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 4,
+        "zero_score_zero_sr": 11,
+        "pos_sr": 39
+      },
+      {
+        "policy_key": "Liber_wam",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 4,
+        "zero_score_zero_sr": 10,
+        "pos_sr": 40
+      },
+      {
+        "policy_key": "Simate-beta",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 4,
+        "zero_score_zero_sr": 9,
+        "pos_sr": 41
+      },
+      {
+        "policy_key": "PyRUA_Lean",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 3,
+        "zero_score_zero_sr": 3,
+        "pos_sr": 48
+      },
+      {
+        "policy_key": "Q0_Preview",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 3,
+        "zero_score_zero_sr": 0,
+        "pos_sr": 51
+      },
+      {
+        "policy_key": "WallX",
+        "observed": 54,
+        "missing": 0,
+        "pos_score_zero_sr": 3,
+        "zero_score_zero_sr": 3,
+        "pos_sr": 48
+      }
+    ],
+    "capability_comparison": [
+      {
+        "method": "WALL-OSS-1.0-lite",
+        "overall_score": 42.59,
+        "avg_sr": 34.97,
+        "memory_sr": 56.0,
+        "precision_sr": 29.08,
+        "long_sr": 32.25,
+        "gen_sr": 37.94,
+        "open_sr": 19.58
+      },
+      {
+        "method": "VPP2",
+        "overall_score": 39.26,
+        "avg_sr": 32.26,
+        "memory_sr": 55.56,
+        "precision_sr": 35.17,
+        "long_sr": 37.0,
+        "gen_sr": 29.5,
+        "open_sr": 4.08
+      },
+      {
+        "method": "OpenWAM-α",
+        "overall_score": 17.18,
+        "avg_sr": 11.92,
+        "memory_sr": 9.11,
+        "precision_sr": 9.25,
+        "long_sr": 25.33,
+        "gen_sr": 14.83,
+        "open_sr": 1.08
+      },
+      {
+        "method": "Spatial Forcing",
+        "overall_score": 12.38,
+        "avg_sr": 8.04,
+        "memory_sr": 4.11,
+        "precision_sr": 10.58,
+        "long_sr": 14.58,
+        "gen_sr": 9.34,
+        "open_sr": 1.58
+      },
+      {
+        "method": "π₀.₅",
+        "overall_score": 11.44,
+        "avg_sr": 6.93,
+        "memory_sr": 4.67,
+        "precision_sr": 5.5,
+        "long_sr": 14.67,
+        "gen_sr": 8.17,
+        "open_sr": 1.67
+      },
+      {
+        "method": "X-WAM",
+        "overall_score": 7.69,
+        "avg_sr": 3.83,
+        "memory_sr": 4.67,
+        "precision_sr": 1.83,
+        "long_sr": 9.08,
+        "gen_sr": 3.33,
+        "open_sr": 0.25
+      },
+      {
+        "method": "AHA-WAM",
+        "overall_score": 4.82,
+        "avg_sr": 2.39,
+        "memory_sr": 2.78,
+        "precision_sr": 2.42,
+        "long_sr": 2.67,
+        "gen_sr": 3.27,
+        "open_sr": 0.83
+      },
+      {
+        "method": "Fast-WAM",
+        "overall_score": 3.48,
+        "avg_sr": 2.03,
+        "memory_sr": 3.44,
+        "precision_sr": 0.0,
+        "long_sr": 5.17,
+        "gen_sr": 1.11,
+        "open_sr": 0.42
+      }
+    ],
+    "organize_table_case": {
+      "policy": "VPP2",
+      "task": "organize_table",
+      "score": 63.17,
+      "sr_percent": 7.33
+    },
+    "source_summary_keys": [
+      "robodojo_configurations",
+      "robodojo_configurations_with_progress_zero_success",
+      "robodojo_expected",
+      "robodojo_missing",
+      "robodojo_observed",
+      "robodojo_positive_score_zero_success",
+      "robodojo_positive_success",
+      "robodojo_source",
+      "robodojo_zero_score_zero_success",
+      "robotwin_all_tasks_lower",
+      "robotwin_configurations",
+      "robotwin_randomized_mean_lower",
+      "robotwin_settings",
+      "robotwin_source",
+      "robotwin_task_pairs",
+      "snapshot_date",
+      "vpp2"
+    ]
+  }
+}

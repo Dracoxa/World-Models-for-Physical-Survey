@@ -2,168 +2,80 @@
 
 # World Models for Physical AI
 
-### Learning to Predict, Plan, and Act in the Real World
+### Interfaces, Experimental Evidence, and Downstream Utility
 
-[![Website](https://img.shields.io/badge/Website-GitHub_Pages-4f46e5)](https://dracoxa.github.io/World-Models-for-Physical-Survey/)
-[![Website manuscript](https://img.shields.io/badge/Paper-Website_Manuscript-0d9488)](docs/assets/survey.pdf)
-[![Draft PDF](https://img.shields.io/badge/Paper-Working_Draft-2563eb)](paper/preview/main.pdf)
-[![LaTeX](https://img.shields.io/badge/LaTeX-Source-008080)](paper/main.tex)
-[![Literature](https://img.shields.io/badge/Literature-Seven_Themes-6b7280)](#paper-list)
-[![CSV](https://img.shields.io/badge/Data-CSV-22863a)](literature/current/catalog.csv)
-[![BibTeX](https://img.shields.io/badge/References-BibTeX-555555)](paper/references.bib)
+[![Website](https://img.shields.io/badge/Website-GitHub_Pages-1d4ed8?style=flat-square)](https://dracoxa.github.io/World-Models-for-Physical-Survey/)
+[![Journal Preview](https://img.shields.io/badge/PDF-ACM_Preview_(33p)-0f766e?style=flat-square)](docs/assets/survey.pdf)
+[![Review Manuscript](https://img.shields.io/badge/PDF-Review_Draft_(31p)-334155?style=flat-square)](docs/assets/survey-review.pdf)
+[![Evidence Companion](https://img.shields.io/badge/Data-Evidence_Companion_(75%20%2F%2093)-b45309?style=flat-square)](docs/assets/Evidence-companion.zip)
+[![Candidate Pool](https://img.shields.io/badge/Index-Literature_Catalog_(781)-64748b?style=flat-square)](literature/current/README.md)
 
-面向物理智能的世界模型综述与文献导航
+*An ACM Computing Surveys (CSUR) anonymous review manuscript & reproducible evidence companion auditing when learned environmental predictions improve physical learning, planning, action generation, evaluation, and runtime control.*
 
 </div>
 
-本仓库收集世界模型及相关控制、表示、数据与安全研究，配套综述 **World Models for Physical AI: Learning to Predict, Plan, and Act in the Real World**。
+---
 
-- **讨论主线**：预测什么、动作如何参与、预测在训练或部署中怎样发挥作用。
-- **组织方式**：正文保留四部分，文献按七个可交叉的主题检索。
-- **当前状态**：采用 ACM Computing Surveys 模板，仍为工作草稿，尚未正式发表。
+## Core Takeaway
 
-**文献收集（2026-10-10 快照）**：累计 **781 条暂定去重候选记录**，其中 **763 条附公开检索链接**、18 条链接待补或待查。进入 [最新文献目录](literature/current/README.md)，或下载 [候选主表 CSV](literature/current/catalog.csv)。收录不等于全文核验或最终纳入。
+Learned world models predict how physical environments evolve, yet higher forecast accuracy does not automatically improve physical behavior. Forecasts enter Physical AI systems through distinct interfaces—**training supervision**, **candidate-plan scoring**, **action-generation context**, **offline policy evaluation**, or **runtime correction**—and each interface requires its own experimental control.
 
-本次更新独立的候选索引；Draft PDF、LaTeX 与 BibTeX 保留此前公开的工作稿，不与本次目录同版。
+Across **93 source-linked comparisons** drawn from **75 purposively selected Physical AI studies** (**56** with simulated or physical execution outcomes; **29** with qualifying component tests, or **26** after removing four bundled branch/scoring records across three studies), anchored quantitatively in robotic manipulation with autonomous driving and navigation as cross-domain interface contrasts:
 
-**综述网站**提供按预测用途浏览的原文对照，以及 RoboTwin 2.0 和 RoboDojo 榜单入口。网站的下载稿、配图与 BibTeX 对应 [2026-11-09 公开匿名稿](docs/assets/survey.pdf)。
-
-## 快速入口
-
-- [浏览综述网站](https://dracoxa.github.io/World-Models-for-Physical-Survey/)：筛选五类用途下的原论文对照，查看图示与榜单。
-- [网站配套匿名稿 PDF](docs/assets/survey.pdf)：与网站内容配套。
-- [仓库工作稿 PDF](paper/preview/main.pdf) · [LaTeX 源码](paper/main.tex)：独立保留的工作稿，与网站稿件不是同一版本。
-- [文献候选目录](literature/current/README.md) · [CSV 主表](literature/current/catalog.csv)：2026-10-10 检索快照，纳入与证据状态仍需核验。
-
-网站是无构建步骤的静态页面；维护时修改 `docs/`，在仓库根目录运行 `python3 docs/check_site.py`，推送至 `main` 后由 [GitHub Actions](https://github.com/Dracoxa/World-Models-for-Physical-Survey/actions/workflows/deploy-pages.yml) 部署。
-
-<a id="contents"></a>
-
-## Table of Contents
-
-- [Survey Overview · 综述框架](#survey-overview)
-- [Foundations & Control · 世界模型基础与控制](#foundations-control)
-- [Visual & Video World Models · 视觉与视频世界模型](#visual-video)
-- [Latent & Predictive Representations · Latent 与预测表示](#latent-representations)
-- [Structured Physics & Multimodal Models · 结构化物理与多模态](#physics-multimodal)
-- [Data, Simulation & Embodiment · 数据、模拟与跨本体](#data-simulation-embodiment)
-- [World Models, VLA & Planning · 世界模型、VLA 与规划](#policy-planning)
-- [Evaluation, Safety & Benchmarks · 评估、安全与 Benchmark](#evaluation-safety)
-- [Contributing · 补充与纠错](#contributing)
+- **Training supervision vs. deployment readout**: Objective ablations consistently show training-time future supervision aiding policy learning even when deployment omits future generation (*Fast-WAM Base*, *DyPES-VLA*, *Cosmos Policy*). Matched execution component controls remain sparse for deployment-time action generation (**2** after unbundling) and runtime intervention (**1**).
+- **Candidate pool & closed-loop reversal**: Test-time selection depends first on mixed-outcome headroom (*Yuan et al.*: only 6 of 48 restored states offer reranking gain) and second on closed-loop alignment (*GeoBoN*: offline trajectory fit reverses online, `77.4%` vs. `82.5%`).
+- **Evaluator agreement ≠ training utility**: In *DexTouch-WM*, the simulator with higher evaluator correlation (`WM-Mix`, `r = 0.844` vs. `0.646`) trains lower-scoring policies for two of three new learners.
+- **Task-level benchmark forensics** (10 Nov 2026 frozen snapshots):
+  - **RoboTwin 2.0** (33 configs · 1,650 clean/randomized task pairs): **32 / 33** configs (**27 / 28** co-trained) drop in mean success under scene randomization; **12 / 33** (**11 / 28** co-trained) decline on **all 50 tasks**; even *GigaBrain-0.7* still declines on 18 tasks.
+  - **RoboDojo** (66 configs · 3,536 visible cells): **858 / 3,536 cells (`24.3%`)** receive partial-progress `Score` credit despite `0%` binary completion (every config affected; median **13**, range **3–26**).
 
 ---
 
-<a id="survey-overview"></a>
+## Quick Access
 
-## Survey Overview
-
-| 部分 | 主要内容 |
-| --- | --- |
-| [一、基础与发展脉络](paper/sections/01_foundations.tex) | 概念边界、模型式控制、预测表示与相关综述定位 |
-| [二、数据、表示与模型](paper/sections/02_data_models.tex) | 视觉与视频预测、latent dynamics、结构化物理、多模态数据与跨本体泛化 |
-| [三、机器人策略融合](paper/sections/03_policy_integration.tex) | 模型式规划、想象中的策略学习、VLA、联合世界与动作模型，以及推理与策略接口 |
-| [四、评估、可靠性与前沿](paper/sections/04_evaluation.tex) | 预测质量与决策效用、闭环评估、不确定性、安全约束与运行时护栏 |
-
-网站提供[预测用途与实验对照](https://dracoxa.github.io/World-Models-for-Physical-Survey/#evidence)、[预测与动作接口图](https://dracoxa.github.io/World-Models-for-Physical-Survey/#mechanisms)和[基准评估入口](https://dracoxa.github.io/World-Models-for-Physical-Survey/#benchmarks)；图示与网站配套稿件对应。
+| Artifact | Description | Link |
+| :--- | :--- | :--- |
+| **Interactive Companion Website** | Search all 93 source-linked comparisons, toggle the `29 → 26` sensitivity check, explore RoboTwin/RoboDojo task profiles, and inspect all 7 survey figures | [dracoxa.github.io/World-Models-for-Physical-Survey](https://dracoxa.github.io/World-Models-for-Physical-Survey/) |
+| **ACM Journal Preview PDF** | Formatted `acmsmall` preview (33 pages, anonymous, 110 references) | [`docs/assets/survey.pdf`](docs/assets/survey.pdf) |
+| **Review Draft PDF** | Line-numbered `manuscript,review` submission draft (31 pages, anonymous) | [`docs/assets/survey-review.pdf`](docs/assets/survey-review.pdf) |
+| **Evidence Companion Archive** | `papers.csv`, `comparisons.csv`, `coding_decisions.csv`, `summarize.py`, `benchmark_tasks.zip`, and 18-sheet `Quantitative_Analysis.xlsx` | [`docs/assets/Evidence-companion.zip`](docs/assets/Evidence-companion.zip) |
+| **Broader Discovery Catalog** | 781 deduplicated candidate records (2026-10-10 discovery snapshot; distinct from the 75-study audited evidence core) | [`literature/current/README.md`](literature/current/README.md) · [`catalog.csv`](literature/current/catalog.csv) |
 
 ---
 
-<a id="paper-list"></a>
-<a id="文献目录"></a>
+## Survey Structure (4 Parts · 17 Subsections)
 
-## Paper List
-
-以下是旧协作表快照的浏览示例，不是排名或新增纳入清单。年份不代表最新发表状态；完整分类入口指向最新候选索引，提供题名、年份、论文链接、暂定编号与核查状态。作者、会议和实验结论须另查原文。
-
-> 七类是重叠检索视图，不是七种互斥机制，也不是七章正文。目录包含核心方法、支撑资源及边界对照；不能把收录等同于已核验。
-
-<a id="foundations-control"></a>
-
-### Foundations & Control
-
-> 世界模型基础与控制：学习动力学、模型式强化学习、模型预测控制与想象中的策略学习。
-
-- **[2018] World Models** · [Paper](https://arxiv.org/abs/1803.10122)
-- **[2019] Learning Latent Dynamics for Planning from Pixels** · [Paper](https://arxiv.org/abs/1811.04551)
-
-[查看完整分类](literature/current/categories/01-foundations-control.md) · [返回目录](#contents)
-
-<a id="visual-video"></a>
-
-### Visual & Video World Models
-
-> 视觉与视频世界模型：视频预测、动作条件生成与交互式世界模拟。
-
-- **[2024] Genie: Generative Interactive Environments** · [Paper](https://arxiv.org/abs/2402.15391)
-- **[2025] Cosmos World Foundation Model Platform for Physical AI** · [Paper](https://arxiv.org/abs/2501.03575)
-
-[查看完整分类](literature/current/categories/02-visual-video.md) · [返回目录](#contents)
-
-<a id="latent-representations"></a>
-
-### Latent & Predictive Representations
-
-> Latent 与预测表示：潜空间动力学、预测嵌入及支撑机器人学习的视觉表示。
-
-- **[2024] Connecting Joint-Embedding Predictive Architecture with Contrastive Self-supervised Learning (C-JEPA)** · [Paper](https://papers.nips.cc/paper_files/paper/2024/hash/04a80267ad46fc730011f8760f265054-Paper-Conference.pdf)
-- **[2025] V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning** · [Paper](https://arxiv.org/abs/2506.09985)
-
-[查看完整分类](literature/current/categories/03-latent-representations.md) · [返回目录](#contents)
-
-<a id="physics-multimodal"></a>
-
-### Structured Physics & Multimodal Models
-
-> 结构化物理与多模态：物体、图与网格动力学，3D/4D 表示及接触、触觉和多模态交互。
-
-- **[2016] Interaction networks for learning about objects, relations and physics** · [Paper](https://arxiv.org/abs/1612.00222)
-- **[2021] Learning mesh-based simulation with graph networks** · [Paper](https://arxiv.org/abs/2010.03409)
-
-[查看完整分类](literature/current/categories/04-physics-multimodal.md) · [返回目录](#contents)
-
-<a id="data-simulation-embodiment"></a>
-
-### Data, Simulation & Embodiment
-
-> 数据、模拟与跨本体：机器人数据、仿真环境、合成数据与跨机器人迁移；资源不自动等同于世界模型方法。
-
-- **[2019] RoboNet: Large-scale multi-robot learning** · [Paper](https://arxiv.org/abs/1910.11215)
-- **[2024] Open x-embodiment: Robotic learning datasets and RT-X models** · [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10611477&origin_source=search&origin_method=searchbar)
-
-[查看完整分类](literature/current/categories/05-data-simulation-embodiment.md) · [返回目录](#contents)
-
-<a id="policy-planning"></a>
-
-### World Models, VLA & Planning
-
-> 世界模型、VLA 与规划：预测如何进入动作选择、策略学习、联合建模与策略后训练。
-
-- **[2025] WorldVLA: Towards autoregressive action world model** · [Paper](https://arxiv.org/abs/2506.21539)
-- **[2025] DiWA: Diffusion Policy Adaptation with World Models** · [Paper](https://arxiv.org/abs/2508.03645)
-
-[查看完整分类](literature/current/categories/06-policy-planning.md) · [返回目录](#contents)
-
-<a id="evaluation-safety"></a>
-
-### Evaluation, Safety & Benchmarks
-
-> 评估、安全与 Benchmark：分开看预测质量、策略收益与可靠性，涵盖不确定性、安全约束、运行时监测与恢复。
-
-- **[2015] A Comprehensive Survey on Safe Reinforcement Learning** · [Paper](https://www.jmlr.org/papers/volume16/garcia15a.html)
-- **[2025] WorldEval: World Model as Real-World Robot Policies Evaluator** · [Paper](https://arxiv.org/abs/2505.19017)
-
-[查看完整分类](literature/current/categories/07-evaluation-safety.md) · [返回目录](#contents)
+1. **Part 1 — From Prediction to Physical Action** (`§1.1–§1.4`): Predictive target, action query ($p_\theta(y_{t+1:t+H}\mid h_t, a_{t:t+H-1})$ vs. goal-conditioned/joint/policy interfaces), six evaluation dimensions (`L1–L6`), corpus scope (`75 / 93`), and comparison with 7 recent 2026 surveys (`Table 1`).
+2. **Part 2 — Information Requirements for Downstream Use** (`§2.1–§2.3`): Command-consequence grounding (`V-JEPA 2`, `DreamDojo`, `DROID`, `DexTouch-WM`, `REBOOT`), state initialization and recursive rollout (`GNS`, `ContactWorld`, `AVID`, `OmniVTA`), and history/viewpoint/embodiment transfer (`UniSim`, `SCVC`, `DyPES-VLA`).
+3. **Part 3 — How Predictions Enter Learning and Action** (`§3.1–§3.5`): Training supervision (`Fast-WAM`, `MBPO`, `PWM`, `VLAW`, `WMPO`), candidate selection (`PETS`, `TD-MPC2`, `GeoBoN`, `Yuan et al.`, `Drive-WM`, `ContactWorld`), action generation (`V-JEPA Policy`, `DreamZero`, `JOPAT`, `Cosmos Policy`, `DAWN`, `NavForesee`), policy evaluators (`IWS`, `DexTouch-WM`, `Mem-World`), and runtime timing/safety (`FutureRTC`, `TacPAC`, `VLA-FixBench`, `DreamAvoid`, `SMBPO`).
+4. **Part 4 — Evaluating Downstream Utility and Reliability** (`§4.1–§4.5`): RoboTwin 2.0 & RoboDojo task-level forensics, `Table 9` attribution summary (`75 / 56 / 29 (26)`), synthesis, and three falsifiable controlled follow-up tests (`Table 10`).
 
 ---
 
-<a id="contributing"></a>
+## Local Website Preview & Validation
 
-## Contributing
+The GitHub Pages site (`docs/`) requires no Node/bundler build step:
 
-欢迎通过 [Issue](https://github.com/Dracoxa/World-Models-for-Physical-Survey/issues) 或 [Pull Request](https://github.com/Dracoxa/World-Models-for-Physical-Survey/pulls) 推荐论文、纠正错链或补充正式出版版本。
+```bash
+# Validate HTML anchors, local assets, 7 figures, and JSON counts (75/93, 33/66/858)
+python3 docs/check_site.py
 
-请提供：**论文标题、年份、DOI/arXiv/正式出版链接、所属主题，以及一句与综述相关的理由**。优先使用作者原文或正式出版来源。
+# Preview locally
+python3 -m http.server 8000 --directory docs
+```
 
-完整候选索引与状态说明见 [Latest Literature Catalog](literature/current/README.md)；可下载 [CSV](literature/current/catalog.csv) 检索。旧协作表目录留作 [历史存档](literature/README.md)。补充内容经核对后再进入正文，不直接照收其他仓库的分类或结论。
+Pushing changes in `docs/` to `main` automatically deploys via [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
 
-展示格式参考 [NTUMARS / Awesome-World-Model-for-Robotics-Policy](https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy)，文献内容及研究框架按本项目维护。
+---
+
+## Citation (Anonymous Preprint)
+
+```bibtex
+@article{anonymous2026worldmodelsphysical,
+  title   = {World Models for Physical AI: Interfaces, Experimental Evidence, and Downstream Utility},
+  author  = {Anonymous Author(s)},
+  journal = {ACM Computing Surveys (manuscript under review)},
+  year    = {2026},
+  note    = {Evidence companion snapshot: 2026-11-22; benchmark snapshot: 2026-11-10}
+}
+```
