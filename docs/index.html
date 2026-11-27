@@ -223,7 +223,7 @@
 
           <div class="cov-footnote">
             <span id="cov-total-note">Loading totals…</span>
-            <span class="mono">Source: analysis/summary.csv &amp; Table 9 (r6)</span>
+            <span class="mono">Source: analysis/summary.csv &amp; Table 9</span>
           </div>
         </div>
 
@@ -297,51 +297,56 @@
       </div>
     </section>
 
-    <!-- ==================== 03 THREE CONTROLLED FOLLOW-UP TESTS ==================== -->
+    <!-- ==================== 03 FOUR CONTROLLED FOLLOW-UP PROTOCOLS ==================== -->
     <section class="band" id="tests">
       <div class="wrap">
         <div class="sec-head">
           <p class="sec-num">03 · Falsifiable Follow-Up Agenda (Table 10)</p>
-          <h2>Three controlled tests to close the remaining attribution gaps</h2>
+          <h2>Four controlled protocols to resolve the open execution-loop splits</h2>
         </div>
 
         <div class="test-card-grid">
           <article class="test-card">
             <span class="badge badge-comp">Test 01 · Planning (L5)</span>
-            <h3>Physical same-state branching</h3>
+            <h3>Candidate availability vs. scoring rule</h3>
             <dl class="test-dl">
-              <dt>Fixed controls</dt>
-              <dd>Restored scene, randomized branch order, candidate pool, continuation policy, search budget.</dd>
-              <dt>Varied intervention</dt>
-              <dd>Candidate scoring rule only (equal-budget uniform primary; K=1 budget reference).</dd>
-              <dt>Falsifier</dt>
-              <dd>Precise all-starts gain below threshold vs. uniform selection argues against the scorer.</dd>
+              <dt>Arms &amp; controls</dt>
+              <dd>Fix reproducible resets, randomized branch order, candidate pool, continuation policy, and budget K; compare (A) uniform, (B) offline proxy, and (C) candidate scorer (+ K=1 reference &amp; rejected outcomes).</dd>
+              <dt>Metrics &amp; decisive criterion</dt>
+              <dd>All-starts completion diff, mixed-outcome fraction, latency, and predicted-vs.-realized cross-check; failing to beat uniform at acceptable latency counts against the scorer.</dd>
             </dl>
           </article>
 
           <article class="test-card">
             <span class="badge badge-comp">Test 02 · Contact Planning (L2, L4, L5)</span>
-            <h3>Dynamics swap under frozen readout</h3>
+            <h3>Predictive dynamics vs. goal geometry</h3>
             <dl class="test-dl">
-              <dt>Fixed controls</dt>
-              <dd>Sensors, frozen encoder, shared latent/physical state space, goal cost, replanning rule.</dd>
-              <dt>Varied intervention</dt>
-              <dd>Predictive dynamics model only.</dd>
-              <dt>Falsifier</dt>
-              <dd>Lower rollout error without higher closed-loop completion is only a fidelity gain.</dd>
+              <dt>Arms &amp; controls</dt>
+              <dd>Fix sensors, a frozen shared encoder &amp; goal metric, search budget, and replanning; independently swap visual vs. vision–tactile dynamics and contact cost terms (retrain missing modalities—no OOD zero-masking).</dd>
+              <dt>Metrics &amp; decisive criterion</dt>
+              <dd>Rollout error (L2), object response (L4), closed-loop completion (L5), and latency; lower rollout error without higher completion establishes only an L2 fidelity gain.</dd>
             </dl>
           </article>
 
           <article class="test-card">
-            <span class="badge badge-comp">Test 03 · Runtime Control (L5, L6)</span>
-            <h3>Runtime access to predicted contact</h3>
+            <span class="badge badge-comp">Test 03 · Action Generation (L5)</span>
+            <h3>Training supervision vs. deployment readout</h3>
             <dl class="test-dl">
-              <dt>Fixed controls</dt>
-              <dd>Observations, base chunk &amp; action index, compute budget, editable window, deadline.</dd>
-              <dt>Varied intervention</dt>
-              <dd>Access to cached predictive reference.</dd>
-              <dt>Falsifier</dt>
-              <dd>Net gain across all attempts below threshold (including late updates) counts against runtime access.</dd>
+              <dt>Arms &amp; controls</dt>
+              <dd>Under one dual-mode architecture and fixed data, compare (A) no future supervision, (B) training-only supervision (deployment readout off), and (C) deployment readout of pure future latents (decoupled from text CoT) at matched compute.</dd>
+              <dt>Metrics &amp; decisive criterion</dt>
+              <dd>Closed-loop completion, wall-clock latency, and throughput; only a net gain of C over B under matched compute and latency establishes independent test-time readout value.</dd>
+            </dl>
+          </article>
+
+          <article class="test-card">
+            <span class="badge badge-comp">Test 04 · Runtime Control (L5, L6)</span>
+            <h3>Deadline-bound runtime correction</h3>
+            <dl class="test-dl">
+              <dt>Arms &amp; controls</dt>
+              <dd>Fix observations, base chunk, committed prefix, compute budget, editable window, and hard deadline without pausing physics or hardware; compare (A) unassisted, (B) reactive no-cache, and (C) cached predictive suffix correction.</dd>
+              <dt>Metrics &amp; decisive criterion</dt>
+              <dd>Net completion across all attempts (including late updates), p50/p95 end-to-end latency, and missed-deadline rate; gains below threshold count against runtime predictive access.</dd>
             </dl>
           </article>
         </div>

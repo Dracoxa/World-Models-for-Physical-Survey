@@ -103,7 +103,7 @@ Rather than grouping papers solely by generative backbone, the survey locates ev
     </tr>
     <tr>
       <td><strong>§4 · Utility, Forensics &amp; Open Tests</strong></td>
-      <td>Frozen RoboTwin 2.0 &amp; RoboDojo task-level forensics, 75-study / 93-comparison attribution funnel, synthesis, and three falsifiable controlled follow-up tests.</td>
+      <td>Frozen RoboTwin 2.0 &amp; RoboDojo task-level forensics, 75-study / 93-comparison attribution funnel, synthesis, and four controlled follow-up protocols.</td>
       <td>Tables 7–10 · Fig. 7</td>
     </tr>
   </tbody>
@@ -158,13 +158,14 @@ To test what aggregate leaderboard scores conceal about complete systems—witho
 
 ## Proposed Controlled Follow-Up Tests
 
-Translating the evidence gaps from §3–§4 into actionable, falsifiable experimental protocols (**Table 10, §4.5**):
+Translating the open execution-loop attribution splits from §3–§4 into four decisive, falsifiable experimental protocols (**Table 10, §4.5**):
 
-| Proposed Test | Fixed Controls | Varied Intervention | Required Outcomes &amp; Falsification Criterion |
-| :--- | :--- | :--- | :--- |
-| **1. Physical same-state branching** *(L5)* | Restored scene, randomized branch order, candidate pool, continuation policy, search budget | Candidate scoring rule | Primary: all-starts terminal completion diff + mixed-outcome diagnostic + $K=1$ reference + latency. Must beat equal-budget uniform selection at acceptable latency. |
-| **2. Dynamics swap for contact planning** *(L2, L4, L5)* | Sensors, **frozen encoder**, shared state space, goal cost, search budget, replanning rule | Predictive dynamics | Rollout error, observed object response, closed-loop completion, planning latency. Lower rollout error alone establishes only an L2 fidelity gain, not L5 planning utility. |
-| **3. Runtime access to predicted contact** *(L5, L6)* | Observations, base chunk &amp; action index, compute budget, editable window &amp; hard deadline | Access to cached predictive reference | Net completion **across all attempts** (including late updates), latency, missed-deadline rate, and multi-seed uncertainty. Net gains below prespecified threshold count against runtime predictive access. |
+| Proposed Protocol | Matched Arms &amp; Key Controls | Metrics &amp; Decisive Criterion |
+| :--- | :--- | :--- |
+| **1. Candidate availability vs. scoring rule** *(L5)* | Fix reproducible resets, randomized branch order, candidate pool, continuation policy, and budget $K$; compare **(A)** uniform, **(B)** offline proxy, and **(C)** candidate scorer (plus $K=1$ reference &amp; rejected outcomes). | All-starts completion diff, mixed-outcome fraction, latency, and predicted-vs.-realized cross-check separating forecast from valuation error. Failing to beat uniform at acceptable latency counts against the scorer. |
+| **2. Predictive dynamics vs. goal geometry** *(L2, L4, L5)* | Fix sensors, a **frozen shared encoder &amp; goal metric**, search budget, and replanning; independently swap visual vs. vision–tactile dynamics and contact cost terms (**retrain** missing-modality heads—no OOD zero-masking). | Multi-step rollout error (L2), object response (L4), closed-loop completion (L5), and latency. Lower rollout error without higher closed-loop completion establishes only an L2 fidelity gain, not L5 planning utility. |
+| **3. Training supervision vs. deployment readout** *(L5)* | Under one dual-mode architecture &amp; fixed data, compare **(A)** no future supervision, **(B)** training-only future supervision (deployment readout off), and **(C)** training + deployment readout of pure future latents (decoupled from text CoT) at matched compute. | Closed-loop completion, wall-clock latency, and throughput. B &gt; A isolates training supervision; only a net gain of C over B under matched compute and deployment latency establishes independent value for test-time future readout. |
+| **4. Deadline-bound runtime correction** *(L5, L6)* | Fix observations, base chunk, committed prefix, compute budget, editable window, and hard deadline (**no pausing simulation physics or hardware motion**); compare **(A)** unassisted, **(B)** reactive no-cache, and **(C)** cached predictive suffix correction. | Net completion across **all** attempts (including nominal runs &amp; late updates), p50/p95 end-to-end latency, and missed-deadline rate. Net gains below threshold—from weak revisions, false alarms, or missed deadlines—count against runtime access. |
 
 ---
 
@@ -224,7 +225,7 @@ World-Models-for-Physical-Survey/
 
 ### Direct Downloads
 
-- **Manuscript (Typeset Preview, 34 pp):** [docs/assets/survey.pdf](docs/assets/survey.pdf)
+- **Manuscript (Typeset Preview, 33 pp):** [docs/assets/survey.pdf](docs/assets/survey.pdf)
 - **Manuscript (Line-Numbered Review Copy, 31 pp):** [docs/assets/survey-review.pdf](docs/assets/survey-review.pdf)
 - **Evidence Companion Archive:** [docs/assets/Evidence-companion.zip](docs/assets/Evidence-companion.zip) — source-linked 93-comparison ledger, quantitative workbook, and frozen benchmark snapshots
 - **Literature Discovery Catalogue:** [literature/current/README.md](literature/current/README.md) · [catalog.csv](literature/current/catalog.csv)
