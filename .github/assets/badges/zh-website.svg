@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="32" viewBox="0 0 112 32" role="img" aria-label="项目官网">
+  <rect width="112" height="32" rx="6" fill="#1d4ed8"/>
+  <rect x="0.5" y="0.5" width="111" height="31" rx="5.5" fill="none" stroke="#ffffff" stroke-opacity="0.18"/>
+  <g transform="translate(11, 8.5) scale(0.625)" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/>
+  </g>
+  <text x="67.0" y="20.5" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">项目官网</text>
+</svg>

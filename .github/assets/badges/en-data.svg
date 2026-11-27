@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="32" viewBox="0 0 172 32" role="img" aria-label="Evidence Companion">
+  <rect width="172" height="32" rx="6" fill="#b45309"/>
+  <rect x="0.5" y="0.5" width="171" height="31" rx="5.5" fill="none" stroke="#ffffff" stroke-opacity="0.18"/>
+  <g transform="translate(11, 8.5) scale(0.625)" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>
+  </g>
+  <text x="97.0" y="20.5" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">Evidence Companion</text>
+</svg>

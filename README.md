@@ -8,11 +8,13 @@
 
 <br>
 
-[![Project Website](https://img.shields.io/badge/Project_Website-GitHub_Pages-1d4ed8?style=for-the-badge&logo=githubpages&logoColor=white)](https://dracoxa.github.io/World-Models-for-Physical-Survey/)
-[![Evidence Explorer](https://img.shields.io/badge/Interactive_Explorer-93_Comparisons-4338ca?style=for-the-badge&logo=datatables&logoColor=white)](https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html)
-[![Survey PDF](https://img.shields.io/badge/Manuscript-Survey_PDF-0f766e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](docs/assets/survey.pdf)
-[![Line-Numbered PDF](https://img.shields.io/badge/Review_Copy-Line_Numbered-334155?style=for-the-badge&logo=readthedocs&logoColor=white)](docs/assets/survey-review.pdf)
-[![Evidence Companion](https://img.shields.io/badge/Data-Evidence_Companion-b45309?style=for-the-badge&logo=files&logoColor=white)](docs/assets/Evidence-companion.zip)
+<p>
+  <a href="https://dracoxa.github.io/World-Models-for-Physical-Survey/"><img src=".github/assets/badges/en-website.svg" alt="Project Website" height="32"></a>&nbsp;
+  <a href="https://dracoxa.github.io/World-Models-for-Physical-Survey/explorer.html"><img src=".github/assets/badges/en-explorer.svg" alt="Evidence Explorer" height="32"></a>&nbsp;
+  <a href="docs/assets/survey.pdf"><img src=".github/assets/badges/en-pdf.svg" alt="Survey PDF" height="32"></a>&nbsp;
+  <a href="docs/assets/survey-review.pdf"><img src=".github/assets/badges/en-review.svg" alt="Line-Numbered PDF" height="32"></a>&nbsp;
+  <a href="docs/assets/Evidence-companion.zip"><img src=".github/assets/badges/en-data.svg" alt="Evidence Companion" height="32"></a>
+</p>
 
 <p>
   <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
